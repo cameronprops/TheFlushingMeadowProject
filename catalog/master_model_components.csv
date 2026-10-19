@@ -1,0 +1,1 @@
+component_id,building_id,period_year,model_asset_id,source_node,mesh_key,role,coordinate_frame,min_x_m,min_y_m,min_z_m,max_x_m,max_y_m,max_z_m,vertices,faces,watertight,material_name,roughness,metallic,source_sha256,verification_status
