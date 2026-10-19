@@ -1,0 +1,9 @@
+{
+  "crs": "EPSG:32118",
+  "certified": false,
+  "affine_x": [0.35, -0.04, 300000.0],
+  "affine_y": [0.02, 0.35, 62000.0],
+  "control_rmse_m": 0.2,
+  "check_rmse_m": 0.7,
+  "note": "SYNTHETIC TEST ONLY. These are not archival geographic coordinates."
+}
