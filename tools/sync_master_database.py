@@ -29,6 +29,7 @@ from tools.build_db import build
 from tools.export_building_dossiers import export_pack
 from tools.building_program.export_runtime_handoff import export as export_runtime_handoff
 from tools.site.export_site_amenities import export_site_amenities
+from tools.site.export_horticulture import export_horticulture
 from tools.building_program.refresh_model_catalog import refresh_registered_models
 WATCH_GLOBS = (
     "catalog/*.csv",
@@ -38,6 +39,7 @@ WATCH_GLOBS = (
     "tools/build_db.py",
     "tools/export_building_dossiers.py",
     "tools/building_program/export_runtime_handoff.py",
+    "tools/site/export_horticulture.py",
     "tools/sync_master_database.py",
 )
 
@@ -107,6 +109,7 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
         staged_dossiers = staging / "dossiers"
         staged_handoff = staging / "runtime_handoff"
         staged_amenities = staging / "site_amenities"
+        staged_horticulture = staging / "horticulture"
         # Build_db is bound to ROOT, intentionally refusing another source tree.
         if root.resolve() != ROOT.resolve():
             raise ValueError("sync_once requires its own checkout; do not mix repositories")
@@ -116,6 +119,7 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
             summary = export_pack(connection, staged_dossiers)
             runtime_handoff = export_runtime_handoff(connection, staged_handoff, denominator=250)
             site_amenity_report = export_site_amenities(connection, staged_amenities)
+            horticulture_report = export_horticulture(connection, staged_horticulture)
         # Only replace the last good SQLite database after all checks/export pass.
         destination_db = output_root / "flushing_meadows.sqlite"
         os.replace(staged_db, destination_db)
@@ -164,6 +168,20 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
             raise
         if amenity_backup.exists():
             shutil.rmtree(amenity_backup)
+        horticulture_dest = output_root / "horticulture"
+        horticulture_backup = output_root / ".horticulture_previous"
+        if horticulture_backup.exists():
+            shutil.rmtree(horticulture_backup)
+        if horticulture_dest.exists():
+            os.replace(horticulture_dest, horticulture_backup)
+        try:
+            os.replace(staged_horticulture, horticulture_dest)
+        except Exception:
+            if horticulture_backup.exists():
+                os.replace(horticulture_backup, horticulture_dest)
+            raise
+        if horticulture_backup.exists():
+            shutil.rmtree(horticulture_backup)
     report = {
         "schema": "fmp.master-db-refresh.v1",
         "updated_utc": datetime.now(timezone.utc).isoformat(),
@@ -173,6 +191,7 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
         "export": summary,
         "runtime_handoff": {"building_manifests": len(runtime_handoff["buildings"]), "units":"metres->Unreal centimetres and scaled print millimetres"},
         "site_amenities": site_amenity_report,
+        "horticulture": horticulture_report,
         "source_of_truth": "version-controlled CSV + migration SQL; generated SQLite is derivative",
         "current_snapshot": str(output_root / "flushing_meadows.sqlite"),
         "dossiers_directory": str(output_root / "building_program"),
