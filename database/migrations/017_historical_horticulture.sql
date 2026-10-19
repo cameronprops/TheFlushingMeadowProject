@@ -154,3 +154,56 @@ CREATE TRIGGER IF NOT EXISTS trg_horticulture_era_link
  OR (NEW.certainty='VERIFIED' AND (SELECT historical_status FROM horticulture_sources
  WHERE source_id=NEW.source_id)='UNKNOWN')
  BEGIN SELECT RAISE(ABORT,'Horticulture time link cannot invert chronology or lack evidence'); END;
+
+-- Tree-by-tree, shrub-by-shrub and bed-instance records are deliberately EMPTY
+-- until a historically matched plan/photo gives justified center positions.
+CREATE TABLE IF NOT EXISTS horticulture_plant_instances (
+ instance_id TEXT PRIMARY KEY,
+ era_year INTEGER NOT NULL CHECK(era_year IN(1939,1940,1964,1965,2026)),
+ planting_id TEXT NOT NULL REFERENCES horticulture_plantings(planting_id),
+ source_id TEXT NOT NULL REFERENCES horticulture_sources(source_id),
+ original_plan_symbol TEXT,
+ name_or_tree_tag TEXT,
+ location_status TEXT NOT NULL CHECK(location_status IN
+  ('UNLOCATED','AREA_ONLY','PHOTO_ESTIMATE','MAP_TRACED','SITE_REGISTERED')),
+ coordinate_frame TEXT NOT NULL DEFAULT 'UNREGISTERED',
+ x_m REAL,y_m REAL,z_m REAL,
+ horizontal_crs TEXT,vertical_datum TEXT,
+ uncertainty_m REAL CHECK(uncertainty_m IS NULL OR uncertainty_m>=0),
+ canopy_diameter_m REAL CHECK(canopy_diameter_m IS NULL OR canopy_diameter_m>0),
+ mature_height_m REAL CHECK(mature_height_m IS NULL OR mature_height_m>0),
+ mesh_asset_uri TEXT,
+ unreal_instance_id TEXT,
+ print_group_id TEXT,
+ notes TEXT,
+ CHECK((x_m IS NULL AND y_m IS NULL AND z_m IS NULL) OR
+       (x_m IS NOT NULL AND y_m IS NOT NULL AND z_m IS NOT NULL)),
+ CHECK(location_status NOT IN('MAP_TRACED','SITE_REGISTERED') OR
+       x_m IS NOT NULL),
+ CHECK(location_status!='SITE_REGISTERED' OR
+       (horizontal_crs IS NOT NULL AND vertical_datum IS NOT NULL))
+);
+CREATE VIEW IF NOT EXISTS horticulture_mapped_plants AS
+ SELECT i.*,p.area_id,p.taxon_id,p.display_label,p.unreal_layer
+ FROM horticulture_plant_instances i
+ JOIN horticulture_plantings p ON i.planting_id=p.planting_id
+ WHERE i.location_status IN('MAP_TRACED','SITE_REGISTERED') AND i.x_m IS NOT NULL;
+
+CREATE TABLE IF NOT EXISTS horticulture_irrigation_links (
+ irrigation_link_id TEXT PRIMARY KEY,
+ area_id TEXT NOT NULL REFERENCES horticulture_areas(area_id),
+ network_layer_id TEXT NOT NULL REFERENCES site_network_layers(layer_id),
+ segment_id TEXT REFERENCES site_network_segments(segment_id),
+ source_id TEXT REFERENCES horticulture_sources(source_id),
+ linkage_status TEXT NOT NULL CHECK(linkage_status IN
+  ('RESEARCH_LEAD','CONTRACTED','DOCUMENTED','SITE_REGISTERED')),
+ equipment_description TEXT,
+ notes TEXT,
+ CHECK(linkage_status!='SITE_REGISTERED' OR
+       (segment_id IS NOT NULL AND source_id IS NOT NULL))
+);
+CREATE TRIGGER IF NOT EXISTS trg_horticulture_individual_year
+ BEFORE INSERT ON horticulture_plant_instances
+ WHEN (SELECT era_year FROM horticulture_plantings WHERE planting_id=NEW.planting_id)!=NEW.era_year
+ OR (SELECT era_year FROM horticulture_sources WHERE source_id=NEW.source_id)!=NEW.era_year
+ BEGIN SELECT RAISE(ABORT,'Individual plant period does not match planting/source'); END;
