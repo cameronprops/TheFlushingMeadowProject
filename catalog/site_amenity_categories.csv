@@ -1,0 +1,24 @@
+category_id,category_family,display_name,suggested_layer,visible_in_unreal,note
+AMENITY_REFUSE,CLEANLINESS,Waste basket / refuse can,FMP_SITE_REFUSE,1,Period-specific form and pickup type require archival reference
+AMENITY_BENCH,SEATING,Park bench / rest seating,FMP_SITE_SEATING,1,Individual model/spacing variant sourced separately
+AMENITY_CHAIR,SEATING,Movable chairs / rest seating,FMP_SITE_SEATING,1,Some seating is rented and is not a fixed site asset
+AMENITY_DRINK,DRINKING_WATER,Drinking fountain,FMP_SITE_DRINKING,1,Water service lateral should be linked only with evidence
+AMENITY_LIGHTPOLE,LIGHTING,Street luminaire / light pole,FMP_SITE_LIGHTING,1,Lamp type and circuit have separate properties
+AMENITY_TREELIGHT,LIGHTING,Landscape / tree lighting,FMP_SITE_LIGHTING,1,May be recessed or elevated
+AMENITY_SIGN,WAYFINDING,Directional sign / directory,FMP_SITE_SIGNS,1,Stable per-era historical wording
+AMENITY_INFO,PUBLIC_SERVICE,Information booth,FMP_SITE_PUBLIC_SERVICES,1,Public navigation service
+AMENITY_NEWS,PUBLIC_SERVICE,Newsstand,FMP_SITE_PUBLIC_SERVICES,1,Operator/licensing may change each year
+AMENITY_PHONE,PUBLIC_SERVICE,Telephone booth,FMP_SITE_PUBLIC_SERVICES,1,Telecom conduit not inferred from booth
+AMENITY_LOCKER,PUBLIC_SERVICE,Public locker,FMP_SITE_PUBLIC_SERVICES,1,Guest storage
+AMENITY_MAIL,PUBLIC_SERVICE,Mailbox,FMP_SITE_PUBLIC_SERVICES,1,Postal service
+AMENITY_CLOCK,PUBLIC_SERVICE,Public clock / Swiss clock,FMP_SITE_PUBLIC_SERVICES,1,Historic time sales / clocks
+AMENITY_TOILET,PUBLIC_SERVICE,Comfort station / public restroom,FMP_SITE_COMFORT,1,Building footprint and door/service connections when sourced
+AMENITY_FIRSTAID,PUBLIC_SERVICE,First aid facility,FMP_SITE_FIRST_AID,1,Medical facility access; not necessarily permanent building
+AMENITY_STATUE,CIVIC_ART,Statuary / sculpture,FMP_SITE_ART,1,"Artist, title, material, period changes"
+AMENITY_FOUNTAIN,WATER_FEATURE,Decorative fountain / pool,FMP_SITE_FOUNTAIN,1,"Separate geometry from pumps, jets and animated cues"
+AMENITY_PUMPHOUSE,OPERATIONS,Fountain pump / equipment shelter,FMP_SITE_OPERATIONS,1,"Mechanical service, not guest attraction"
+AMENITY_MAINTENANCE,OPERATIONS,Maintenance/service building,FMP_SITE_OPERATIONS,1,Separate access and utility delivery route
+AMENITY_SERVICE,OPERATIONS,Waste collection / cleaning support,FMP_SITE_OPERATIONS,1,Service routes and pickup areas documented independently
+AMENITY_PLANTER,LANDSCAPE_FIXTURE,Planter / hardscape flower bed,FMP_SITE_LANDSCAPE,1,Landscape features and seasonal changes
+AMENITY_FLAG,LANDSCAPE_FIXTURE,Flagpole / pennant,FMP_SITE_FLAGS,1,Sheet 7 operations manual provides flagpole reference
+AMENITY_SECURITY,SECURITY,Turnstile / gate / toll booth,FMP_SITE_GATES,1,Private access classification can differ from guest paths
