@@ -71,3 +71,35 @@ clearance test. It does not certify the full stair/bridge route or Unreal collis
 Next gate: validate the corrected overlay in Unreal, including the transitions
 between landing, sill, stair and return bridge. If Unreal is unavailable, inspect
 those joins against the actual meshes before extending the route.
+
+
+## 2026-10-19 corrective revision r2: walking surfaces
+
+Measured r1 mesh tops showed the upper connector 3.8 mm above its source landing
+and the stair bottom/return slabs 26.68 mm below the bridge walking surface.
+Slab endpoints now mean top surfaces, with slab thickness extending downward.
+The upper landing and bridge use source mesh upper Y bounds. Stairs retain
+uniform positive risers below 180 mm; their final tread meets the bridge level.
+Handrail endpoints use those same walking levels. Interaction candidates now
+reference landing/bridge surfaces rather than slab centers.
+
+Use the **v002_r2** runtime GLB, cutter GLB and contract:
+[geometry, generators and tests](https://drive.google.com/file/d/1osR0o85nkImiI-cllHh-mMp4YWLh-dnY/view).
+ZIP SHA-256: `3ff31d1ce14f23961714951aeab1066f866afcddc38d3737f3dbdfa73af65309`.
+The preserved source GLB hash is unchanged. r2 supersedes r1 preview outputs.
+
+**12 focused software tests pass**, including surface-level alignment, uniform
+stair risers, handrail endpoint heights, and honest reporting of the unresolved
+Helicline join. This is not a claim that all geometry acceptance gates pass.
+
+**Open geometry gate:** with the target raised to the bridge walking surface,
+Helicline nearest-vertex distance is 0.122434 m, exceeding the retained 0.1 m
+proximity threshold. The contract explicitly reports proximity_pass=false.
+The former proximity assertion has been replaced by an independent measurement
+and failure-status regression, not by a relaxed threshold. Vertex proximity does
+not measure actual face contact or capsule clearance.
+
+Next: inspect the Helicline top faces and route endpoint with surface-distance
+and body-clearance checks before constructing any transition. Full route continuity,
+headroom and Unreal traversal remain unvalidated. All revised circulation remains
+provisional, not historically measured architecture.
