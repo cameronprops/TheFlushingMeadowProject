@@ -78,6 +78,25 @@ def make_construction_brief(packet):
                      "; collision="+room["collision_status"]+
                      "; navigation="+room["navigation_status"])
     if not d.get("interior_spaces"):lines.append("No known interior circulation yet.")
+    lines.extend(["","## Model envelope, source coordinates and uncertainty"])
+    for env in d.get("envelopes",[]):
+        lower=[env["min_x_m"],env["min_y_m"],env["min_z_m"]]
+        upper=[env["max_x_m"],env["max_y_m"],env["max_z_m"]]
+        lines.append("- "+env["period_year"].__str__()+": "+env["envelope_scope"]+
+          " / "+env["coordinate_frame"]+" / min "+str(lower)+" / max "+str(upper)+
+          " ["+env["evidence_status"]+"; SITE REGISTERED: "+("yes" if env["site_registered"] else "NO")+"]")
+    if not d.get("envelopes"):lines.append("No measured envelope yet; do not infer coordinates.")
+    lines.extend(["","## Visitor interaction points"])
+    for point in d.get("interactive_points",[]):
+        lines.append("- "+point["label"]+" / "+point["interaction_type"]+
+          " / "+point["position_status"]+" / "+str(point["requested_behavior"] or ""))
+    if not d.get("interactive_points"):lines.append("No interactions scoped yet.")
+    lines.extend(["","## Connected project media and archival references"])
+    for media in d.get("media_inventory",[]):
+        lines.append("- ["+media["record_type"]+"] "+media["title"]+
+            " — "+str(media["uri"] or media["project_uri"] or "")+
+            " ("+media["acquisition_status"]+")")
+    if not d.get("media_inventory"):lines.append("No media registered yet.")
     lines.extend(["","## Exterior/interior shell and optional structural layers"])
     policy=d.get("shell_first_policy") or {}
     if policy:
@@ -124,6 +143,9 @@ def export_pack(connection, output_dir: Path):
         related = records(connection,"SELECT * FROM building_linked_places WHERE building_id=? ORDER BY link_id",(building_id,))
         shell_policy = records(connection,"SELECT * FROM building_reconstruction_policy WHERE building_id=?",(building_id,))
         shell_parts = records(connection,"SELECT * FROM building_shell_parts WHERE building_id=? ORDER BY role,part_id",(building_id,))
+        envelopes = records(connection,"SELECT * FROM master_building_envelopes WHERE building_id=? ORDER BY period_year,envelope_id",(building_id,))
+        hotspots = records(connection,"SELECT * FROM master_interactive_points WHERE building_id=? ORDER BY period_year,point_id",(building_id,))
+        media_files = records(connection,"SELECT * FROM master_all_media WHERE building_id=? ORDER BY record_type,media_ref",(building_id,))
         parameters = records(connection,"SELECT * FROM building_geometry_parameters WHERE building_id=? ORDER BY period_year,component_id,parameter_key",(building_id,))
         surfaces = records(connection,"SELECT * FROM building_surface_research WHERE building_id=? ORDER BY period_year,component_selector",(building_id,))
         photographs = records(connection,"SELECT * FROM building_view_observations WHERE building_id=? ORDER BY period_year,view_id",(building_id,))
@@ -137,6 +159,8 @@ def export_pack(connection, output_dir: Path):
                       appearances=skins, model_release_history=releases,
                       linked_places_and_existing_assets=related, shell_first_policy=shell_policy[0] if shell_policy else None,
                       shell_source_parts=shell_parts,
+                      envelopes=envelopes, interactive_points=hotspots,
+                      media_inventory=media_files,
                       procedural_parameters=parameters, surface_research=surfaces,
                       photographic_observations=photographs,
                       geometry_format_policy="SHARED_CORE_WITH_REALISTIC_AND_STYLIZED_MATERIALS",
@@ -154,6 +178,11 @@ def export_pack(connection, output_dir: Path):
         queue.append(row)
         if b["public_access_status"]=="INTERIOR_ALPHA_TARGET":
             access.append(packet)
+    master_rows=records(connection,"SELECT * FROM master_building_overview ORDER BY production_priority,display_name")
+    with (target/"master_building_overview.csv").open("w",encoding="utf-8",newline="") as f:
+        writer=csv.DictWriter(f,fieldnames=list(master_rows[0]) if master_rows else ["building_id"])
+        writer.writeheader()
+        writer.writerows(master_rows)
     with (target/"master_building_queue.csv").open("w",encoding="utf-8",newline="") as f:
         writer=csv.DictWriter(f,fieldnames=EXPORT_FIELDS)
         writer.writeheader()
@@ -173,6 +202,9 @@ def export_pack(connection, output_dir: Path):
                                                       (b["building_id"],))) for b in buildings),
                  attached_source_references=sum(row["evidence_count"] for row in queue),
                  existing_linked_places=connection.execute("SELECT count(*) FROM building_linked_places").fetchone()[0],
+                 source_model_envelopes=connection.execute("SELECT count(*) FROM master_building_envelopes").fetchone()[0],
+                 interactive_locations=connection.execute("SELECT count(*) FROM master_interactive_points").fetchone()[0],
+                 linked_media_references=connection.execute("SELECT count(*) FROM master_all_media").fetchone()[0],
                  shell_first_policies=connection.execute("SELECT count(*) FROM building_reconstruction_policy").fetchone()[0],
                  audited_shell_source_parts=connection.execute("SELECT count(*) FROM building_shell_parts").fetchone()[0],
                  indexed_interior_spaces=sum(row["interior_space_count"] for row in queue),
