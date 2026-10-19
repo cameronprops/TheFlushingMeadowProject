@@ -19,12 +19,13 @@ def mesh(scene,name):
     return out
 
 def box_segment(a,b,width=1.85,thickness=.16):
+    """Build a horizontal slab with endpoints on its walking surface."""
     a,b=np.array(a,float),np.array(b,float)
     d=b-a;length=np.linalg.norm(d[[0,2]])
     if length<.01: raise ValueError('Degenerate deck segment')
     part=trimesh.creation.box(extents=(length,thickness,width))
     part.apply_transform(trimesh.geometry.align_vectors([1,0,0],[d[0]/length,0,d[2]/length]))
-    part.apply_translation((a+b)/2)
+    part.apply_translation((a+b)/2-np.array([0,thickness/2,0]))
     return part
 
 def generate(glb,destination):
@@ -36,6 +37,8 @@ def generate(glb,destination):
     original=mesh(scene,NAMES[0]);low=mesh(scene,NAMES[1]).bounds.mean(axis=0)
     high=mesh(scene,NAMES[2]).bounds.mean(axis=0)
     deck=mesh(scene,NAMES[3]).bounds.mean(axis=0)
+    high[1]=mesh(scene,NAMES[2]).bounds[1,1]
+    deck[1]=mesh(scene,NAMES[3]).bounds[1,1]
     # Interpretation-only openings. The original source GLB is never modified.
     triangles=original.vertices[original.faces]
     remain=np.ones(len(original.faces),bool)
