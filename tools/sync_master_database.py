@@ -28,6 +28,7 @@ if str(ROOT) not in sys.path:
 from tools.build_db import build
 from tools.export_building_dossiers import export_pack
 from tools.building_program.export_runtime_handoff import export as export_runtime_handoff
+from tools.site.export_site_amenities import export_site_amenities
 from tools.building_program.refresh_model_catalog import refresh_registered_models
 WATCH_GLOBS = (
     "catalog/*.csv",
@@ -105,6 +106,7 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
         staged_db = staging / "master.sqlite"
         staged_dossiers = staging / "dossiers"
         staged_handoff = staging / "runtime_handoff"
+        staged_amenities = staging / "site_amenities"
         # Build_db is bound to ROOT, intentionally refusing another source tree.
         if root.resolve() != ROOT.resolve():
             raise ValueError("sync_once requires its own checkout; do not mix repositories")
@@ -113,6 +115,7 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
             counts = verify_master(connection)
             summary = export_pack(connection, staged_dossiers)
             runtime_handoff = export_runtime_handoff(connection, staged_handoff, denominator=250)
+            site_amenity_report = export_site_amenities(connection, staged_amenities)
         # Only replace the last good SQLite database after all checks/export pass.
         destination_db = output_root / "flushing_meadows.sqlite"
         os.replace(staged_db, destination_db)
@@ -147,6 +150,20 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
             raise
         if handoff_backup.exists():
             shutil.rmtree(handoff_backup)
+        amenity_dest = output_root / "site_amenities"
+        amenity_backup = output_root / ".site_amenities_previous"
+        if amenity_backup.exists():
+            shutil.rmtree(amenity_backup)
+        if amenity_dest.exists():
+            os.replace(amenity_dest, amenity_backup)
+        try:
+            os.replace(staged_amenities, amenity_dest)
+        except Exception:
+            if amenity_backup.exists():
+                os.replace(amenity_backup, amenity_dest)
+            raise
+        if amenity_backup.exists():
+            shutil.rmtree(amenity_backup)
     report = {
         "schema": "fmp.master-db-refresh.v1",
         "updated_utc": datetime.now(timezone.utc).isoformat(),
@@ -155,6 +172,7 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
         "counts": counts,
         "export": summary,
         "runtime_handoff": {"building_manifests": len(runtime_handoff["buildings"]), "units":"metres->Unreal centimetres and scaled print millimetres"},
+        "site_amenities": site_amenity_report,
         "source_of_truth": "version-controlled CSV + migration SQL; generated SQLite is derivative",
         "current_snapshot": str(output_root / "flushing_meadows.sqlite"),
         "dossiers_directory": str(output_root / "building_program"),
