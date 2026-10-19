@@ -76,6 +76,9 @@ def generate_v002(source:Path,out:Path,print_scales=(250,800)):
     lower=source_mesh(scene,"Platform_1_Landing_Hypothesis").bounds.mean(axis=0)
     upper=source_mesh(scene,"Platform_2_Landing_Hypothesis").bounds.mean(axis=0)
     bridge=source_mesh(scene,"Return_Bridge_Deck").bounds.mean(axis=0)
+    lower[1]=source_mesh(scene,"Platform_1_Landing_Hypothesis").bounds[1,1]
+    upper[1]=source_mesh(scene,"Platform_2_Landing_Hypothesis").bounds[1,1]
+    bridge[1]=source_mesh(scene,"Return_Bridge_Deck").bounds[1,1]
     cutters=trimesh.Scene()
     portals=[]
     for tag,point in (("LOWER",lower),("UPPER",upper)):
@@ -138,8 +141,8 @@ def generate_v002(source:Path,out:Path,print_scales=(250,800)):
            "status":"PROVISIONAL_MODEL_LOCAL_NOT_HISTORICALLY_REGISTERED",
            "interactive_qa":"UNREAL_NOT_TESTED"})
 
-    runtime_file=out/"ThemeCenter_1939_GuestFlow_Trim_v002_r1.glb"
-    cutter_file=out/"ThemeCenter_1939_CAD_PortalCutters_v002_r1.glb"
+    runtime_file=out/"ThemeCenter_1939_GuestFlow_Trim_v002_r2.glb"
+    cutter_file=out/"ThemeCenter_1939_CAD_PortalCutters_v002_r2.glb"
     runtime_file.write_bytes(runtime.export(file_type="glb"))
     cutter_file.write_bytes(cutters.export(file_type="glb"))
     tested_runtime=trimesh.load(runtime_file,force="scene")
@@ -165,11 +168,14 @@ def generate_v002(source:Path,out:Path,print_scales=(250,800)):
       "added_nodes":len(added),"door_frames":len(portals),
       "solid_print_guides":len(tested_cutters.geometry),
       "helicline_nearest_vertex_error_m":float(np.min(distance)),
+      "helicline_proximity_limit_m":0.1,
+      "helicline_proximity_pass":bool(np.min(distance)<0.1),
+      "helicline_join_acceptance":"OPEN_REQUIRES_SURFACE_AND_BODY_CLEARANCE_CHECK",
       "helicline_target_reference_m":target.tolist(),
       "helix_actual_vertex_m":nearest.tolist(),
       "cannot_certify_navigation":True}
     report={"schema":"fmp.theme-center-guest-flow.v002",
-      "geometry_revision":"r1_floor_aligned_portals",
+      "geometry_revision":"r2_walking_surface_alignment",
       "source_glb":source.name,"source_hash_sha256":original_sha,
       "building_ids":["WF0001","WF0002"],"related_places":["WF0003","WF0004"],
       "years":[1939],"assembly_geometry":"original source, separate runtime-only overlay",
@@ -194,7 +200,7 @@ def generate_v002(source:Path,out:Path,print_scales=(250,800)):
        "Unreal capsule, navigation, threshold and stair collision tests",
        "Printable duplicated-shell Boolean, closed rims and wall-thickness QA",
        "Physical projection/print alignment independent of visitor scene"]}
-    (out/"ThemeCenter_1939_GuestFlow_Contract_v002_r1.json").write_text(
+    (out/"ThemeCenter_1939_GuestFlow_Contract_v002_r2.json").write_text(
       json.dumps(report,indent=2)+"\n",encoding="utf-8")
     return report
 
