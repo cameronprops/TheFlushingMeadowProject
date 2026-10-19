@@ -53,8 +53,15 @@ class GuestFlowV002Test(unittest.TestCase):
                 self.assertTrue(source_mesh(self.scene,
                     f"INTERPRETIVE_UPPER_EXIT_POST_{side}_{i:02}").is_watertight)
         self.assertEqual(self.report["qa"]["added_nodes"],28)
-    def test_07_existing_helicline_alignment(self):
-        self.assertLess(self.report["qa"]["helicline_nearest_vertex_error_m"],.1)
+    def test_07_helicline_proximity_reports_unresolved_join(self):
+        qa=self.report["qa"]
+        target=np.array(qa["helicline_target_reference_m"])
+        helix=source_mesh(self.source,"Helicline_Deck_and_Curved_Soffit")
+        distance=float(np.linalg.norm(helix.vertices-target,axis=1).min())
+        self.assertAlmostEqual(qa["helicline_nearest_vertex_error_m"],distance,places=7)
+        self.assertEqual(qa["helicline_proximity_pass"],distance<0.1)
+        self.assertFalse(qa["helicline_proximity_pass"])
+        self.assertIn("OPEN",qa["helicline_join_acceptance"])
         self.assertEqual(self.report["unreal_native_collision"],"NOT_TESTED")
     def test_08_local_to_unreal_cm_coordinates(self):
         for obj in self.report["interaction_candidates"]:
@@ -94,6 +101,27 @@ class GuestFlowV002Test(unittest.TestCase):
                 (tri[:,:,2].max(axis=1)>z-1.175+1e-4) &
                 (tri[:,:,2].min(axis=1)<z+1.175-1e-4))
             self.assertFalse(intersects.any(), "Shell faces obstruct portal envelope")
+
+    def test_12_stair_and_bridge_walking_surfaces(self):
+        upper=source_mesh(self.source,"Platform_2_Landing_Hypothesis").bounds[1,1]
+        bridge=source_mesh(self.source,"Return_Bridge_Deck").bounds[1,1]
+        connector=source_mesh(self.scene,"PROVISIONAL_UpperLandingToStair")
+        bottom=source_mesh(self.scene,"PROVISIONAL_StairBottom")
+        self.assertAlmostEqual(connector.bounds[1,1],upper,places=4)
+        self.assertAlmostEqual(bottom.bounds[1,1],bridge,places=4)
+        names=sorted(n for n in self.scene.graph.nodes if n.startswith("PROVISIONAL_UpperReturnStair_"))
+        levels=[upper]+[source_mesh(self.scene,n).bounds[1,1] for n in names]
+        risers=-np.diff(levels)
+        self.assertTrue(np.all(risers>0))
+        self.assertTrue(np.all(risers<=.18))
+        self.assertLess(float(np.ptp(risers)),1e-5)
+        self.assertAlmostEqual(levels[-1],bridge,places=4)
+        for n in self.scene.graph.nodes:
+            if n.startswith("PROVISIONAL_ReturnViaTrylon_"):
+                self.assertAlmostEqual(source_mesh(self.scene,n).bounds[1,1],bridge,places=4)
+        for a,b in self.report["guiderails"]:
+            self.assertAlmostEqual(a[1]-upper,1.0,places=4)
+            self.assertAlmostEqual(b[1]-bridge,1.0,places=4)
 
 if __name__=="__main__":
     unittest.main()
