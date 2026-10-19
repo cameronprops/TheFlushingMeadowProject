@@ -103,3 +103,33 @@ Next: inspect the Helicline top faces and route endpoint with surface-distance
 and body-clearance checks before constructing any transition. Full route continuity,
 headroom and Unreal traversal remain unvalidated. All revised circulation remains
 provisional, not historically measured architecture.
+
+
+## 2026-10-19: actual Helicline surface audit
+
+Read-only audit of the preserved source GLB resolves the vertex-distance ambiguity:
+nearest vertex 122.434 mm; nearest triangle 99.648 mm. Direct vertical projection
+at the route endpoint finds the upward ramp surface **100.139 mm below** the
+provisional route walking level. A 5 by 5 grid spans the 2.1 m route width and
+0.5 m before/after its endpoint. All 25 samples find an upward face within the
+1 m vertical search window; sampled drops range from **35.361 to 168.611 mm**.
+
+This shows a sloping surface under the sampled region, not a certified continuous
+join. No geometry changed. No full-scene obstructions, body sweep or Unreal tests
+were performed. The r2 join gate remains open; proximity alone cannot close it.
+
+Reproduce:
+```bash
+python tools/world_build/audit_helicline_join.py SOURCE.glb REPORT.json
+python -m unittest -v tools.world_build.test_helicline_surface
+```
+Four focused synthetic tests pass: sloped interpolation, outside-triangle
+rejection, soffit exclusion, level-window filtering and edge handling.
+[Recorded measurements](HELICLINE_SURFACE_AUDIT_v001.json).
+[Archived audit package](https://drive.google.com/file/d/1zaCmP3adCn_pqqJaqeYOkVNa89J2cCah/view),
+SHA-256 `1f770207a5605b7dbaefef798f1a7d9f63d436267aecbb753f1c29918900d06a`.
+
+Next: derive a separate provisional transition surface from the measured ramp
+faces, preserving source geometry. Check its full width for support and adjacent
+obstructions before any native-engine traversal acceptance. The measurements
+describe model geometry, not historically surveyed construction.
