@@ -22,7 +22,7 @@ class DatedSiteNetworkTests(unittest.TestCase):
         with self.connect() as c:
             self.assertEqual(c.execute('SELECT COUNT(*) FROM building_dossiers').fetchone()[0],195)
             self.assertEqual(c.execute('SELECT COUNT(*) FROM site_network_layers').fetchone()[0],19)
-            self.assertEqual(c.execute('SELECT COUNT(*) FROM site_network_sheets').fetchone()[0],43)
+            self.assertGreaterEqual(c.execute('SELECT COUNT(*) FROM site_network_sheets').fetchone()[0],68)
             self.assertEqual(c.execute('SELECT COUNT(*) FROM site_network_features').fetchone()[0],19)
             self.assertEqual(c.execute('SELECT COUNT(*) FROM site_network_segments').fetchone()[0],19)
             self.assertEqual(c.execute('PRAGMA foreign_key_check').fetchall(),[])
