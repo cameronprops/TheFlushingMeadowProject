@@ -46,7 +46,7 @@ class GuestFlowV002Test(unittest.TestCase):
         for kind in ("LOWER","UPPER"):
             for item in ("HEAD","JAMB_N","JAMB_S","SILL_GUIDE"):
                 self.assertIn(f"INTERPRETIVE_{kind}_PORTAL_{item}",self.scene.graph.nodes)
-    def test_06_stair handrails_and_posts(self):
+    def test_06_stair_handrails_and_posts(self):
         for side in ("L","R"):
             self.assertIn(f"INTERPRETIVE_UPPER_EXIT_HANDRAIL_{side}",self.scene.graph.nodes)
             for i in range(9):
@@ -74,5 +74,27 @@ class GuestFlowV002Test(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Unknown original"):
             generate_v002(source,self.output/"invalid")
 
+    def test_11_portals_clear_full_height_above_landing(self):
+        for portal in self.report["portals"]:
+            tag="LOWER" if "LOWER" in portal["id"] else "UPPER"
+            floor=source_mesh(self.source,portal["floor_source_node"]).bounds[1,1]
+            head=source_mesh(self.scene,f"INTERPRETIVE_{tag}_PORTAL_HEAD")
+            sill=source_mesh(self.scene,f"INTERPRETIVE_{tag}_PORTAL_SILL_GUIDE")
+            cutter=source_mesh(self.cut,f"CAD_ONLY_BOOLEAN_CUTTER_{tag}")
+            self.assertAlmostEqual(head.bounds[0,1]-floor,2.4,places=4)
+            self.assertAlmostEqual(sill.bounds[1,1],floor,places=4)
+            self.assertAlmostEqual(cutter.bounds[0,1],floor,places=4)
+            self.assertAlmostEqual(cutter.bounds[1,1]-floor,2.4,places=4)
+            shell=source_mesh(self.scene,"Perisphere_Lower_Removable_Shell__UNREAL_PORTALS_v001")
+            tri=shell.vertices[shell.faces]
+            z=portal["center_model_m"][2]
+            intersects=((tri[:,:,0].min(axis=1)<-15) &
+                (tri[:,:,1].max(axis=1)>floor+1e-4) &
+                (tri[:,:,1].min(axis=1)<floor+2.4-1e-4) &
+                (tri[:,:,2].max(axis=1)>z-1.175+1e-4) &
+                (tri[:,:,2].min(axis=1)<z+1.175-1e-4))
+            self.assertFalse(intersects.any(), "Shell faces obstruct portal envelope")
+
 if __name__=="__main__":
     unittest.main()
+
