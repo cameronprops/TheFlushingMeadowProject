@@ -23,3 +23,16 @@ The [complete research snapshot on Drive](https://drive.google.com/file/d/1u5ppo
 
 ## Optional future scenarios
 `catalog/future_scenarios.csv` is ingested using `database/migrations/003_future_scenarios.sql`. It stores alternative uncommitted 2039/2064 environments, distinct from the five factual/historical `eras` rows; it contains no claimed primary-source facts. See [future timeline rules](../docs/FUTURE_TIMELINES.md).
+
+## Master building database (2026-10-19)
+
+**Current entrypoint: [MASTER_DATABASE.md](MASTER_DATABASE.md).** The older notes above describe the original seed version; they are not the complete present data inventory. The master index now covers the 239 research candidates and 195 building/venue candidates, plus architectural dimensions, source-model envelopes, visitor interaction hotspots, and linked photos/films/GLB/CAD/media references. It preserves existing historical and structural data.
+
+Run: `python3 tools/sync_master_database.py --once`
+
+For local automatic rebuilding while working: `python3 tools/sync_master_database.py --watch --interval 3`
+
+The generated `out/flushing_meadows.sqlite` database, its per-building `.json`/`.md` dossiers, and `master_building_overview.csv` are derived from version-controlled research catalogs and migrations. They are not separately hand-edited or hosted in a persistent running database. Google Drive external folder updates are **not automatically polled** by this watcher.
+
+### Additional v1 schema
+`database/migrations/012_master_building_index.sql` and `catalog/master_*.csv` define dated envelopes, visitor action points, project media assets and their links. `master_all_media` includes existing evidence and source-image references without misrepresenting them as acquired media files. `master_building_overview` is the single candidate summary view.
