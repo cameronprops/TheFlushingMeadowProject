@@ -78,6 +78,14 @@ def make_construction_brief(packet):
                      "; collision="+room["collision_status"]+
                      "; navigation="+room["navigation_status"])
     if not d.get("interior_spaces"):lines.append("No known interior circulation yet.")
+    lines.extend(["","## Current GLB model versions"])
+    for model in d.get("active_model_releases",[]):
+        lines.append("- "+str(model["period_year"])+" / "+model["logical_role"]+
+            ": "+str(model["parts"])+" mesh parts, "+str(model["closed_parts"])+
+            " closed, "+str(model["material_groups"])+
+            " material groups; hash "+model["source_sha256"])
+    if not d.get("active_model_releases"):
+        lines.append("No current registered GLB version.")
     lines.extend(["","## Model envelope, source coordinates and uncertainty"])
     for env in d.get("envelopes",[]):
         lower=[env["min_x_m"],env["min_y_m"],env["min_z_m"]]
@@ -216,6 +224,7 @@ def export_pack(connection, output_dir: Path):
                  attached_source_references=sum(row["evidence_count"] for row in queue),
                  existing_linked_places=connection.execute("SELECT count(*) FROM building_linked_places").fetchone()[0],
                  source_model_envelopes=connection.execute("SELECT count(*) FROM master_building_envelopes").fetchone()[0],
+                 current_model_revisions=connection.execute("SELECT count(*) FROM master_active_model_releases").fetchone()[0],
                  interactive_locations=connection.execute("SELECT count(*) FROM master_interactive_points").fetchone()[0],
                  linked_media_references=connection.execute("SELECT count(*) FROM master_all_media").fetchone()[0],
                  inspected_glb_components=connection.execute("SELECT count(*) FROM master_model_components").fetchone()[0],
