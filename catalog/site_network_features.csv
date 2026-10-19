@@ -1,0 +1,20 @@
+feature_id,canonical_name,feature_kind,identity_status,comment
+NR1939-CONSTITUTION,Constitution Mall,PEDESTRIAN_PATH,DOCUMENTED_NAMED,Named in contemporary June 1939 account; coordinates and exact extent not registered
+NR1939-PATRIOTS,Avenue of Patriots,NAMED_STREET,DOCUMENTED_NAMED,Contemporary June 1939 account lists avenue; exact historic alignment needs map tracing
+NR1939-PIONEERS,Avenue of Pioneers,NAMED_STREET,DOCUMENTED_NAMED,"Contemporary 1939 street name, geometry unavailable"
+NR1939-WHEELS,Street of Wheels,NAMED_STREET,DOCUMENTED_NAMED,Contemporary June 1939 account names street
+NR1939-WINGS,Street of Wings,NAMED_STREET,DOCUMENTED_NAMED,Contemporary June 1939 account names street
+NR1939-RAINBOW,Rainbow Avenue,NAMED_STREET,CATALOG_LEAD,Names require verification from printed 1939 fairground guide or map
+NR1964-PROGRESS,Avenue of Progress,NAMED_STREET,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-ENTERPRISES,Avenue of Enterprises,NAMED_STREET,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-COMMERCE,Avenue of Commerce,NAMED_STREET,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-STATES,Avenue of the States,NAMED_STREET,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-TRAVEL,Avenue of Travel,NAMED_STREET,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-AUTOMATION,Avenue of Automation,NAMED_STREET,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-TRANSPORTATION,Avenue of Transportation,NAMED_STREET,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-INDUSTRY,Promenade of Industry,PEDESTRIAN_PATH,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-TRUMAN,Truman Promenade,PEDESTRIAN_PATH,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-MERIDIAN,Meridian Road,NAMED_STREET,DOCUMENTED_NAMED,1964 official guide map
+NR1964-WESTDRIVE,West Drive,NAMED_STREET,DOCUMENTED_NAMED,1964 official guide map
+NR1964-COURT-UNIVERSE,Court of the Universe,PLAZA,DOCUMENTED_NAMED,1964 official fair guide map
+NR1964-COURT-STARS,Court of the Stars,PLAZA,DOCUMENTED_NAMED,1964 official fair guide map
