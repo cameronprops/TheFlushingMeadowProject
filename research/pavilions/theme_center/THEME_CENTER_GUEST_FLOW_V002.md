@@ -42,3 +42,32 @@ Dependencies: Python, `numpy`, `trimesh`. Companion previous source is `tools/wo
 Still outstanding: period plan tracing; exact Trylon east return opening; schematic vs built elevation; actual visitor route clearance, collisions/Unreal navigation, physical print fit/Boolean; final site-position origin and projector registration. No model-specific historical certification implied.
 
 Next logical build: traced/registered architectural openings once original plans can be obtained, otherwise parallel development of the RCA pavilion based on cataloged architectural elevations/sections without inventing unmeasured site geometry.
+
+## 2026-10-19 corrective revision r1: floor-aligned exit headroom
+
+The earlier generator centered its 2.4 m openings on the landing slab centers.
+That left approximately half the intended opening height above the walking surface.
+Both shell face-removal envelopes and portal frames/cutters now start at the
+source landing mesh's upper Y bound and extend 2.4 m upward. Historical dimensions
+remain provisional. The two source-model floor elevations are 15.849600 m and
+19.507200 m, in local Y-up metres.
+
+The v002 generator now writes **ThemeCenter_1939_GuestFlow_Trim_v002_r1.glb**,
+**ThemeCenter_1939_CAD_PortalCutters_v002_r1.glb**, and the corresponding
+**ThemeCenter_1939_GuestFlow_Contract_v002_r1.json**. Use these in place of
+the earlier v002 preview outputs. The inherited v001 shell-cutting routine is
+corrected too. Original staging/print source bytes are unchanged.
+
+[Download corrected geometry, contract, generators and tests](https://drive.google.com/file/d/15v1yP_XlDS_jAP3PtUfBbidkrhfp5mu6/view).
+Package SHA-256: `3cd168262c772a20731d39b73893690541bb9b3f00b8a3b4f78b55ca12c91898`.
+
+Validation: fixed a syntax error in the committed test method name; **11 focused
+tests pass** against the hash-verified original GLB. The added regression checks
+frame head clearance, sill and cutter alignment to each landing, and absence of
+remaining shell triangles overlapping the opening envelope. This is a conservative
+triangle-envelope removal, not an exact architectural Boolean or a complete body
+clearance test. It does not certify the full stair/bridge route or Unreal collision.
+
+Next gate: validate the corrected overlay in Unreal, including the transitions
+between landing, sill, stair and return bridge. If Unreal is unavailable, inspect
+those joins against the actual meshes before extending the route.
