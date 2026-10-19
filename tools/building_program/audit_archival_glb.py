@@ -22,7 +22,9 @@ def bounds(scene, name):
             'size':(hi-lo).tolist(),'faces':len(mesh.faces),
             'watertight':bool(mesh.is_watertight)}
 
-def component_id(scene, name):
+def component_id(scene, name, assembly_id):
+    if assembly_id != 'FMP_THEME_CENTER_1939':
+        return assembly_id  # General building: no guessed subassembly ownership.
     n=name
     while n and n!='world':
         if 'DEMOCRACITY' in n.upper():return 'WF0003'
@@ -111,7 +113,7 @@ def audit(model_path, profile_path, output, drawings=True):
     scene=trimesh.load(model_path,force='scene')
     rows=[];index={};groups={}
     for name in sorted(scene.graph.nodes):
-        bbox=bounds(scene,name);group=component_id(scene,name)
+        bbox=bounds(scene,name);group=component_id(scene,name,profile['assembly_id'])
         index[name]=bbox;groups[group]=groups.get(group,0)+1
         rows.append([name,group,scene.graph.transforms.parents.get(name),
                      '' if bbox is None else json.dumps(bbox['min']),
