@@ -3,7 +3,8 @@
 UPDATE building_dossiers SET production_priority='P2'
  WHERE building_id IN ('WF0012','FMP64SUBJ0064');
 UPDATE building_dossiers
- SET notes='GM Futurama II in 1964-65; distinct from 1939 Highways and Horizons. Period postcard describes 680-ft building, 110-ft canopy, 40-ft revolving indicator; no site registration yet.'
+ SET classification='CONFIRMED_BUILDING',architecture_status='BUILDING_IDENTITY_DOCUMENTED',
+ notes='GM Futurama II in 1964-65; distinct from 1939 Highways and Horizons. Period postcard describes 680-ft building, 110-ft canopy, 40-ft revolving indicator; no site registration yet.'
  WHERE building_id='FMP64SUBJ0064';
 INSERT INTO unidentified_visual_leads
  (lead_id,working_description,status,candidate_building_id,reference_url,feature_motion,notes)
