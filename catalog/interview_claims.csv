@@ -1,0 +1,11 @@
+claim_id,interview_id,linked_asset,summary,claim_class,timecode_or_section,recalled_era,verification_next
+ICL001,INT001,WPA Pavilion,Organizing 1939 WPA exhibition involved borrowing Rockefeller Center office space and engaging Donald Deskey,WITNESS_RECOLLECTION,[01:04:55] approx in transcript,1939,NEEDS_PERIOD_CORROBORATION
+ICL002,INT002,WPA Pavilion outdoor theatre,A revolving outdoor stage and planned Juanita Hall chorus opening were disrupted around opening,WITNESS_RECOLLECTION,Tape 2 near beginning,1939,NEEDS_SHOW_PROGRAM_AND_PLAN
+ICL003,INT003,1939 mural program,The Artists Painters and Sculptors Collaborators sought integrated art and architecture in Fair context,WITNESS_RECOLLECTION,Transcript section on 1939 fair,1939,NEEDS_PERIOD_ART_DIRECTORY
+ICL004,INT004,1939 fair photo archive,Abbenseth discussed photographing and documenting the 1939 Fair,CATALOG_SUMMARY,Smithsonian catalog summary,1939,NEEDS_FULL_TRANSCRIPT_REVIEW
+ICL005,INT005,New England States Pavilion,Design reportedly used hexagonal modules grouped into four buildings,ARCHITECT_RECOLLECTION,Transcript section describing 1964 pavilion,1964;1965,NEEDS_CONSTRUCTION_DRAWINGS
+ICL006,INT006,it’s a small world,Costume design required adaptations to animated figures under mechanical wear,CREATOR_RECOLLECTION,2014 WDFM interview paragraph on can-can figures,1964;1965,NEEDS_PRODUCTION_PHOTOS
+ICL007,INT006,General Electric Progressland,Davis recounts shipment of a show figure by air; sequence is anecdotal and needs production records,CREATOR_RECOLLECTION,2014 WDFM interview paragraph on grandmother figure,1964,NEEDS_SHIPPING_AND_SHOW_RECORDS
+ICL008,INT007,1939 Fair art panels,Lehman recalled finding a panel sold/displaced following the Fair,WITNESS_RECOLLECTION,1997 transcript section on Canal Street,1939;1940,NEEDS_ASSET_ORIGINAL_LOCATION
+ICL009,INT010,1964 General Electric queue,Cotter reports long queue and subsequent overhead protection; distinguish observed details from later research,VISITOR_AND_HISTORIAN,Podcast section on 1964 GE queue,1964;1965,NEEDS_1964_AND_1965_PLANS
+ICL010,INT011,Unbuilt 1939 Calder proposals,Calder states he proposed kinetic work for 1939 fair that was not adopted,UNBUILT_PROPOSAL,1971 Calder interview section,1939,NOT_BUILT_DO_NOT_PLACE
