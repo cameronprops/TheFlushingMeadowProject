@@ -54,6 +54,7 @@ def build(output: Path) -> None:
                     f"INSERT INTO {table} ({cols}) VALUES ({placeholders})", rows
                 )
                 print(f"{table}: {len(rows)} rows")
+        connection.executescript((ROOT / "database/migrations/006_building_priorities.sql").read_text(encoding="utf-8"))
         connection.commit()
         outcome = connection.execute("PRAGMA integrity_check").fetchone()[0]
         if outcome != "ok":
