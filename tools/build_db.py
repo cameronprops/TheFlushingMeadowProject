@@ -35,6 +35,7 @@ TABLES = {
     'master_interactive_points': ('catalog/master_interactive_points.csv', ('point_id', 'building_id', 'period_year', 'space_id', 'label', 'interaction_type', 'public_access', 'coordinate_frame', 'x_m', 'y_m', 'z_m', 'position_status', 'requested_behavior', 'trigger_or_scene_key', 'implementation_status', 'native_unreal_tested', 'notes')),
     'master_media_assets': ('catalog/master_media_assets.csv', ('media_id', 'title', 'kind', 'period_year', 'uri', 'repo_path', 'mime_type', 'sha256', 'rights_status', 'acquisition_status', 'notes')),
     'master_building_media': ('catalog/master_building_media.csv', ('link_id', 'building_id', 'media_id', 'period_year', 'role', 'component_id', 'notes')),
+    'master_model_components': ('catalog/master_model_components.csv', ('component_id', 'building_id', 'period_year', 'model_asset_id', 'source_node', 'mesh_key', 'role', 'coordinate_frame', 'min_x_m', 'min_y_m', 'min_z_m', 'max_x_m', 'max_y_m', 'max_z_m', 'vertices', 'faces', 'watertight', 'material_name', 'roughness', 'metallic', 'source_sha256', 'verification_status')),
 }
 
 def build(output: Path) -> None:
@@ -51,6 +52,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/005_building_program.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/007_procedural_architecture.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/012_master_building_index.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/013_source_model_components.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
