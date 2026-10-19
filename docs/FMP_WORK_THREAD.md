@@ -42,3 +42,16 @@ category separation, and evidence gates. The script ran against the current Git
 catalog and generated 32 rows. No new geometry, survey certification, terrain data,
 or Unreal build is claimed by this increment. The 239-candidate archive has not
 been reconciled or revalidated in this increment. No Drive backup was made here.
+
+## 2026-10-18: archived inventory recovered and compared
+
+Imported 239 candidates, 82 source records, 58 Operations Manual sheet leads and
+239 production availability rows into separate archive tables in the standard
+SQLite build. Comparison: 18 matching live records, 2 ID matches with differences,
+219 archive-only candidates, no live-only records. Original IDs and raw years
+are preserved. No automatic promotion to verified places. Eleven tests, catalog
+validation, full imported-row comparison and SQLite checks pass.
+
+See [reconciliation details](INVENTORY_RECONCILIATION.md). The archival recovery
+and identity comparison portion of step 1 is complete; evidence review, candidate
+classification and survey registration remain open. No new geometry in this pass.
