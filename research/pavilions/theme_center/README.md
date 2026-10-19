@@ -64,3 +64,7 @@ The site model is **not georeferenced**. No Unreal character-collision or live v
 - [ASCE structural engineering paper, 1941](https://ascelibrary.org/doi/10.1061/TACEAT.0005368)
 
 **Next actual architectural work:** reconcile Trylon bay schedule/base portal and steel profile changes; solve Perisphere meridian/ring stations and bridge levels; confirm Helicline exact site path/footing positions from period plans; test public walk/collision in Unreal; author historically grounded materials + optional stylized skin. Preserve the long-running Rhino and StructureGraph geometry.
+
+## Subsequent visitor-shell and circulation update
+
+[Guest-flow v002](THEME_CENTER_GUEST_FLOW_V002.md) adds an **interior/egress preview only** (two modeled exit frames, handrails, solid *unapplied* CAD cutter guides, provisional scene hotspot coordinates, Helicline endpoint proximity check). It **never overwrites** the watertight original print shells. Native Unreal collision/visitor traversal and real physical print apertures remain separate engineering acceptance gates.
