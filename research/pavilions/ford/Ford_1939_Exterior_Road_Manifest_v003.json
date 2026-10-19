@@ -1,0 +1,230 @@
+{
+  "schema": "fmp.wf0014.exterior-road.v003",
+  "building_id": "WF0014",
+  "historic_year": 1939,
+  "parameters": {
+    "industrial_hall_center_xy_m": [
+      -64,
+      0
+    ],
+    "industrial_hall_outer_radius_x_m": 44.8,
+    "industrial_hall_outer_radius_y_m": 37.5,
+    "industrial_hall_wall_height_m": 14,
+    "industrial_hall_roof_rise_m": 3,
+    "entrance_hall_center_xy_m": [
+      -64,
+      -56.5
+    ],
+    "entrance_hall_width_m": 75,
+    "entrance_hall_depth_m": 38,
+    "entrance_hall_wall_height_m": 12.5,
+    "visitor_entrance_width_m": 9,
+    "road_spiral_center_xy_m": [
+      63,
+      12
+    ],
+    "road_inner_column_ring_radius_m": 21.2,
+    "road_centerline_radius_m": 26,
+    "road_travel_width_m": 4.7,
+    "road_turns": 2.8,
+    "road_z_start_m": 1.65,
+    "road_z_end_m": 10.0,
+    "road_column_count": 24,
+    "road_curb_height_m": 0.48,
+    "road_structural_deck_thickness_m": 0.44,
+    "water_outer_radius_m": 19.1,
+    "turntable_diameter_m": 30.48,
+    "turntable_tier_radii_m": [
+      15.24,
+      12.5,
+      9,
+      5.2
+    ],
+    "turntable_tier_heights_m": [
+      0.9,
+      3.4,
+      6.25,
+      9.25
+    ],
+    "mercury_figure_vertical_extent_m": 7.62,
+    "period_half_mile_car_route_m": 804.672,
+    "ford_working_model_count": 87,
+    "ford_animated_figure_count": 142,
+    "ford_raw_material_count": 27
+  },
+  "qa": {
+    "status": "PASS_SYNTHETIC_STRUCTURAL_QA",
+    "geometry_count": 310,
+    "new_structural_meshes_watertight": 105,
+    "dxf_entities": 32,
+    "dxf_errors": 0,
+    "glb_sha256": "41a0a751b1125bdd6beca9b77111b1e8dc0e2ddc8f3f900a7955e43e87dccf0f",
+    "historic_geo_certified": false,
+    "collision_engine_tested": false,
+    "unreal_tested": false,
+    "reported_turntable_mass_tons": 150,
+    "ton_unit_unresolved": true,
+    "turntable_inertia_unresolved": true,
+    "game_ready": false,
+    "source_image_traces_unavailable": true
+  },
+  "road_math": {
+    "spiral_ground_length_m": 457.4075301976162,
+    "spiral_slope_pct": 1.8254722181556675,
+    "animation": {
+      "parent_id": "FORD39_CYCLE_OF_PRODUCTION",
+      "axis": "Z",
+      "pivot_local_m": [
+        -64,
+        0,
+        0
+      ],
+      "rpm": null,
+      "status": "NOT_MEASURED",
+      "child_mesh_ids": [
+        "FORD_CYCLE_TIER_00",
+        "FORD_CYCLE_TIER_01",
+        "FORD_CYCLE_TIER_02",
+        "FORD_CYCLE_TIER_03"
+      ],
+      "formula": "theta_radians = theta_0 + (2*pi*rpm/60)*t_seconds"
+    },
+    "spiral_3d_length_m": 457.4837387071624
+  },
+  "source_references": {
+    "AR38": "https://usmodernist.org/AR/AR-1938-11.pdf",
+    "BROCHURE": "https://www.thehenryford.org/collections/explore/artifact/373546",
+    "THF_ROAD": "https://www.thehenryford.org/collections/explore/artifact/373201",
+    "THF_AERIAL": "https://www.thehenryford.org/collections/explore/artifact/65310",
+    "THF_CYCLE": "https://www.thehenryford.org/collections/explore/artifact/47282",
+    "THF_1940": "https://askus.thehenryford.org/bibs/faq/445890",
+    "MONOCORK": "https://www.lancasterhistory.org/armstrong-worlds-fair-part-1/",
+    "FERRISS": "https://www.thehenryford.org/collections/explore/artifact/31119",
+    "THF_TURNTABLE": "https://www.thehenryford.org/collections/explore/artifact/77707"
+  },
+  "editable_policy": "Historical 100-ft diameter and source counts fixed; all other geometric sizes are inference and not surveyed",
+  "provenance": {
+    "documented": [
+      "turntable_diameter_m",
+      "mercury_figure_vertical_extent_m",
+      "period_half_mile_car_route_m",
+      "ford_working_model_count",
+      "ford_animated_figure_count",
+      "ford_raw_material_count"
+    ],
+    "interpretive": "All site XY, plan envelopes, architecture roof and road support count"
+  },
+  "cinematic_materials": {
+    "painted_facade": {
+      "baseColorFactor": [
+        0.8,
+        0.85,
+        0.81,
+        1.0
+      ],
+      "metallicFactor": 0.05,
+      "roughnessFactor": 0.53,
+      "source": "BROCHURE",
+      "certainty": "VISUAL_ESTIMATE"
+    },
+    "glazed_band": {
+      "baseColorFactor": [
+        0.24,
+        0.38,
+        0.43,
+        0.5
+      ],
+      "metallicFactor": 0.05,
+      "roughnessFactor": 0.18,
+      "source": "BROCHURE",
+      "certainty": "VISUAL_ESTIMATE"
+    },
+    "roof_concrete": {
+      "baseColorFactor": [
+        0.67,
+        0.71,
+        0.68,
+        1.0
+      ],
+      "metallicFactor": 0.04,
+      "roughnessFactor": 0.77,
+      "source": "THF_AERIAL",
+      "certainty": "SURFACE_FAMILY_INFERRED"
+    },
+    "road_monocork": {
+      "baseColorFactor": [
+        0.2,
+        0.21,
+        0.2,
+        1.0
+      ],
+      "metallicFactor": 0.0,
+      "roughnessFactor": 0.82,
+      "source": "MONOCORK",
+      "certainty": "MATERIAL_DOCUMENTED_COLOR_GUESSED"
+    },
+    "steel_rail": {
+      "baseColorFactor": [
+        0.6,
+        0.66,
+        0.66,
+        1.0
+      ],
+      "metallicFactor": 0.78,
+      "roughnessFactor": 0.31,
+      "source": "THF_ROAD",
+      "certainty": "SURFACE_FAMILY_INFERRED"
+    },
+    "water": {
+      "baseColorFactor": [
+        0.07,
+        0.36,
+        0.46,
+        0.7
+      ],
+      "metallicFactor": 0.02,
+      "roughnessFactor": 0.09,
+      "source": "THF_CYCLE",
+      "certainty": "VISUAL_ESTIMATE"
+    },
+    "exhibit_stage": {
+      "baseColorFactor": [
+        0.6,
+        0.63,
+        0.58,
+        1.0
+      ],
+      "metallicFactor": 0.12,
+      "roughnessFactor": 0.55,
+      "source": "THF_CYCLE",
+      "certainty": "VISUAL_ESTIMATE"
+    },
+    "garden": {
+      "baseColorFactor": [
+        0.29,
+        0.45,
+        0.27,
+        1
+      ],
+      "metallicFactor": 0.0,
+      "roughnessFactor": 0.96,
+      "source": "THF_AERIAL",
+      "certainty": "VISUAL_ESTIMATE"
+    },
+    "interpretive_proxy": {
+      "baseColorFactor": [
+        0.91,
+        0.62,
+        0.28,
+        1
+      ],
+      "metallicFactor": 0.12,
+      "roughnessFactor": 0.58,
+      "source": null,
+      "certainty": "UNMEASURED_CONCEPT_PROXY"
+    }
+  },
+  "mesh_component_count": 310,
+  "viewer_ready": false,
+  "native_host_tested": false
+}
