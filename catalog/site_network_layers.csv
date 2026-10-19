@@ -1,0 +1,20 @@
+layer_id,family,medium,walkable,typically_buried,description
+FMP_PATH_PEDESTRIAN,ACCESS,PEDESTRIAN_WALKWAY,1,0,"Public walks, paths, promenades and sidewalks"
+FMP_PATH_PLAZA,ACCESS,PEDESTRIAN_PLAZA,1,0,Plaza walking connections and crossing nodes
+FMP_PATH_STREET,ACCESS,SHARED_STREET,1,0,Historic streets with possible pedestrian/vehicle mixing; access verified per segment
+FMP_PATH_SERVICE,ACCESS,SERVICE_ALLEY,0,0,"Staff, vehicles, loading, maintenance and back-of-house lanes"
+FMP_PATH_BRIDGE,ACCESS,PUBLIC_BRIDGE,1,0,Bridges/ramp walks; verify access per period
+FMP_PATH_GATES,ACCESS,ENTRANCE_CONNECTOR,1,0,Historic park/fairground entrances and secure gates
+FMP_UTIL_POTABLE,UTILITY,POTABLE_WATER_MAIN,0,1,Public mains; branch/building-service laterals stay separate
+FMP_UTIL_SERVICE_WATER,UTILITY,BUILDING_WATER_LATERAL,0,1,Individual pavilion plumbing feed; not same as trunk mains
+FMP_UTIL_SANITARY,UTILITY,SANITARY_SEWER,0,1,Wastewater pipes incl pumping stations
+FMP_UTIL_STORM,UTILITY,STORM_DRAIN,0,1,"Separate storm drains, gullies, manholes and surface inlets"
+FMP_UTIL_COMBINED,UTILITY,COMBINED_SEWER_UNVERIFIED,0,1,Use only when source explicitly confirms combined conveyance
+FMP_UTIL_GAS,UTILITY,GAS_MAIN,0,1,Gas mains and meters when sourced
+FMP_UTIL_ELECTRIC,UTILITY,ELECTRICAL_DISTRIBUTION,0,1,Electrical primary/secondary ducts and surface transformers
+FMP_UTIL_TELECOM,UTILITY,TELEPHONE_TV_CONDUIT,0,1,"Telephone, video/TV or communication conduit"
+FMP_UTIL_PA,UTILITY,PUBLIC_ADDRESS,0,0,Audio paging and zone-control coverage
+FMP_UTIL_LIGHTING,UTILITY,STREET_LIGHTING,0,0,"Luminaires, circuits and poles"
+FMP_UTIL_FOUNTAIN,UTILITY,FOUNTAIN_PUMP_PIPING,0,1,"Water display pumps and distribution, do not equate with potable mains"
+FMP_CONTROL_SITE,CONTROL,SITE_REGISTRATION_CONTROL,0,0,Map control points and geodetic transforms
+FMP_TOPO_TERRAIN,TOPOGRAPHY,GRADE_AND_TOPOGRAPHY,0,0,"Dated grades, reclaimed landfill and elevation evidence"
