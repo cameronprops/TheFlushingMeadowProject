@@ -6,7 +6,7 @@ AMT39-COMFORT,AMENITY_TOILET,1939,Public comfort stations,ARCHIVE_LEAD,,,,,,NYPL
 AMT39-BULLETIN,AMENITY_SIGN,1939,Information boards,ARCHIVE_LEAD,,,,,,NYPL39-275-14,,NYPL maintenance inventory of bulletin boards
 AMT39-FLAGS,AMENITY_FLAG,1939,Flags and banners,ARCHIVE_LEAD,,,,,,NYPL39-275-21,,Particular flagpole locations require contemporaneous site plan
 AMT39-WASHINGTON,AMENITY_STATUE,1939,George Washington statue by James Earle Fraser,HISTORICALLY_DOCUMENTED,1,19.812,,,,NYCP39-GW,,NYC Parks gives 65ft height; on Washington Square/Constitution Mall; source not geodetic survey
-AMT39-MANSHIP,AMENITY_STATUE,1939,Manship Time and the Fates sculpture/sundial program,DESIGN_REFERENCE_ONLY,,,,,,NYCP39-GW,,Period guide describes project; installed details/positions unverified
+AMT39-MANSHIP,AMENITY_STATUE,1939,Manship Time and the Fates sculpture/sundial program,HISTORICALLY_DOCUMENTED,1,,,,,ART39-MANSHIP-MN,,Museum and 1939 period photograph confirm installation; exact geodetic base location untraced
 AMT40-REFUSE,AMENITY_REFUSE,1940,Waste receptacles,ARCHIVE_LEAD,,,,,,NYPL40-238-07,,Independent 1940 inventory; do not copy 1939 placement
 AMT40-BENCH,AMENITY_BENCH,1940,Fairground benches,ARCHIVE_LEAD,,,,,,NYPL40-275-10,,1940 maintenance records
 AMT40-DRINK,AMENITY_DRINK,1940,Public drinking fountains,ARCHIVE_LEAD,,,,,,NYPL40-275-17,,1940 maintenance records
@@ -29,3 +29,5 @@ AMT64-SERVICE,AMENITY_MAINTENANCE,1964,World's Fair service building,HISTORICALL
 AMT64-PAINT,AMENITY_MAINTENANCE,1964,Maintenance building and paint shop,HISTORICALLY_DOCUMENTED,,,,,,OPS64-52,,"Service facility, exact footprint untraced"
 AMT64-FLAG,AMENITY_FLAG,1964,Flagpoles and entrance standards,HISTORICALLY_DOCUMENTED,,,,,,OPS64-07,,Operations sheet 7
 AMT64-REFUSE,AMENITY_REFUSE,1964,Waste receptacles — documentation needed,UNCERTAIN,,,,,,,,No known exact 1964 placement sheet yet; research from dated photos/maintenance files
+AMT39-MOODS,AMENITY_STATUE,1939,Manship Moods of Time sculptural group,HISTORICALLY_DOCUMENTED,,,,,,ART39-MANSHIP-MN,,Four representations Morning Day Evening Night; period sources and museum confirmation
+AMT39-MALLFOUNTAIN,AMENITY_FOUNTAIN,1939,Constitution Mall fountains and reflecting pools,HISTORICALLY_DOCUMENTED,,,,,,NYCP39-GW,,NYC Parks historical photo records Mall fountains; exact nozzle/pool geometry pending
