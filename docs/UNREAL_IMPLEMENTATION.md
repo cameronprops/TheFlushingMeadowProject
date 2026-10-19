@@ -25,4 +25,4 @@ Target is a large, geographically coherent world covering the park, both fairs, 
 6. Source-backed pavilion geometry can replace interpretive shells without losing location or version lineage.
 7. Automated catalog QA and manual Unreal frame-time/streaming and reproducibility logs.
 
-Previous \`WorldFair1939\` C++ prototype is an **uncompiled reference scaffold**; it is not a verified Unreal Engine build. The web walkthrough is a separate earlier play test.
+Previous `WorldFair1939` C++ prototype is an **uncompiled reference scaffold**; it is not a verified Unreal Engine build. The web walkthrough is a separate earlier play test.

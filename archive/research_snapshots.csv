@@ -1,0 +1,2 @@
+snapshot_id,archive_date_utc,description,drive_url,sha256,zip_bytes,zip_entries,places,sources,source_links,tasks,completeness,status
+FMP_RESEARCH_100,2026-10-19,Initial 1939-1940 seed snapshot,https://drive.google.com/file/d/1t5XpdiUC27QTL0928cQloJdRUSkGeAHj/view?usp=drivesdk,3c50e5b88fa79be8a17fb972ee0df41e573355a58ff98efa480d22257a79e5b0,406364,385,59,66,99,184,NON_EXHAUSTIVE,ARCHIVED_VERIFIED

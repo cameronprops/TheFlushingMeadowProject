@@ -25,14 +25,17 @@ An open research and reconstruction effort for the Flushing Meadows–Corona Par
 ## Verify the catalog locally
 Requires Python 3.10+ and no third-party Python packages.
 
-\`\`\`bash
+```bash
 python tools/validate_catalog.py
 python tools/build_db.py --output out/flushing_meadows.sqlite
-\`\`\`
+```
 
 The SQLite file is a **generated working index**, not the sole historical authority. Check in text CSVs, SQL migrations, and source manifests; do not commit multi-GB scans, terrain rasters, or transient Unreal cache directories.
 
 ## Preservation and collaboration
-Git records decisions, source data, code and asset references. The archival originals, large releases, scans and GIS datasets belong in the Google Drive research archive, with stable links, SHA-256 hashes and rights notes kept here. Binary 3D/Unreal assets selected for Git are tracked through Git LFS (see \`.gitattributes\`).
+Git records decisions, source data, code and asset references. The archival originals, large releases, scans and GIS datasets belong in the Google Drive research archive, with stable links, SHA-256 hashes and rights notes kept here. Binary 3D/Unreal assets selected for Git are tracked through Git LFS (see `.gitattributes`).
 
 **Important:** The repo name uses **Meadow** (singular) in the URL, as originally created; the project's public name remains **The Flushing Meadows Project**.
+
+## Initial research archive
+[Research Snapshot v1.0.0 on Google Drive](https://drive.google.com/file/d/1t5XpdiUC27QTL0928cQloJdRUSkGeAHj/view?usp=drivesdk) includes the older **59-target / 66-source** 1939–1940 research database, a 45-row plan register, per-target CSV records and uncompiled Unreal reference code. The ZIP is **an archived seed**, not a reconciled or exhaustive five-era point of truth. See [snapshot manifest](archive/research_snapshots.csv).

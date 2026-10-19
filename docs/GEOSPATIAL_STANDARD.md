@@ -21,4 +21,4 @@ Recommended processing:
 
 **Existing Democracity/Theme Center mesh transforms are authoring transforms, not surveyed park georeferencing.**
 
-Terrain sources and measured anchors live in the database's \`surveys\` and \`control_points\` tables when available.
+Terrain sources and measured anchors live in the database's `surveys` and `control_points` tables when available.
