@@ -60,6 +60,7 @@ def build(output: Path) -> None:
                 print(f"{table}: {len(rows)} rows")
         connection.executescript((ROOT / "database/migrations/006_building_priorities.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/008_gm_research_priority.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/009_ford_cycle_identification.sql").read_text(encoding="utf-8"))
         connection.commit()
         outcome = connection.execute("PRAGMA integrity_check").fetchone()[0]
         if outcome != "ok":
