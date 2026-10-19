@@ -78,6 +78,18 @@ def make_construction_brief(packet):
                      "; collision="+room["collision_status"]+
                      "; navigation="+room["navigation_status"])
     if not d.get("interior_spaces"):lines.append("No known interior circulation yet.")
+    lines.extend(["","## Exterior/interior shell and optional structural layers"])
+    policy=d.get("shell_first_policy") or {}
+    if policy:
+        lines.append("Exterior: "+str(policy.get("exterior_shell_priority"))+
+                     "; Interior: "+str(policy.get("interior_shell_priority"))+
+                     "; Steel: "+str(policy.get("structural_frame_priority"))+
+                     "; Print: "+str(policy.get("printed_shell_priority")))
+    for part in d.get("shell_source_parts",[]):
+        lines.append("- "+part["role"]+" / "+part["exact_source_node"]+
+                     " ["+part["construction_status"]+"]")
+    if not d.get("shell_source_parts"):
+        lines.append("Source node selection remains to be performed. No inferred steel required.")
     lines.extend(["","## Materials, cinematic look development, both skins",
       "Realistic and stylized variants share the SAME architectural geometry, ID, doors and collision."])
     for m in d.get("surface_research",[]):
@@ -110,6 +122,8 @@ def export_pack(connection, output_dir: Path):
         skins = records(connection,"SELECT * FROM building_appearance WHERE building_id=? ORDER BY variant",(building_id,))
         releases = records(connection,"SELECT * FROM building_worklog WHERE building_id=? ORDER BY changed_utc",(building_id,))
         related = records(connection,"SELECT * FROM building_linked_places WHERE building_id=? ORDER BY link_id",(building_id,))
+        shell_policy = records(connection,"SELECT * FROM building_reconstruction_policy WHERE building_id=?",(building_id,))
+        shell_parts = records(connection,"SELECT * FROM building_shell_parts WHERE building_id=? ORDER BY role,part_id",(building_id,))
         parameters = records(connection,"SELECT * FROM building_geometry_parameters WHERE building_id=? ORDER BY period_year,component_id,parameter_key",(building_id,))
         surfaces = records(connection,"SELECT * FROM building_surface_research WHERE building_id=? ORDER BY period_year,component_selector",(building_id,))
         photographs = records(connection,"SELECT * FROM building_view_observations WHERE building_id=? ORDER BY period_year,view_id",(building_id,))
@@ -121,7 +135,8 @@ def export_pack(connection, output_dir: Path):
                       architect_details=detail[0] if detail else None,
                       source_evidence=evid, interior_spaces=rooms,
                       appearances=skins, model_release_history=releases,
-                      linked_places_and_existing_assets=related,
+                      linked_places_and_existing_assets=related, shell_first_policy=shell_policy[0] if shell_policy else None,
+                      shell_source_parts=shell_parts,
                       procedural_parameters=parameters, surface_research=surfaces,
                       photographic_observations=photographs,
                       geometry_format_policy="SHARED_CORE_WITH_REALISTIC_AND_STYLIZED_MATERIALS",
@@ -158,6 +173,8 @@ def export_pack(connection, output_dir: Path):
                                                       (b["building_id"],))) for b in buildings),
                  attached_source_references=sum(row["evidence_count"] for row in queue),
                  existing_linked_places=connection.execute("SELECT count(*) FROM building_linked_places").fetchone()[0],
+                 shell_first_policies=connection.execute("SELECT count(*) FROM building_reconstruction_policy").fetchone()[0],
+                 audited_shell_source_parts=connection.execute("SELECT count(*) FROM building_shell_parts").fetchone()[0],
                  indexed_interior_spaces=sum(row["interior_space_count"] for row in queue),
                  researched_geometry_parameters=connection.execute("SELECT count(*) FROM building_geometry_parameters").fetchone()[0],
                  researched_surface_records=connection.execute("SELECT count(*) FROM building_surface_research").fetchone()[0],
