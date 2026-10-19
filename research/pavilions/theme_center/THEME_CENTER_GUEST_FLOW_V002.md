@@ -133,3 +133,45 @@ Next: derive a separate provisional transition surface from the measured ramp
 faces, preserving source geometry. Check its full width for support and adjacent
 obstructions before any native-engine traversal acceptance. The measurements
 describe model geometry, not historically surveyed construction.
+
+
+## 2026-10-19: v003 provisional Helicline transition built
+
+A new runtime-only 2.1 m wide, 1.0 m long transition replaces the last 0.5 m of
+the flat return path and extends 0.5 m over the measured Helicline deck.
+The shortened flat segment retains its node name; the new separate closed solid
+is `PROVISIONAL_Helicline_Surface_Transition_r3`. The complete v003 overlay
+replaces the r2 overlay, avoiding a flat slab protruding through the new slope.
+
+Built from 903 surface samples. Maximum triangulated surface slope ratio:
+0.0693124 (6.93%). This is a measured model property, not an accessibility or
+historical compliance claim. The transition undersurface intentionally overlaps
+the existing ramp; original source/print geometry remains unchanged.
+
+**Five focused tests pass** against the exported GLB: closed consistent mesh,
+85 seam samples at each end, 840 independent interior support samples,
+single replacement node/explicit open acceptance status, and wrong-source refusal.
+Entry seam distance is below 0.01 mm; exit seam distance below 1 mm under the
+tested sample criteria. Sampled interior top penetration is bounded at 1 mm.
+Discrete checks do not establish continuous body clearance.
+
+The local cached source failed its hash guard during this run. It was not used.
+A fresh Drive original matched the recorded
+`a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5`
+and was used for generation and testing. No alternate hash was accepted.
+
+[Download v003 overlay, manifest, generators and tests](https://drive.google.com/file/d/1w4CgzhuZEigyOGTAANuIFLk44q2AEHkM/view).
+Package SHA-256: `684c3b2c025cbeda0a26b1cd4551dc2f3dfde52b87b5ad5dbb8e59d48adf12bd`.
+[Geometry manifest](HELICLINE_TRANSITION_v003.json).
+
+```bash
+python tools/world_build/build_helicline_transition.py SOURCE.glb OUT
+FMP_THEME_CENTER_GLB=/absolute/path/SOURCE.glb python -m unittest -v tools.world_build.test_helicline_transition
+```
+
+Use `ThemeCenter_1939_GuestFlow_Trim_v003.glb` instead of the previous runtime
+overlay. Continue hiding the original lower Perisphere display shell and legacy
+shortcut as documented. This package is not a printable or historically certified
+assembly. Native Unreal import, collision, navigation and complete-route body
+clearance remain open. Next: check nearby source rails, shells and other geometry
+against a defined player body envelope, then validate in Unreal.
