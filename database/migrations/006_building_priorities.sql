@@ -21,3 +21,12 @@ INSERT INTO building_worklog
   'https://drive.google.com/file/d/197H4eTaLAFYEyfPSFFh8wp7_2B5IflIl/view',
   '510-node existing Theme Center model includes Perisphere and Democracity; entrance, collision and navigability NOT engine-tested.',
   '2026-10-18T23:00:00Z');
+
+INSERT INTO building_worklog
+ (log_id,building_id,period_year,build_stage,status,asset_uri,notes,changed_utc)
+ VALUES
+ ('FMP-WLOG-WH-02','WF0020',1939,'INTERIOR_ACCESS_PROXY',
+ 'GLB_CREATED_HOST_UNTESTED',
+ 'https://drive.google.com/file/d/1OR0siWqF5rFHTBtH_odAKQEl8acBYhgI/view',
+ 'Hollow proxy generated from 329-part exterior: 326 existing objects retained; 57 floor/wall/roof components added; 383 total. Seven openings are inferred. Two deterministic local builds succeeded; native Unreal navigation and collision remain NOT_TESTED.',
+ '2026-10-19T06:40:00Z');
