@@ -27,3 +27,5 @@ These folders hold prototypes/research; they do not establish historically as-bu
 - SHA-256: `3c50e5b88fa79be8a17fb972ee0df41e573355a58ff98efa480d22257a79e5b0`
 - ZIP integrity passed, 385 archived files.
 - Historical-source URLs are acquisition leads unless their individual file download and rights status is independently documented.
+
+Master research snapshot folder: https://drive.google.com/drive/folders/1zxrj-HFmhDQOQSH3f8zVCGtm0MDNMZcA
