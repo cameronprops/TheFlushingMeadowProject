@@ -1,0 +1,2 @@
+snapshot_id,version,drive_folder_url,interviews,collection_leads,claims,zip_sha256,integrity_status,rights_status
+FMP_ORAL_112,1.1.2,https://drive.google.com/drive/folders/19rrbhT8ZJWUcpw6XdSCE98XeT9qWoIt5,13,3,10,3400b0850c3378a50acc3df648810feec5c0e5083c89da3055a4ccfb73b79013,SQLITE_AND_ZIP_OK,AUDIO_REUSE_NOT_CLEARED
