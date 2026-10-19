@@ -64,6 +64,9 @@ def export_pack(connection, output_dir: Path):
         rooms = records(connection,"SELECT * FROM building_spaces WHERE building_id=? ORDER BY year,space_id",(building_id,))
         skins = records(connection,"SELECT * FROM building_appearance WHERE building_id=? ORDER BY variant",(building_id,))
         releases = records(connection,"SELECT * FROM building_worklog WHERE building_id=? ORDER BY changed_utc",(building_id,))
+        parameters = records(connection,"SELECT * FROM building_geometry_parameters WHERE building_id=? ORDER BY period_year,component_id,parameter_key",(building_id,))
+        surfaces = records(connection,"SELECT * FROM building_surface_research WHERE building_id=? ORDER BY period_year,component_selector",(building_id,))
+        photographs = records(connection,"SELECT * FROM building_view_observations WHERE building_id=? ORDER BY period_year,view_id",(building_id,))
         if {r["variant"] for r in skins} != {"REALISTIC","STYLIZED"}:
             raise ValueError("Missing shared-geometry appearance variants: "+building_id)
         packet = dict(b)
@@ -71,7 +74,11 @@ def export_pack(connection, output_dir: Path):
                       is_historically_certified=False,
                       architect_details=detail[0] if detail else None,
                       source_evidence=evid, interior_spaces=rooms,
-                      appearances=skins, model_release_history=releases)
+                      appearances=skins, model_release_history=releases,
+                      procedural_parameters=parameters, surface_research=surfaces,
+                      photographic_observations=photographs,
+                      geometry_format_policy="SHARED_CORE_WITH_REALISTIC_AND_STYLIZED_MATERIALS",
+                      alternate_build_targets=["UNREAL","WORLDWRIGHT","RHINO","MINECRAFT_PLANNED"])
         packet["next_action"]=next_action(packet)
         (building_dir/(building_id+".json")).write_text(
             json.dumps(packet,indent=2,ensure_ascii=False,allow_nan=False)+"\n",
@@ -103,11 +110,18 @@ def export_pack(connection, output_dir: Path):
                                                       (b["building_id"],))) for b in buildings),
                  attached_source_references=sum(row["evidence_count"] for row in queue),
                  indexed_interior_spaces=sum(row["interior_space_count"] for row in queue),
+                 researched_geometry_parameters=connection.execute("SELECT count(*) FROM building_geometry_parameters").fetchone()[0],
+                 researched_surface_records=connection.execute("SELECT count(*) FROM building_surface_research").fetchone()[0],
+                 photographic_reference_records=connection.execute("SELECT count(*) FROM building_view_observations").fetchone()[0],
+                 unresolved_visual_identification_leads=connection.execute("SELECT count(*) FROM unidentified_visual_leads WHERE status='UNIDENTIFIED'").fetchone()[0],
                  accessible_alpha_targets=[b["building_id"] for b in access],
                  source_caveat="Archive candidate names are not certified separate buildings; many are exhibits or venues.",
                  acceptance_gate="No building ready for visitors until local scale, collision, exit and navigation are engine-tested")
     (target/"building_program_summary.json").write_text(
         json.dumps(summary,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+    unresolved=records(connection,"SELECT * FROM unidentified_visual_leads ORDER BY lead_id")
+    (target/"unidentified_landmarks.json").write_text(
+        json.dumps(unresolved,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     (target/"accessibility_pilots.json").write_text(
         json.dumps([dict(building_id=b["building_id"],name=b["display_name"],
                          source_count=len(b["source_evidence"]),
