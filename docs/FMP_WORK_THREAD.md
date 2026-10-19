@@ -55,3 +55,13 @@ validation, full imported-row comparison and SQLite checks pass.
 See [reconciliation details](INVENTORY_RECONCILIATION.md). The archival recovery
 and identity comparison portion of step 1 is complete; evidence review, candidate
 classification and survey registration remain open. No new geometry in this pass.
+
+## 2026-10-18: source suitability review and alignment tooling
+
+Reviewed three NYPL map catalog records. General plan XM-250 has a broad catalog
+creation range; the Hammond approaches map is a bird's-eye view; the Dolph &
+Stewart environs map remains a candidate reference. No surveyed footprint inferred.
+Added a 2D similarity-registration tool with independent check residuals, inverse
+transform and explicit non-certification. Seventeen tests pass. High-resolution
+map requests failed in the reader; real control acquisition remains the next gate.
+See [Theme Center registration](THEME_CENTER_REGISTRATION.md).
