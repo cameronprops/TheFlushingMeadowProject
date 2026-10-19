@@ -62,6 +62,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/008_gm_research_priority.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/009_ford_cycle_identification.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/010_theme_center_asset_registry.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/011_shell_first_production.sql").read_text(encoding="utf-8"))
         connection.commit()
         outcome = connection.execute("PRAGMA integrity_check").fetchone()[0]
         if outcome != "ok":
