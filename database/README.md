@@ -20,3 +20,6 @@ The [complete research snapshot on Drive](https://drive.google.com/file/d/1u5ppo
 
 ## Historical interviews and oral history (v1.1.2)
 `catalog/historical_interviews.csv`, `catalog/oral_history_collections.csv`, and `catalog/interview_claims.csv` index 13 specific interviews, 3 institutional collection leads and 10 research claims. The original interview date is distinct from the era recalled. The companion migration is `database/migrations/002_oral_history_tables.sql`. Audio/voice reuse rights are NOT cleared. [Archive](https://drive.google.com/drive/folders/1E49HB4l2w9j9hMd6SoR9Az9shaEWO_ZN) records literature only; interview snapshot stored separately in the Historical Interviews folder.
+
+## Optional future scenarios
+`catalog/future_scenarios.csv` is ingested using `database/migrations/003_future_scenarios.sql`. It stores alternative uncommitted 2039/2064 environments, distinct from the five factual/historical `eras` rows; it contains no claimed primary-source facts. See [future timeline rules](../docs/FUTURE_TIMELINES.md).

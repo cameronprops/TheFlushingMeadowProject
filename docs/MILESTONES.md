@@ -15,3 +15,5 @@
 | FMP-100 | Large-scale Unreal pre-alpha | playable packaged test, GPU/CPU/collision/nav QA |
 
 **Current completion:** Repository scaffold only; source inventory and terrain survey validation remain incomplete. Actual game build has not been compiled.
+
+| FMP-FUTURE | Optional 2039/2064 environments and alternatives | Author selects direction; scenarios keyed by branch and year; world terrain and narrative only after creative approval |

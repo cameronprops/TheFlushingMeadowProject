@@ -39,3 +39,6 @@ Git records decisions, source data, code and asset references. The archival orig
 
 ## Initial research archive
 [Research Snapshot v1.0.0 on Google Drive](https://drive.google.com/file/d/1t5XpdiUC27QTL0928cQloJdRUSkGeAHj/view?usp=drivesdk) includes the older **59-target / 66-source** 1939–1940 research database, a 45-row plan register, per-target CSV records and uncompiled Unreal reference code. The ZIP is **an archived seed**, not a reconciled or exhaustive five-era point of truth. See [snapshot manifest](archive/research_snapshots.csv).
+
+## Potential futures (not canon)
+The project may optionally add **2039 and 2064** as alternative authored scenarios. Proposed approaches are a renewed, utopian World's Fair or an increasingly post-apocalyptic branch. These have **no historical evidence status and no modeled assets yet**. See [future timelines](docs/FUTURE_TIMELINES.md).

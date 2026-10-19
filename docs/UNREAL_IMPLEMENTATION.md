@@ -26,3 +26,6 @@ Target is a large, geographically coherent world covering the park, both fairs, 
 7. Automated catalog QA and manual Unreal frame-time/streaming and reproducibility logs.
 
 Previous `WorldFair1939` C++ prototype is an **uncompiled reference scaffold**; it is not a verified Unreal Engine build. The web walkthrough is a separate earlier play test.
+
+## Optional speculative futures
+2039 and 2064 are **not historical eras**. They may become either utopian new World's Fairs or a worsening post-apocalyptic alternate branch. The scene selection key must include both **branch and year**, never just year. See [future timeline specification](FUTURE_TIMELINES.md). No future geometry is yet implemented.

@@ -1,0 +1,5 @@
+scenario_id,branch_id,year,title,scenario_class,status,canonical,site_coordinate_policy,notes
+FUT_U2039,NEW_FAIR,2039,Proposed future World's Fair in 2039,UTOPIAN,CONCEPT,0,SHARED_SITE_ID_UNSURVEYED,Optimistic new fair; architecture and story left to project author
+FUT_U2064,NEW_FAIR,2064,Proposed future World's Fair in 2064,UTOPIAN,CONCEPT,0,SHARED_SITE_ID_UNSURVEYED,Optimistic future fair; exact relationship to 2039 not yet authored
+FUT_D2039,DECLINE,2039,Alternative post-apocalyptic Flushing Meadows 2039,DYSTOPIAN,CONCEPT,0,SHARED_SITE_ID_UNSURVEYED,Post-apocalyptic alternative; story and visual details undecided
+FUT_D2064,DECLINE,2064,Alternative further decline in 2064,DYSTOPIAN,CONCEPT,0,SHARED_SITE_ID_UNSURVEYED,Future becomes substantially worse than 2039; details undecided

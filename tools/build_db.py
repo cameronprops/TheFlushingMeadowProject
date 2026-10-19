@@ -20,6 +20,7 @@ TABLES = {
     "historical_interviews": ("catalog/historical_interviews.csv", ("interview_id", "interviewee_or_group", "interviewer_or_host", "interview_date", "publication_date", "recalled_fair_years", "fair_role", "building_or_subject", "research_value", "record_type", "repository", "catalog_url", "transcript_access", "audio_access", "source_review", "rights_status", "archive_copy_status", "priority", "next_action")),
     "oral_history_collections": ("catalog/oral_history_collections.csv", ("collection_id", "title", "repository", "date", "era_covered", "catalog_url", "status", "description", "next_action")),
     "interview_claims": ("catalog/interview_claims.csv", ("claim_id", "interview_id", "linked_asset", "summary", "claim_class", "timecode_or_section", "recalled_era", "verification_next")),
+    "future_scenarios": ("catalog/future_scenarios.csv", ("scenario_id", "branch_id", "year", "title", "scenario_class", "status", "canonical", "site_coordinate_policy", "notes")),
 }
 
 def build(output: Path) -> None:
@@ -31,6 +32,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/schema.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/001_narrative_tables.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/002_oral_history_tables.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/003_future_scenarios.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
