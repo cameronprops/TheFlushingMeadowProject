@@ -1,0 +1,36 @@
+{
+  "building_id": "WF0014",
+  "source_sha256": "41a0a751b1125bdd6beca9b77111b1e8dc0e2ddc8f3f900a7955e43e87dccf0f",
+  "model_accuracy": "SCHEMATIC_HISTORICAL_IMPRESSION_NOT_REGISTERED",
+  "fail_on_unclassified": true,
+  "rules": [
+    {
+      "pattern": "^(ENTRANCE_HALL_FLOOR|ENTRANCE_HALL_INNER_WALL|INDUSTRIAL_HALL_FLOOR)",
+      "role": "INTERIOR_SHELL_PREVIEW"
+    },
+    {
+      "pattern": "^ENTRANCE_(?!HALL_FLOOR|HALL_INNER_WALL)",
+      "role": "EXTERIOR_SHELL_PREVIEW"
+    },
+    {
+      "pattern": "^INDUSTRIAL_(?!HALL_FLOOR)",
+      "role": "EXTERIOR_SHELL_PREVIEW"
+    },
+    {
+      "pattern": "^ROAD_",
+      "role": "ROAD_OF_TOMORROW"
+    },
+    {
+      "pattern": "^GARDEN_",
+      "role": "SITE_LANDSCAPE_PREVIEW"
+    },
+    {
+      "pattern": "^(FORD_CYCLE_|PONTOON_)",
+      "role": "CYCLE_OF_PRODUCTION_EXHIBIT"
+    },
+    {
+      "pattern": "^(MERCURY_|FORD_SIGNAGE_)",
+      "role": "EXTERIOR_SHELL_PREVIEW"
+    }
+  ]
+}
