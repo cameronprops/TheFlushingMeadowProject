@@ -11,6 +11,7 @@ from pathlib import Path
 
 from tools.build_db import build
 from tools.export_building_dossiers import export_pack
+from tools.building_program.export_runtime_handoff import export as export_runtime_handoff
 from tools.sync_master_database import source_fingerprint
 
 
@@ -113,6 +114,19 @@ class MasterBuildingIndexTests(unittest.TestCase):
             view=db.execute("SELECT active_mesh_parts FROM master_building_dashboard_v2 WHERE building_id='WF0020'").fetchone()
             self.assertEqual(view["active_mesh_parts"],383)
             self.assertEqual(db.execute("PRAGMA foreign_key_check").fetchall(),[])
+
+    def test_runtime_handoff_export_from_master_index(self):
+        with self.con() as db:
+            export_dir=self.root/"runtime_handoff"
+            handoff=export_runtime_handoff(db,export_dir,denominator=250)
+        self.assertEqual(len(handoff["buildings"]),4)
+        self.assertEqual(sum(x["mesh_count"] for x in handoff["buildings"]),696)
+        self.assertEqual(handoff["projection_calibrated"],False)
+        ford=json.loads((export_dir/"WF0014_1939_handoff.json").read_text())
+        self.assertEqual(len(ford["models"][0]["mesh_parts"]),310)
+        self.assertEqual(ford["render_targets"]["unreal_status"],"HANDOFF_ONLY_NOT_IMPORTED")
+        self.assertTrue(all(x["position_xyz_m"] is None for x in ford["interactive_points"]))
+        self.assertIsNone(ford["geometry_registration"]["world_to_physical_matrix"])
 
     def test_source_fingerprint_is_reproducible(self):
         digest=source_fingerprint()
