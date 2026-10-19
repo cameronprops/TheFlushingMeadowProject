@@ -40,7 +40,7 @@ class MasterBuildingIndexTests(unittest.TestCase):
 
     def test_master_envelopes_provenance(self):
         with self.con() as db:
-            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_building_envelopes").fetchone()[0],4)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_building_envelopes").fetchone()[0],8)
             row=db.execute("SELECT * FROM master_building_envelopes WHERE building_id='WF0001'").fetchone()
             self.assertAlmostEqual(row["max_y_m"],185.928,places=3)
             self.assertEqual(row["coordinate_frame"],"SOURCE_GLB_Y_UP")
@@ -56,8 +56,8 @@ class MasterBuildingIndexTests(unittest.TestCase):
 
     def test_media_resolves_with_archival_references(self):
         with self.con() as db:
-            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_media_assets").fetchone()[0],7)
-            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_building_media").fetchone()[0],10)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_media_assets").fetchone()[0],9)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_building_media").fetchone()[0],14)
             src=db.execute("SELECT uri FROM master_all_media WHERE building_id='WF0001' AND record_type='REGISTERED_FILE' AND media_kind='3D_GLB'").fetchone()
             self.assertTrue(src and "drive.google.com" in src["uri"])
             a=db.execute("SELECT COUNT(*) FROM master_all_media WHERE building_id='WF0002' AND record_type='ARCHIVE_REFERENCE'").fetchone()[0]
@@ -76,17 +76,29 @@ class MasterBuildingIndexTests(unittest.TestCase):
         with self.con() as db:
             target=self.root/"dossiers"
             summary=export_pack(db,target)
-        self.assertEqual(summary["source_model_envelopes"],4)
+        self.assertEqual(summary["source_model_envelopes"],8)
         self.assertEqual(summary["interactive_locations"],10)
+        self.assertEqual(summary["inspected_glb_components"],696)
         self.assertGreater(summary["linked_media_references"],40)
         items=list((target/"buildings").glob("*.json"))
         self.assertEqual(len(items),195)
         trylon=json.loads((target/"buildings"/"WF0001.json").read_text())
-        self.assertEqual(len(trylon["envelopes"]),1)
+        self.assertEqual(len(trylon["envelopes"]),2)
         self.assertGreater(len(trylon["media_inventory"]),0)
         self.assertTrue((target/"buildings"/"WF0001.md").exists())
         with (target/"master_building_overview.csv").open(newline="") as stream:
             self.assertEqual(len(list(csv.DictReader(stream))),195)
+
+    def test_real_glb_part_registry_and_surface_qa(self):
+        with self.con() as db:
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_model_components").fetchone()[0],696)
+            rows=dict(db.execute("SELECT building_id,COUNT(*) FROM master_model_components GROUP BY building_id"))
+            self.assertEqual(rows,{"WF0001":1,"WF0002":2,"WF0014":310,"WF0020":383})
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_model_components WHERE watertight=1").fetchone()[0],656)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_model_materials WHERE building_id='WF0014'").fetchone()[0],8)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_model_components WHERE building_id='WF0020' AND watertight=0").fetchone()[0],40)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_model_components WHERE verification_status='MODEL_OBSERVED_NOT_HISTORIC_CERTIFIED'").fetchone()[0],696)
+            self.assertEqual(db.execute("PRAGMA foreign_key_check").fetchall(),[])
 
     def test_source_fingerprint_is_reproducible(self):
         digest=source_fingerprint()
