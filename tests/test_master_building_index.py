@@ -41,7 +41,7 @@ class MasterBuildingIndexTests(unittest.TestCase):
 
     def test_master_envelopes_provenance(self):
         with self.con() as db:
-            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_building_envelopes").fetchone()[0],8)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_building_envelopes").fetchone()[0],9)
             row=db.execute("SELECT * FROM master_building_envelopes WHERE building_id='WF0001'").fetchone()
             self.assertAlmostEqual(row["max_y_m"],185.928,places=3)
             self.assertEqual(row["coordinate_frame"],"SOURCE_GLB_Y_UP")
@@ -77,7 +77,7 @@ class MasterBuildingIndexTests(unittest.TestCase):
         with self.con() as db:
             target=self.root/"dossiers"
             summary=export_pack(db,target)
-        self.assertEqual(summary["source_model_envelopes"],8)
+        self.assertEqual(summary["source_model_envelopes"],9)
         self.assertEqual(summary["interactive_locations"],10)
         self.assertEqual(summary["inspected_glb_components"],696)
         self.assertEqual(summary["current_model_revisions"],4)
