@@ -1,0 +1,11 @@
+{
+  "schema": "fmp.markers.v1",
+  "data_class": "SYNTHETIC_TEST_ONLY",
+  "notes": "Synthetic reference only. Names and positions are NOT archival survey data.",
+  "markers": [
+    {"id":"TEST_ORIGIN","title":"Synthetic origin","source_map_id":"SYNTHETIC_1939","period":"1939-test","pixel":[0,0]},
+    {"id":"TEST_EAST","title":"Synthetic east point","source_map_id":"SYNTHETIC_1939","period":"1939-test","pixel":[100,0]},
+    {"id":"TEST_NORTH","title":"Synthetic north point","source_map_id":"SYNTHETIC_1939","period":"1939-test","pixel":[0,100]},
+    {"id":"TEST_DIAGONAL","title":"Synthetic fourth point","source_map_id":"SYNTHETIC_1939","period":"1939-test","pixel":[150,150]}
+  ]
+}
