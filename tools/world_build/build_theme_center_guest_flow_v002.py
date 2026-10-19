@@ -79,7 +79,9 @@ def generate_v002(source:Path,out:Path,print_scales=(250,800)):
     cutters=trimesh.Scene()
     portals=[]
     for tag,point in (("LOWER",lower),("UPPER",upper)):
-        y,z=float(point[1]),float(point[2])
+        landing_name="Platform_1_Landing_Hypothesis" if tag=="LOWER" else "Platform_2_Landing_Hypothesis"
+        floor_y=float(source_mesh(scene,landing_name).bounds[1,1])
+        y,z=floor_y+1.2,float(point[2])
         width,height,t=2.35,2.4,.15
         xx=surface_x(y,z)
         x=xx+.08
@@ -95,6 +97,7 @@ def generate_v002(source:Path,out:Path,print_scales=(250,800)):
         cutters.add_geometry(cutter,node_name="CAD_ONLY_BOOLEAN_CUTTER_"+tag)
         portals.append({"id":"WF0002-1939-"+tag+"-EXIT",
             "center_model_m":[xx,y,z],"width_m":width,"height_m":height,
+            "floor_y_model_m":floor_y,"floor_source_node":landing_name,
             "historical_status":"INTERPRETIVE_GEOMETRY",
             "source_node":"Perisphere_Lower_Removable_Shell"})
 
@@ -135,8 +138,8 @@ def generate_v002(source:Path,out:Path,print_scales=(250,800)):
            "status":"PROVISIONAL_MODEL_LOCAL_NOT_HISTORICALLY_REGISTERED",
            "interactive_qa":"UNREAL_NOT_TESTED"})
 
-    runtime_file=out/"ThemeCenter_1939_GuestFlow_Trim_v002.glb"
-    cutter_file=out/"ThemeCenter_1939_CAD_PortalCutters_v002.glb"
+    runtime_file=out/"ThemeCenter_1939_GuestFlow_Trim_v002_r1.glb"
+    cutter_file=out/"ThemeCenter_1939_CAD_PortalCutters_v002_r1.glb"
     runtime_file.write_bytes(runtime.export(file_type="glb"))
     cutter_file.write_bytes(cutters.export(file_type="glb"))
     tested_runtime=trimesh.load(runtime_file,force="scene")
@@ -166,6 +169,7 @@ def generate_v002(source:Path,out:Path,print_scales=(250,800)):
       "helix_actual_vertex_m":nearest.tolist(),
       "cannot_certify_navigation":True}
     report={"schema":"fmp.theme-center-guest-flow.v002",
+      "geometry_revision":"r1_floor_aligned_portals",
       "source_glb":source.name,"source_hash_sha256":original_sha,
       "building_ids":["WF0001","WF0002"],"related_places":["WF0003","WF0004"],
       "years":[1939],"assembly_geometry":"original source, separate runtime-only overlay",
@@ -190,10 +194,11 @@ def generate_v002(source:Path,out:Path,print_scales=(250,800)):
        "Unreal capsule, navigation, threshold and stair collision tests",
        "Printable duplicated-shell Boolean, closed rims and wall-thickness QA",
        "Physical projection/print alignment independent of visitor scene"]}
-    (out/"ThemeCenter_1939_GuestFlow_Contract_v002.json").write_text(
+    (out/"ThemeCenter_1939_GuestFlow_Contract_v002_r1.json").write_text(
       json.dumps(report,indent=2)+"\n",encoding="utf-8")
     return report
 
 if __name__=="__main__":
     if len(sys.argv)!=3:raise SystemExit(__doc__)
     print(json.dumps(generate_v002(Path(sys.argv[1]),Path(sys.argv[2]))["qa"],indent=2))
+
