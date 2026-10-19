@@ -106,3 +106,37 @@ CREATE VIEW IF NOT EXISTS site_network_progress AS
  (SELECT COUNT(*) FROM site_network_segments s WHERE s.era_year=e.year AND s.geojson_geometry IS NOT NULL) AS mapped_segments,
  (SELECT COUNT(*) FROM site_walkable_edges w WHERE w.era_year=e.year) AS walkable_edges
  FROM eras e;
+
+-- Reject connections between mismatched historical years and utility layers.
+CREATE TRIGGER IF NOT EXISTS site_segment_node_era_gate
+BEFORE INSERT ON site_network_segments
+WHEN (NEW.from_node_id IS NOT NULL AND EXISTS (
+   SELECT 1 FROM site_network_nodes n WHERE n.node_id=NEW.from_node_id
+       AND (n.era_year!=NEW.era_year OR n.layer_id!=NEW.layer_id)))
+ OR (NEW.to_node_id IS NOT NULL AND EXISTS (
+   SELECT 1 FROM site_network_nodes n WHERE n.node_id=NEW.to_node_id
+       AND (n.era_year!=NEW.era_year OR n.layer_id!=NEW.layer_id)))
+BEGIN
+ SELECT RAISE(ABORT,'Site network node era/layer mismatch');
+END;
+CREATE TRIGGER IF NOT EXISTS site_segment_node_era_update_gate
+BEFORE UPDATE OF from_node_id,to_node_id,era_year,layer_id ON site_network_segments
+WHEN (NEW.from_node_id IS NOT NULL AND EXISTS (
+   SELECT 1 FROM site_network_nodes n WHERE n.node_id=NEW.from_node_id
+       AND (n.era_year!=NEW.era_year OR n.layer_id!=NEW.layer_id)))
+ OR (NEW.to_node_id IS NOT NULL AND EXISTS (
+   SELECT 1 FROM site_network_nodes n WHERE n.node_id=NEW.to_node_id
+       AND (n.era_year!=NEW.era_year OR n.layer_id!=NEW.layer_id)))
+BEGIN
+ SELECT RAISE(ABORT,'Site network node era/layer mismatch');
+END;
+-- Linking segments across periods is explicit and cannot be asserted by a
+-- similar line appearing on two maps. Earlier must precede later.
+CREATE TRIGGER IF NOT EXISTS site_network_temporal_relation_gate
+BEFORE INSERT ON site_network_era_relations
+WHEN (SELECT era_year FROM site_network_segments WHERE segment_id=NEW.earlier_segment_id)
+   >= (SELECT era_year FROM site_network_segments WHERE segment_id=NEW.later_segment_id)
+ OR (NEW.confidence='VERIFIED' AND NEW.evidence_sheet_id IS NULL)
+BEGIN
+ SELECT RAISE(ABORT,'Temporal relation requires earlier year and source evidence');
+END;
