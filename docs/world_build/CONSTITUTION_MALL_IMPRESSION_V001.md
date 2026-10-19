@@ -1,0 +1,61 @@
+# FMP | Constitution Mall Impression v0.1
+
+Status: **BUILT**, interpretive scene geometry; not survey-aligned. Built 2026-10-18.
+This is a historical impression, not an as-built plan. User authorized best-guess artistic reconstruction.
+
+## Deliverables
+
+- [Combined world ZIP on FMP Google Drive](https://drive.google.com/file/d/1u75ZMxVmh3vnKVAe3drx3T42ggxF0byC/view?usp=drivesdk)
+- Generator: [tools/world_build/build_constitution_mall_v001.py](../../tools/world_build/build_constitution_mall_v001.py)
+- ZIP contents: existing Theme Center + Constitution Mall combined GLB, complete object manifest, generator source, plan preview, README.
+- Input: FMP_ThemeCenter_Staging_v001.glb, Google Drive source ID 197H4eTaLAFYEyfPSFFh8wp7_2B5IflIl (staged model, not a period-sourced survey).
+
+## Real 3D geometry added
+
+416 scene nodes appended to 510 preserved source nodes (total 926).
+
+- 381-meter extension of interpreted mall ground beyond existing Theme Center grounds, with overlap connection.
+- Three rectangular reflecting basins with rims, separate traversable cross-promenade connectors and open edge walks.
+- Oval lagoon with concentric ornamental water-jet rings.
+- 66 physical fountain nozzles plus 66 static modeled water-arc effects (no simulation).
+- 48 trees composed of trunks and stylized canopies, arranged symmetrically.
+- 38 period-inspired pathway lamps, comprising posts and luminaires.
+- Six unidentified contextual pavilion masses with facades, entry arcades and low architectural crown volumes. Their identities and dimensions are NOT asserted as historical.
+- Connecting pedestrian plazas, grass panels, broad avenues and a blank sculpture plinth awaiting sourced identity.
+
+## Geometry/coordinate approach
+
+- Original staging scene axes: glTF Y-up metres.
+- Added long-axis scenery extends toward local +X from the existing Perisphere at local X=0 and Trylon approximately X=-46. This is a local *impression* direction, **not** a survey claim that the real Constitution Mall ran geodetic east.
+- Existing source JSON nodes/meshes/materials/accessors/bufferViews preserved unmodified, and existing binary bytes retained exactly. Only appendages and required outer buffer-length updates occur.
+- Persistent UUIDv5 for every new object, with per-object classification: INTERPRETIVE, unregistered local coordinates, preview collision untested.
+- Old Theme Center included in the same world GLB, not replaced with a generic schematic.
+
+## Validation
+
+- Original source SHA256: `a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5`
+- Combined GLB SHA256: `277e3b93f4829569e6ea8bd12f2af05e922b4c2fa8242f09d168e57ab93ae923`
+- Combined ZIP SHA256: `7e9a8269215f2b3e6a43b8eb76038b1efaf199dab7a3b60ec7c28642e752a158`
+- Rebuilt twice; byte-identical outputs.
+- Combined GLB reloaded in trimesh 4.11.1: 926 nodes, 917 mesh nodes, no structural load failure.
+- Source bin prefix preserved exactly and source metadata arrays unchanged; all 416 new IDs unique.
+- Approximate combined bounds (metres, local X,Y,Z): `[-172.5,-0.35,-251.5] to [566.0,185.93,173.5]`.
+- No runtime claims for collision, walking, lighting, shaders, water behavior, engine import or Worldwright.
+
+## Evidence and authorship
+
+This is a scenic interpretation based on documented 1939 fair visual vocabulary: grand Constitution Mall axial layouts, formal reflecting water, sculptural landscapes, and neighboring exhibition structures.
+
+References:
+- https://www.tclf.org/landscapes/new-york-worlds-fair
+- https://www.worldsfairphotos.com/nywf39/book-sample-pages.pdf
+- https://s-media.nyc.gov/agencies/lpc/lp/1925.pdf
+
+Source references support the general architectural vocabulary, not exact new geometry placement. Do not promote new anonymous pavilion names to archival records. No speculative 2039/2064 structure assets are included.
+
+## Next world-first work
+
+- Add approach/junction continuity on the inherited grounds and test player path widths.
+- Build pavilion context from dated photo/plan evidence, swapping anonymous masses for real geometry when researched.
+- Preview in Unreal and Worldwright, confirming Y-up conversion, local scale and visibility, then add collision proxies.
+- Continue reconstruction sections building-by-building without blocking on full survey registration.
