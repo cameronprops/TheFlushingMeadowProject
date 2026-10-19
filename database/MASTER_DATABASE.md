@@ -114,3 +114,15 @@ A type (e.g. one historic bench design) is **not** a thousand placed benches. A 
 Run `python3 tools/sync_master_database.py --once` to regenerate the derived `out/site_amenities` mapping source queue, evidence register, name-only landmarks and future precisely mapped WGS84/scene points. These files are generated views, not competing catalogs.
 
 Full scope, archival box numbers, provenance rules and production priorities: [Historic street furnishings and public services](../docs/site/FMP_HISTORIC_STREET_FURNISHINGS_AND_PUBLIC_SERVICES_v001.md).
+
+## Historical planting plans and horticulture
+
+Migration `database/migrations/017_historical_horticulture.sql` adds historical planting research to the **same** master SQLite database. Eight canonical source catalogs include archives, botanical taxa, nested garden/bed boundaries, a year-specific planting schedule, seasonal replanting/damage events, cross-era tree-row relationships, individual plant/tree centers and garden-to-utility links.
+
+Source catalog first pass: **19 archival and museum references, 10 taxa/uncertain groups, 20 named areas, 11 botanical planting descriptions, five dated horticultural events, two evidence-tagged continuity relations**. No precise tree centers, map polygons or irrigation pipes are fabricated.
+
+Original detailed source plans include Shogo Myaida's 1939 Japanese Pavilion/Nippon Garden drawings (LIU), NYPL's 1939 and 1940 landscaping folders, Cornell's 1937–38 tree/bedding specifications, 1964 NYPL C3.7 planting reports, and the NPS/Cornell 1965 tree-mapping research. Botanical records distinguish installed descriptions from planning contracts, such as the 1962 **400-tree** Fair planting award.
+
+`python3 tools/sync_master_database.py --once` now regenerates `out/horticulture` alongside building, shell, visitor and small-site-furniture manifests. The exporter preserves uncertain places outside the mapped points, so Unreal/3D-print vegetation generators do not accidentally present probable trees as georegistered trees.
+
+[Horticulture sources and acquisition/tracing plan](../docs/site/FMP_HISTORICAL_HORTICULTURE_PLANTING_PLAN_v001.md). Run `python3 -m unittest -v tests.test_horticulture` locally in a complete checkout for SQL-integrated QA.
