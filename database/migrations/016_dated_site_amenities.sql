@@ -129,3 +129,37 @@ JOIN site_amenity_types t ON t.type_id=a.type_id
 JOIN site_amenity_categories c ON c.category_id=t.category_id
 WHERE a.position_status IN ('MAP_TRACED','SITE_REGISTERED')
 AND a.x_m IS NOT NULL AND a.source_observation_id IS NOT NULL;
+
+-- Reject impossible time transfers or deceptively certain imported locations.
+CREATE TRIGGER IF NOT EXISTS trg_amenity_type_source_era
+BEFORE INSERT ON site_amenity_types
+WHEN NEW.source_sheet_id IS NOT NULL
+ AND (SELECT era_year FROM site_network_sheets WHERE sheet_id=NEW.source_sheet_id)!=NEW.era_year
+BEGIN SELECT RAISE(ABORT,'Amenity type and source sheet years disagree'); END;
+CREATE TRIGGER IF NOT EXISTS trg_amenity_evidence_era
+BEFORE INSERT ON site_amenity_evidence
+WHEN (SELECT era_year FROM site_amenity_types WHERE type_id=NEW.type_id)!=NEW.era_year
+ OR (NEW.source_sheet_id IS NOT NULL AND
+ (SELECT era_year FROM site_network_sheets WHERE sheet_id=NEW.source_sheet_id)!=NEW.era_year)
+BEGIN SELECT RAISE(ABORT,'Amenity evidence year does not match type and source'); END;
+CREATE TRIGGER IF NOT EXISTS trg_amenity_instance_era
+BEFORE INSERT ON site_amenity_instances
+WHEN (SELECT era_year FROM site_amenity_types WHERE type_id=NEW.type_id)!=NEW.era_year
+ OR (NEW.source_observation_id IS NOT NULL AND NOT EXISTS(
+ SELECT 1 FROM site_amenity_evidence e WHERE e.observation_id=NEW.source_observation_id
+ AND e.type_id=NEW.type_id AND e.era_year=NEW.era_year))
+ OR (NEW.longitude IS NOT NULL AND NEW.position_status!='SITE_REGISTERED')
+BEGIN SELECT RAISE(ABORT,'Amenity instance type, evidence, era, or geodetic status mismatch'); END;
+CREATE TRIGGER IF NOT EXISTS trg_amenity_service_certification
+BEFORE INSERT ON site_amenity_service_links
+WHEN (NEW.linkage_status='DOCUMENTED' AND NEW.source_observation_id IS NULL)
+ OR (NEW.linkage_status='GEOREGISTERED' AND
+     (NEW.segment_id IS NULL OR NEW.source_observation_id IS NULL))
+BEGIN SELECT RAISE(ABORT,'Service connection cannot be certified without documents'); END;
+CREATE TRIGGER IF NOT EXISTS trg_amenity_era_relation
+BEFORE INSERT ON site_amenity_era_relations
+WHEN (SELECT era_year FROM site_amenity_instances WHERE instance_id=NEW.earlier_instance_id)
+  >= (SELECT era_year FROM site_amenity_instances WHERE instance_id=NEW.later_instance_id)
+ OR (NEW.certainty='VERIFIED' AND NEW.evidence_observation_id IS NULL)
+ OR (NEW.relation_type='SAME_PHYSICAL_OBJECT' AND NEW.certainty!='VERIFIED')
+BEGIN SELECT RAISE(ABORT,'Chronology/evidence of reused street furnishing not established'); END;
