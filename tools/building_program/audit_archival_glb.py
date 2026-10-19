@@ -23,6 +23,7 @@ def bounds(scene, name):
             'watertight':bool(mesh.is_watertight)}
 
 def component_id(scene, name, assembly_id):
+    if name=='world':return 'SCENE_ROOT'
     if assembly_id != 'FMP_THEME_CENTER_1939':
         return assembly_id  # General building: no guessed subassembly ownership.
     n=name
