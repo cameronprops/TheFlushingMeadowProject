@@ -1,0 +1,8 @@
+{
+  "building_id": "WF0014",
+  "year": 1939,
+  "up": "Z",
+  "role": "FULL_SCHEMATIC",
+  "glb": "Ford_1939_Exterior_Road_Production_v003.glb",
+  "envelope_scope": "FULL_SCHEMATIC_INCLUDES_ROAD_NOT_BUILDING_FOOTPRINT"
+}
