@@ -1,0 +1,11 @@
+taxon_id,display_name,scientific_name,taxonomic_precision,growth_form,notes
+TAXON-ROSA,Roses,Rosa,GENUS,ROSE,"Gardens on Parade rose plantings; 250 varieties historically mentioned, specific cultivars unverified"
+TAXON-JP-CHERRY,Weeping Japanese cherry,Prunus,GENUS,TREE,Havemeyer Tribute Garden; botanical species and cultivar cannot be inferred from vernacular name
+TAXON-ALTERNANTHERA,Alternanthera,Alternanthera,GENUS,GROUNDCOVER,Pony Express living stamp at Gardens on Parade in 1940 only
+TAXON-SEDUM,Sedum,Sedum,GENUS,GROUNDCOVER,Pony Express living stamp at Gardens on Parade in 1940; species unknown
+TAXON-RED-MAPLE,Red maple,Acer rubrum,SPECIES,TREE,Named among 1962 tree-contract species for 1964 Fair; site allocation unknown
+TAXON-HONEY-LOCUST,Honey locust,Gleditsia triacanthos,SPECIES,TREE,Named among 1962 tree-contract species for 1964 Fair; specific cultivar unknown
+TAXON-BLUE-ATLAS-CEDAR,Blue Atlas cedar,Cedrus atlantica,SPECIES,TREE,Original Gardens on Parade tree lineage at Queens Botanical Garden reported; historical original planting zone unknown
+TAXON-TURF,Lawn turf (grass mix unknown),,UNKNOWN,TURF,Grass lawn; not assigning unspecified grass species
+TAXON-NATIVE-ROADSIDE,Native roadside wildflowers (unspecified),,COMMON_GROUP,MIXED,1940/1939 Wild Flower Shrine historical garden palette described generically; no inferred species
+TAXON-DECIDUOUS-GENERIC,Unidentified deciduous shade tree,,UNKNOWN,TREE,Only when original maps indicate a tree whose taxon is not confirmed
