@@ -1,0 +1,7 @@
+parameter_id,building_id,period_year,component_id,parameter_key,value_si,units_si,period_source_value,source_evidence_id,evidence_class,tolerance_si,adjustment_status,notes
+GM64-LENGTH,FMP64SUBJ0064,1964,overall_pavilion,length,207.264,m,680 feet,FMP-EV-GM64-01,PERIOD_PRINTED,,EDITABLE,Contemporary caption length is an approximate overall length; do not infer precise polygon or roof geometry
+GM64-CANOPY-H,FMP64SUBJ0064,1964,entrance_canopy,height,33.528,m,110 feet,FMP-EV-GM64-01,PERIOD_PRINTED,,EDITABLE,Period report describes height of entrance canopy
+GM64-CANOPY-SPARS,FMP64SUBJ0064,1964,entrance_canopy,spar_count,39,count,39 spars,FMP-EV-GM64-01,PERIOD_PRINTED,,EDITABLE,Counts are document-supported; spar section/profile remains unmeasured
+GM64-INDICATOR-W,FMP64SUBJ0064,1964,roof_indicator,width,12.192,m,40 feet wide,FMP-EV-GM64-01,PERIOD_PRINTED,,EDITABLE,Revolving indicator atop dome; NOT evidence for pyramid shape; rotation speed unknown
+GM64-RIDE-L,FMP64SUBJ0064,1964,futurama_ii_ride,travel_length,518.16,m,1700-foot ride,FMP-EV-GM64-01,PERIOD_PRINTED,,EDITABLE,"Rider path length, NOT building footprint or straight-line distance"
+GM64-BUILDING-AREA,FMP64SUBJ0064,1964,overall_pavilion,reported_area,21367.6992,m2,nearly 230000 square feet,FMP-EV-GM64-01,PERIOD_PRINTED,,EDITABLE,"Approximate stated area, not an independently surveyed built footprint"
