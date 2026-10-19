@@ -1,0 +1,12 @@
+{
+  "building_id": "WF0002",
+  "year": 1939,
+  "up": "Y",
+  "role": "EXTERIOR_SHELL",
+  "glb": "FMP_ThemeCenter_Staging_v001.glb",
+  "nodes": [
+    "Perisphere_Upper_Removable_Shell",
+    "Perisphere_Lower_Removable_Shell"
+  ],
+  "envelope_scope": "EXTERIOR_SHELL_MODEL_BOUNDS"
+}
