@@ -44,7 +44,7 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
     def test_source_linkage_and_access_spaces(self):
         with self.connect() as c:
             self.assertEqual(c.execute("SELECT count(*) FROM building_details").fetchone()[0],14)
-            self.assertEqual(c.execute("SELECT count(*) FROM building_evidence").fetchone()[0],37)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_evidence").fetchone()[0],43)
             self.assertEqual(c.execute("SELECT count(*) FROM building_spaces").fetchone()[0],9)
             self.assertEqual(c.execute("PRAGMA foreign_key_check").fetchall(),[])
 
@@ -64,8 +64,8 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
     def test_gm_both_eras_and_procedural_evidence(self):
         with self.connect() as c:
             self.assertEqual(c.execute("SELECT classification FROM building_dossiers WHERE building_id='FMP64SUBJ0064'").fetchone()[0],"CONFIRMED_BUILDING")
-            self.assertEqual(c.execute("SELECT count(*) FROM building_geometry_parameters").fetchone()[0],10)
-            self.assertEqual(c.execute("SELECT count(*) FROM building_surface_research").fetchone()[0],5)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_geometry_parameters").fetchone()[0],13)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_surface_research").fetchone()[0],8)
             self.assertEqual(c.execute("SELECT count(*) FROM building_view_observations").fetchone()[0],6)
             self.assertEqual(c.execute("SELECT count(*) FROM unidentified_visual_leads WHERE status='MATCH_CONFIRMED' AND candidate_building_id='WF0014'").fetchone()[0],1)
             param=c.execute("SELECT value_si,units_si,evidence_class FROM building_geometry_parameters WHERE parameter_id='GM64-INDICATOR-W'").fetchone()
@@ -85,7 +85,13 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
             self.assertEqual(dims['working_models'],87)
             self.assertEqual(dims['animated_figures'],142)
             self.assertEqual(dims['raw_material_categories'],27)
-            self.assertAlmostEqual(dims['diameter_hypothesis'],30.48)
+            self.assertAlmostEqual(dims['turntable_diameter'],30.48)
+            provenance=c.execute("SELECT source_evidence_id,evidence_class FROM building_geometry_parameters WHERE parameter_id='FORD39-CP-DIAMETER'").fetchone()
+            self.assertEqual(provenance['source_evidence_id'],'FMP-EV-FORD-AR1938-01')
+            self.assertEqual(provenance['evidence_class'],'PERIOD_PRINTED')
+            road=c.execute("SELECT value_si FROM building_geometry_parameters WHERE parameter_id='FORD39-ROAD-ROUTE-LEN'").fetchone()
+            self.assertAlmostEqual(road['value_si'],804.672)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_surface_research WHERE building_id='WF0014'").fetchone()[0],3)
             self.assertEqual(c.execute("SELECT count(*) FROM building_spaces WHERE space_id='FMP-SP-FORD-1939-CYCLE'").fetchone()[0],1)
 
     def test_dossier_export_consistency(self):
