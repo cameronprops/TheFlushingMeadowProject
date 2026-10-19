@@ -86,3 +86,15 @@ The model release inspector is `tools/building_program/ingest_glb.py`. To review
 The repository now contains 8 measured *model-space* envelopes, 10 planned interaction points (locations unresolved), 9 explicit project media assets, 14 file links, and 696 individually identified GLB meshes in addition to the archival/photo/material/history evidence. The 195-dossier export includes source-mesh and material counts per building.
 
 **See** [model import and reproducible measurements](../docs/buildings/FMP_AUTOMATIC_GLB_INGEST_v001.md). The importer is tested on actual source files and seven portable synthetic fixtures; the full 195-candidate SQLite build still needs a complete-checkout runtime test.
+
+## New: automatic current-GLB refresh (2026-10-19)
+
+Registered GLBs can now update this single database as the user saves model revisions in a local/synced folder. The model scanner creates **new immutable media/mesh records** when the GLB's SHA-256 or selected node set changes; `master_active_model_releases` tracks the currently selected revision for each building/year/logical role.
+
+The `master_building_dashboard_v2` view merges earlier architectural and media information with active mesh/closed-component/material counts. Its building dossiers include `active_model_releases`; no measurements are represented as certified historic as-built drawings.
+
+Run `python3 tools/sync_master_database.py --once` to import registered GLBs, validate/rebuild the SQLite index, and export updated dossiers in one command. Run the same tool with `--watch --interval 4` while working for active file-change monitoring; default model folder is `models/incoming`. Add `--no-model-scan` to refresh only catalog sources.
+
+Registration examples and setup: [models/incoming/README.md](../models/incoming/README.md); full technical instructions: [AUTOMATIC_MODEL_REFRESH_v002.md](../docs/buildings/AUTOMATIC_MODEL_REFRESH_v002.md).
+
+The initial active-release register preserves known source file SHA-256 values for Trylon, Perisphere, Ford v003 and Westinghouse v002; local file paths remain unresolved until each model folder is configured. A local watcher is not a persistent online task and does not itself sync or back up assets to Drive.
