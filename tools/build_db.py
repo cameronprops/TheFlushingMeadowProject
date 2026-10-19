@@ -55,6 +55,8 @@ TABLES = {
     'horticulture_plantings': ('catalog/horticulture_plantings.csv', ('planting_id','era_year','area_id','taxon_id','source_id','display_label','planting_role','installation_status','quantity','quantity_basis','variety_count','cultivar_name','seasonal_window','growing_pattern','evidence_excerpt','estimated_height_m','model_asset_uri','unreal_layer','note')),
     'horticulture_seasonal_events': ('catalog/horticulture_seasonal_events.csv', ('event_id','era_year','area_id','planting_id','source_id','event_type','date_start','date_end','date_precision','event_status','notes')),
     'horticulture_era_links': ('catalog/horticulture_era_links.csv', ('link_id','earlier_area_id','later_area_id','relation_type','source_id','certainty','notes')),
+    'horticulture_plant_instances': ('catalog/horticulture_plant_instances.csv', ('instance_id','era_year','planting_id','source_id','original_plan_symbol','name_or_tree_tag','location_status','coordinate_frame','x_m','y_m','z_m','horizontal_crs','vertical_datum','uncertainty_m','canopy_diameter_m','mature_height_m','mesh_asset_uri','unreal_instance_id','print_group_id','notes')),
+    'horticulture_irrigation_links': ('catalog/horticulture_irrigation_links.csv', ('irrigation_link_id','area_id','network_layer_id','segment_id','source_id','linkage_status','equipment_description','notes')),
 }
 
 def build(output: Path) -> None:
