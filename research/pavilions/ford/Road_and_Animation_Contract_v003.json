@@ -1,0 +1,33 @@
+{
+  "schema": "fmp.ford.road.v003",
+  "building_id": "WF0014",
+  "local_coordinates": "metres, unregistered",
+  "source_supported": {
+    "exhibit_diameter_m": 30.48,
+    "overall_route_m": 804.672
+  },
+  "modeled_spiral_length_m": 457.4837387071624,
+  "model_spiral_grade_pct": 1.8254722181556675,
+  "model_vertical_pitch_m": 2.982142857142857,
+  "model_deck_clearance_m": 2.5421428571428573,
+  "animation": {
+    "parent_id": "FORD39_CYCLE_OF_PRODUCTION",
+    "axis": "Z",
+    "pivot_local_m": [
+      -64,
+      0,
+      0
+    ],
+    "rpm": null,
+    "status": "NOT_MEASURED",
+    "child_mesh_ids": [
+      "FORD_CYCLE_TIER_00",
+      "FORD_CYCLE_TIER_01",
+      "FORD_CYCLE_TIER_02",
+      "FORD_CYCLE_TIER_03"
+    ],
+    "formula": "theta_radians = theta_0 + (2*pi*rpm/60)*t_seconds"
+  },
+  "source_certified": false,
+  "unreal_nav_tested": false
+}
