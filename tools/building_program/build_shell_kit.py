@@ -106,7 +106,7 @@ def build(source, target, include_structure=True):
     printing=[]
     for name in SHELL_NODES:
         source_mesh=flatten_node(src,name)
-        for scale in ([800] if name=='Trylon_Hollow_Exterior' else [800,200]):
+        for scale in ([800] if name=='Trylon_Hollow_Exterior' else [800,250,200]):
             part=print_mesh(source_mesh,scale)
             file=f'PRINT_{name}_1to{scale}_mm.stl'
             part.export(target/file,file_type='stl')
