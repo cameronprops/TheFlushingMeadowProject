@@ -70,9 +70,19 @@ Media pipeline future: connected Drive folder-change ingestion; automatic source
 
 ## Recorded initial v1 population
 
-- 4 measured-in-model-space envelopes (Trylon, Perisphere, Ford and Westinghouse)
+- 8 source-model envelopes (four reviewed preview bounds and four newly GLB-inspected release bounds)
 - 10 planned interactive points, all with unknown XYZ until surveyed
-- 7 registered project media assets, 10 explicit attachment links
+- 9 registered project media assets, 14 explicit attachment links
 - all existing building_evidence, building_shell_parts, and building_view_observations are automatically included in master_all_media.
 
 Full source files: database/migrations/012_master_building_index.sql; catalog/master_*.csv; tools/build_db.py; tools/export_building_dossiers.py; tools/sync_master_database.py.
+
+## GLB ingestion v1 — 19 October 2026
+
+We extended the same database, rather than creating another project inventory. Real source-GLB inspection now populates `master_model_components` (migration 013) and `master_model_materials`. The canonical catalog contains **696 mesh-component records** from the original Trylon/Perisphere shared GLB, Ford v003 and Westinghouse v002: **656 watertight** and **40 currently open component meshes** (all 40 in Westinghouse). Ford exposes **eight shader/material groups**. These are *geometry observations*, not proof of period construction dimensions or successful printer/Unreal validation.
+
+The model release inspector is `tools/building_program/ingest_glb.py`. To review first, run it against a local GLB, explicitly specifying building/year/axis and selecting the correct nodes for shared scenes. To merge the computed data into CSV source-of-truth files, add `--apply --catalog-dir catalog`. It preserves the original mesh, requires a consistent source SHA per asset identity, stages media links and source-model envelopes, and records material and mesh QA. The existing SQLite watcher then regenerates the indexed master database when CSV source files change.
+
+The repository now contains 8 measured *model-space* envelopes, 10 planned interaction points (locations unresolved), 9 explicit project media assets, 14 file links, and 696 individually identified GLB meshes in addition to the archival/photo/material/history evidence. The 195-dossier export includes source-mesh and material counts per building.
+
+**See** [model import and reproducible measurements](../docs/buildings/FMP_AUTOMATIC_GLB_INGEST_v001.md). The importer is tested on actual source files and seven portable synthetic fixtures; the full 195-candidate SQLite build still needs a complete-checkout runtime test.
