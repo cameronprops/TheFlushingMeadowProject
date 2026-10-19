@@ -1,0 +1,31 @@
+type_id,category_id,era_year,historical_label,type_status,period_quantity,measured_height_m,measured_width_m,measured_depth_m,material_note,source_sheet_id,linked_model_uri,evidence_note
+AMT39-REFUSE,AMENITY_REFUSE,1939,Refuse cans / street waste baskets,ARCHIVE_LEAD,,,,,,NYPL39-238-26,,Archive explicitly catalogues Waste Cans (1939); deployment and design unknown
+AMT39-BENCH,AMENITY_BENCH,1939,Fairground benches,ARCHIVE_LEAD,,,,,,NYPL39-275-11,,1939 benches in NYPL maintenance files
+AMT39-DRINK,AMENITY_DRINK,1939,Public drinking fountains,ARCHIVE_LEAD,,,,,,NYPL39-275-18,,1939 fixture maintenance files; precise designs and locations not acquired
+AMT39-COMFORT,AMENITY_TOILET,1939,Public comfort stations,ARCHIVE_LEAD,,,,,,NYPL39-238-10,,1940 versions tracked separately
+AMT39-BULLETIN,AMENITY_SIGN,1939,Information boards,ARCHIVE_LEAD,,,,,,NYPL39-275-14,,NYPL maintenance inventory of bulletin boards
+AMT39-FLAGS,AMENITY_FLAG,1939,Flags and banners,ARCHIVE_LEAD,,,,,,NYPL39-275-21,,Particular flagpole locations require contemporaneous site plan
+AMT39-WASHINGTON,AMENITY_STATUE,1939,George Washington statue by James Earle Fraser,HISTORICALLY_DOCUMENTED,1,19.812,,,,NYCP39-GW,,NYC Parks gives 65ft height; on Washington Square/Constitution Mall; source not geodetic survey
+AMT39-MANSHIP,AMENITY_STATUE,1939,Manship Time and the Fates sculpture/sundial program,DESIGN_REFERENCE_ONLY,,,,,,NYCP39-GW,,Period guide describes project; installed details/positions unverified
+AMT40-REFUSE,AMENITY_REFUSE,1940,Waste receptacles,ARCHIVE_LEAD,,,,,,NYPL40-238-07,,Independent 1940 inventory; do not copy 1939 placement
+AMT40-BENCH,AMENITY_BENCH,1940,Fairground benches,ARCHIVE_LEAD,,,,,,NYPL40-275-10,,1940 maintenance records
+AMT40-DRINK,AMENITY_DRINK,1940,Public drinking fountains,ARCHIVE_LEAD,,,,,,NYPL40-275-17,,1940 maintenance records
+AMT40-COMFORT,AMENITY_TOILET,1940,Public comfort stations,ARCHIVE_LEAD,,,,,,NYPL40-238-09,,1940 maintenance records
+AMT64-BENCH,AMENITY_BENCH,1964,Benches — Operations Drawing location symbols,HISTORICALLY_DOCUMENTED,,,,,,OPS64-08,,Location series 8–10; symbol types and counts to extract
+AMT64-DRINK,AMENITY_DRINK,1964,Drinking fountains — Operations Drawing symbols,HISTORICALLY_DOCUMENTED,,,,,,OPS64-08,,Map 8–10; align to scale when scan obtained
+AMT64-INFO,AMENITY_INFO,1964,Fair information booths,HISTORICALLY_DOCUMENTED,,,,,,OPS64-08,,Map series 8–10
+AMT64-NEWS,AMENITY_NEWS,1964,Public newsstands,HISTORICALLY_DOCUMENTED,,,,,,OPS64-08,,Map series 8–10
+AMT64-LOCKER,AMENITY_LOCKER,1964,Public lockers,HISTORICALLY_DOCUMENTED,,,,,,OPS64-08,,Map series 8–10
+AMT64-PHONE,AMENITY_PHONE,1964,Public telephone booths,HISTORICALLY_DOCUMENTED,,,,,,OPS64-08,,Map series 8–10
+AMT64-MAIL,AMENITY_MAIL,1964,Mailboxes,HISTORICALLY_DOCUMENTED,,,,,,OPS64-08,,Map series 8–10
+AMT64-CLOCK,AMENITY_CLOCK,1964,Swiss clocks and time-sale booths,HISTORICALLY_DOCUMENTED,,,,,,OPS64-08,,Map series 8–10
+AMT64-POLES,AMENITY_LIGHTPOLE,1964,Street lighting luminaires,HISTORICALLY_DOCUMENTED,,,,,,OPS64-16,,"Map sheets 16–20; luminaire families, pole heights/circuit separate"
+AMT64-TREELIGHT,AMENITY_TREELIGHT,1964,Open-space and tree lighting,HISTORICALLY_DOCUMENTED,,,,,,OPS64-21,,Map sheet 21
+AMT64-TOILET,AMENITY_TOILET,1964,Public comfort stations,HISTORICALLY_DOCUMENTED,,,,,,OPS64-57,,"Typical station plan and service layouts, precise position later"
+AMT64-FIRSTAID,AMENITY_FIRSTAID,1964,Fair first-aid stations,HISTORICALLY_DOCUMENTED,,,,,,OPS64-57,,Typical First Aid Station 57
+AMT64-FOUNTAINPLANETS,AMENITY_FOUNTAIN,1964,Fountain of the Planets / Pool of Industry,HISTORICALLY_DOCUMENTED,1,,,,,OPS64-37,,"Nighttime show fountain, pumps sheet 37 and photo references"
+AMT64-FOUTPUMP,AMENITY_PUMPHOUSE,1964,Decorative fountain pumps,HISTORICALLY_DOCUMENTED,,,,,,OPS64-37,,Mechanical system; physical pipe routing must follow pump sheet
+AMT64-SERVICE,AMENITY_MAINTENANCE,1964,World's Fair service building,HISTORICALLY_DOCUMENTED,,,,,,OPS64-51,,"Dedicated building, may have independent building dossier later"
+AMT64-PAINT,AMENITY_MAINTENANCE,1964,Maintenance building and paint shop,HISTORICALLY_DOCUMENTED,,,,,,OPS64-52,,"Service facility, exact footprint untraced"
+AMT64-FLAG,AMENITY_FLAG,1964,Flagpoles and entrance standards,HISTORICALLY_DOCUMENTED,,,,,,OPS64-07,,Operations sheet 7
+AMT64-REFUSE,AMENITY_REFUSE,1964,Waste receptacles — documentation needed,UNCERTAIN,,,,,,,,No known exact 1964 placement sheet yet; research from dated photos/maintenance files
