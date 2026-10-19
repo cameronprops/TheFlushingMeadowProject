@@ -19,9 +19,10 @@ import shutil
 import tempfile
 import time
 
-from ingest_glb import (
-    inspect, digest, read_csv, FIELDS, ENV_FIELDS, MEDIA_FIELDS, LINK_FIELDS,
-)
+try:
+    from .ingest_glb import inspect, digest, read_csv, FIELDS, ENV_FIELDS, MEDIA_FIELDS, LINK_FIELDS
+except ImportError:  # Direct CLI launch from this folder
+    from ingest_glb import inspect, digest, read_csv, FIELDS, ENV_FIELDS, MEDIA_FIELDS, LINK_FIELDS
 
 ROOT = Path(__file__).resolve().parents[2]
 RELEASE_FIELDS = (
