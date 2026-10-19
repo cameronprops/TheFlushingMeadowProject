@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FMP | Control Point Digitizer</title>
+<style>
+:root{font:15px system-ui,sans-serif;color-scheme:dark;background:#15232d;color:#e3eff4}
+*{box-sizing:border-box}body{margin:0}header{padding:14px 20px;background:#213847}h1{font-size:20px;margin:0}
+main{display:grid;grid-template-columns:minmax(300px,2fr) minmax(280px,1fr)}
+section{padding:12px;border-right:1px solid #597280}label{display:block;margin:10px 0 3px;font-size:12px}
+input,select,button{background:#2b4351;border:1px solid #7392a2;color:white;border-radius:4px;padding:6px}
+input{width:100%}button{cursor:pointer}button:hover{background:#38657d}
+#viewport{height:62vh;overflow:auto;background:#0b161d;border:1px solid #7893a1}
+canvas{display:block;max-width:none;cursor:crosshair}small,p{color:#b2c5ce}
+.row{display:flex;gap:8px;align-items:end}.row>*{flex:1}.buttons{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{border-bottom:1px solid #45606e;padding:4px;text-align:left}td input,td select{width:100%;min-width:0;padding:3px;font-size:12px}
+#status{padding:8px;background:#263e4b;white-space:pre-wrap;font-size:12px}
+.warning{color:#f0cc8a}aside{max-height:95vh;overflow-y:auto}
+@media(max-width:760px){main{display:block}#viewport{height:50vh}aside{max-height:none}}
+</style></head><body>
+<header><h1>Flushing Meadows Project | Point Digitizer v0.1</h1><small>Offline, source-pixel measurements. No survey certification.</small></header>
+<main><section>
+<div class="row"><div><label>Local plan image (PNG, JPG, WebP)<input type="file" id="file" accept="image/png,image/jpeg,image/webp"></label></div>
+<div><label>Drawing source ID<input id="source" value="OPS64-S03"></label></div></div>
+<div class="row"><div><label>Zoom: <output id="zoomlabel">100%</output><input type="range" id="zoom" min="15" max="400" value="100" step="5"></label></div>
+<div><label>Click action<select id="action"><option value="point">Add observation</option><option value="start">Scale bar start</option><option value="end">Scale bar end</option></select></label></div></div>
+<div id="viewport"><canvas id="map" width="800" height="450"></canvas></div>
+<div class="buttons"><button id="undo">Undo last</button><button id="draft">Export draft CSV</button><button id="fit">Export fit CSV</button><button id="manifest">Export source JSON</button></div>
+<p>Source images stay on your machine. For a PDF, first render a single sheet to PNG locally. Do not redistribute restricted source scans.</p>
+</section><aside><section>
+<div class="row"><div><label>Projected CRS<input id="crs" placeholder="EPSG:26918"></label></div><div><label>New point role<select id="role"><option value="control">control</option><option value="check">check</option></select></label></div></div>
+<div class="row"><div><label>Printed scale bar (feet)<input id="feet" type="number" value="200" step="0.01" min="0.01"></label></div>
+<div><label>Fair era<input id="era" value="1964-1965"></label></div></div>
+<label>Source URL<input id="url" placeholder="https://..."></label>
+<label>Copyright / reuse note<input id="rights" placeholder="Link-only; rights unverified"></label>
+<pre id="status">Open a local image to begin.</pre>
+<h3>Observed points</h3><small>Click the drawing to create a point. Enter externally surveyed projected X/Y coordinates in metres only when known.</small>
+<table><thead><tr><th>ID</th><th>Role</th><th>Pixel X/Y</th><th>World X</th><th>World Y</th><th></th></tr></thead><tbody id="observations"></tbody></table>
+<p class="warning">The scale bar only estimates local drawing distances. It does not locate the drawing in real-world coordinates.</p>
+</section></aside></main>
+<script>
+"use strict";
+const el=id=>document.getElementById(id),canvas=el("map"),ctx=canvas.getContext("2d");
+let img=null,imageName="",obs=[],start=null,end=null;
+function numeric(v){return Number(v)}
+function metresPerPixel(){let d=start&&end?Math.hypot(end.x-start.x,end.y-start.y):0;let feet=numeric(el("feet").value);return d>0&&feet>0?feet*0.3048/d:null}
+function redraw(){
+ let w=img?img.naturalWidth:800,h=img?img.naturalHeight:450;
+ if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}
+ let z=numeric(el("zoom").value)/100;canvas.style.width=w*z+"px";canvas.style.height=h*z+"px";
+ el("zoomlabel").textContent=Math.round(z*100)+"%";
+ ctx.clearRect(0,0,w,h);if(img)ctx.drawImage(img,0,0);else{ctx.fillStyle="#c4dce5";ctx.font="22px system-ui";ctx.fillText("Open a plan image to start.",30,55)}
+ let r=Math.max(4,Math.min(w,h)/250);
+ obs.forEach(p=>{ctx.strokeStyle=p.role==="check"?"#eebd71":"#60eddb";ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(p.x-r,p.y);ctx.lineTo(p.x+r,p.y);ctx.moveTo(p.x,p.y-r);ctx.lineTo(p.x,p.y+r);ctx.stroke();ctx.fillStyle="#ffffff";ctx.font="13px system-ui";ctx.fillText(p.id,p.x+r+3,p.y-r)});
+ if(start&&end){ctx.strokeStyle="#e7a8e9";ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(start.x,start.y);ctx.lineTo(end.x,end.y);ctx.stroke()}
+ let m=metresPerPixel();el("status").textContent=(img?imageName+" | "+w+" x "+h+" pixels":"No image loaded")+"\n"+obs.length+" observations\n"+(m?"Scale "+m.toFixed(6)+" m/pixel":"Scale not measured");
+}
+function csvCell(value){let s=String(value??"");return /[",\r\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s}
+function save(name,text,type){let a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}
+function complete(p){return p.xworld.trim()!==""&&p.yworld.trim()!==""&&Number.isFinite(numeric(p.xworld))&&Number.isFinite(numeric(p.yworld))}
+function nonCollinear(points){for(let i=0;i<points.length;i++)for(let j=i+1;j<points.length;j++)for(let k=j+1;k<points.length;k++){let a=points[i],b=points[j],c=points[k];if(Math.abs((b.x-a.x)*(c.y-a.y)-(b.y-a.y)*(c.x-a.x))>0.01)return true}return false}
+function validate(){if(!img)return "Load an image.";if(!/^EPSG:\d+$/.test(el("crs").value.trim()))return "Set an explicit projected CRS.";
+ if(obs.some(p=>!p.id.trim()||!complete(p)))return "Each point needs an ID and independently sourced world X and Y.";
+ if(new Set(obs.map(p=>p.id)).size!==obs.length)return "Point IDs must be unique.";
+ if(!nonCollinear(obs.filter(p=>p.role==="control")))return "At least 3 non-collinear controls are needed.";
+ if(obs.filter(p=>p.role==="check").length<2)return "At least 2 independent check points are needed.";
+ return null}
+function csv(){let rows=[["id","role","pixel_x","pixel_y","world_x_m","world_y_m","crs"]];
+ obs.forEach(p=>rows.push([p.id,p.role,p.x.toFixed(4),p.y.toFixed(4),p.xworld,p.yworld,el("crs").value.trim()]));
+ return rows.map(row=>row.map(csvCell).join(",")).join("\r\n")+"\r\n"}
+function safe(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function showRows(){el("observations").innerHTML="";obs.forEach((p,i)=>{let tr=document.createElement("tr");tr.innerHTML='<td><input data-i="'+i+'" data-key="id" value="'+safe(p.id)+'"></td>'+
+ '<td><select data-i="'+i+'" data-key="role"><option '+(p.role==="control"?"selected":"")+' value="control">control</option><option '+(p.role==="check"?"selected":"")+' value="check">check</option></select></td>'+
+ '<td>'+p.x.toFixed(1)+", "+p.y.toFixed(1)+'</td>'+
+ '<td><input data-i="'+i+'" data-key="xworld" value="'+safe(p.xworld)+'"></td>'+
+ '<td><input data-i="'+i+'" data-key="yworld" value="'+safe(p.yworld)+'"></td>'+
+ '<td><button data-delete="'+i+'">×</button></td>';el("observations").appendChild(tr)});redraw()}
+el("observations").addEventListener("change",e=>{let t=e.target,k=t.dataset.key,i=Number(t.dataset.i);if(k&&obs[i]){obs[i][k]=t.value;redraw()}});
+el("observations").addEventListener("click",e=>{let n=e.target.dataset.delete;if(n!==undefined){obs.splice(Number(n),1);showRows()}});
+canvas.addEventListener("click",e=>{if(!img)return;let box=canvas.getBoundingClientRect(),p={x:(e.clientX-box.left)*canvas.width/box.width,y:(e.clientY-box.top)*canvas.height/box.height};
+ if(el("action").value==="start"){start=p;redraw()}else if(el("action").value==="end"){end=p;redraw()}else{obs.push({...p,id:"GCP-"+String(obs.length+1).padStart(3,"0"),role:el("role").value,xworld:"",yworld:""});showRows()}});
+el("file").addEventListener("change",e=>{let f=e.target.files[0];if(!f)return;if(!/^image\/(png|jpeg|webp)$/.test(f.type)){alert("Use a PNG, JPEG or WebP raster.");return}
+ let src=URL.createObjectURL(f),loaded=new Image();loaded.onload=()=>{img=loaded;imageName=f.name;obs=[];start=null;end=null;showRows();URL.revokeObjectURL(src)};loaded.onerror=()=>alert("Cannot read image");loaded.src=src});
+el("zoom").addEventListener("input",redraw);el("feet").addEventListener("input",redraw);el("undo").addEventListener("click",()=>{obs.pop();showRows()});
+el("draft").addEventListener("click",()=>{if(!obs.length){alert("No points yet.");return}save("FMP_"+el("source").value+"_observations.csv",csv(),"text/csv")});
+el("fit").addEventListener("click",()=>{let error=validate();if(error){alert(error);return}save("FMP_"+el("source").value+"_fit.csv",csv(),"text/csv")});
+el("manifest").addEventListener("click",()=>{let metadata={schema:"FMP-controls-v0.1",certified:false,source_id:el("source").value,source_url:el("url").value,era:el("era").value,image_filename:imageName,image_dimensions:img?[img.naturalWidth,img.naturalHeight]:null,rights:el("rights").value,crs:el("crs").value,scale_bar_feet:numeric(el("feet").value),scale_start:start,scale_end:end,metres_per_pixel:metresPerPixel(),observations:obs};save("FMP_"+el("source").value+"_source.json",JSON.stringify(metadata,null,2)+"\n","application/json")});
+redraw();
+</script></body></html>
