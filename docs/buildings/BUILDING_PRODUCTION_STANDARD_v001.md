@@ -127,3 +127,23 @@ candidate list rather than blindly placing 122 index topics as separate pavilion
 
 This file is a BUILD STANDARD and QA contract, not evidence of a playable
 Unreal game or surveyed pavilion layout.
+
+## 2026-10-18 procedural and cinematic data extension
+See [the source-driven procedural, cinematic PBR, and Minecraft pipeline](PROCEDURAL_CINEMATIC_AND_VOXEL_PIPELINE_v001.md).
+
+New tables: building_geometry_parameters, building_surface_research,
+building_view_observations, unidentified_visual_leads. These feed the *same*
+per-building JSON export; no parallel manual model list. Geometry parameters
+store era, units, source ID, uncertainty and component identifier. Surface
+records distinguish lookdev numbers from historical measurements.
+
+Priority additions: 1939-1940 GM (WF0012; Albert Kahn building drawings,
+Norman Bel Geddes Futurama) and 1964-1965 GM (FMP64SUBJ0064; period canopy,
+roof indicator and pavilion dimensions). These are **different pavilions**.
+The owner-described rotating floating pyramid is an UNIDENTIFIED research
+lead, not yet a named historical building.
+
+Minecraft export is architecturally feasible as a derived voxel/structure
+build from the same core site/building assets and distinct block palette,
+but is **not implemented**. Unreal cinematic surface lookdev, native host
+inspection, and photo camera matching are also future implementation gates.
