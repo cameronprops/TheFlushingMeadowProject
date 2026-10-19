@@ -1,0 +1,213 @@
+{
+  "schema": "fmp.architecture.constraints.v1",
+  "assembly_id": "FMP_THEME_CENTER_1939",
+  "period_year": 1939,
+  "coordinate_convention": "source GLB meters, Y-up; no registration",
+  "base_model": {
+    "file_name": "FMP_ThemeCenter_Staging_v001.glb",
+    "drive_url": "https://drive.google.com/file/d/197H4eTaLAFYEyfPSFFh8wp7_2B5IflIl/view",
+    "expected_nodes": 510,
+    "sha256": "a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5"
+  },
+  "constraints": [
+    {
+      "id": "F001",
+      "place_id": "WF0001",
+      "component": "Trylon_Hollow_Exterior",
+      "key": "built_height",
+      "si_value": 185.928,
+      "audit_axis": "height_y",
+      "source": "https://www.istructe.org/journal/volumes/volume-16-%28published-in-1938%29/issue-11/theme-structures-of-new-york-world-s-fair/",
+      "tolerance_m": 0.035,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F009",
+      "place_id": "WF0001",
+      "component": "Trylon_Hollow_Exterior",
+      "key": "plate_transition_height",
+      "si_value": 146.304,
+      "audit_axis": null,
+      "source": "https://www.istructe.org/journal/volumes/volume-16-%28published-in-1938%29/issue-11/theme-structures-of-new-york-world-s-fair/",
+      "tolerance_m": null,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F010",
+      "place_id": "WF0001",
+      "component": "Trylon_Hollow_Exterior",
+      "key": "plate_section_length",
+      "si_value": 39.624,
+      "audit_axis": null,
+      "source": "https://www.istructe.org/journal/volumes/volume-16-%28published-in-1938%29/issue-11/theme-structures-of-new-york-world-s-fair/",
+      "tolerance_m": null,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F012",
+      "place_id": "WF0001",
+      "component": "Trylon_Hollow_Exterior",
+      "key": "upper_tip_width",
+      "si_value": 0.7874,
+      "audit_axis": null,
+      "source": "https://www.istructe.org/journal/volumes/volume-16-%28published-in-1938%29/issue-11/theme-structures-of-new-york-world-s-fair/",
+      "tolerance_m": null,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F021",
+      "place_id": "WF0002",
+      "component": "Perisphere_Upper_Removable_Shell+Perisphere_Lower_Removable_Shell",
+      "key": "built_outer_diameter",
+      "si_value": 54.864,
+      "audit_axis": "combined_sphere_diameter_x",
+      "source": "https://americanhistory.si.edu/collections/object/nmah_1129345",
+      "tolerance_m": 0.035,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F022",
+      "place_id": "WF0002",
+      "component": "Perisphere_Lower_Removable_Shell",
+      "key": "sphere_bottom_clearance",
+      "si_value": 5.1816,
+      "audit_axis": "bbox_ymin",
+      "source": "https://drive.google.com/file/d/1IWHAdUS_prVnM71ErlFOcSrdSAaYAIuc/view",
+      "tolerance_m": 0.035,
+      "evidence_status": "WORKBOOK_REVIEWED"
+    },
+    {
+      "id": "F023",
+      "place_id": "WF0002",
+      "component": "Perisphere_Column_",
+      "key": "column_count",
+      "si_value": 8,
+      "audit_axis": "count_matching_nodes",
+      "source": "https://www.worldsfairphotos.com/nywf39/articles/design-trends.pdf",
+      "tolerance_m": 0,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F025",
+      "place_id": "WF0002",
+      "component": "Perisphere_Foundation",
+      "key": "pile_count",
+      "si_value": 528,
+      "audit_axis": null,
+      "source": "https://www.worldsfairphotos.com/nywf39/articles/design-trends.pdf",
+      "tolerance_m": null,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F027",
+      "place_id": "WF0002",
+      "component": "Perisphere_Support_Ring",
+      "key": "ring_girder_centerline_diameter",
+      "si_value": 21.9456,
+      "audit_axis": null,
+      "source": "https://www.worldsfairphotos.com/nywf39/articles/design-trends.pdf",
+      "tolerance_m": null,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F028",
+      "place_id": "WF0002",
+      "component": "Meridian_Truss_",
+      "key": "meridian_count",
+      "si_value": 32,
+      "audit_axis": "count_matching_nodes",
+      "source": "https://www.worldsfairphotos.com/nywf39/articles/design-trends.pdf",
+      "tolerance_m": 0,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F029",
+      "place_id": "WF0002",
+      "component": "Latitude_Truss_",
+      "key": "horizontal_count",
+      "si_value": 15,
+      "audit_axis": "count_matching_nodes",
+      "source": "https://www.worldsfairphotos.com/nywf39/articles/design-trends.pdf",
+      "tolerance_m": 0,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F034",
+      "place_id": "WF0002",
+      "component": "Moving_Platform_",
+      "key": "moving_platform_count",
+      "si_value": 2,
+      "audit_axis": "count_matching_nodes",
+      "source": "https://www.worldsfairphotos.com/nywf39/articles/design-trends.pdf",
+      "tolerance_m": 0,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F045",
+      "place_id": "WF0001",
+      "component": "Escalator_",
+      "key": "public_escalator_count",
+      "si_value": 2,
+      "audit_axis": "count_matching_nodes",
+      "source": "https://drive.google.com/file/d/1IWHAdUS_prVnM71ErlFOcSrdSAaYAIuc/view",
+      "tolerance_m": 0,
+      "evidence_status": "WORKBOOK_REVIEWED"
+    },
+    {
+      "id": "F058",
+      "place_id": "WF0004",
+      "component": "Helicline_Deck_and_Curved_Soffit",
+      "key": "centerline_length",
+      "si_value": 289.56,
+      "audit_axis": null,
+      "source": "https://americanhistory.si.edu/collections/object/nmah_1129345",
+      "tolerance_m": null,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F059",
+      "place_id": "WF0004",
+      "component": "Helicline_Deck_and_Curved_Soffit",
+      "key": "deck_width",
+      "si_value": 5.4864,
+      "audit_axis": null,
+      "source": "https://carnegiemuseums.org/magazine-archive/1997/sepoct/feat6.html",
+      "tolerance_m": null,
+      "evidence_status": "BUILT_PERIOD_DOCUMENTED"
+    },
+    {
+      "id": "F047",
+      "place_id": "WF0002",
+      "component": "bridge/escalators",
+      "key": "proposed_entrance_levels",
+      "si_value": null,
+      "audit_axis": null,
+      "source": "https://www.rgusrail.com/fairs/nywf1939_lv/nywf1939_lv.pdf",
+      "tolerance_m": null,
+      "evidence_status": "PROPOSAL_ONLY_NOT_BUILT_CONSTRAINT"
+    }
+  ],
+  "rejected_as_built": [
+    {
+      "part": "Trylon",
+      "proposal_ft": 700,
+      "built_ft": 610,
+      "source": "https://archives.nypl.org/mss/2233"
+    },
+    {
+      "part": "Perisphere",
+      "proposal_ft": 200,
+      "built_ft": 180,
+      "source": "https://archives.nypl.org/mss/2233"
+    }
+  ],
+  "unresolved": [
+    "site registration and exact orientation",
+    "Trylon true base footprint, steel bay schedule and entrance portal",
+    "Perisphere truss profiles/ring latitude stations and pile positions",
+    "unconfirmed original 52/64 ft entrance elevations",
+    "Helicline plan curvature and varying support locations",
+    "navigable collision/Unreal acceptance",
+    "material/lighting/photo match"
+  ]
+}
