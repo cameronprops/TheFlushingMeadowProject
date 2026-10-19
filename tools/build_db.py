@@ -21,6 +21,10 @@ TABLES = {
     "oral_history_collections": ("catalog/oral_history_collections.csv", ("collection_id", "title", "repository", "date", "era_covered", "catalog_url", "status", "description", "next_action")),
     "interview_claims": ("catalog/interview_claims.csv", ("claim_id", "interview_id", "linked_asset", "summary", "claim_class", "timecode_or_section", "recalled_era", "verification_next")),
     "future_scenarios": ("catalog/future_scenarios.csv", ("scenario_id", "branch_id", "year", "title", "scenario_class", "status", "canonical", "site_coordinate_policy", "notes")),
+    'archive_inventory_candidates': ('catalog/archive_inventory_candidates.csv', ('inventory_id', 'label', 'year_candidates', 'category', 'zone', 'evidence_status', 'identity_status', 'is_verified_structure', 'physical_structure_state', 'plans_status', 'geometry_status', 'gameplay_scope', 'source_id', 'source_url', 'archive_status', 'notes')),
+    'archive_source_catalog_v2': ('catalog/archive_source_catalog_v2.csv', ('source_id', 'title', 'repository', 'source_kind', 'catalog_url', 'year_scope', 'date_on_source', 'access_status', 'full_source_downloaded', 'local_or_drive_location', 'sha256', 'rights_status', 'priority', 'notes')),
+    'archive_operations_manual_sheets': ('catalog/archive_operations_manual_sheets.csv', ('sheet_id', 'sheet_number', 'title', 'year_scope', 'source_id', 'sheet_catalog_url', 'drawing_direct_url', 'downloaded', 'registered_to_site', 'reconstruction_value', 'notes')),
+    'archive_production_availability': ('catalog/archive_production_availability.csv', ('inventory_id', 'label', 'year_candidates', 'priority', 'identity', 'map_footprint', 'floorplan', 'elevations_sections', 'period_photographs', 'terrain_elevation', 'exterior_model', 'interior_model', 'historical_show', 'gameplay', 'testing', 'next_research')),
 }
 
 def build(output: Path) -> None:
@@ -33,6 +37,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/001_narrative_tables.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/002_oral_history_tables.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/003_future_scenarios.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/004_archived_inventory.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
