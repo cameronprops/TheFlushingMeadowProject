@@ -1,0 +1,13 @@
+{
+ "schema":"fmp.georef.scene.v1",
+ "horizontal":{"crs":"EPSG:32118","units":"metres","site_x_positive":"east","site_y_positive":"north","origin_easting_m":300050,"origin_northing_m":62025,"origin_source":"SYNTHETIC_TEST_ONLY"},
+ "engine":{"unreal_units":"centimetres","centimetres_per_metre":100,"unreal_x_positive":"east","unreal_y_positive":"north"},
+ "vertical":{"status":"UNRESOLVED","datum":null},
+ "use_status":"PREVIEW_ONLY_UNTIL_INDEPENDENT_SURVEY_VALIDATION",
+ "maps":{
+   "SYNTHETIC_1939": {
+    "pixel_to_local_site_m":{"east_x":[0.35,-0.04,-50.0],"north_y":[0.02,0.35,-25.0]},
+    "qa":{"control_rmse_m":0.2,"check_rmse_m":0.7,"numeric_check_limit_m":null,"status":"UNASSESSED","historically_certified":false}
+   }
+ }
+}
