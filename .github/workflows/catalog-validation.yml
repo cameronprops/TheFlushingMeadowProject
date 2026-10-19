@@ -1,0 +1,19 @@
+name: Validate research catalog
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate unique IDs and five-era catalog
+        run: python tools/validate_catalog.py
+      - name: Run SQLite round-trip tests
+        run: python -m unittest discover -s tests -v
+      - name: Build SQLite research index
+        run: python tools/build_db.py --output out/flushing_meadows.sqlite
