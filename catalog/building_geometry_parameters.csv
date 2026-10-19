@@ -12,3 +12,19 @@ FORD39-CP-DIAMETER,WF0014,1939,FORD39_CYCLE_OF_PRODUCTION,turntable_diameter,30.
 FORD39-ROAD-ROUTE-LEN,WF0014,1939,FORD39_ROAD_OF_TOMORROW,route_length,804.672,m,half-mile visitor driving route,FMP-EV-FORD-SOUV1939-01,PERIOD_PRINTED,,EDITABLE,Length of entire car route including ramp and connectors NOT length of one spiral
 FORD39-ROAD-SPIRAL-TIERS,WF0014,1939,FORD39_ROAD_OF_TOMORROW,cantilever_tier_count,3,count,three-tiered concrete spiral,FMP-EV-FORD-AR1938-01,PERIOD_PRINTED,,EDITABLE,Architectural Record identifies three tiers on inner ring of support columns not three full turns
 FORD39-ENTRY-MERCURY-H,WF0014,1939,FORD39_MERCURY_ENTRANCE,reported_sculpture_height,7.62,m,25-foot Mercury figure,FMP-EV-FORD-SOUV1939-01,PHOTO_INFERRED,,EDITABLE,Figure height reported in secondary sources. Original brochure text not yet independently checked
+TP-TR-HEIGHT,WF0001,1939,TRYLON_STRUCTURE,built_height,185.928,m,610 feet,FMP-EV-TP-IST1938-01,DOCUMENTED_BUILT,0.035,LOCKED,Prior 700ft proposal is not built
+TP-TR-PLATE-Z,WF0001,1939,TRYLON_STRUCTURE,plate_transition_elevation,146.304,m,480 feet,FMP-EV-TP-IST1938-01,DOCUMENTED_BUILT,0.15,LOCKED,Plate tower upper 130 feet
+TP-TR-UPPER-LEN,WF0001,1939,TRYLON_STRUCTURE,plate_tower_length,39.624,m,130 feet,FMP-EV-TP-IST1938-01,DOCUMENTED_BUILT,0.15,LOCKED,
+TP-TR-TIP-W,WF0001,1939,TRYLON_STRUCTURE,tip_width,0.7874,m,2 feet 7 inches,FMP-EV-TP-IST1938-01,DOCUMENTED_BUILT,0.03,LOCKED,
+TP-PS-DIA,WF0002,1939,PERISPHERE_SKIN,outside_diameter,54.864,m,180 feet,FMP-EV-TP-SMI-01,DOCUMENTED_BUILT,0.035,LOCKED,Prior 200ft proposal is not built
+TP-PS-BOTTOM-CLR,WF0002,1939,PERISPHERE_SKIN,bottom_clearance,5.1816,m,17 feet,FMP-EV-TP-LOCAL-AUDIT-01,DOCUMENTED_BUILT,0.035,EDITABLE,Legacy audited workbook; original drawing datum and reference pending
+TP-PS-SUPPORTS,WF0002,1939,PERISPHERE_SUPPORTS,column_count,8,count,eight steel columns,FMP-EV-TP-AR1939-01,DOCUMENTED_BUILT,0,LOCKED,Period article supports eight rather than five columns
+TP-PS-PILES,WF0002,1939,PERISPHERE_FOUNDATION,pile_count,528,count,528 piles,FMP-EV-TP-AR1939-01,DOCUMENTED_BUILT,0,LOCKED,Exact pile positions unknown; not modeled
+TP-PS-RING-DIA,WF0002,1939,PERISPHERE_SUPPORT_RING,ring_centerline_diameter,21.9456,m,72 feet,FMP-EV-TP-AR1939-01,DOCUMENTED_BUILT,0.15,LOCKED,Centerline dimension not same as mesh outer bbox
+TP-PS-MERIDIANS,WF0002,1939,PERISPHERE_TRUSSES,meridian_count,32,count,32 meridian trusses,FMP-EV-TP-AR1939-01,DOCUMENTED_BUILT,0,LOCKED,
+TP-PS-LATITUDES,WF0002,1939,PERISPHERE_TRUSSES,horizontal_count,15,count,15 horizontal trusses,FMP-EV-TP-AR1939-01,DOCUMENTED_BUILT,0,LOCKED,Latitude stations still unverified
+TP-PS-VIEW-DECKS,WF0002,1939,PERISPHERE_GUEST_PLATFORMS,moving_platform_count,2,count,two opposed moving platforms,FMP-EV-TP-AR1939-01,DOCUMENTED_BUILT,0,LOCKED,Original direction and timing should be checked from engineering schedule
+TP-PS-HELICLINE-L,WF0002,1939,WF0004_HELICLINE,centerline_length,289.56,m,950 feet,FMP-EV-TP-SMI-01,DOCUMENTED_BUILT,0.05,LOCKED,"Belongs to separate WF0004 site circulation place, linked to Perisphere dossier"
+TP-PS-HELICLINE-W,WF0002,1939,WF0004_HELICLINE,deck_width,5.4864,m,18 feet,FMP-EV-TP-CM-01,DOCUMENTED_BUILT,0.05,LOCKED,Cross-section profile provisional
+TP-TR-PROPOSAL-H,WF0001,1938,TRYLON_CONCEPT,proposed_height,213.36,m,700 feet proposed,FMP-EV-TP-NYPL-01,DOCUMENTED_PROPOSED,,HISTORY_ONLY,NOT FOR BUILT MODEL
+TP-PS-PROPOSAL-D,WF0002,1938,PERISPHERE_CONCEPT,proposed_diameter,60.96,m,200 feet proposed,FMP-EV-TP-NYPL-01,DOCUMENTED_PROPOSED,,HISTORY_ONLY,NOT FOR BUILT MODEL
