@@ -154,6 +154,7 @@ def export_pack(connection, output_dir: Path):
         envelopes = records(connection,"SELECT * FROM master_building_envelopes WHERE building_id=? ORDER BY period_year,envelope_id",(building_id,))
         hotspots = records(connection,"SELECT * FROM master_interactive_points WHERE building_id=? ORDER BY period_year,point_id",(building_id,))
         media_files = records(connection,"SELECT * FROM master_all_media WHERE building_id=? ORDER BY record_type,media_ref",(building_id,))
+        active_models = records(connection,"SELECT * FROM master_active_model_summary WHERE building_id=? ORDER BY period_year,logical_role",(building_id,))
         mesh_parts = records(connection,"SELECT * FROM master_model_components WHERE building_id=? ORDER BY period_year,model_asset_id,source_node",(building_id,))
         model_materials = records(connection,"SELECT * FROM master_model_materials WHERE building_id=? ORDER BY period_year,model_asset_id,material_name",(building_id,))
         parameters = records(connection,"SELECT * FROM building_geometry_parameters WHERE building_id=? ORDER BY period_year,component_id,parameter_key",(building_id,))
@@ -170,7 +171,7 @@ def export_pack(connection, output_dir: Path):
                       linked_places_and_existing_assets=related, shell_first_policy=shell_policy[0] if shell_policy else None,
                       shell_source_parts=shell_parts,
                       envelopes=envelopes, interactive_points=hotspots,
-                      media_inventory=media_files,
+                      media_inventory=media_files, active_model_releases=active_models,
                       observed_mesh_components=mesh_parts,
                       model_material_groups=model_materials,
                       procedural_parameters=parameters, surface_research=surfaces,
@@ -190,7 +191,7 @@ def export_pack(connection, output_dir: Path):
         queue.append(row)
         if b["public_access_status"]=="INTERIOR_ALPHA_TARGET":
             access.append(packet)
-    master_rows=records(connection,"SELECT * FROM master_building_overview ORDER BY production_priority,display_name")
+    master_rows=records(connection,"SELECT * FROM master_building_dashboard_v2 ORDER BY production_priority,display_name")
     with (target/"master_building_overview.csv").open("w",encoding="utf-8",newline="") as f:
         writer=csv.DictWriter(f,fieldnames=list(master_rows[0]) if master_rows else ["building_id"])
         writer.writeheader()
