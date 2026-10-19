@@ -1,0 +1,6 @@
+event_id,era_year,area_id,planting_id,source_id,event_type,date_start,date_end,date_precision,event_status,notes
+HEV39-STORM,1939,HORT39-GOP,,HORT39-QBG-HISTORY,WEATHER_DAMAGE,1938-09-21,,DAY,DOCUMENTED,1938 hurricane flooded and damaged Gardens on Parade planted plots before 1939 opening; replanted afterward
+HEV39-STORM-RECOVERY,1939,HORT39-GOP,,HORT39-QBG-HISTORY,RECOVERY,1938-09,,MONTH,DOCUMENTED,Harriet Barnes Pratt oversaw reconstruction of damaged garden beds in September 1938
+HEV40-STAMP,1940,HORT40-LIVINGSTAMP,,HORT40-QBG-HISTORY,PLANTED,1940,,YEAR,DOCUMENTED,"Pony Express living stamp planted with alternanthera and sedum during 1940 season, not 1939"
+HEV64-TREE-CONTRACT,1964,HORT64-INDUSTRIAL-CORRIDOR,PL64-400-TREES,HORT64-NYC-TREE-CONTRACT,PLANTED,1962,,YEAR,CONTRACTED,400-tree planting contract for 1964 Fair preparation; contracted does not mean verified completed
+HEV64-TREE-RETENTION,1964,HORT64-RETAINED-ROWS,,HORT64-NPS-TREE-RESEARCH,MAINTENANCE,1964,,YEAR,DOCUMENTED,1964 site-preparation report recommended maintaining rows surviving from 1939; not all individual trees identified
