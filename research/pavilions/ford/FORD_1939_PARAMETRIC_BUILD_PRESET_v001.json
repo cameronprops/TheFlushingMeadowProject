@@ -1,0 +1,141 @@
+{
+  "schema": "fmp.ford1939.parametric-preset.v1",
+  "building_id": "WF0014",
+  "year": 1939,
+  "certified": false,
+  "site_frame": {
+    "crs": null,
+    "site_easting_m": null,
+    "site_northing_m": null,
+    "orientation": "DIAGRAMMATIC_ONLY_NO_TRUE_NORTH"
+  },
+  "documented": {
+    "turntable_diameter_m": {
+      "value": 30.48,
+      "source": "FMP-EV-FORD-AR1938-01",
+      "evidence_grade": "PERIOD_PRINTED",
+      "note": "100 ft reported in 1938 Architectural Record"
+    },
+    "total_car_ride_m": {
+      "value": 804.672,
+      "source": "FMP-EV-FORD-SOUV1939-01",
+      "evidence_grade": "PERIOD_REPORTED_NEEDS_ORIGINAL_PAGE_CHECK",
+      "note": "0.5 mi entire route, not simply the spiral"
+    },
+    "road_spiral_tiers": {
+      "value": 3,
+      "source": "FMP-EV-FORD-AR1938-01",
+      "evidence_grade": "PERIOD_PRINTED",
+      "note": "Three cantilever tiers != three revolutions"
+    },
+    "mercury_figure_height_m": {
+      "value": 7.62,
+      "source": "FMP-EV-FORD-SOUV1939-01",
+      "evidence_grade": "SECONDARY_REPORTED_PRIMARY_PAGE_PENDING",
+      "note": "Reported 25 ft"
+    },
+    "working_models": {
+      "value": 87,
+      "source": "FMP-EV-FORD-CYCLE-01",
+      "evidence_grade": "INSTITUTIONAL_ARCHIVAL_RECORD",
+      "note": ""
+    },
+    "animated_figures": {
+      "value": 142,
+      "source": "FMP-EV-FORD-CYCLE-01",
+      "evidence_grade": "INSTITUTIONAL_ARCHIVAL_RECORD",
+      "note": ""
+    },
+    "raw_material_categories": {
+      "value": 27,
+      "source": "FMP-EV-FORD-CYCLE-01",
+      "evidence_grade": "INSTITUTIONAL_ARCHIVAL_RECORD",
+      "note": ""
+    }
+  },
+  "interpretive": {
+    "industrial_hall": {
+      "width_m": 90,
+      "depth_m": 76,
+      "height_m": 16,
+      "center_xy_m": [
+        -64,
+        0
+      ],
+      "notes": "Replace rectangular envelope with period-traced rounded shell"
+    },
+    "entrance_hall": {
+      "width_m": 75,
+      "depth_m": 38,
+      "height_m": 13,
+      "center_xy_m": [
+        -64,
+        -57
+      ],
+      "notes": "Proxy mass, original silhouette/door locations not measured"
+    },
+    "garden_court": {
+      "width_m": 110,
+      "depth_m": 95,
+      "center_xy_m": [
+        55,
+        11
+      ],
+      "notes": "Provisional geometry not registered to period site"
+    },
+    "cycle": {
+      "center_xy_m": [
+        -64,
+        0
+      ],
+      "tier_radii_m": [
+        15.24,
+        12.5,
+        9,
+        5.2
+      ],
+      "tier_elevations_m": [
+        0.9,
+        3.4,
+        6.25,
+        9.25
+      ],
+      "moat_outer_radius_m": 19.1,
+      "moat_depth_m": 0.55,
+      "audience_ring_outer_radius_m": 27.5,
+      "notes": "Only first radius based on documented 100-foot diameter. No pontoon count or RPM established"
+    },
+    "road_spiral": {
+      "center_xy_m": [
+        63,
+        12
+      ],
+      "mean_radius_m": 26,
+      "roadway_width_m": 4.7,
+      "turns_estimate": 2.8,
+      "start_elevation_m": 1.6,
+      "end_elevation_m": 10,
+      "notes": "Only three cantilever tiers are historically supported; turn count and pitch are purely illustrative"
+    }
+  },
+  "geometry_contract": {
+    "building_id": "WF0014",
+    "exhibit_id": "FORD39_CYCLE_OF_PRODUCTION",
+    "material_mode": [
+      "REALISTIC",
+      "STYLIZED"
+    ],
+    "scale_units": "metres",
+    "historical_survey_certified": false,
+    "not_for_fabrication": true,
+    "period_1940_separate": true
+  },
+  "math": {
+    "r_m": 15.24,
+    "plan_area_m2": 729.6587699003967,
+    "circumference_m": 95.75574408141689,
+    "theta_formula": "theta0 + 2*pi*(rpm/60)*t",
+    "rim_speed_formula": "(2*pi*rpm/60)*r",
+    "buoyancy_formula": "displaced_volume_m3=supported_mass_kg / density_water_kg_m3"
+  }
+}
