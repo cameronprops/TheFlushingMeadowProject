@@ -38,7 +38,8 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
         with self.connect() as c:
             self.assertEqual(c.execute("SELECT count(*) FROM building_dossiers").fetchone()[0],195)
             self.assertEqual(c.execute("SELECT count(*) FROM building_dossiers WHERE classification='ARCHITECTURE_LISTED'").fetchone()[0],38)
-            self.assertEqual(c.execute("SELECT count(*) FROM building_dossiers WHERE architecture_status='CANDIDATE_NOT_CERTIFIED'").fetchone()[0],195)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_dossiers WHERE architecture_status='CANDIDATE_NOT_CERTIFIED'").fetchone()[0],194)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_dossiers WHERE classification='CONFIRMED_BUILDING'").fetchone()[0],1)
 
     def test_source_linkage_and_access_spaces(self):
         with self.connect() as c:
