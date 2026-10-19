@@ -57,8 +57,8 @@ class MasterBuildingIndexTests(unittest.TestCase):
 
     def test_media_resolves_with_archival_references(self):
         with self.con() as db:
-            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_media_assets").fetchone()[0],10)
-            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_building_media").fetchone()[0],16)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_media_assets").fetchone()[0],11)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_building_media").fetchone()[0],17)
             src=db.execute("SELECT uri FROM master_all_media WHERE building_id='WF0001' AND record_type='REGISTERED_FILE' AND media_kind='3D_GLB'").fetchone()
             self.assertTrue(src and "drive.google.com" in src["uri"])
             a=db.execute("SELECT COUNT(*) FROM master_all_media WHERE building_id='WF0002' AND record_type='ARCHIVE_REFERENCE'").fetchone()[0]
