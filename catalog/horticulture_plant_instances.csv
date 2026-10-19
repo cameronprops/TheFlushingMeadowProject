@@ -1,0 +1,1 @@
+instance_id,era_year,planting_id,source_id,original_plan_symbol,name_or_tree_tag,location_status,coordinate_frame,x_m,y_m,z_m,horizontal_crs,vertical_datum,uncertainty_m,canopy_diameter_m,mature_height_m,mesh_asset_uri,unreal_instance_id,print_group_id,notes
