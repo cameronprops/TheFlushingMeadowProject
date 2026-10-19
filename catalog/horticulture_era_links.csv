@@ -1,0 +1,3 @@
+link_id,earlier_area_id,later_area_id,relation_type,source_id,certainty,notes
+HLINK-GOP-39-40,HORT39-GOP,HORT40-GOP,SAME_AREA_REPLANTED,HORT40-QBG-HISTORY,RESEARCH_SUPPORTED,Named Gardens on Parade horticultural exhibition was open both years; layouts and specific displays may have changed
+HLINK-ROWS-39-64,HORT39-FAIR-TREEROWS,HORT64-RETAINED-ROWS,TREES_RETAINED,HORT64-NPS-TREE-RESEARCH,RESEARCH_SUPPORTED,NPS/Cornell cites the 1964 site-preparation report encouraging retention of mature 1939-40 planted rows; NOT identity-level tree matches
