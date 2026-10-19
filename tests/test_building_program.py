@@ -100,12 +100,21 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
             self.assertEqual(links,5)
             for bid in ("WF0001","WF0002"):
                 self.assertEqual(c.execute("SELECT production_priority FROM building_dossiers WHERE building_id=?",(bid,)).fetchone()[0],"P1")
-                self.assertEqual(c.execute("SELECT baseline_model_status FROM building_dossiers WHERE building_id=?",(bid,)).fetchone()[0],"EXISTING_TRUTH_GATED_RECONSTRUCTION")
+                self.assertEqual(c.execute("SELECT baseline_model_status FROM building_dossiers WHERE building_id=?",(bid,)).fetchone()[0],"EXISTING_SHELL_FIRST_ASSET_EXPORTS")
             trylon=c.execute("SELECT value_si FROM building_geometry_parameters WHERE parameter_id='TP-TR-HEIGHT'").fetchone()[0]
             sphere=c.execute("SELECT value_si FROM building_geometry_parameters WHERE parameter_id='TP-PS-DIA'").fetchone()[0]
             self.assertAlmostEqual(trylon,185.928,places=6)
             self.assertAlmostEqual(sphere,54.864,places=6)
             self.assertEqual(c.execute("SELECT count(*) FROM building_geometry_parameters WHERE evidence_class='DOCUMENTED_PROPOSED' AND parameter_id LIKE 'TP-%'").fetchone()[0],2)
+            self.assertEqual(c.execute("PRAGMA foreign_key_check").fetchall(),[])
+
+    def test_shell_first_global_policy_and_optional_steel(self):
+        with self.connect() as c:
+            self.assertEqual(c.execute("SELECT count(*) FROM building_reconstruction_policy").fetchone()[0],195)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_shell_parts").fetchone()[0],10)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_reconstruction_policy WHERE structural_frame_priority='OPTIONAL_DOCUMENT_IF_SOURCED'").fetchone()[0],195)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_shell_parts WHERE role='OPTIONAL_STEEL_STRUCTURE'").fetchone()[0],2)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_shell_parts WHERE historical_certified=1 OR wall_thickness_verified=1").fetchone()[0],0)
             self.assertEqual(c.execute("PRAGMA foreign_key_check").fetchall(),[])
 
     def test_dossier_export_consistency(self):
@@ -123,6 +132,8 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
             tp=json.loads((out/"buildings"/"WF0002.json").read_text())
             self.assertTrue(any(p["place_id"]=="WF0003" for p in tp["linked_places_and_existing_assets"]))
             self.assertTrue((out/"buildings"/"WF0002.md").exists())
+            self.assertEqual(tp["shell_first_policy"]["structural_frame_priority"],"OPTIONAL_DOCUMENT_IF_SOURCED")
+            self.assertTrue(any(x["role"]=="EXTERIOR_SHELL" for x in tp["shell_source_parts"]))
             with (out/"master_building_queue.csv").open(newline="") as f:
                 self.assertEqual(len(list(csv.DictReader(f))),195)
 
