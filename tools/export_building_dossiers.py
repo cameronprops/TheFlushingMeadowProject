@@ -97,6 +97,14 @@ def make_construction_brief(packet):
             " — "+str(media["uri"] or media["project_uri"] or "")+
             " ("+media["acquisition_status"]+")")
     if not d.get("media_inventory"):lines.append("No media registered yet.")
+    lines.extend(["","## Inspected GLB components (source mesh data, not historical measurements)"])
+    parts=d.get("observed_mesh_components",[])
+    lines.append("Parts: "+str(len(parts))+"; watertight: "+
+                 str(sum(int(p["watertight"]) for p in parts))+
+                 "; needs print closure QA: "+str(sum(not int(p["watertight"]) for p in parts)))
+    for mat in d.get("model_material_groups",[]):
+        lines.append("- source material "+str(mat["material_name"])+" — "+
+                     str(mat["mesh_parts"])+" parts, "+str(mat["face_count"])+" faces")
     lines.extend(["","## Exterior/interior shell and optional structural layers"])
     policy=d.get("shell_first_policy") or {}
     if policy:
@@ -146,6 +154,8 @@ def export_pack(connection, output_dir: Path):
         envelopes = records(connection,"SELECT * FROM master_building_envelopes WHERE building_id=? ORDER BY period_year,envelope_id",(building_id,))
         hotspots = records(connection,"SELECT * FROM master_interactive_points WHERE building_id=? ORDER BY period_year,point_id",(building_id,))
         media_files = records(connection,"SELECT * FROM master_all_media WHERE building_id=? ORDER BY record_type,media_ref",(building_id,))
+        mesh_parts = records(connection,"SELECT * FROM master_model_components WHERE building_id=? ORDER BY period_year,model_asset_id,source_node",(building_id,))
+        model_materials = records(connection,"SELECT * FROM master_model_materials WHERE building_id=? ORDER BY period_year,model_asset_id,material_name",(building_id,))
         parameters = records(connection,"SELECT * FROM building_geometry_parameters WHERE building_id=? ORDER BY period_year,component_id,parameter_key",(building_id,))
         surfaces = records(connection,"SELECT * FROM building_surface_research WHERE building_id=? ORDER BY period_year,component_selector",(building_id,))
         photographs = records(connection,"SELECT * FROM building_view_observations WHERE building_id=? ORDER BY period_year,view_id",(building_id,))
@@ -161,6 +171,8 @@ def export_pack(connection, output_dir: Path):
                       shell_source_parts=shell_parts,
                       envelopes=envelopes, interactive_points=hotspots,
                       media_inventory=media_files,
+                      observed_mesh_components=mesh_parts,
+                      model_material_groups=model_materials,
                       procedural_parameters=parameters, surface_research=surfaces,
                       photographic_observations=photographs,
                       geometry_format_policy="SHARED_CORE_WITH_REALISTIC_AND_STYLIZED_MATERIALS",
@@ -205,6 +217,8 @@ def export_pack(connection, output_dir: Path):
                  source_model_envelopes=connection.execute("SELECT count(*) FROM master_building_envelopes").fetchone()[0],
                  interactive_locations=connection.execute("SELECT count(*) FROM master_interactive_points").fetchone()[0],
                  linked_media_references=connection.execute("SELECT count(*) FROM master_all_media").fetchone()[0],
+                 inspected_glb_components=connection.execute("SELECT count(*) FROM master_model_components").fetchone()[0],
+                 inspected_material_bindings=connection.execute("SELECT count(*) FROM master_model_materials").fetchone()[0],
                  shell_first_policies=connection.execute("SELECT count(*) FROM building_reconstruction_policy").fetchone()[0],
                  audited_shell_source_parts=connection.execute("SELECT count(*) FROM building_shell_parts").fetchone()[0],
                  indexed_interior_spaces=sum(row["interior_space_count"] for row in queue),
