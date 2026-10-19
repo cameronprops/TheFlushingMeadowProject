@@ -66,13 +66,3 @@ CREATE TABLE IF NOT EXISTS unidentified_visual_leads (
 CREATE INDEX IF NOT EXISTS ix_fmp_build_params ON building_geometry_parameters(building_id,period_year);
 CREATE INDEX IF NOT EXISTS ix_fmp_surfaces ON building_surface_research(building_id,period_year);
 CREATE INDEX IF NOT EXISTS ix_fmp_views ON building_view_observations(building_id,period_year);
--- New fair, new geometry: keep two GM pavilions as distinct real-world objects.
-UPDATE building_dossiers SET production_priority='P2' WHERE building_id IN ('WF0012','FMP64SUBJ0064');
-UPDATE building_dossiers SET notes='1964-65 standalone GM Futurama II; distinct from 1939 Highways and Horizons. Footprint untraced; period photos and printed specifications are leads.'
- WHERE building_id='FMP64SUBJ0064';
-INSERT INTO unidentified_visual_leads
- (lead_id,working_description,status,candidate_building_id,reference_url,feature_motion,notes)
- VALUES ('FMP-VIS-ROTATING-PYRAMID-01',
- 'Giant floating pyramid-like object that rotates at the fair',
- 'UNIDENTIFIED',NULL,NULL,'ROTATING',
- 'Owner requested identification. The 1964 GM roof indicator rotated and may be a visual comparator, but pyramid geometry and whether this is the intended exhibit remain UNVERIFIED. Do not label or place an asset until identified.');
