@@ -36,6 +36,7 @@ WATCH_GLOBS = (
     "database/migrations/*.sql",
     "tools/build_db.py",
     "tools/export_building_dossiers.py",
+    "tools/building_program/export_runtime_handoff.py",
     "tools/sync_master_database.py",
 )
 
