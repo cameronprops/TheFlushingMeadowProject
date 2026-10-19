@@ -28,6 +28,9 @@ TABLES = {
     'building_details': ('catalog/building_details.csv', ('building_id', 'architectural_attribution', 'architectural_form', 'known_dimensions', 'structural_materials', 'facade_roof', 'site_orientation', 'documented_interiors', 'interaction_points', 'exact_dimensions_status', 'year_variant_notes', 'workflow_notes', 'details_status')),
     'building_evidence': ('catalog/building_evidence.csv', ('evidence_id', 'building_id', 'year', 'document_title', 'repository', 'document_url', 'archive_locator', 'document_type', 'evidence_scope', 'claim_or_research_value', 'evidence_status', 'rights_status', 'local_or_drive_uri', 'sha256', 'revision_date', 'reviewer_note')),
     'building_spaces': ('catalog/building_spaces.csv', ('space_id', 'building_id', 'year', 'space_name', 'space_type', 'access_intent', 'evidence_status', 'floor_level', 'plan_reference', 'entrance_geometry_status', 'interior_model_status', 'collision_status', 'navigation_status', 'notes')),
+    'building_geometry_parameters': ('catalog/building_geometry_parameters.csv', ('parameter_id', 'building_id', 'period_year', 'component_id', 'parameter_key', 'value_si', 'units_si', 'period_source_value', 'source_evidence_id', 'evidence_class', 'tolerance_si', 'adjustment_status', 'notes')),
+    'building_surface_research': ('catalog/building_surfaces.csv', ('surface_id', 'building_id', 'period_year', 'component_selector', 'material_family', 'finish_description', 'substrate', 'glass_transmission', 'measured_color', 'metallic', 'roughness', 'texture_asset_uri', 'evidence_id', 'certainty', 'skin_policy', 'notes')),
+    'building_view_observations': ('catalog/building_visual_observations.csv', ('view_id', 'building_id', 'period_year', 'evidence_id', 'image_uri', 'view_direction', 'lens_perspective', 'visible_components', 'fixed_points', 'estimated_dimensions', 'mesh_reference_uri', 'geometry_use', 'confidence', 'notes')),
 }
 
 def build(output: Path) -> None:
@@ -42,6 +45,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/003_future_scenarios.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/004_archived_inventory.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/005_building_program.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/007_procedural_architecture.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
@@ -55,6 +59,7 @@ def build(output: Path) -> None:
                 )
                 print(f"{table}: {len(rows)} rows")
         connection.executescript((ROOT / "database/migrations/006_building_priorities.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/008_gm_research_priority.sql").read_text(encoding="utf-8"))
         connection.commit()
         outcome = connection.execute("PRAGMA integrity_check").fetchone()[0]
         if outcome != "ok":
