@@ -31,3 +31,17 @@ CREATE VIEW IF NOT EXISTS master_active_model_summary AS
  FROM master_active_model_releases r
  LEFT JOIN master_model_components p ON p.model_asset_id=r.active_media_id
  GROUP BY r.release_key;
+
+-- Dashboard v2 is a superset of the previous master overview: active model
+-- revisions are joined, but historical unregistered dimensions remain distinct.
+CREATE VIEW IF NOT EXISTS master_building_dashboard_v2 AS
+SELECT b.*,
+  COALESCE((SELECT COUNT(*) FROM master_active_model_releases r
+    WHERE r.building_id=b.building_id),0) AS active_model_releases,
+  COALESCE((SELECT SUM(x.parts) FROM master_active_model_summary x
+    WHERE x.building_id=b.building_id),0) AS active_mesh_parts,
+  COALESCE((SELECT SUM(x.closed_parts) FROM master_active_model_summary x
+    WHERE x.building_id=b.building_id),0) AS active_watertight_parts,
+  COALESCE((SELECT SUM(x.material_groups) FROM master_active_model_summary x
+    WHERE x.building_id=b.building_id),0) AS active_material_groups
+FROM master_building_overview b;
