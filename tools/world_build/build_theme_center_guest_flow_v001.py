@@ -39,7 +39,10 @@ def generate(glb,destination):
     # Interpretation-only openings. The original source GLB is never modified.
     triangles=original.vertices[original.faces]
     remain=np.ones(len(original.faces),bool)
-    for yc,zc in ((low[1],low[2]),(high[1],high[2])):
+    for landing_name in NAMES[1:3]:
+        bounds=mesh(scene,landing_name).bounds
+        yc=float(bounds[1,1])+1.2
+        zc=float(bounds[:,2].mean())
         remain &= ~((triangles[:,:,0].min(axis=1)<-15)&
             (triangles[:,:,1].max(axis=1)>=yc-1.2)&
             (triangles[:,:,1].min(axis=1)<=yc+1.2)&
@@ -92,3 +95,4 @@ def generate(glb,destination):
 if __name__=='__main__':
     if len(sys.argv)!=3:raise SystemExit(__doc__)
     print(json.dumps(generate(sys.argv[1],sys.argv[2]),indent=2))
+
