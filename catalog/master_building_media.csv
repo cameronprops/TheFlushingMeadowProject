@@ -1,0 +1,11 @@
+link_id,building_id,media_id,period_year,role,component_id,notes
+LINK-TR-STAGING,WF0001,FMP-MEDIA-THEME-STAGING,1939,SOURCE_GEOMETRY,Trylon_Hollow_Exterior,Same shared source contains all Theme Center components
+LINK-PS-STAGING,WF0002,FMP-MEDIA-THEME-STAGING,1939,SOURCE_GEOMETRY,Perisphere_Upper_Removable_Shell,Use original mesh without overwriting
+LINK-TR-BIM,WF0001,FMP-MEDIA-TP-WORKBOOK,1939,ARCHITECTURAL_DIMENSIONS,,Original F001-F067 truth rows
+LINK-PS-BIM,WF0002,FMP-MEDIA-TP-WORKBOOK,1939,ARCHITECTURAL_DIMENSIONS,,Original F001-F067 truth rows
+LINK-TR-AUDIT,WF0001,FMP-MEDIA-TP-TRUTHAUDIT,1939,SOURCE_AUDIT,,Built versus proposal study
+LINK-PS-AUDIT,WF0002,FMP-MEDIA-TP-TRUTHAUDIT,1939,SOURCE_AUDIT,,Shared historical value audit
+LINK-FORD-GEN,WF0014,FMP-MEDIA-FORD-GEN,1939,PROCEDURAL_BUILDER,,Road and pavilion shell conceptual generator
+LINK-FORD-PLAN,WF0014,FMP-MEDIA-FORD-AR1938,1939,HISTORICAL_PLAN,,Period source has plan needing tracing
+LINK-WEST-PACK,WF0020,FMP-MEDIA-WEST-PACK,1939,VISITOR_ACCESS_MODEL,,Package of playable-shell prototype not itself validated in Unreal
+LINK-WEST-GEN,WF0020,FMP-MEDIA-WEST-GEN,1939,PROCEDURAL_BUILDER,,Schematic massing generator
