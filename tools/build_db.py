@@ -31,6 +31,10 @@ TABLES = {
     'building_geometry_parameters': ('catalog/building_geometry_parameters.csv', ('parameter_id', 'building_id', 'period_year', 'component_id', 'parameter_key', 'value_si', 'units_si', 'period_source_value', 'source_evidence_id', 'evidence_class', 'tolerance_si', 'adjustment_status', 'notes')),
     'building_surface_research': ('catalog/building_surfaces.csv', ('surface_id', 'building_id', 'period_year', 'component_selector', 'material_family', 'finish_description', 'substrate', 'glass_transmission', 'measured_color', 'metallic', 'roughness', 'texture_asset_uri', 'evidence_id', 'certainty', 'skin_policy', 'notes')),
     'building_view_observations': ('catalog/building_visual_observations.csv', ('view_id', 'building_id', 'period_year', 'evidence_id', 'image_uri', 'view_direction', 'lens_perspective', 'visible_components', 'fixed_points', 'estimated_dimensions', 'mesh_reference_uri', 'geometry_use', 'confidence', 'notes')),
+    'master_building_envelopes': ('catalog/master_building_envelopes.csv', ('envelope_id', 'building_id', 'period_year', 'envelope_scope', 'coordinate_frame', 'min_x_m', 'min_y_m', 'min_z_m', 'max_x_m', 'max_y_m', 'max_z_m', 'source_geometry_node', 'source_asset_id', 'evidence_status', 'uncertainty_m', 'site_registered', 'notes')),
+    'master_interactive_points': ('catalog/master_interactive_points.csv', ('point_id', 'building_id', 'period_year', 'space_id', 'label', 'interaction_type', 'public_access', 'coordinate_frame', 'x_m', 'y_m', 'z_m', 'position_status', 'requested_behavior', 'trigger_or_scene_key', 'implementation_status', 'native_unreal_tested', 'notes')),
+    'master_media_assets': ('catalog/master_media_assets.csv', ('media_id', 'title', 'kind', 'period_year', 'uri', 'repo_path', 'mime_type', 'sha256', 'rights_status', 'acquisition_status', 'notes')),
+    'master_building_media': ('catalog/master_building_media.csv', ('link_id', 'building_id', 'media_id', 'period_year', 'role', 'component_id', 'notes')),
 }
 
 def build(output: Path) -> None:
@@ -46,6 +50,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/004_archived_inventory.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/005_building_program.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/007_procedural_architecture.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/012_master_building_index.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
