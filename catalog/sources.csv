@@ -1,0 +1,11 @@
+source_id,title,repository,url,source_type,access_status,rights_status,notes
+SRC001,1939-1940 Theme Center drawings overview,Carnegie Museums,https://carnegiemuseums.org/magazine-archive/1997/sepoct/feat6.html,INSTITUTIONAL_ARTICLE,REFERENCE_LINK,UNDETERMINED,Dimensions cited in prior project research
+SRC002,RCA Pavilion drawing set,Athenaeum of Philadelphia,https://www.americanbuildings.org/pab/app/ho_display.cfm/56239,DRAWING_COLLECTION,CATALOG_LOCATED,UNDETERMINED,Contains floor and roof plans elevations and sections per catalog
+SRC003,General Motors pavilion drawing records,Harry Ransom Center,https://research.hrc.utexas.edu/NBGpublic/details.cfm?id=307,ARCHIVAL_COLLECTION,CATALOG_LOCATED,UNDETERMINED,Plans and blueprints not locally verified
+SRC004,Federal Building proposed presentation plans,FDR Presidential Library,https://fdr.artifacts.archives.gov/en/objects/10539/new-york-worlds-fair-1939,PROPOSAL_DRAWING,CATALOG_LOCATED,UNDETERMINED,Do not treat proposed views as built
+SRC005,Medical and Public Health buildings plans,New York State Library,https://nysl.nysed.gov/msscfa/qc16514,ARCHIVAL_COLLECTION,CATALOG_LOCATED,UNDETERMINED,Request archival sheets
+SRC006,Consumer Interests renting plan,NYPL Digital Collections,https://old-digitalcollections.nypl.org/items/932609db-b85a-ffde-e040-e00a18067b32,PLAN,CATALOG_LOCATED,UNDETERMINED,Renting plan not full architectural construction set
+SRC007,Applied Arts proposed layout,Library of Congress,https://www.loc.gov/pictures/item/2019647967/,PROPOSED_LAYOUT,CATALOG_LOCATED,UNDETERMINED,Verify dated source and final layout
+SRC008,World's Fair archives finding aid,NYPL,https://archives.nypl.org/mss/2233,FINDING_AID,REFERENCE_LINK,UNDETERMINED,Collection-level leads not individual acquired drawings
+SRC009,NYPL World's Fair plan XM-250,NYPL Digital Collections,https://old-digitalcollections.nypl.org/items/926ff6bc-5ff8-0931-e040-e00a180628c4,SITE_PLAN_THUMBNAIL,CATALOG_LOCATED,UNDETERMINED,Prior project blockout uses approximate pixel alignment with no control points
+SRC010,1939 Architectural Forum issue,USModernist,https://www.usmodernist.org/AF/AF-1939-06.pdf,PERIOD_JOURNAL,REFERENCE_LINK,REVIEW_REQUIRED,Opening-day relative layout and architecture; copies governed by rights

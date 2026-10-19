@@ -1,0 +1,21 @@
+place_id,name,category,zone,year_scope,identity_status,geometry_status,site_registration,notes
+WF0001,Trylon,architecture,Theme Center,1939-1940,HISTORICAL_NAME,PROVISIONAL_MODEL,UNREGISTERED,Existing reconstructed geometry; coordinates still require survey registration
+WF0002,Perisphere,architecture,Theme Center,1939-1940,HISTORICAL_NAME,PROVISIONAL_MODEL,UNREGISTERED,Revolved-gallery and structural details need as-built reconciliation
+WF0003,Democracity,exhibit,Theme Center,1939-1940,HISTORICAL_NAME,INTERPRETIVE_MODEL,UNREGISTERED,Miniature inside Perisphere; immersive version is a separate authored world
+WF0004,Helicline,circulation,Theme Center,1939-1940,HISTORICAL_NAME,PROVISIONAL_MODEL,UNREGISTERED,Walkway must be capsule collision tested
+WF0005,Theme Center Pool and Grounds,landscape,Theme Center,1939-1940,HISTORICAL_NAME,PROVISIONAL_MODEL,UNREGISTERED,Previous browser context v0.9.0
+WF0006,Federal Building,architecture,Government Zone,1939-1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,FDR library proposed plans need built-state confirmation
+WF0007,Hall of Nations,architecture,Government Zone,1939-1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,Overseas exhibits vary by era and tenant
+WF0008,New York City Building,architecture,Government Zone,1939-1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,Surviving building requires historical change reconstruction
+WF0009,RCA Building,architecture,Communications Zone,1939-1940,HISTORICAL_NAME,PLANS_LOCATED,UNREGISTERED,Athenaeum floor and roof plans and sections cataloged
+WF0010,AT&T Building,architecture,Communications Zone,1939-1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,Public Voder exhibits
+WF0012,General Motors Building,architecture,Transportation Zone,1939-1940,HISTORICAL_NAME,PLANS_LOCATED,UNREGISTERED,Archival working plans at Harry Ransom Center
+WF0013,Futurama,exhibit,General Motors Building,1939-1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,Hosted within GM building not another pavilion
+WF0020,Westinghouse Building,architecture,Electricity / Power,1939-1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,Elektro demonstrations hosted here
+WF0021,Elektro,show_character,Westinghouse Building,1939-1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,Show performance system pending primary evidence
+WF0022,Sparko,show_character,Westinghouse Building,1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,1940-specific inclusion requires primary state verification
+WF0028,Medical and Public Health Buildings,architecture,Community Interests Zone,1939-1940,HISTORICAL_NAME,PLANS_LOCATED,UNREGISTERED,New York State Library architectural plan lead
+WF0030,Consumer Interests Building,architecture,Community Interests Zone,1939-1940,HISTORICAL_NAME,PLANS_LOCATED,UNREGISTERED,NYPL renting plan lead
+WF0031,Applied Arts Building,architecture,Community Interests Zone,1939-1940,HISTORICAL_NAME,PLANS_LOCATED,UNREGISTERED,Library of Congress layout drawing
+WF0042,Aquacade,architecture,Amusement Zone,1939-1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,Aquatic amphitheater and pool complex
+WF0050,World's Fair Rail and Subway Access,infrastructure,Transit Zone,1939-1940,HISTORICAL_NAME,RESEARCH_PENDING,UNREGISTERED,Station routes and access need dated maps

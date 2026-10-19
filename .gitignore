@@ -1,0 +1,36 @@
+# Unreal generated
+**/Binaries/
+**/Build/
+**/DerivedDataCache/
+**/Intermediate/
+**/Saved/
+**/.vs/
+**/.idea/
+**/obj/
+**/Content/Developers/
+*.sln
+*.suo
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+__pycache__/
+*.py[cod]
+.venv/
+# Local or regenerated outputs
+/out/
+/dist/
+/tmp/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+# Historical source archives and heavy rasters: store originals in Drive
+/research/raw/
+/terrain/raw/
+*.las
+*.laz
+*.tif
+*.tiff
+*.jp2
+*.pdf
+*.zip
