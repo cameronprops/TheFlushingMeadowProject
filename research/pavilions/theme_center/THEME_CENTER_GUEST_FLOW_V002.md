@@ -175,3 +175,39 @@ shortcut as documented. This package is not a printable or historically certifie
 assembly. Native Unreal import, collision, navigation and complete-route body
 clearance remain open. Next: check nearby source rails, shells and other geometry
 against a defined player body envelope, then validate in Unreal.
+
+
+## 2026-10-19: v003 transition body-clearance screen
+
+Hash-verified original and v003 overlay were screened at 63 discrete positions
+(21 along the transition, three lateral tracks). Provisional capsule dimensions:
+radius 0.3 m, height 1.8 m, feet lifted 0.05 m above the sampled floor.
+These are test assumptions, not configured Unreal character dimensions.
+
+Thirteen spheres along each vertical capsule axis use a conservative covering
+radius of 0.304138 m. All displayed source/overlay mesh nodes enter transformed
+bounding-box filtering; only the documented original lower shell and legacy
+shortcut are excluded. Three nearby nodes required triangle checks: Helicline
+deck, new transition, and shortened return slab. No sampled surface contact was
+detected. Minimum reported surface clearance is 45.225 mm, including the deliberate
+floor lift; it is not a lateral clearance margin.
+
+Four focused tests pass for wall contact/separation, translated obstacles,
+tangency/batch handling and the explicitly demonstrated solid-containment limit.
+This screen cannot detect a body entirely enclosed in a closed solid, does not
+sweep between poses, and covers only the one-metre transition. It does not certify
+the full route or Unreal collision/navigation. No model geometry changed.
+
+[Detailed poses and results](TRANSITION_CLEARANCE_v001.json).
+[Archived code, tests and results](https://drive.google.com/file/d/1q2hqMjcPeWWSKf5f9HjXkzHpkYk6JzZ6/view).
+ZIP SHA-256: `f7b546c38296f56a53fae10c3c9fadd76f581e5f1d572b8078796d639a7f1891`.
+
+```bash
+python tools/world_build/audit_transition_clearance.py SOURCE.glb V003_OVERLAY.glb REPORT.json
+python -m unittest -v tools.world_build.test_transition_clearance
+```
+
+Next acceptance gate: native Unreal collision and continuous capsule traversal with
+the actual player configuration. If no engine runtime is available, apply the
+existing offline screening approach to the wider Trylon return route rather than
+repeat this completed local transition screen.
