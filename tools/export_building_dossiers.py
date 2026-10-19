@@ -42,6 +42,51 @@ def next_action(dossier):
         return "Develop separate walkable interior proxy and collision/nav tests"
     return "Review evidence and advance exterior/entrance modeling"
 
+def make_construction_brief(packet):
+    """One sourced construction brief per building; blank means unknown."""
+    d=packet
+    lines=["# "+d["display_name"]+" — FMP architectural reconstruction",
+      "", "ID: "+d["building_id"]+" | Historical periods: "+str(d["year_candidates"]),
+      "", "## Identity and production state",
+      "Category: "+d["classification"]+"; priority: "+d["production_priority"]+
+      "; site: "+d["site_position_status"]+"; footprint: "+d["footprint_status"],
+      "", "## Architecture"]
+    for key,val in (d.get("architect_details") or {}).items():
+        if key!="building_id":
+            lines.append("- "+key.replace("_"," ").title()+": "+str(val or "NOT YET DOCUMENTED"))
+    lines.extend(["","## Dated dimensions / parametric constraints"])
+    for p in d.get("procedural_parameters",[]):
+        lines.append("- "+str(p["period_year"])+" / "+p["component_id"]+"/"+p["parameter_key"]+
+            ": "+str(p["value_si"])+" "+str(p["units_si"] or "")+
+            " ["+p["evidence_class"]+", "+str(p["source_evidence_id"] or "uncited")+"]")
+    if not d.get("procedural_parameters"):
+        lines.append("No measured construction parameters. Do not fabricate footprint or height.")
+    lines.extend(["","## Archival photos, plans, drawings and evidence"])
+    for e in d.get("source_evidence",[]):
+        lines.append("- "+e["document_title"]+" | "+e["repository"]+
+                     " | "+e["evidence_status"]+" | "+str(e.get("document_url") or ""))
+    if not d.get("source_evidence"):lines.append("Acquisition pending.")
+    lines.extend(["","## Existing 3D assets and linked exhibits"])
+    for a in d.get("linked_places_and_existing_assets",[]):
+        lines.append("- "+a["place_id"]+": "+a["link_type"]+
+            " ("+a["status"]+") "+str(a.get("source_model_url") or ""))
+    if not d.get("linked_places_and_existing_assets"):lines.append("No explicitly linked preserved 3D sources.")
+    lines.extend(["","## Floorplan / walkable interior"])
+    for room in d.get("interior_spaces",[]):
+        lines.append("- "+room["space_name"]+": "+room["access_intent"]+
+                     "; model="+room["interior_model_status"]+
+                     "; collision="+room["collision_status"]+
+                     "; navigation="+room["navigation_status"])
+    if not d.get("interior_spaces"):lines.append("No known interior circulation yet.")
+    lines.extend(["","## Materials, cinematic look development, both skins",
+      "Realistic and stylized variants share the SAME architectural geometry, ID, doors and collision."])
+    for m in d.get("surface_research",[]):
+        lines.append("- "+m["component_selector"]+" / "+m["material_family"]+" / "+m["certainty"])
+    lines.extend(["","## Next concrete task",d["next_action"],"",
+      "Pavilion identification is not proof of as-built placement. Photo estimates and Meshy assets require review.",
+      "This building is NOT playable until verified with native Unreal geometry, collision, routes and performance.",""])
+    return "\n".join(lines)
+
 def export_pack(connection, output_dir: Path):
     connection.row_factory = sqlite3.Row
     target = Path(output_dir)
@@ -64,6 +109,7 @@ def export_pack(connection, output_dir: Path):
         rooms = records(connection,"SELECT * FROM building_spaces WHERE building_id=? ORDER BY year,space_id",(building_id,))
         skins = records(connection,"SELECT * FROM building_appearance WHERE building_id=? ORDER BY variant",(building_id,))
         releases = records(connection,"SELECT * FROM building_worklog WHERE building_id=? ORDER BY changed_utc",(building_id,))
+        related = records(connection,"SELECT * FROM building_linked_places WHERE building_id=? ORDER BY link_id",(building_id,))
         parameters = records(connection,"SELECT * FROM building_geometry_parameters WHERE building_id=? ORDER BY period_year,component_id,parameter_key",(building_id,))
         surfaces = records(connection,"SELECT * FROM building_surface_research WHERE building_id=? ORDER BY period_year,component_selector",(building_id,))
         photographs = records(connection,"SELECT * FROM building_view_observations WHERE building_id=? ORDER BY period_year,view_id",(building_id,))
@@ -75,6 +121,7 @@ def export_pack(connection, output_dir: Path):
                       architect_details=detail[0] if detail else None,
                       source_evidence=evid, interior_spaces=rooms,
                       appearances=skins, model_release_history=releases,
+                      linked_places_and_existing_assets=related,
                       procedural_parameters=parameters, surface_research=surfaces,
                       photographic_observations=photographs,
                       geometry_format_policy="SHARED_CORE_WITH_REALISTIC_AND_STYLIZED_MATERIALS",
@@ -83,6 +130,7 @@ def export_pack(connection, output_dir: Path):
         (building_dir/(building_id+".json")).write_text(
             json.dumps(packet,indent=2,ensure_ascii=False,allow_nan=False)+"\n",
             encoding="utf-8")
+        (building_dir/(building_id+".md")).write_text(make_construction_brief(packet), encoding="utf-8")
         row={k:packet.get(k) for k in EXPORT_FIELDS}
         row["evidence_count"]=len(evid)
         row["interior_space_count"]=len(rooms)
@@ -109,6 +157,7 @@ def export_pack(connection, output_dir: Path):
                  detailed_dossiers=sum(bool(records(connection,"SELECT 1 FROM building_details WHERE building_id=?",
                                                       (b["building_id"],))) for b in buildings),
                  attached_source_references=sum(row["evidence_count"] for row in queue),
+                 existing_linked_places=connection.execute("SELECT count(*) FROM building_linked_places").fetchone()[0],
                  indexed_interior_spaces=sum(row["interior_space_count"] for row in queue),
                  researched_geometry_parameters=connection.execute("SELECT count(*) FROM building_geometry_parameters").fetchone()[0],
                  researched_surface_records=connection.execute("SELECT count(*) FROM building_surface_research").fetchone()[0],
