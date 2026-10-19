@@ -37,6 +37,12 @@ TABLES = {
     'master_building_media': ('catalog/master_building_media.csv', ('link_id', 'building_id', 'media_id', 'period_year', 'role', 'component_id', 'notes')),
     'master_model_components': ('catalog/master_model_components.csv', ('component_id', 'building_id', 'period_year', 'model_asset_id', 'source_node', 'mesh_key', 'role', 'coordinate_frame', 'min_x_m', 'min_y_m', 'min_z_m', 'max_x_m', 'max_y_m', 'max_z_m', 'vertices', 'faces', 'watertight', 'material_name', 'roughness', 'metallic', 'source_sha256', 'verification_status')),
     'master_active_model_releases': ('catalog/master_active_model_releases.csv', ('release_key','building_id','period_year','logical_role','active_media_id','source_path','source_sha256','up_axis','selected_nodes','observed_utc','status')),
+    'site_network_sheets': ('catalog/site_network_sheets.csv', ('sheet_id','era_year','sheet_title','sheet_number','archive_collection','archive_url','primary_layer','availability','status_note')),
+    'site_network_layers': ('catalog/site_network_layers.csv', ('layer_id','family','medium','walkable','typically_buried','description')),
+    'site_network_features': ('catalog/site_network_features.csv', ('feature_id','canonical_name','feature_kind','identity_status','comment')),
+    'site_network_nodes': ('catalog/site_network_nodes.csv', ('node_id','era_year','layer_id','name','x_m','y_m','z_m','coordinate_frame','horizontal_crs','vertical_datum','location_status','source_sheet_id')),
+    'site_network_segments': ('catalog/site_network_segments.csv', ('segment_id','feature_id','era_year','layer_id','historical_name','from_node_id','to_node_id','geojson_geometry','source_sheet_id','alignment_status','width_m','depth_m','invert_elevation_m','flow_direction','access_class','navigable','estimated_accuracy_m','note')),
+    'site_network_era_relations': ('catalog/site_network_era_relations.csv', ('relation_id','earlier_segment_id','later_segment_id','relation_type','evidence_sheet_id','confidence','note')),
 }
 
 def build(output: Path) -> None:
@@ -55,6 +61,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/012_master_building_index.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/013_source_model_components.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/014_active_model_releases.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/015_dated_site_networks.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
