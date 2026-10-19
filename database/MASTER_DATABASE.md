@@ -98,3 +98,9 @@ Run `python3 tools/sync_master_database.py --once` to import registered GLBs, va
 Registration examples and setup: [models/incoming/README.md](../models/incoming/README.md); full technical instructions: [AUTOMATIC_MODEL_REFRESH_v002.md](../docs/buildings/AUTOMATIC_MODEL_REFRESH_v002.md).
 
 The initial active-release register preserves known source file SHA-256 values for Trylon, Perisphere, Ford v003 and Westinghouse v002; local file paths remain unresolved until each model folder is configured. A local watcher is not a persistent online task and does not itself sync or back up assets to Drive.
+
+## Historical route and buried utility networks (migration 015)
+
+[Production specification](../docs/site/FMP_HISTORIC_ROUTES_AND_UTILITIES_v001.md) extends this same master database with named pedestrian paths, streets, service-only alleys, bridges, gates and separate buried potable-water, building-water, sanitary, storm, gas, conduit, power and fountain layers. Each segment has a historical year, sheet source, alignment status, possible measured width/depth, access/navigability flag and optional dated cross-era relationship. Unknown positions are NULL; an archival sheet index is not a surveyed sewer line.
+
+Inputs: `catalog/site_network_*.csv`; schema: `database/migrations/015_dated_site_networks.sql`. Reads: `site_network_progress`, `site_walkable_edges` and `site_utility_segments`. As of v001: 43 catalog sheet records, 19 layer families, 19 named untraced route records; 0 georeferenced route/pipe segments, no manufactured cross-era pipe continuity. Source-backed RCA shell comes first; the full site network is the following FMP production milestone.
