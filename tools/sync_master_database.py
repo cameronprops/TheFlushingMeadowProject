@@ -20,11 +20,13 @@ import tempfile
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-
-from build_db import build
-from export_building_dossiers import export_pack
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.build_db import build
+from tools.export_building_dossiers import export_pack
 WATCH_GLOBS = (
     "catalog/*.csv",
     "archive/*.csv",
