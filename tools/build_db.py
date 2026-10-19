@@ -36,6 +36,7 @@ TABLES = {
     'master_media_assets': ('catalog/master_media_assets.csv', ('media_id', 'title', 'kind', 'period_year', 'uri', 'repo_path', 'mime_type', 'sha256', 'rights_status', 'acquisition_status', 'notes')),
     'master_building_media': ('catalog/master_building_media.csv', ('link_id', 'building_id', 'media_id', 'period_year', 'role', 'component_id', 'notes')),
     'master_model_components': ('catalog/master_model_components.csv', ('component_id', 'building_id', 'period_year', 'model_asset_id', 'source_node', 'mesh_key', 'role', 'coordinate_frame', 'min_x_m', 'min_y_m', 'min_z_m', 'max_x_m', 'max_y_m', 'max_z_m', 'vertices', 'faces', 'watertight', 'material_name', 'roughness', 'metallic', 'source_sha256', 'verification_status')),
+    'master_active_model_releases': ('catalog/master_active_model_releases.csv', ('release_key','building_id','period_year','logical_role','active_media_id','source_path','source_sha256','up_axis','selected_nodes','observed_utc','status')),
 }
 
 def build(output: Path) -> None:
@@ -53,6 +54,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/007_procedural_architecture.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/012_master_building_index.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/013_source_model_components.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/014_active_model_releases.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
