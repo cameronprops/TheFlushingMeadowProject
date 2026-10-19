@@ -79,6 +79,7 @@ class MasterBuildingIndexTests(unittest.TestCase):
         self.assertEqual(summary["source_model_envelopes"],8)
         self.assertEqual(summary["interactive_locations"],10)
         self.assertEqual(summary["inspected_glb_components"],696)
+        self.assertEqual(summary["current_model_revisions"],4)
         self.assertGreater(summary["linked_media_references"],40)
         items=list((target/"buildings").glob("*.json"))
         self.assertEqual(len(items),195)
@@ -86,6 +87,7 @@ class MasterBuildingIndexTests(unittest.TestCase):
         self.assertEqual(len(trylon["envelopes"]),2)
         self.assertGreater(len(trylon["media_inventory"]),0)
         self.assertTrue((target/"buildings"/"WF0001.md").exists())
+        self.assertEqual(len(trylon["active_model_releases"]),1)
         with (target/"master_building_overview.csv").open(newline="") as stream:
             self.assertEqual(len(list(csv.DictReader(stream))),195)
 
@@ -98,6 +100,18 @@ class MasterBuildingIndexTests(unittest.TestCase):
             self.assertEqual(db.execute("SELECT COUNT(*) FROM master_model_materials WHERE building_id='WF0014'").fetchone()[0],8)
             self.assertEqual(db.execute("SELECT COUNT(*) FROM master_model_components WHERE building_id='WF0020' AND watertight=0").fetchone()[0],40)
             self.assertEqual(db.execute("SELECT COUNT(*) FROM master_model_components WHERE verification_status='MODEL_OBSERVED_NOT_HISTORIC_CERTIFIED'").fetchone()[0],696)
+            self.assertEqual(db.execute("PRAGMA foreign_key_check").fetchall(),[])
+
+    def test_current_glb_pointer_and_dashboard(self):
+        with self.con() as db:
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_active_model_releases").fetchone()[0],4)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_active_model_components").fetchone()[0],696)
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM master_building_dashboard_v2").fetchone()[0],195)
+            p=db.execute("SELECT * FROM master_active_model_summary WHERE building_id='WF0014'").fetchone()
+            self.assertEqual(p["parts"],310)
+            self.assertGreater(p["closed_parts"],0)
+            view=db.execute("SELECT active_mesh_parts FROM master_building_dashboard_v2 WHERE building_id='WF0020'").fetchone()
+            self.assertEqual(view["active_mesh_parts"],383)
             self.assertEqual(db.execute("PRAGMA foreign_key_check").fetchall(),[])
 
     def test_source_fingerprint_is_reproducible(self):
