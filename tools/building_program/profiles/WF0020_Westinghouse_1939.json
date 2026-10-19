@@ -1,0 +1,16 @@
+{
+  "building_id": "WF0020",
+  "source_sha256": "327b132ed3563518c472b9aa31bf6333323670195d287e8612af10dac5e1cc74",
+  "model_accuracy": "SCHEMATIC_HISTORICAL_IMPRESSION_NOT_REGISTERED",
+  "fail_on_unclassified": true,
+  "rules": [
+    {
+      "pattern": "^WH39_ACCESS_",
+      "role": "INTERIOR_SHELL_PREVIEW"
+    },
+    {
+      "pattern": "^WH39_(?!ACCESS_)",
+      "role": "EXTERIOR_FACADE_TOWER"
+    }
+  ]
+}
