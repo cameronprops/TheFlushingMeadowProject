@@ -49,6 +49,12 @@ TABLES = {
     'site_amenity_instances': ('catalog/site_amenity_instances.csv', ('instance_id','type_id','era_year','location_label','nearby_building_id','nearby_route_segment_id','source_observation_id','position_status','coordinate_frame','x_m','y_m','z_m','longitude','latitude','horizontal_crs','vertical_datum','yaw_deg','placement_uncertainty_m','historical_visibility','model_asset_uri','unreal_scene_object_id','print_component_id','notes')),
     'site_amenity_service_links': ('catalog/site_amenity_service_links.csv', ('service_link_id','instance_id','network_layer_id','segment_id','service_kind','linkage_status','source_observation_id','notes')),
     'site_amenity_era_relations': ('catalog/site_amenity_era_relations.csv', ('relation_id','earlier_instance_id','later_instance_id','relation_type','evidence_observation_id','certainty','notes')),
+    'horticulture_sources': ('catalog/horticulture_sources.csv', ('source_id','era_year','title','repository','source_url','archive_locator','document_date','source_class','access_status','historical_status','rights_status','notes')),
+    'horticulture_taxa': ('catalog/horticulture_taxa.csv', ('taxon_id','display_name','scientific_name','taxonomic_precision','growth_form','notes')),
+    'horticulture_areas': ('catalog/horticulture_areas.csv', ('area_id','era_year','historical_name','area_kind','parent_area_id','associated_building_id','associated_route_segment_id','source_id','named_context','approximate_area_m2','area_measurement_status','location_status','local_polygon_geojson','coordinate_frame','horizontal_crs','vertical_datum','notes')),
+    'horticulture_plantings': ('catalog/horticulture_plantings.csv', ('planting_id','era_year','area_id','taxon_id','source_id','display_label','planting_role','installation_status','quantity','quantity_basis','variety_count','cultivar_name','seasonal_window','growing_pattern','evidence_excerpt','estimated_height_m','model_asset_uri','unreal_layer','note')),
+    'horticulture_seasonal_events': ('catalog/horticulture_seasonal_events.csv', ('event_id','era_year','area_id','planting_id','source_id','event_type','date_start','date_end','date_precision','event_status','notes')),
+    'horticulture_era_links': ('catalog/horticulture_era_links.csv', ('link_id','earlier_area_id','later_area_id','relation_type','source_id','certainty','notes')),
 }
 
 def build(output: Path) -> None:
@@ -69,6 +75,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/014_active_model_releases.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/015_dated_site_networks.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/016_dated_site_amenities.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/017_historical_horticulture.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
