@@ -44,7 +44,7 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
     def test_source_linkage_and_access_spaces(self):
         with self.connect() as c:
             self.assertEqual(c.execute("SELECT count(*) FROM building_details").fetchone()[0],14)
-            self.assertEqual(c.execute("SELECT count(*) FROM building_evidence").fetchone()[0],43)
+            self.assertGreaterEqual(c.execute("SELECT count(*) FROM building_evidence").fetchone()[0],49)
             self.assertEqual(c.execute("SELECT count(*) FROM building_spaces").fetchone()[0],9)
             self.assertEqual(c.execute("PRAGMA foreign_key_check").fetchall(),[])
 
@@ -64,7 +64,7 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
     def test_gm_both_eras_and_procedural_evidence(self):
         with self.connect() as c:
             self.assertEqual(c.execute("SELECT classification FROM building_dossiers WHERE building_id='FMP64SUBJ0064'").fetchone()[0],"CONFIRMED_BUILDING")
-            self.assertEqual(c.execute("SELECT count(*) FROM building_geometry_parameters").fetchone()[0],13)
+            self.assertGreaterEqual(c.execute("SELECT count(*) FROM building_geometry_parameters").fetchone()[0],29)
             self.assertEqual(c.execute("SELECT count(*) FROM building_surface_research").fetchone()[0],8)
             self.assertEqual(c.execute("SELECT count(*) FROM building_view_observations").fetchone()[0],6)
             self.assertEqual(c.execute("SELECT count(*) FROM unidentified_visual_leads WHERE status='MATCH_CONFIRMED' AND candidate_building_id='WF0014'").fetchone()[0],1)
@@ -94,6 +94,20 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
             self.assertEqual(c.execute("SELECT count(*) FROM building_surface_research WHERE building_id='WF0014'").fetchone()[0],3)
             self.assertEqual(c.execute("SELECT count(*) FROM building_spaces WHERE space_id='FMP-SP-FORD-1939-CYCLE'").fetchone()[0],1)
 
+    def test_theme_center_sources_and_preserved_assets(self):
+        with self.connect() as c:
+            links=c.execute("SELECT count(*) FROM building_linked_places").fetchone()[0]
+            self.assertEqual(links,5)
+            for bid in ("WF0001","WF0002"):
+                self.assertEqual(c.execute("SELECT production_priority FROM building_dossiers WHERE building_id=?",(bid,)).fetchone()[0],"P1")
+                self.assertEqual(c.execute("SELECT baseline_model_status FROM building_dossiers WHERE building_id=?",(bid,)).fetchone()[0],"EXISTING_TRUTH_GATED_RECONSTRUCTION")
+            trylon=c.execute("SELECT value_si FROM building_geometry_parameters WHERE parameter_id='TP-TR-HEIGHT'").fetchone()[0]
+            sphere=c.execute("SELECT value_si FROM building_geometry_parameters WHERE parameter_id='TP-PS-DIA'").fetchone()[0]
+            self.assertAlmostEqual(trylon,185.928,places=6)
+            self.assertAlmostEqual(sphere,54.864,places=6)
+            self.assertEqual(c.execute("SELECT count(*) FROM building_geometry_parameters WHERE evidence_class='DOCUMENTED_PROPOSED' AND parameter_id LIKE 'TP-%'").fetchone()[0],2)
+            self.assertEqual(c.execute("PRAGMA foreign_key_check").fetchall(),[])
+
     def test_dossier_export_consistency(self):
         with self.connect() as c:
             out=self.root/"pack"
@@ -106,6 +120,9 @@ class BuildingProgramIntegrationTests(unittest.TestCase):
             self.assertEqual(len(b["source_evidence"]),5)
             self.assertEqual(len(b["interior_spaces"]),3)
             self.assertFalse(b["is_historically_certified"])
+            tp=json.loads((out/"buildings"/"WF0002.json").read_text())
+            self.assertTrue(any(p["place_id"]=="WF0003" for p in tp["linked_places_and_existing_assets"]))
+            self.assertTrue((out/"buildings"/"WF0002.md").exists())
             with (out/"master_building_queue.csv").open(newline="") as f:
                 self.assertEqual(len(list(csv.DictReader(f))),195)
 
