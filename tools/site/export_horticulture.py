@@ -34,6 +34,8 @@ def export_horticulture(db:sqlite3.Connection,output_dir:Path):
        ORDER BY p.era_year,p.area_id,p.planting_id""")
     events=records(db,"SELECT * FROM horticulture_seasonal_events ORDER BY era_year,date_start,event_id")
     lineage=records(db,"SELECT * FROM horticulture_era_links ORDER BY earlier_area_id,later_area_id")
+    plant_instances=records(db,"SELECT * FROM horticulture_mapped_plants ORDER BY era_year,instance_id")
+    irrigation_links=records(db,"SELECT * FROM horticulture_irrigation_links ORDER BY area_id,irrigation_link_id")
     queue=records(db,"SELECT * FROM horticulture_research_queue ORDER BY era_year,historical_name")
 
     # A historical plan's existence is not geometric registration.
@@ -60,6 +62,11 @@ def export_horticulture(db:sqlite3.Connection,output_dir:Path):
                     'warning':'Coordinates are model/site-local and NOT automatically WGS84',
                     'areas':registered},indent=2,ensure_ascii=False,allow_nan=False)+'\n',
         encoding='utf-8')
+    (out/'mapped_individual_plants.json').write_text(
+        json.dumps({'schema':'fmp.horticulture.mapped-plants.v1',
+                    'warning':'Only sourced, date-specific positions, never random vegetation',
+                    'instances':plant_instances},indent=2,ensure_ascii=False,allow_nan=False)+'\n',
+        encoding='utf-8')
     (out/'unlocated_gardens.json').write_text(
         json.dumps({'schema':'fmp.horticulture.research-zones.v1',
                     'warning':'Named zones are NOT surveyed maps or 3D planting locations',
@@ -75,6 +82,9 @@ def export_horticulture(db:sqlite3.Connection,output_dir:Path):
                     'warning':'Area relationships are not identity-level tree survivorship proof',
                     'links':lineage},indent=2,ensure_ascii=False,allow_nan=False)+'\n',
         encoding='utf-8')
+    write_csv(out/'documented_irrigation_links.csv',irrigation_links,
+             ['irrigation_link_id','area_id','network_layer_id','segment_id',
+              'source_id','linkage_status','equipment_description','notes'])
     write_csv(out/'source_acquisition_queue.csv',sources,
              ['source_id','era_year','title','repository','source_url','archive_locator',
               'document_date','source_class','access_status','historical_status',
@@ -98,7 +108,8 @@ def export_horticulture(db:sqlite3.Connection,output_dir:Path):
              'era_relationships':len(lineage),
              'site_registered_or_traced_areas':len(registered),
              'unlocated_or_named_areas':len(contextual),
-             'usable_historic_plant_centers':0,
+             'usable_historic_plant_centers':len(plant_instances),
+             'documented_or_candidate_irrigation_links':len(irrigation_links),
              'historical_accuracy_status':'RESEARCH_STAGE_NOT_GEOREGISTERED',
              'geometry_output_policy':'No species placements without georeferenced dated plans',
              'priority_source':'LIU Myaida Nippon Garden 1939 plans; NYPL 1939 landscape; NYPL 1964 planting files'}
