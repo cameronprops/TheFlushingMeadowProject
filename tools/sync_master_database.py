@@ -27,6 +27,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 from tools.build_db import build
 from tools.export_building_dossiers import export_pack
+from tools.building_program.refresh_model_catalog import refresh_registered_models
 WATCH_GLOBS = (
     "catalog/*.csv",
     "archive/*.csv",
@@ -86,7 +87,7 @@ def write_json_atomic(path: Path, obj) -> None:
                          encoding="utf-8")
     os.replace(temporary, path)
 
-def sync_once(output_root: Path, root: Path = ROOT):
+def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = None):
     """Build full snapshot in a temp directory, validate, then promote it.
 
     Repo tables are never edited here; a corrupt incoming CSV cannot erase the
@@ -94,6 +95,8 @@ def sync_once(output_root: Path, root: Path = ROOT):
     """
     output_root = Path(output_root)
     output_root.mkdir(parents=True, exist_ok=True)
+    if model_root is not None:
+        refresh_registered_models(model_root, root / "catalog", repo_root=root)
     fingerprint = source_fingerprint(root)
     with tempfile.TemporaryDirectory(prefix=".fmp-master-build-", dir=output_root) as tmp:
         staging = Path(tmp)
@@ -142,24 +145,30 @@ def sync_once(output_root: Path, root: Path = ROOT):
     write_json_atomic(output_root / "master_sync_report.json", report)
     return report
 
-def run_watch(output_root: Path, seconds: float):
+def run_watch(output_root: Path, seconds: float, model_root: Path | None = None):
     if seconds < 1:
         raise ValueError("Minimum local polling interval is 1 second")
     previous = None
-    print("FMP local watcher running. This process must stay open; Ctrl-C stops.")
+    print("FMP local watcher running: source catalogs and explicitly registered GLBs.")
     try:
         while True:
-            current = source_fingerprint()
-            if current != previous:
-                try:
+            try:
+                # Scan source models before checking CSV fingerprints so new
+                # geometry revisions trigger a single DB/dossier refresh.
+                if model_root is not None:
+                    result = refresh_registered_models(model_root, ROOT / "catalog")
+                    if result["changed"]:
+                        print("Observed new model versions:", result["changed"],
+                              "measured parts:", result["components_added"], flush=True)
+                current = source_fingerprint()
+                if current != previous:
                     report = sync_once(output_root)
                     previous = current
                     print("Master database refreshed:", report["counts"],
                           "at", report["updated_utc"], flush=True)
-                except Exception as exc:
-                    # Do not mark failed source fingerprint as processed.
-                    print("Refresh rejected, previous snapshot retained:", exc,
-                          flush=True)
+            except Exception as exc:
+                # Keep last known-good master database and try the next cycle.
+                print("Refresh rejected, previous snapshot retained:", exc, flush=True)
             time.sleep(seconds)
     except KeyboardInterrupt:
         print("FMP local watcher stopped.")
@@ -172,11 +181,17 @@ def main():
                       help="Stay running and regenerate when local source files change")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "out")
     parser.add_argument("--interval", type=float, default=3.0)
+    parser.add_argument("--model-root", type=Path,
+                        default=ROOT / "models/incoming",
+                        help="Directory containing registered *.fmp-model.json GLBs")
+    parser.add_argument("--no-model-scan", action="store_true",
+                        help="Only rebuild from existing CSV/SQL without touching GLB source catalogs")
     args = parser.parse_args()
+    model_root = None if args.no_model_scan else args.model_root
     if args.watch:
-        run_watch(args.output_dir, args.interval)
+        run_watch(args.output_dir, args.interval, model_root=model_root)
     else:
-        report = sync_once(args.output_dir)
+        report = sync_once(args.output_dir, model_root=model_root)
         print(json.dumps(report["counts"], indent=2))
 
 if __name__ == "__main__":
