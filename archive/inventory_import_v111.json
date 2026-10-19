@@ -1,0 +1,28 @@
+{
+  "source_drive_url": "https://drive.google.com/file/d/1u5ppoqDwpmKF4tg_EZPgZOMlYFJnEybL/view",
+  "snapshot_sha256": "8cfc3b0ec35d3a73e40daa37195c6c522faa819ee642e391aa7a09ac845e8afe",
+  "zip_sha256": "fdf302d4fdab459bb6323a8ffb46c594fbbb53af311c009490c7526b7ff7521c",
+  "policy": "CSV export preserving source values except the documented NULL/empty-string equivalence. Archived claims are not newly verified. Empty CSV cells represent SQL NULL or empty text.",
+  "tables": {
+    "inventory_candidates": {
+      "rows": 239,
+      "csv": "catalog/archive_inventory_candidates.csv",
+      "sha256": "7abed48248800cf77ce9d41672833b54b513fbab0b3814337267f5e733338a76"
+    },
+    "source_catalog_v2": {
+      "rows": 82,
+      "csv": "catalog/archive_source_catalog_v2.csv",
+      "sha256": "fe592b7ad9f102ae9cf070beb81e1e8a50f866b81783517b3a35ea464c2ccb84"
+    },
+    "operations_manual_sheets": {
+      "rows": 58,
+      "csv": "catalog/archive_operations_manual_sheets.csv",
+      "sha256": "8c6c10b276c5ef5f5e107c46e156d71f5aebfc9a1851efd7ea022fd5ef253d54"
+    },
+    "production_availability": {
+      "rows": 239,
+      "csv": "catalog/archive_production_availability.csv",
+      "sha256": "d26e8e16eeae5f512df54ca6e431aae97c054fe2fe4740e387321ba7e078da35"
+    }
+  }
+}
