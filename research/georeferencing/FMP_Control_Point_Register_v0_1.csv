@@ -1,0 +1,6 @@
+control_id,feature,era_1939,era_1964,current_survival,source_1939,source_1964,source_modern,source_pixel_x_1939,source_pixel_y_1939,source_pixel_x_1964,source_pixel_y_1964,world_x_m,world_y_m,crs,confidence,verification_status,notes
+CP-001,Flushing Meadows site boundary,YES,YES,PARTIAL,NYPL-XM250,OPS64-S03-S04,,,,,,,,CANDIDATE,UNMEASURED,Boundary geometry is not a single point; select a matching vertex only after plan inspection
+CP-002,Roosevelt Avenue corridor,YES,YES,YES,NYPL-XM250,OPS64-S03-S04,,,,,,,,CANDIDATE,UNMEASURED,Use a surveyed intersection or stationing feature not arbitrary street center
+CP-003,Grand Central Parkway alignment,YES,YES,YES,NYPL-XM250,OPS64-S03-S04,,,,,,,,CANDIDATE,UNMEASURED,Use an identifiable unchanged engineering point after checking changes between periods
+CP-004,Flushing River or watercourse crossing,YES,YES,MODIFIED,NYPL-XM250,OPS64-S03-S04,,,,,,,,LOW,UNMEASURED,Historical landscape significantly reworked; reject without strong cross-source tie
+CP-005,Long Island Rail Road corridor,YES,YES,YES,NYPL-XM250,OPS64-S03-S04,,,,,,,,CANDIDATE,UNMEASURED,Track geometry may vary; identify engineering control rather than general corridor
