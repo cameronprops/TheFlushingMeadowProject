@@ -104,3 +104,13 @@ The initial active-release register preserves known source file SHA-256 values f
 [Production specification](../docs/site/FMP_HISTORIC_ROUTES_AND_UTILITIES_v001.md) extends this same master database with named pedestrian paths, streets, service-only alleys, bridges, gates and separate buried potable-water, building-water, sanitary, storm, gas, conduit, power and fountain layers. Each segment has a historical year, sheet source, alignment status, possible measured width/depth, access/navigability flag and optional dated cross-era relationship. Unknown positions are NULL; an archival sheet index is not a surveyed sewer line.
 
 Inputs: `catalog/site_network_*.csv`; schema: `database/migrations/015_dated_site_networks.sql`. Reads: `site_network_progress`, `site_walkable_edges` and `site_utility_segments`. As of v001: 43 catalog sheet records, 19 layer families, 19 named untraced route records; 0 georeferenced route/pipe segments, no manufactured cross-era pipe continuity. Source-backed RCA shell comes first; the full site network is the following FMP production milestone.
+
+## Dated site furnishings and public services (2026-10-19)
+
+The master database now holds **on-the-ground small objects and public services**, not just buildings and linear networks. Migration `database/migrations/016_dated_site_amenities.sql` integrates site-furniture family/type/evidence/instance tables into the existing historical-year and network scheme: refuse cans, benches, drinking fountains, poles, illumination, fountains, statuary, first aid, comfort stations, signs, telephones, mailboxes, lockers, information and maintenance facilities. Each object may link to an existing utility layer, historical road segment, building, original archive sheet and Unreal/print asset identity.
+
+A type (e.g. one historic bench design) is **not** a thousand placed benches. A documented named area is **not** a georegistered XY. The current source index has 23 object categories, 32 historical types, 56 evidence observations and six named-area examples, with **zero** certified points. The 1964–65 operations drawing sheets 8–10 offer the first systematic way to trace dozens/hundreds of *individual* furnishings from primary source plans.
+
+Run `python3 tools/sync_master_database.py --once` to regenerate the derived `out/site_amenities` mapping source queue, evidence register, name-only landmarks and future precisely mapped WGS84/scene points. These files are generated views, not competing catalogs.
+
+Full scope, archival box numbers, provenance rules and production priorities: [Historic street furnishings and public services](../docs/site/FMP_HISTORIC_STREET_FURNISHINGS_AND_PUBLIC_SERVICES_v001.md).
