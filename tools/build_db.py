@@ -43,6 +43,12 @@ TABLES = {
     'site_network_nodes': ('catalog/site_network_nodes.csv', ('node_id','era_year','layer_id','name','x_m','y_m','z_m','coordinate_frame','horizontal_crs','vertical_datum','location_status','source_sheet_id')),
     'site_network_segments': ('catalog/site_network_segments.csv', ('segment_id','feature_id','era_year','layer_id','historical_name','from_node_id','to_node_id','geojson_geometry','source_sheet_id','alignment_status','width_m','depth_m','invert_elevation_m','flow_direction','access_class','navigable','estimated_accuracy_m','note')),
     'site_network_era_relations': ('catalog/site_network_era_relations.csv', ('relation_id','earlier_segment_id','later_segment_id','relation_type','evidence_sheet_id','confidence','note')),
+    'site_amenity_categories': ('catalog/site_amenity_categories.csv', ('category_id','category_family','display_name','suggested_layer','visible_in_unreal','note')),
+    'site_amenity_types': ('catalog/site_amenity_types.csv', ('type_id','category_id','era_year','historical_label','type_status','period_quantity','measured_height_m','measured_width_m','measured_depth_m','material_note','source_sheet_id','linked_model_uri','evidence_note')),
+    'site_amenity_evidence': ('catalog/site_amenity_evidence.csv', ('observation_id','type_id','era_year','source_sheet_id','source_url','source_locator','observation_kind','observation_status','claim','approximate_named_context','observed_quantity','rights_status','notes')),
+    'site_amenity_instances': ('catalog/site_amenity_instances.csv', ('instance_id','type_id','era_year','location_label','nearby_building_id','nearby_route_segment_id','source_observation_id','position_status','coordinate_frame','x_m','y_m','z_m','longitude','latitude','horizontal_crs','vertical_datum','yaw_deg','placement_uncertainty_m','historical_visibility','model_asset_uri','unreal_scene_object_id','print_component_id','notes')),
+    'site_amenity_service_links': ('catalog/site_amenity_service_links.csv', ('service_link_id','instance_id','network_layer_id','segment_id','service_kind','linkage_status','source_observation_id','notes')),
+    'site_amenity_era_relations': ('catalog/site_amenity_era_relations.csv', ('relation_id','earlier_instance_id','later_instance_id','relation_type','evidence_observation_id','certainty','notes')),
 }
 
 def build(output: Path) -> None:
@@ -62,6 +68,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/013_source_model_components.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/014_active_model_releases.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/015_dated_site_networks.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/016_dated_site_amenities.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
