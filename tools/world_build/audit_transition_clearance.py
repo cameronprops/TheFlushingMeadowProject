@@ -19,7 +19,8 @@ def sphere_screen(mesh,centers,radius):
         best[start:start+32]=dist
     return best-radius
 
-def audit(source,overlay):
+def audit(source,overlay,route="transition"):
+    if route not in ("transition","return"):raise ValueError("Unknown route")
     source,overlay=Path(source),Path(overlay)
     if hashlib.sha256(source.read_bytes()).hexdigest()!=SOURCE_SHA:raise ValueError('Unknown source')
     if hashlib.sha256(overlay.read_bytes()).hexdigest()!=OVERLAY_SHA:raise ValueError('Unknown overlay')
@@ -42,6 +43,27 @@ def audit(source,overlay):
             index=len(poses);poses.append({'foot_xyz_m':p.tolist(),'along_m':float(along),'lateral_m':offset})
             for y in np.linspace(radius,height-radius,13):
                 centers.append(p+[0,y,0]);owners.append(index)
+    if route=="return":
+        centers=[];poses=[];owners=[]
+        floor=float(world_mesh(scenes[0][1],'Return_Bridge_Deck').bounds[1,1])
+        deck_z=float(world_mesh(scenes[0][1],'Return_Bridge_Deck').bounds[:,2].mean())
+        inside_x=float(world_mesh(scenes[0][1],'Trylon_Hollow_Exterior').bounds[:,0].mean())
+        points=[[-35.9,floor,deck_z],[inside_x,floor,deck_z],
+                [inside_x,floor,-3.15],[-35.6,floor,-3.15],start.tolist()]
+        for segment,(a,b) in enumerate(zip(points,points[1:]),1):
+            a,b=np.array(a),np.array(b);vector=b-a;length=float(np.linalg.norm(vector))
+            direction=vector/length;across=np.array([-direction[2],0,direction[0]])
+            slab=world_mesh(scenes[1][1],f'PROVISIONAL_ReturnViaTrylon_{segment:02d}')
+            for t in np.linspace(.00001,.99999,int(np.ceil(length/.25))+1):
+                for offset in (-.6,0,.6):
+                    p=a+t*vector+offset*across
+                    hit=vertical_surface(slab,p[[0,2]],floor)
+                    if hit is None:raise ValueError('Missing return slab support')
+                    p[1]=hit['surface_y_m']+floor_lift
+                    index=len(poses);poses.append({'foot_xyz_m':p.tolist(),'segment':segment,
+                        'along_m':float(t*length),'lateral_m':offset})
+                    for y in np.linspace(radius,height-radius,13):
+                        centers.append(p+[0,y,0]);owners.append(index)
     centers=np.array(centers)
     lo=centers.min(axis=0)-cover_radius;hi=centers.max(axis=0)+cover_radius
     checked=[];findings=[]
@@ -54,7 +76,10 @@ def audit(source,overlay):
             mask=np.all(tri.max(axis=1)>=lo,axis=1)&np.all(tri.min(axis=1)<=hi,axis=1)
             if not mask.any():continue
             local=trimesh.Trimesh(vertices=m.vertices,faces=m.faces[mask],process=False)
-            clearance=sphere_screen(local,centers,cover_radius)
+            nearby=np.all(centers>=m.bounds[0]-cover_radius,axis=1)&np.all(centers<=m.bounds[1]+cover_radius,axis=1)
+            if not nearby.any():continue
+            clearance=np.full(len(centers),np.inf)
+            clearance[nearby]=sphere_screen(local,centers[nearby],cover_radius)
             checked.append({'origin':origin,'node':node,'triangles_screened':int(mask.sum()),'minimum_surface_clearance_m':float(clearance.min())})
             indices=np.flatnonzero(clearance<0)
             if len(indices):
@@ -65,16 +90,16 @@ def audit(source,overlay):
     return {'schema':'fmp.transition-clearance.v1','source_sha256':SOURCE_SHA,'overlay_sha256':OVERLAY_SHA,
       'body_assumption':{'radius_m':radius,'height_m':height,'floor_lift_m':floor_lift,'axis_cover_radius_m':cover_radius,
       'note':'Provisional test body, not a configured Unreal character or accessibility standard'},
-      'pose_count':len(poses),'poses':poses,'checked_nodes':checked,'findings':findings,
+      'route':route,'pose_count':len(poses),'poses':poses,'checked_nodes':checked,'findings':findings,
       'hidden_source_nodes':sorted(HIDDEN),'status':'BLOCKERS_FOUND' if findings else 'NO_SAMPLED_SURFACE_CONTACTS',
       'acceptance':'OPEN_NATIVE_COLLISION_AND_CONTINUOUS_SWEEP',
-      'limits':['Discrete poses only across transition, not the complete visitor route',
+      'limits':['Discrete poses on selected route only; no continuous motion or corner-turn coverage',
        'Surface screen does not detect a capsule entirely inside a closed solid',
        'Inflated axis-cover spheres may conservatively flag near contacts',
        'Source nodes treated as obstacles regardless of future Unreal collision settings',
        'No geometry altered; no Unreal tests performed']}
 
 if __name__=='__main__':
-    if len(sys.argv)!=4:raise SystemExit('usage: audit_transition_clearance.py SOURCE OVERLAY REPORT')
-    r=audit(sys.argv[1],sys.argv[2]);Path(sys.argv[3]).write_text(json.dumps(r,indent=2)+'\n')
+    if len(sys.argv) not in (4,5):raise SystemExit('usage: audit_transition_clearance.py SOURCE OVERLAY REPORT [transition|return]')
+    r=audit(sys.argv[1],sys.argv[2],sys.argv[4] if len(sys.argv)==5 else "transition");Path(sys.argv[3]).write_text(json.dumps(r,indent=2)+'\n')
     print(json.dumps({k:v for k,v in r.items() if k not in ('poses','checked_nodes')},indent=2))
