@@ -63,6 +63,10 @@ TABLES = {
     'horticulture_era_links': ('catalog/horticulture_era_links.csv', ('link_id','earlier_area_id','later_area_id','relation_type','source_id','certainty','notes')),
     'horticulture_plant_instances': ('catalog/horticulture_plant_instances.csv', ('instance_id','era_year','planting_id','source_id','original_plan_symbol','name_or_tree_tag','location_status','coordinate_frame','x_m','y_m','z_m','horizontal_crs','vertical_datum','uncertainty_m','canopy_diameter_m','mature_height_m','mesh_asset_uri','unreal_instance_id','print_group_id','notes')),
     'horticulture_irrigation_links': ('catalog/horticulture_irrigation_links.csv', ('irrigation_link_id','area_id','network_layer_id','segment_id','source_id','linkage_status','equipment_description','notes')),
+    'atlas_reference_maps': ('catalog/atlas_reference_maps.csv', ('map_id','era_year','title','source_uri','linked_sheet_id','access_status','raster_file','raster_sha256','image_width_px','image_height_px','projected_crs','vertical_datum','affine_json','control_rmse_m','holdout_rmse_m','status','provenance_note')),
+    'atlas_world_frames': ('catalog/atlas_world_frames.csv', ('frame_id','era_year','projected_crs','origin_e_m','origin_n_m','origin_z_m','vertical_datum','xy_unit','z_unit','unreal_axis','status','control_source_uri','note')),
+    'atlas_placements': ('catalog/atlas_placements.csv', ('placement_id','era_year','entity_type','entity_id','display_name','layer_id','source_map_id','source_uri','geometry_kind','pixel_vertices_json','projected_vertices_json','frame_id','placement_status','historical_evidence','uncertainty_m','variant','rotation_deg','height_offset_m','asset_role','note')),
+    'atlas_placement_reviews': ('catalog/atlas_placement_reviews.csv', ('review_id','placement_id','decision','reviewer','review_date','evidence_uri','note')),
 }
 
 def build(output: Path) -> None:
@@ -85,6 +89,7 @@ def build(output: Path) -> None:
         connection.executescript((ROOT / "database/migrations/016_dated_site_amenities.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/017_historic_horticulture.sql").read_text(encoding="utf-8"))
         connection.executescript((ROOT / "database/migrations/017_historical_horticulture.sql").read_text(encoding="utf-8"))
+        connection.executescript((ROOT / "database/migrations/018_fairground_atlas.sql").read_text(encoding="utf-8"))
         for table, (relative, expected) in TABLES.items():
             with (ROOT / relative).open(newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
