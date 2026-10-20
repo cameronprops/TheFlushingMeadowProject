@@ -1,0 +1,37 @@
+{
+  "schema": "fmp.theme-center.engine-handoff-gate.v001",
+  "asset_id": "FMP_THEME_CENTER_1939",
+  "runtime_asset": "FMP_ThemeCenter_Assembled_Runtime_v005.glb",
+  "era": 1939,
+  "source_paths": {
+    "built_constraints": "research/pavilions/theme_center/THEME_CENTER_ASBUILT_CONSTRAINTS_v001.json",
+    "portals": "research/pavilions/theme_center/SHARED_PORTALS_v004.json",
+    "return_route": "research/pavilions/theme_center/RETURN_ROUTE_CLEARANCE_v004.json",
+    "transition": "research/pavilions/theme_center/HELICLINE_TRANSITION_v003.json",
+    "runtime_manifest": "research/pavilions/theme_center/ASSEMBLED_RUNTIME_v005.json"
+  },
+  "coordinate_contract": {
+    "source": "right-handed, Y-up, metres, model-local; site registration unresolved",
+    "unreal_preview": "[X,Z,Y]*100 centimetres, as documented by guest-flow v002; unverified in engine",
+    "world_registration_status": "UNREGISTERED",
+    "engine_axis_acceptance": "NOT_TESTED"
+  },
+  "verification_scope": {
+    "offline_manifest_crosscheck": "SUPPORTED",
+    "offline_glb_hash_and_static_structure": "REQUIRES_EXACT_LOCAL_V005_GLB",
+    "wolfram_numerical_crosscheck": "CALCULATED_2026_10_20",
+    "continuous_capsule_collision": "NOT_TESTED",
+    "actual_unreal_import": "NOT_TESTED",
+    "actual_unreal_navmesh_traversal": "NOT_TESTED",
+    "game_dev_normalization_or_package": "NOT_EXECUTED_LOCAL_RUNTIME_UNAVAILABLE",
+    "historical_portal_dimensions": "UNVERIFIED",
+    "site_registration": "UNREGISTERED",
+    "print_master_approval": "NOT_APPLICABLE_RUNTIME_DERIVATIVE"
+  },
+  "source_protection": {
+    "do_not_modify_original_watertight_print_models": true,
+    "preview_portal_dimensions_are_not_historical": true,
+    "do_not_claim_435_discrete_poses_prove_continuous_traversal": true,
+    "do_not_auto_promote_unregistered_geometry": true
+  }
+}
