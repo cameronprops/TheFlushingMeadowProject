@@ -1,0 +1,2023 @@
+{
+  "body_radius_m": 0.3,
+  "body_height_m": 1.8,
+  "crossing_x_range_m": [
+    -38,
+    -35
+  ],
+  "candidates": [
+    {
+      "floor_y_m": 14.0,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.2901530583411258
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.30363977100908485
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.0,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.3022757198025699
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.0,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.3012654209794273
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.0,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.30332704166424107
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.0,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.06724442939892517
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.30400123077950253
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.2178981210217476
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.0,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.16109695431859022
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.3039095241290411
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.2178981210217476
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.0,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.05995656325993676
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.263847205674583
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.30361645944254767
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.2178981210217476
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.0,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.19048861065021766
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.30192035468206174
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.30338041178104813
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.2178981210217476
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.0,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.2937867332200244
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.30285152076692395
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.2178981210217476
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.5,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.2901530583411258
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.19831437980137806
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.30363977100908485
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.5,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.3002549455183521
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.3022757198025699
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.5,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.3019325494271685
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.3005566018166854
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.5,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.26759309394194875
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.30020454492136595
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.5,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.23892420754044824
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.30400123077950253
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.5,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.24906601510536358
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.20863737489514816
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.5,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.05995656325993676
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.2942120788287903
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.11658077268040645
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.5,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.19048861065021766
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.30192035468206174
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.024606997452585433
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        }
+      ]
+    },
+    {
+      "floor_y_m": 14.5,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.2937867332200244
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.293064368812601
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.0,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.2901530583411324
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.2876459635273647
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.18687118398215685
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2759950322534149
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.0,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.3002549455183521
+        },
+        {
+          "node": "Helicline_Deck_and_Curved_Soffit",
+          "clearance_m": -0.09237704470018446
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.30332404805156593
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.0,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.3019325494271685
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2830630380132164
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.0,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.26759309394194875
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.27686815965620165
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.0,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.23892420754044824
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.11352515840718622
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.0,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.24906601510536358
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2768681479713265
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.0,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.05995656325993676
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.2942120788287903
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28306278739355706
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.0,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.19048861065021766
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.30192035468206174
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.30332392786351964
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.0,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.2937867332200244
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2759950322534149
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.5,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.2901530583411324
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.2876459635273647
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2759950322534149
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.5,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.3002549455183521
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.30332404805156593
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.5,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.3019325494271685
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.284108562499844
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.5,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.26759309394194875
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2850201184000919
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.5,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.23892420754044824
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.30130221510878297
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.5,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.23247983068160044
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2850201184000919
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.5,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.18936961012067025
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2841084446115028
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.5,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.07273812522920556
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.12256420539568502
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.30332392786351964
+        }
+      ]
+    },
+    {
+      "floor_y_m": 15.5,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.03459436804966032
+        },
+        {
+          "node": "Return_Bridge_Deck",
+          "clearance_m": -0.3037379647717455
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2759950322534149
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.0,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Helicline_Posts_-1",
+          "clearance_m": -0.23512173977453102
+        },
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.2621205358722401
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2864632400075168
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.0,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.15306292000502686
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3039156794215319
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.0,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Helicline_Rail_-1",
+          "clearance_m": -0.08937873908132651
+        },
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.284108562499844
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.0,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2850201184000919
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.0,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.30130221510878297
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.0,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2850201184000919
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.0,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2841084446115028
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.0,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3039156257646013
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.0,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2864632400075227
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.5,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28970380508285687
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.5,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3039156794215319
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.5,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.27604944423735256
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.5,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2850201184000919
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.5,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.30130221510878297
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.5,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2850201184000919
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.5,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2760493777287696
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.5,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3039156257646013
+        }
+      ]
+    },
+    {
+      "floor_y_m": 16.5,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28970380508285687
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.0,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28970380508285687
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.0,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3039156794215319
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.0,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.27604944423735256
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.0,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.18522761193814796
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.0,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.15135658079398767
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.0,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.18522761193814796
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.0,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2760493777287696
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.0,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3039156257646013
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.0,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28970380508285687
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.5,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.5,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.5,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.5,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.5,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.5,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.5,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.5,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 17.5,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.0,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.0,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.0,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.0,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.0,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.0,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.0,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.0,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.0,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29460924086080514
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.5,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25492339049409796
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.5,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25492339049409796
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.5,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25492339049409796
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.5,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25492339049409796
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.5,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25492339049409796
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.5,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25492339049409796
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.5,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25492339049409796
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.5,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25492339049409796
+        }
+      ]
+    },
+    {
+      "floor_y_m": 18.5,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25492339049409796
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.0,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.24490149042766435
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.0,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2582157075355947
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.0,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.25991207325624754
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.0,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.26304596260967195
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.0,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2691846965831664
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.0,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.26304596260967195
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.0,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2599120732562479
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.0,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2582157075355947
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.0,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.24490149042766435
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.5,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.24490149042766435
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.5,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2873291687651733
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.5,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28035818752272845
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.5,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28279166252206844
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.5,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2764424854559681
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.5,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28279166252206844
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.5,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28035818752272845
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.5,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28732916876517406
+        }
+      ]
+    },
+    {
+      "floor_y_m": 19.5,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.24490149042766435
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.0,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3026372911449682
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.0,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2945869576379748
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.0,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28035818752272845
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.0,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28279166252206844
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.0,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2764424854559681
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.0,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28279166252206844
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.0,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28035818752272845
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.0,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29458695763797565
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.0,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3026372911449698
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.5,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3026372911449682
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.5,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2945869576379748
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.5,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28035818752272845
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.5,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28279166252206844
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.5,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.23960774507004123
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.5,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28279166252206844
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.5,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.28035818752272845
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.5,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29458695763797565
+        }
+      ]
+    },
+    {
+      "floor_y_m": 20.5,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3026372911449698
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.0,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3026372911449682
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.0,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.0,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.0,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.0,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.0,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.0,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.0,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.0,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.3026372911449698
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.5,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2925594164848732
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.5,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.5,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.5,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.5,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.5,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.5,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.5,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 21.5,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 22.0,
+      "center_z_m": -4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.2996762871327562
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    },
+    {
+      "floor_y_m": 22.0,
+      "center_z_m": -3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 22.0,
+      "center_z_m": -2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 22.0,
+      "center_z_m": -1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 22.0,
+      "center_z_m": 0.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 22.0,
+      "center_z_m": 1.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 22.0,
+      "center_z_m": 2.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 22.0,
+      "center_z_m": 3.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29255941648487266
+        }
+      ]
+    },
+    {
+      "floor_y_m": 22.0,
+      "center_z_m": 4.0,
+      "blockers": [
+        {
+          "node": "Trylon_Face_3_Frame",
+          "clearance_m": -0.29967628713275324
+        },
+        {
+          "node": "Trylon_Hollow_Exterior",
+          "clearance_m": -0.027338066242693804
+        }
+      ]
+    }
+  ],
+  "limitations": "Discrete straight crossings only; not exhaustive path search or historical proof",
+  "source_sha256": "a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5",
+  "clear_candidates": 0
+}
