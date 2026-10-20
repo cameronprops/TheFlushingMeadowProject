@@ -211,3 +211,42 @@ Next acceptance gate: native Unreal collision and continuous capsule traversal w
 the actual player configuration. If no engine runtime is available, apply the
 existing offline screening approach to the wider Trylon return route rather than
 repeat this completed local transition screen.
+
+
+## 2026-10-19: wider Trylon return route is blocked
+
+Extended the existing clearance screen through the four provisional return slabs,
+ending at the v003 transition entry. Sampled 435 poses on three lateral tracks
+at no more than 0.25 m longitudinal spacing, using the previous 0.6 m diameter,
+1.8 m tall test body and 0.05 m floor lift. Source/overlay hashes remain fixed.
+
+Two source meshes intersect the sampled body envelopes:
+- `Trylon_Face_3_Frame`: 21 affected poses, including entrance and exit crossings.
+  Worst sphere center: [-36.829897, 17.399600, -3.150000] m; signed surface
+  clearance -0.303124 m using the inflated covering spheres.
+- `Helicline_Rail_-1`: eight affected poses near the return exit.
+  Worst sphere center: [-36.337983, 16.199600, -3.750000] m; signed surface
+  clearance -0.285576 m.
+
+Coordinates are model-local Y-up metres. These are surface contacts, not historical
+measurements or Unreal collision results. The route is explicitly BLOCKERS_FOUND.
+Neither obstacle was deleted, hidden or modified to make the screen pass.
+
+Four existing calculation tests pass. The prior 63-pose transition result was
+rerun: poses, findings and reported nearest-surface distances match exactly.
+A candidate pruning optimization was removed because it changed the meaning of
+reported minimum distances, even though the collision findings agreed.
+
+[435-pose report](RETURN_ROUTE_CLEARANCE_v001.json).
+[Code and results archive](https://drive.google.com/file/d/1uzBGKYwxz6oSJ7v_cfeICHh1lSmyxajl/view),
+SHA-256 `bcc1d066d982292eb9981ffcc60de0b9a628763a47387b9beb0af26d9590d2ff`.
+
+```bash
+python tools/world_build/audit_transition_clearance.py SOURCE.glb V003_OVERLAY.glb REPORT.json return
+```
+
+Next: inspect the specific frame members and rail at the recorded crossings.
+Determine whether an evidence-supported opening or a revised provisional path is
+appropriate, retaining original geometry. Continuous corner turns, solid
+containment and native Unreal traversal remain untested. Do not describe the
+complete return route as walkable based on the clear local transition.
