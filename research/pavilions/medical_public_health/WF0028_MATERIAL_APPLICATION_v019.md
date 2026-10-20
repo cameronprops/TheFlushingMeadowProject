@@ -1,0 +1,3 @@
+# WF0028 v019 material application
+
+2026-10-20: Generated an additive material-assigned version of the v017 107-part GLB using the v018 source-linked material kit. 76 components received five PBR families; 31 debug, zone, or landscape nodes intentionally retained legacy appearance. All 107 components classified after fixing four missed partition assignments. Original vertex arrays and transforms unchanged, GLB reimport preserved component count and material names. No artwork textures, calibrated historical color samples, or Unreal shader tests. The JSON assignment report, material board, source GLB, procedural material textures, and output GLB are packaged in WF0028_1939_Material_Assigned_v019.zip. Historical reconstruction remains interpretive.
