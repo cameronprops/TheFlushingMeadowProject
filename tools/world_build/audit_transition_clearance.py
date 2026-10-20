@@ -19,11 +19,12 @@ def sphere_screen(mesh,centers,radius):
         best[start:start+32]=dist
     return best-radius
 
-def audit(source,overlay,route="transition"):
+def audit(source,overlay,route="transition",*,expected_overlay_sha=OVERLAY_SHA,extra_hidden=()):
     if route not in ("transition","return"):raise ValueError("Unknown route")
     source,overlay=Path(source),Path(overlay)
+    hidden=HIDDEN|set(extra_hidden)
     if hashlib.sha256(source.read_bytes()).hexdigest()!=SOURCE_SHA:raise ValueError('Unknown source')
-    if hashlib.sha256(overlay.read_bytes()).hexdigest()!=OVERLAY_SHA:raise ValueError('Unknown overlay')
+    if hashlib.sha256(overlay.read_bytes()).hexdigest()!=expected_overlay_sha:raise ValueError('Unknown overlay')
     scenes=[('source',trimesh.load(source,force='scene')),('overlay',trimesh.load(overlay,force='scene'))]
     transition=world_mesh(scenes[1][1],'PROVISIONAL_Helicline_Surface_Transition_r3')
     start=np.array([-32.71935121424215,15.849599838256836,-9.050683803084627])
@@ -69,7 +70,7 @@ def audit(source,overlay,route="transition"):
     checked=[];findings=[]
     for origin,scene in scenes:
         for node in sorted(scene.graph.nodes_geometry):
-            if origin=='source' and node in HIDDEN:continue
+            if origin=='source' and node in hidden:continue
             m=world_mesh(scene,node)
             if np.any(m.bounds[1]<lo) or np.any(m.bounds[0]>hi):continue
             tri=m.triangles
@@ -84,11 +85,11 @@ def audit(source,overlay,route="transition"):
                 findings.append({'origin':origin,'node':node,'affected_pose_indices':sorted(set(owners[i] for i in indices)),
                   'worst_pose_index':owners[worst],'sphere_center_m':centers[worst].tolist(),
                   'minimum_surface_clearance_m':float(clearance[worst])})
-    return {'schema':'fmp.transition-clearance.v1','source_sha256':SOURCE_SHA,'overlay_sha256':OVERLAY_SHA,
+    return {'schema':'fmp.transition-clearance.v1','source_sha256':SOURCE_SHA,'overlay_sha256':expected_overlay_sha,
       'body_assumption':{'radius_m':radius,'height_m':height,'floor_lift_m':floor_lift,'axis_cover_radius_m':cover_radius,
       'note':'Provisional test body, not a configured Unreal character or accessibility standard'},
       'route':route,'pose_count':len(poses),'poses':poses,'checked_nodes':checked,'findings':findings,
-      'hidden_source_nodes':sorted(HIDDEN),'status':'BLOCKERS_FOUND' if findings else 'NO_SAMPLED_SURFACE_CONTACTS',
+      'hidden_source_nodes':sorted(hidden),'status':'BLOCKERS_FOUND' if findings else 'NO_SAMPLED_SURFACE_CONTACTS',
       'acceptance':'OPEN_NATIVE_COLLISION_AND_CONTINUOUS_SWEEP',
       'limits':['Discrete poses on selected route only; no continuous motion or corner-turn coverage',
        'Surface screen does not detect a capsule entirely inside a closed solid',
