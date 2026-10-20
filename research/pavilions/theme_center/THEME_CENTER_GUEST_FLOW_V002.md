@@ -250,3 +250,38 @@ Determine whether an evidence-supported opening or a revised provisional path is
 appropriate, retaining original geometry. Continuous corner turns, solid
 containment and native Unreal traversal remain untested. Do not describe the
 complete return route as walkable based on the clear local transition.
+
+
+## 2026-10-19: crossing alternatives tested; no corrected route claimed
+
+Inspected disconnected members of the frame and rail at the blocked crossings.
+A preliminary positive-Z scan at the existing walking elevation found that
+crossings clearing the diagonal frame at Z=7.5 through 9.5 m instead intersect
+the Trylon exterior shell.
+
+A recorded second scan evaluated **153 straight-crossing candidates**:
+17 floor elevations from 14 to 22 m at 0.5 m increments, nine center-Z values
+from -4 to +4 m at 1 m increments. Each crosses X=-38 to -35 m at 13 stations,
+three lateral tracks, and 13 capsule-axis sphere samples. Body assumptions
+remain radius 0.3 m, height 1.8 m, floor lift 0.05 m. **Zero candidates clear
+the surface screen.** This is a bounded local search, not proof that every
+possible route is impossible.
+
+[Candidate measurements](TRYLON_OPENING_FEASIBILITY_v001.json).
+[3D review and reproducible scan package](https://drive.google.com/file/d/1Hm8qoPqXRtd4W3hcfiFBHH-YE0FU9kU2/view).
+ZIP SHA-256: `fbfee272baa5a2db0f3dd71336c1833701e34a7d8dae9d664e0a3c8dc708a052`.
+The diagnostic GLB colors source obstacles orange, provisional route blue and
+worst-contact spheres red. It is a review scene, not a runtime replacement.
+
+Run from repository root:
+```bash
+python -m tools.world_build.scan_trylon_opening SOURCE.glb REPORT.json
+```
+
+No source member was removed or architecture cut to force a pass. The requested
+route correction remains unresolved. Next architectural task: reconcile the
+modeled east return opening and frame schedule against the archived dimension
+workbook and period drawings, then derive a separate provisional runtime revision
+if the evidence supports it. Preserve the original source and report remaining
+uncertainty. Do not repeat the local crossing search or describe v003 as a
+completed walkable return route.
