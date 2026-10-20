@@ -2,6 +2,21 @@
 
 **Status 2026-10-19:** This is the FMP master example for **every building's** evidence-based reconstruction workflow. The Trylon and Perisphere are NOT restarted. They already exist together with Democracity and the Helicline as a preserved, multi-part scene and earlier Rhino builders.
 
+
+## Latest usable assembly: v005 (2026-10-20)
+
+[Download the assembled runtime package](https://drive.google.com/file/d/1OzFZRkHCxN3jMBGwH3Lwdbx0pFJIJhM0/view). Open its single GLB to inspect the full Theme Center with v004 circulation already applied. [Assembly manifest](ASSEMBLED_RUNTIME_v005.json).
+
+The derivative retains all 510 source nodes, original object IDs, materials, textures, hierarchy and source binary data. Five superseded source mesh bindings are disabled; 62 overlay nodes and one grouping node are appended. The scene has 573 reachable nodes and 558 visible mesh-bearing nodes. Original staging remains unchanged.
+
+Validation: loaded through Trimesh and compared all 558 retained/added mesh nodes against their respective input. Vertex arrays, triangle arrays and world transforms match; the five superseded meshes do not render. glTF scene reachability, mesh/accessor references and buffer ranges checked. Source binary, source arrays, transforms and metadata preservation are asserted by the assembler. Bounds are X [-172.5,172.5], Y [-0.35052,185.927994], Z [-251.5,173.5] metres.
+
+Reproduce with `python tools/world_build/assemble_theme_center_v005.py SOURCE_STAGING.glb V004_OVERLAY.glb OUTPUT_DIR`. Exact input hashes are enforced.
+
+**Limits:** provisional aperture dimensions, frame cut ends, rail returns and historical bridge levels remain unresolved. No Unreal import, collision, navigation or playability claim. This is not a print master.
+
+**Next executable step:** import this single assembled GLB into Unreal; inspect scale, materials and object hierarchy, then configure collision and test visitor traversal. Resolve structural reframing and rail return details against supporting evidence before treating these openings as finished architecture.
+
 ## Recover the ORIGINAL geometry before drawing anything new
 
 - [510-node Theme Center staging GLB](https://drive.google.com/file/d/197H4eTaLAFYEyfPSFFh8wp7_2B5IflIl/view) — SHA-256 `a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5`, **Y-up, metres**. Preserve all 510 existing scene nodes.
