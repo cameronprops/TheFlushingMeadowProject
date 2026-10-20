@@ -1,5 +1,9 @@
 # FMP / WF0001 + WF0002 — circulation and shell refinement v0.2
 
+> **Latest runtime topology test: [v004 shared apertures](SHARED_PORTALS_v004.md).** Older blocked-route findings below are history. v004 clears the same 435 sampled poses using provisional derivative frame/rail openings; historical structure and native Unreal traversal remain unvalidated.
+> [Download v004 model, before/after image, code and results](https://drive.google.com/file/d/1Z01QmV6EfgElqiBhVUIg7nIvd_pucZdi/view). Package SHA-256: `c9230e725754be55dbde705931a991d9439e0e1bf9b0135591a83bdbb16f5028`.
+
+
 **2026-10-19: provisional modeled geometry; native Unreal and printed assembly not certified.**
 
 ## Build inputs
