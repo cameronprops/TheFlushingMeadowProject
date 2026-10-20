@@ -59,3 +59,15 @@ Source references support the general architectural vocabulary, not exact new ge
 - Build pavilion context from dated photo/plan evidence, swapping anonymous masses for real geometry when researched.
 - Preview in Unreal and Worldwright, confirming Y-up conversion, local scale and visibility, then add collision proxies.
 - Continue reconstruction sections building-by-building without blocking on full survey registration.
+
+## 2026-10-19: v002 input integrity gate
+
+The existing position-controlled `build_constitution_mall_v002.py` now requires the preserved 510-node source GLB SHA-256 `a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5` **before parsing or appending geometry**. Node-count verification by itself was insufficient: unrelated or altered GLBs could have the same number of nodes. The original source remains read-only. The v002 build continues to exclude the six anonymous pavilion masses from the original interpretive release.
+
+Added `tools/world_build/test_constitution_mall_v002_source.py` covering wrong-source refusal, source nonmutation on rejection and missing-source rejection. The tests were committed but **not executed in an installed Python environment in this change**; only the repository edits were verified through the GitHub connector. Run:
+
+```bash
+python -m unittest -v tools.world_build.test_constitution_mall_v002_source
+```
+
+Next artifact gate: regenerate v002 from the verified source GLB, archive the model and manifest, then inspect ground and walkable junction continuity before reporting any route as traversable. Do not mark collision, Unreal import, physical accessibility, site registration, or period footprint accuracy certified.
