@@ -36,3 +36,20 @@ Present state: **A partially or fully achieved for all seven after this batch; B
 Ask New York State Library for a high-resolution reproduction of Box 5 Folder 11, including scan or photography rights and any plan reverse/legend. Use the LOC photograph to cross-check envelope details. Then compare with the existing `WF0028` live catalog record and trace the floorplan. There is no permission to promote guesses into a surveyed fairground coordinate.
 
 No model generated or new world GLB exported in this batch; no Unreal tests performed.
+
+## 2026-10-19 follow-up: WF0028 individual pass
+
+See [WF0028 research dossier](../medical_public_health/WF0028_MEDICAL_PUBLIC_HEALTH_RECONSTRUCTION_v001.md).
+A second explicitly identified drawing collection is NYPL World's Fair Incorporated
+records C2.3, Box 206 Folder 10. NYSL Box 5 Folder 11 remains the other plan
+holding. Documented Hildreth Meière commission views show Medical/Public Health
+and Science/Education as an architectural **complex**. The public description
+includes nine artworks, several named entrance/facade views and the 14 by 110 ft
+*Picnic* mural. Only the mural measurement has been transcribed; no architectural
+building dimensions or inferred rooms have been adopted.
+
+Five additional archive/documentation leads NEAR39-S017 to NEAR39-S021
+now join the shared source register. No historical plan scans obtained; no
+model rebuilt, no site registration accepted, no native Unreal validation run.
+Next task: source-acquisition and dimension-controlled tracing of both original
+drawing holdings before placing wall geometry.
