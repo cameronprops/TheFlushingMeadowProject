@@ -11,3 +11,7 @@ Six focused local tests pass: additive preservation, component count, uniqueness
 Local ZIP SHA-256: `a702d05cfced1031afaea5e5eb93fb93fef70ddda42b51cc07873bdad76b4432`.
 
 Further production: confirm courtyard access in NYSL/NYPL floorplans before modifying perimeter walls, match photo-based details and historical exhibit placement, run continuous capsule path checks. Keep previous v001/v002 releases.
+
+## Archived release
+
+[WF0028_1939_Interpretive_v003.zip on project Google Drive](https://drive.google.com/file/d/1iyokCcVV7KM9Yfsh4N-hibl19LjgT416/view?usp=drivesdk), archive folder `11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk`. The package contains the v001, v002 and v003 Python builders, GLB, manifest and tests. ZIP checksum is recorded above.
