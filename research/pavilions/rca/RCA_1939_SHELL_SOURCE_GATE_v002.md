@@ -42,3 +42,57 @@ Built by a separate source script under FMP archive release **RCA_1939_Research_
 6. Publish versioned source GLB, DXF, documented dimension schedule and tests into FMP master database.
 
 RCA source-gate blocking item: **CRE351 high-resolution drawings**, not steel. After that, move the project's main modeling focus to all fairground paths, named roads, service routes, dated water/storm/sanitary utilities and temporal alignment analysis.
+
+## Interior experience and plan reconstruction track (2026-10-19)
+
+Interior artifacts must be tied to *rooms* only after the period plan and section
+have been inspected. The present 29-part preview is an **undivided provisional
+hall**, not evidence that the completed pavilion had no internal partitions.
+
+New evidence register:
+[`RCA_1939_INTERIOR_EXHIBIT_REGISTER_v001.csv`](RCA_1939_INTERIOR_EXHIBIT_REGISTER_v001.csv).
+Its records document possible exhibit-modeling targets but deliberately leave
+`room_id` blank and `location_status=ROOM_UNLOCATED`. Exhibit presence is not
+proof of the room used, exact exhibit installation dates, or visitor sequence.
+
+### Trace and model sequence
+
+1. Acquire CRE351-001, April 11 1938: digitize external wall perimeter,
+   partition centerlines, openings, door swings, stair locations, dimension
+   strings and labeled spaces. Keep sheet scale, scan crop, grid and drawing
+   revision in the trace metadata.
+2. Acquire CRE351-002: digitize the second floor separately. Do not carry an
+   inferred first-floor footprint upward without evaluating setbacks and voids.
+3. Cross-check CRE351-005 sections with both plans for actual floor-to-floor
+   elevations, opening heights, stair/ramp connections, ceiling clearances and
+   any mezzanine or overlook.
+4. Compare CRE351-003 roof plan and CRE351-004 elevations to the traced wall
+   envelope. Treat the present round roof features as hypotheses until checked.
+5. Define persistent `WF0009-F01-R###` room IDs and `WF0009-F01-D###`
+   opening IDs *after tracing*, with polygon coordinates in local metres, evidence
+   references, uncertainty and public/staff access. Use separate objects for
+   walls, floors, doors, exhibits, lighting and roof.
+6. Associate documented exhibits with rooms only when plan legends, labels,
+   photographic sightlines or other source evidence support the assignment.
+   Preserve alternatives and unresolved positions without guessed placements.
+7. Build separate public visitor path graph and service graph, recording entrances,
+   stair endpoints, queue areas and obstacles. Screen with test-agent profiles,
+   then perform actual collision and traversal validation in Unreal.
+
+Prioritized exhibit references: the transparent Lucite Phantom Teleceiver
+(https://spectrum.ieee.org/rca-tv), period live television camera demonstration
+records and the *Radio Living-Room of Tomorrow*
+(https://www.earlytelevision.org/worlds_fair.html).
+These are **objects and activities to study**, not a verified tour itinerary.
+
+High-resolution CRE351 scans remain the architectural blocker. Subscription
+and reproduction access must follow the holding institution's policies. The
+metadata catalog and thumbnails alone cannot resolve wall positions. No interior
+floorplan geometry was modified, no Unreal simulation was run, and no new room
+coordinates were asserted in this update.
+
+Next executable modeling gate: obtain a usable CRE351-001 image with reproduction
+rights, create a measured trace with independent control checks, and register its
+local origin to the existing provisional shell without adjusting the shell to
+force a fit. Once CRE351-002 and CRE351-005 are traced, generate qualified room
+volumes and navigation endpoints.
