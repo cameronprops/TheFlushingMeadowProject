@@ -1,0 +1,81 @@
+(* Non-metric 3D photo registration QA for historic Theme Center.
+   Coordinates: model-local X,Y,Z (metres), Y up. Pixel origin: top left.
+   DLT fit checks controls/holdouts. Results NEVER authorize geometry changes.
+   Source lens distortion, intrinsic calibration, and 3D metric pose remain open. *)
+ClearAll[FMPProject3D, FMPFrameProjective3DGate];
+FMPProject3D[p_?MatrixQ, x_List] := Module[{q},
+ If[Dimensions[p]!={3,4}||Length[x]!=3||!VectorQ[x,NumericQ],
+  Return[Missing["InvalidPoint"]]];
+ q=N[p].Append[N[x],1.];
+ If[Abs[q[[3]]]<10^-11,Return[Missing["AtInfinity"]]];
+ N[Take[q,2]/q[[3]]]
+];
+FMPFrameProjective3DGate[frame_Association]:=Module[
+ {req,obs,ids,dims,fit,hold,xyz,uv,a,svd,p,depth,prFit,prHold,
+  errFit,errHold,sigma},
+ req={"source_id","frame_id","source_uri","construction_state",
+ "annotator","coordinate_contract","image_size_px","controls"};
+ If[!AllTrue[req,KeyExistsQ[frame,#]&],
+  Return[<|"status"->"MISSING_PROVENANCE"|>]];
+ If[frame["coordinate_contract"]=!="GLTF_Y_UP_METRES_UNREGISTERED",
+  Return[<|"status"->"COORDINATE_FRAME_MISMATCH"|>]];
+ If[!AllTrue[{"source_id","frame_id","source_uri","construction_state","annotator"},
+   StringQ[frame[#]]&&StringLength[frame[#]]>0&],
+  Return[<|"status"->"INVALID_PROVENANCE"|>]];
+ dims=frame["image_size_px"];
+ If[!MatchQ[dims,{_Integer?Positive,_Integer?Positive}],
+  Return[<|"status"->"INVALID_IMAGE_DIMENSIONS"|>]];
+ obs=frame["controls"];
+ If[!ListQ[obs]||!AllTrue[obs,AssociationQ],
+  Return[<|"status"->"INVALID_CONTROLS"|>]];
+ ids=Lookup[obs,"landmark_id",Missing["MissingID"]];
+ If[!AllTrue[ids,StringQ]||Length[Union[ids]]!=Length[ids],
+  Return[<|"status"->"INVALID_LANDMARK_IDS"|>]];
+ If[!AllTrue[obs,
+   MatchQ[Lookup[#,"model_xyz_m",Null],{_?NumericQ,_?NumericQ,_?NumericQ}]&&
+   MatchQ[Lookup[#,"image_xy_px",Null],{_?NumericQ,_?NumericQ}]&&
+   TrueQ[NumericQ[Lookup[#,"pixel_uncertainty",Null]]&&
+    Lookup[#,"pixel_uncertainty",0]>0]&&
+   MemberQ[{"fit","holdout"},Lookup[#,"role",Null]]&],
+  Return[<|"status"->"INVALID_OBSERVATION_FIELDS"|>]];
+ If[!AllTrue[obs,With[{q=#["image_xy_px"]},
+   0<=q[[1]]<dims[[1]]&&0<=q[[2]]<dims[[2]]]&],
+  Return[<|"status"->"IMAGE_POINT_OUTSIDE"|>]];
+ fit=Select[obs,#["role"]==="fit"&];
+ hold=Select[obs,#["role"]==="holdout"&];
+ If[Length[fit]<6||Length[hold]<2,
+  Return[<|"status"->"INSUFFICIENT_3D_CONTROLS"|>]];
+ xyz=N[Lookup[fit,"model_xyz_m"]];
+ uv=N[Lookup[fit,"image_xy_px"]];
+ If[MatrixRank[N[Map[#-First[xyz]&,Rest[xyz]]]]<3,
+  Return[<|"status"->"COPLANAR_3D_CONTROLS"|>]];
+ a=Flatten[MapThread[Function[{s,t},
+   With[{x=s[[1]],y=s[[2]],z=s[[3]],u=t[[1]],v=t[[2]]},
+   {{x,y,z,1.,0.,0.,0.,0.,-u*x,-u*y,-u*z,-u},
+    {0.,0.,0.,0.,x,y,z,1.,-v*x,-v*y,-v*z,-v}}]],
+   {xyz,uv}],1];
+ If[MatrixRank[N[a]]<11,
+  Return[<|"status"->"DEGENERATE_PROJECTIVE_SYSTEM"|>]];
+ svd=SingularValueDecomposition[N[a]];
+ p=Partition[svd[[3,All,-1]],4];
+ depth=(Last[p.Append[#,1.]]&)/@xyz;
+ If[Median[depth]<0,p=-p;depth=-depth];
+ If[!AllTrue[depth,#>0&],
+  Return[<|"status"->"INCONSISTENT_SIGNED_DEPTH"|>]];
+ prFit=FMPProject3D[p,#]&/@xyz;
+ prHold=FMPProject3D[p,#]&/@Lookup[hold,"model_xyz_m"];
+ If[!FreeQ[Join[prFit,prHold],_Missing],
+  Return[<|"status"->"SINGULAR_PROJECTION"|>]];
+ errFit=N[MapThread[EuclideanDistance,{prFit,uv}]];
+ errHold=N[MapThread[EuclideanDistance,{prHold,Lookup[hold,"image_xy_px"]}]];
+ sigma=N[errHold/Lookup[hold,"pixel_uncertainty"]];
+ <|"status"->If[Max[errHold]<=6.&&Max[sigma]<=3.,
+  "3D_PROJECTIVE_FIT_REVIEW_REQUIRED","HOLDOUT_REJECTED"],
+ "projective_matrix"->p,"fit_count"->Length[fit],
+ "holdout_count"->Length[hold],"fit_rms_px"->Sqrt[Mean[errFit^2]],
+ "holdout_rms_px"->Sqrt[Mean[errHold^2]],
+ "holdout_errors_px"->errHold,"holdout_errors_sigma"->sigma,
+ "metric_intrinsics_calibrated"->False,"metric_pose_certified"->False,
+ "historical_geometry_release_allowed"->False,
+ "requires_source_review"->True|>
+];

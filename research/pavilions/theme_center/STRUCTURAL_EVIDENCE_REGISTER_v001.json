@@ -142,6 +142,30 @@
       "maximum_independent_holdout_error_in_declared_sigma": 3,
       "source_pose_certified": false,
       "status": "CODE_TESTED_NO_HISTORICAL_ANNOTATIONS"
+    },
+    "projective3d_gate_v003": {
+      "code": "tools/world_build/theme_center_projective_3d_gate_v003.wl",
+      "tests": "tests/theme_center_projective_3d_gate_tests.wl",
+      "status": "12_SYNTHETIC_TESTS_PASSED_ZERO_ARCHIVAL_3D_CORRESPONDENCES",
+      "coordinate_contract": "GLTF_Y_UP_METRES_UNREGISTERED",
+      "observed_model_xyz_unit": "metres",
+      "minimum_3d_fit_points": 6,
+      "minimum_independent_holdout_points": 2,
+      "checks": [
+        "spatial rank 3",
+        "projective rank 11",
+        "positive camera depth for fit points",
+        "heldout residual <=6 px",
+        "heldout residual <=3 sigma"
+      ],
+      "limitations": [
+        "projective DLT may absorb unknown focal length and distortions; no metric intrinsics/pose",
+        "DLT direct fit is not robust to mismatched fit landmarks; source review mandatory",
+        "no triangulated 3D location for unknown landmarks",
+        "no historical as-built geometry acceptance"
+      ],
+      "permitted_export": "DATA_QA_NOT_GAME_ASSET",
+      "historical_landmarks_measured": 0
     }
   },
   "geometry_gate": {
@@ -150,7 +174,7 @@
     "perisphere_horiz_truss_latitudes": "UNKNOWN",
     "helicline_column_locations": "UNKNOWN",
     "planar_image_registration": "V002_HOLDOUT_GATE_AVAILABLE_NOT_CALIBRATED",
-    "true_3d_camera_registration": "NOT_IMPLEMENTED",
+    "true_3d_camera_registration": "NONMETRIC_3D_PROJECTIVE_FIT_AVAILABLE_REQUIRES_REAL_CORRESPONDENCES",
     "historical_asset_release": "BLOCKED_FOR_UNRESOLVED_DETAILS"
   },
   "game_development_handoff": {
