@@ -1,0 +1,8 @@
+building_key,existing_place_id,building_name,period,plans_status,photos_status,model_status,site_registration,next_model_gate
+BUSINESS_SYSTEMS_INSURANCE,UNASSIGNED,Business Systems and Insurance Building,1939,NOT_LOCATED,ARCHIVAL_IMAGE_RECORDS_FOUND,NOT_BUILT,UNREGISTERED,Acquire scaled footprint drawing and verify site placement before envelope
+MEDICAL_PUBLIC_HEALTH,WF0028,Medical and Public Health Buildings,1939,PLAN_HOLDING_CONFIRMED,PHOTO_DIGITAL_FOUND,NOT_BUILT,UNREGISTERED,Obtain NYSL Box 5 Folder 11 plan and check exterior photo
+HALL_PHARMACY,UNASSIGNED,Hall of Pharmacy,1939,NOT_LOCATED,NOT_VERIFIED,NOT_BUILT,UNREGISTERED,Confirm separate-building identity and find dated exterior evidence
+SCIENCE_EDUCATION,UNASSIGNED,Science and Education Building,1939,NOT_LOCATED,NOT_VERIFIED,NOT_BUILT,UNREGISTERED,Confirm architectural collection and dated photo identifiers
+COMMUNICATIONS_BUILDING,UNASSIGNED,Communications Building,1939,EXHIBIT_DESIGN_DRAWING_ONLY,EXHIBIT_RENDERING_FOUND,NOT_BUILT,UNREGISTERED,Acquire architectural floorplan and test exhibit assignment
+ATT_BUILDING,WF0010,AT&T Building,1939,NOT_LOCATED,NOT_VERIFIED,NOT_BUILT,UNREGISTERED,Locate dated phone exhibit photographs and footprint
+RCA_BUILDING,WF0009,RCA Building,1939,ARCHITECTURAL_SHEETS_LISTED,ARCHIVAL_PHOTOS_LEAD,PROVISIONAL_SHELL,UNREGISTERED,Acquire CRE351-001 and trace interior
