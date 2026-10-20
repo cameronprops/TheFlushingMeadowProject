@@ -76,10 +76,7 @@ def audit(source,overlay,route="transition"):
             mask=np.all(tri.max(axis=1)>=lo,axis=1)&np.all(tri.min(axis=1)<=hi,axis=1)
             if not mask.any():continue
             local=trimesh.Trimesh(vertices=m.vertices,faces=m.faces[mask],process=False)
-            nearby=np.all(centers>=m.bounds[0]-cover_radius,axis=1)&np.all(centers<=m.bounds[1]+cover_radius,axis=1)
-            if not nearby.any():continue
-            clearance=np.full(len(centers),np.inf)
-            clearance[nearby]=sphere_screen(local,centers[nearby],cover_radius)
+            clearance=sphere_screen(local,centers,cover_radius)
             checked.append({'origin':origin,'node':node,'triangles_screened':int(mask.sum()),'minimum_surface_clearance_m':float(clearance.min())})
             indices=np.flatnonzero(clearance<0)
             if len(indices):
