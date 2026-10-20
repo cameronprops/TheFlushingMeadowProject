@@ -1,0 +1,4 @@
+bed_id,era_year,name,garden_or_zone,nearby_building_id,planting_role,soil_or_hardscape,source_id,geometry_geojson,coordinate_frame,geometry_status,season,notes
+BED39-NIPPON,1939,Nippon Garden planting plan,Japanese Pavilion,,FORMAL_GARDEN,,HORT39-LIU-NIPPON,,UNREGISTERED,NAMED_AREA,,"Detailed original planting plan exists, individual beds and taxa need tracing"
+BED39-JAPAN,1939,Japanese Pavilion garden plan,Japanese Pavilion,,FORMAL_GARDEN,,HORT39-LIU-JAPAN,,UNREGISTERED,NAMED_AREA,,December 1939 drawing date may indicate proposal for later installation
+BED39-MALL,1939,Constitution Mall floral beds,Constitution Mall,,FORMAL_BEDDING,,HORT39-NYPL,,UNREGISTERED,NAMED_AREA,,Site-level concept; actual species and plots pending source review
