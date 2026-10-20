@@ -1,0 +1,2087 @@
+{
+  "schema": "fmp.atlas-asset-registry.v1",
+  "assets": [
+    {
+      "entity_id": "WF0001",
+      "display_name": "Trylon",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "PROVISIONAL_MODEL"
+    },
+    {
+      "entity_id": "WF0002",
+      "display_name": "Perisphere",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "PROVISIONAL_MODEL"
+    },
+    {
+      "entity_id": "WF0003",
+      "display_name": "Democracity",
+      "entity_type": "EXHIBIT",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "INTERPRETIVE_MODEL"
+    },
+    {
+      "entity_id": "WF0004",
+      "display_name": "Helicline",
+      "entity_type": "PATH",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "PROVISIONAL_MODEL"
+    },
+    {
+      "entity_id": "WF0005",
+      "display_name": "Theme Center Pool and Grounds",
+      "entity_type": "WATER",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "PROVISIONAL_MODEL"
+    },
+    {
+      "entity_id": "WF0006",
+      "display_name": "Federal Building",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "WF0007",
+      "display_name": "Hall of Nations",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "WF0008",
+      "display_name": "New York City Building",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "WF0009",
+      "display_name": "RCA Building",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "PLANS_LOCATED"
+    },
+    {
+      "entity_id": "WF0010",
+      "display_name": "AT&T Building",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "WF0012",
+      "display_name": "General Motors Building",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "PLANS_LOCATED"
+    },
+    {
+      "entity_id": "WF0013",
+      "display_name": "Futurama",
+      "entity_type": "EXHIBIT",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "WF0020",
+      "display_name": "Westinghouse Building",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "WF0021",
+      "display_name": "Elektro",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "WF0022",
+      "display_name": "Sparko",
+      "entity_type": "SITE_FEATURE",
+      "years": "1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "WF0028",
+      "display_name": "Medical and Public Health Buildings",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "PLANS_LOCATED"
+    },
+    {
+      "entity_id": "WF0030",
+      "display_name": "Consumer Interests Building",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "PLANS_LOCATED"
+    },
+    {
+      "entity_id": "WF0031",
+      "display_name": "Applied Arts Building",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "PLANS_LOCATED"
+    },
+    {
+      "entity_id": "WF0042",
+      "display_name": "Aquacade",
+      "entity_type": "BUILDING",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "WF0050",
+      "display_name": "World's Fair Rail and Subway Access",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939-1940",
+      "source": "places",
+      "status": "RESEARCH_PENDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0001",
+      "display_name": "Aerial Tower Ride and Waffle Restaurant",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0002",
+      "display_name": "African Pavilion",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0003",
+      "display_name": "Alaska",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0004",
+      "display_name": "All-State Properties and Macy's (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0005",
+      "display_name": "American Express",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0006",
+      "display_name": "American-Israel Pavilion",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0008",
+      "display_name": "Amphicar Rides (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0009",
+      "display_name": "Amphitheatre (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0010",
+      "display_name": "Arlington Hat",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0011",
+      "display_name": "Atomedic Hospital",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0012",
+      "display_name": "Austria",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0013",
+      "display_name": "Auto Thrill Show",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0014",
+      "display_name": "Avis Antique Car Ride",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0015",
+      "display_name": "Avis Pan American Highway Rides (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0016",
+      "display_name": "Bargreen Buffet and Canadian Beer Parlor (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0017",
+      "display_name": "Belgium",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0018",
+      "display_name": "Bell System",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0019",
+      "display_name": "Berlin",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0020",
+      "display_name": "Better Living Center",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0021",
+      "display_name": "Billy Graham",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "WORSHIP_STRUCTURE_OR_PROGRAM_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0022",
+      "display_name": "Bounty (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0023",
+      "display_name": "Bourbon Street",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0024",
+      "display_name": "Boy Scouts of America",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0025",
+      "display_name": "Brass Rail snack bars",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0026",
+      "display_name": "British Lion Pub",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0027",
+      "display_name": "Caribbean",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0028",
+      "display_name": "Carnival (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0030",
+      "display_name": "Centralamerica and Panama",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0031",
+      "display_name": "Century Grill (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0032",
+      "display_name": "Christian Science",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0033",
+      "display_name": "Chrysler",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0034",
+      "display_name": "Chun King Inn",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0035",
+      "display_name": "Chunky Candy",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0036",
+      "display_name": "Churchill Center (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "WORSHIP_STRUCTURE_OR_PROGRAM_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0037",
+      "display_name": "Cities Service World's Fair Band of America",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0038",
+      "display_name": "Clairol",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0039",
+      "display_name": "Coca-Cola",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0040",
+      "display_name": "Continental Circus (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0041",
+      "display_name": "Continental Insurance",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0043",
+      "display_name": "Dancing Waters",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0044",
+      "display_name": "Demonstration Center (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0045",
+      "display_name": "Denmark",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0047",
+      "display_name": "Du Pont",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0048",
+      "display_name": "Dynamic Maturity",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0049",
+      "display_name": "Eastern Air Lines",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0050",
+      "display_name": "Eastman Kodak",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0051",
+      "display_name": "Equitable Life",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0052",
+      "display_name": "Festival of Gas",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0053",
+      "display_name": "Fiesta (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0054",
+      "display_name": "First National City Bank",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0055",
+      "display_name": "Florida",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0056",
+      "display_name": "Ford",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0057",
+      "display_name": "Formica",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0059",
+      "display_name": "Funland (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0061",
+      "display_name": "General Cigar",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0062",
+      "display_name": "General Electric",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0064",
+      "display_name": "General Motors",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "DOCUMENTED_SEPARATE_PAVILION"
+    },
+    {
+      "entity_id": "FMP64SUBJ0066",
+      "display_name": "Greece",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0068",
+      "display_name": "Guinea",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0069",
+      "display_name": "Hall of Education (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0070",
+      "display_name": "Hall of Free Enterprise",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0071",
+      "display_name": "Hall of Science",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0072",
+      "display_name": "Hawaii",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0073",
+      "display_name": "Hertz",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0074",
+      "display_name": "Hollywood, U.S.A.",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0075",
+      "display_name": "Hong Kong",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0076",
+      "display_name": "House of Good Taste",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0077",
+      "display_name": "Illinois",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0078",
+      "display_name": "India",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0079",
+      "display_name": "Indonesia",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0080",
+      "display_name": "International Business Machines",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0082",
+      "display_name": "Ireland",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0083",
+      "display_name": "Japan",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0084",
+      "display_name": "Jaycopter Ride",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0085",
+      "display_name": "Johnson's Wax",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0086",
+      "display_name": "Jordan",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0087",
+      "display_name": "Julimar Farm",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0088",
+      "display_name": "Kiddyland (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0089",
+      "display_name": "Lake Cruise",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0090",
+      "display_name": "Lebanon",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0091",
+      "display_name": "Les Poupees de Paris",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0092",
+      "display_name": "Lithuanian Wayside Cross",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0093",
+      "display_name": "Log Flume Ride",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0095",
+      "display_name": "Löwenbräu",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0096",
+      "display_name": "Louisiana",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0098",
+      "display_name": "Malaysia",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0099",
+      "display_name": "Maryland",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0100",
+      "display_name": "Masonic Center",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0101",
+      "display_name": "Mastro Pizza",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0102",
+      "display_name": "Medo Photo Supply",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0103",
+      "display_name": "Mexico",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0104",
+      "display_name": "Minnesota",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0105",
+      "display_name": "Missouri",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0106",
+      "display_name": "Montana",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0107",
+      "display_name": "Mormon Church",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "WORSHIP_STRUCTURE_OR_PROGRAM_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0108",
+      "display_name": "Morocco",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0109",
+      "display_name": "National Cash Register (NCR)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0111",
+      "display_name": "New England",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0112",
+      "display_name": "New Jersey",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0113",
+      "display_name": "New Mexico",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0114",
+      "display_name": "New York City Pavilion and Ice Theater",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0115",
+      "display_name": "New York State",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0116",
+      "display_name": "Oklahoma",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0117",
+      "display_name": "Oregon",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0118",
+      "display_name": "Pakistan",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0120",
+      "display_name": "Paris",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0122",
+      "display_name": "Pavilion of American Interiors",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0123",
+      "display_name": "Pavilion of Fine Art (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0124",
+      "display_name": "Pennsylvania (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0125",
+      "display_name": "Pepsi-Cola",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0126",
+      "display_name": "Philippines",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0128",
+      "display_name": "Polynesia",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0131",
+      "display_name": "Protestant and Orthodox Center",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0132",
+      "display_name": "Quaker Puffed Cereals House (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0133",
+      "display_name": "RCA",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0134",
+      "display_name": "Republic of China",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0135",
+      "display_name": "Republic of Korea",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0136",
+      "display_name": "Rheingold",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0137",
+      "display_name": "Russian Orthodox Greek-Catholic Church",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "WORSHIP_STRUCTURE_OR_PROGRAM_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0138",
+      "display_name": "Santa Maria",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0139",
+      "display_name": "Schaefer",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0140",
+      "display_name": "Scott Paper",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0141",
+      "display_name": "Sermons From Science",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "WORSHIP_STRUCTURE_OR_PROGRAM_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0142",
+      "display_name": "Seven-Up",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0144",
+      "display_name": "Sierra Leone (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0145",
+      "display_name": "Simmons",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0146",
+      "display_name": "Sinclair",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0147",
+      "display_name": "Singer Bowl",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0148",
+      "display_name": "SKF",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0149",
+      "display_name": "Socony Mobil",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0151",
+      "display_name": "Spain",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0152",
+      "display_name": "Steak Town U.S.A.",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0154",
+      "display_name": "Sudan",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0155",
+      "display_name": "Sweden",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0156",
+      "display_name": "Swiss Sky Ride",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0157",
+      "display_name": "Switzerland",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0158",
+      "display_name": "Texas Pavilions & Music Hall (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0159",
+      "display_name": "Thailand",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0160",
+      "display_name": "Tiparillo Band Pavilion",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "VENUE_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0162",
+      "display_name": "Transportation and Travel",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0163",
+      "display_name": "Travelers Insurance",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0164",
+      "display_name": "Underground World Home",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0165",
+      "display_name": "Unisphere",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0166",
+      "display_name": "United Arab Republic",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "CONCESSION_OR_STRUCTURE_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0167",
+      "display_name": "United Nations (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0168",
+      "display_name": "United States",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0169",
+      "display_name": "U.S. Post Office",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0170",
+      "display_name": "U.S. Rubber",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0171",
+      "display_name": "USO Lounge (1965)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0172",
+      "display_name": "Vatican",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "WORSHIP_STRUCTURE_OR_PROGRAM_REVIEW"
+    },
+    {
+      "entity_id": "FMP64SUBJ0173",
+      "display_name": "Venezuela",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0174",
+      "display_name": "Walter's International Wax Museum",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0175",
+      "display_name": "WBT 2,000 Tribes",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0176",
+      "display_name": "West Virginia",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0177",
+      "display_name": "Westinghouse",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0178",
+      "display_name": "Wisconsin",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964|1965",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "FMP64SUBJ0180",
+      "display_name": "World's Fair Pavilion (1964)",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "building_master_inventory",
+      "status": "MAY_BE_TENANT_OR_BUILDING"
+    },
+    {
+      "entity_id": "WF0001",
+      "display_name": "Trylon",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0002",
+      "display_name": "Perisphere",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0006",
+      "display_name": "Federal Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0007",
+      "display_name": "Hall of Nations",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0008",
+      "display_name": "New York City Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0009",
+      "display_name": "RCA Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0010",
+      "display_name": "AT&T Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0011",
+      "display_name": "Hall of Communications",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0012",
+      "display_name": "General Motors Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0014",
+      "display_name": "Ford Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0015",
+      "display_name": "Chrysler Motors Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0016",
+      "display_name": "B.F. Goodrich Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0017",
+      "display_name": "Goodyear Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0018",
+      "display_name": "Railroad Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0019",
+      "display_name": "Aviation Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0020",
+      "display_name": "Westinghouse Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0023",
+      "display_name": "General Electric Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0024",
+      "display_name": "U.S. Steel Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0025",
+      "display_name": "Production and Distribution Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0026",
+      "display_name": "Business Systems and Insurance Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0028",
+      "display_name": "Medical and Public Health Buildings",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0030",
+      "display_name": "Consumer Interests Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0031",
+      "display_name": "Applied Arts Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0032",
+      "display_name": "Fine Arts Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0033",
+      "display_name": "Home Furnishings Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0034",
+      "display_name": "Hall of Pharmacy",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0036",
+      "display_name": "Town of Tomorrow House No. 4 / House of Glass",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0037",
+      "display_name": "Italian Pavilion",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0038",
+      "display_name": "Spanish Pavilion",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0039",
+      "display_name": "Japanese Pavilion and Gardens",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0040",
+      "display_name": "Venezuelan Pavilion",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0041",
+      "display_name": "Belgian Pavilion",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0043",
+      "display_name": "New York State Building / Marine Amphitheatre",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0055",
+      "display_name": "Temple of Religion",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0056",
+      "display_name": "Shelter Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0057",
+      "display_name": "Pabst Blue Ribbon Beer Garden",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0058",
+      "display_name": "Heinz Dome",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "WF0059",
+      "display_name": "National Cash Register Building",
+      "entity_type": "SITE_FEATURE",
+      "years": "1939|1940",
+      "source": "building_master_inventory",
+      "status": "ARCHITECTURE_LISTED_UNCERTIFIED"
+    },
+    {
+      "entity_id": "NR1939-CONSTITUTION",
+      "display_name": "Constitution Mall",
+      "entity_type": "PATH",
+      "years": "1939",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1939-PATRIOTS",
+      "display_name": "Avenue of Patriots",
+      "entity_type": "STREET",
+      "years": "1939",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1939-PIONEERS",
+      "display_name": "Avenue of Pioneers",
+      "entity_type": "STREET",
+      "years": "1939",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1939-WHEELS",
+      "display_name": "Street of Wheels",
+      "entity_type": "STREET",
+      "years": "1939",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1939-WINGS",
+      "display_name": "Street of Wings",
+      "entity_type": "STREET",
+      "years": "1939",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1939-RAINBOW",
+      "display_name": "Rainbow Avenue",
+      "entity_type": "STREET",
+      "years": "1939",
+      "source": "site_network_features",
+      "status": "CATALOG_LEAD"
+    },
+    {
+      "entity_id": "NR1964-PROGRESS",
+      "display_name": "Avenue of Progress",
+      "entity_type": "STREET",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-ENTERPRISES",
+      "display_name": "Avenue of Enterprises",
+      "entity_type": "STREET",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-COMMERCE",
+      "display_name": "Avenue of Commerce",
+      "entity_type": "STREET",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-STATES",
+      "display_name": "Avenue of the States",
+      "entity_type": "STREET",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-TRAVEL",
+      "display_name": "Avenue of Travel",
+      "entity_type": "STREET",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-AUTOMATION",
+      "display_name": "Avenue of Automation",
+      "entity_type": "STREET",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-TRANSPORTATION",
+      "display_name": "Avenue of Transportation",
+      "entity_type": "STREET",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-INDUSTRY",
+      "display_name": "Promenade of Industry",
+      "entity_type": "PATH",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-TRUMAN",
+      "display_name": "Truman Promenade",
+      "entity_type": "PATH",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-MERIDIAN",
+      "display_name": "Meridian Road",
+      "entity_type": "STREET",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-WESTDRIVE",
+      "display_name": "West Drive",
+      "entity_type": "STREET",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-COURT-UNIVERSE",
+      "display_name": "Court of the Universe",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "NR1964-COURT-STARS",
+      "display_name": "Court of the Stars",
+      "entity_type": "SITE_FEATURE",
+      "years": "1964",
+      "source": "site_network_features",
+      "status": "DOCUMENTED_NAMED"
+    },
+    {
+      "entity_id": "HORT39-GOP",
+      "display_name": "Gardens on Parade horticultural exhibition",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT39-ROSES",
+      "display_name": "Jackson & Perkins Parade of Modern Roses",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT39-HAVEMEYER",
+      "display_name": "Havemeyer Tribute Garden",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT39-WOODLAND",
+      "display_name": "Garden Club of America Woodland Garden",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT39-TOMORROW",
+      "display_name": "Garden of Tomorrow",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT39-WILDFLOWERS",
+      "display_name": "Wayside Wild Flower Shrine",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT39-JAPANESE",
+      "display_name": "Japanese Pavilion Nippon Garden",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT39-ADMIN",
+      "display_name": "Administration Building landscaping",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "UNLOCATED"
+    },
+    {
+      "entity_id": "HORT39-FEDERAL",
+      "display_name": "Federal Building landscaping",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "UNLOCATED"
+    },
+    {
+      "entity_id": "HORT39-COMMS",
+      "display_name": "Communications Building landscaping",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "UNLOCATED"
+    },
+    {
+      "entity_id": "HORT39-COURT-N5",
+      "display_name": "Court N-5 landscaping",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT39-FAIR-TREEROWS",
+      "display_name": "Fair-wide original tree rows",
+      "entity_type": "GARDEN",
+      "years": "1939",
+      "source": "horticulture_areas",
+      "status": "UNLOCATED"
+    },
+    {
+      "entity_id": "HORT40-GOP",
+      "display_name": "Gardens on Parade horticultural exhibition",
+      "entity_type": "GARDEN",
+      "years": "1940",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT40-LIVINGSTAMP",
+      "display_name": "Pony Express living stamp",
+      "entity_type": "GARDEN",
+      "years": "1940",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT40-LANDSCAPE",
+      "display_name": "Fair-wide 1940 landscape changes",
+      "entity_type": "GARDEN",
+      "years": "1940",
+      "source": "horticulture_areas",
+      "status": "UNLOCATED"
+    },
+    {
+      "entity_id": "HORT64-INDUSTRIAL-CORRIDOR",
+      "display_name": "New tree planting corridor from Unisphere through Industrial Area",
+      "entity_type": "GARDEN",
+      "years": "1964",
+      "source": "horticulture_areas",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "HORT64-RETAINED-ROWS",
+      "display_name": "Retained 1939 tree rows",
+      "entity_type": "GARDEN",
+      "years": "1964",
+      "source": "horticulture_areas",
+      "status": "UNLOCATED"
+    },
+    {
+      "entity_id": "HORT64-GARDEN-MEDITATION",
+      "display_name": "Garden of Meditation",
+      "entity_type": "GARDEN",
+      "years": "1964",
+      "source": "horticulture_areas",
+      "status": "UNLOCATED"
+    },
+    {
+      "entity_id": "HORT64-PANAM-GARDENS",
+      "display_name": "Pan American Highway Gardens",
+      "entity_type": "GARDEN",
+      "years": "1964",
+      "source": "horticulture_areas",
+      "status": "UNLOCATED"
+    },
+    {
+      "entity_id": "HORT65-TREE-GRADING",
+      "display_name": "Tree plantings shown on 1965 demolition grading plan",
+      "entity_type": "GARDEN",
+      "years": "1965",
+      "source": "horticulture_areas",
+      "status": "UNLOCATED"
+    },
+    {
+      "entity_id": "SITE39-GW",
+      "display_name": "Washington Square at Constitution Mall",
+      "entity_type": "SCULPTURE",
+      "years": "1939",
+      "source": "site_amenity_instances",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "SITE39-MANSHIP",
+      "display_name": "Constitution Mall near Theme Center",
+      "entity_type": "SCULPTURE",
+      "years": "1939",
+      "source": "site_amenity_instances",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "SITE39-MOODS",
+      "display_name": "Constitution Mall water panels",
+      "entity_type": "SCULPTURE",
+      "years": "1939",
+      "source": "site_amenity_instances",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "SITE39-CMFOUNTAINS",
+      "display_name": "Constitution Mall mirror pools and fountains",
+      "entity_type": "FOUNTAIN",
+      "years": "1939",
+      "source": "site_amenity_instances",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "SITE39-NASH-BASKET",
+      "display_name": "Perisphere plaza in period Nash photo",
+      "entity_type": "FURNISHING",
+      "years": "1939",
+      "source": "site_amenity_instances",
+      "status": "NAMED_AREA_ONLY"
+    },
+    {
+      "entity_id": "SITE64-PLANETS",
+      "display_name": "Fountain of the Planets — Pool of Industry",
+      "entity_type": "FOUNTAIN",
+      "years": "1964",
+      "source": "site_amenity_instances",
+      "status": "NAMED_AREA_ONLY"
+    }
+  ],
+  "unregistered": true,
+  "note": "Master catalog reference candidates, not approved site placements"
+}
