@@ -74,6 +74,46 @@
       ],
       "limitations": "Archive shot log centers on amusement area; NOT yet established as a Theme Center measurement source",
       "measured_landmarks": 0
+    },
+    {
+      "id": "SI_NMAH_HOME_MOVIE_I_1939",
+      "url": "https://americanhistory.si.edu/collections/archival-item/sova-nmah-ac-0560-ref2248",
+      "date": "1939",
+      "type": "smithsonian_catalog_film_access_unconfirmed",
+      "supports": [
+        "Trylon and Perisphere coverage",
+        "early fair construction and groundbreaking",
+        "seaplane aerial views of fair under construction"
+      ],
+      "limitations": "Catalog description only; original film/reel not accessed, frames not viewed, no plan controls established. Usage rights require Smithsonian archival assessment.",
+      "measured_landmarks": 0,
+      "priority": "HIGH"
+    },
+    {
+      "id": "SI_NMAH_HOME_MOVIE_V_1939",
+      "url": "https://www.americanhistory.si.edu/collections/archival-item/sova-nmah-ac-0560-ref2255",
+      "date": "1939",
+      "type": "smithsonian_catalog_film_access_unconfirmed",
+      "supports": [
+        "elevated fair views",
+        "Trylon and Perisphere exterior in 1939",
+        "multiple pavilions for photographic landmark cross-checks"
+      ],
+      "limitations": "Catalog description only, footage not acquired; in-person research may be necessary, no measured frames.",
+      "measured_landmarks": 0,
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "PRELINGER_WIKIMEDIA_1939_SHORT",
+      "url": "https://commons.wikimedia.org/wiki/File:Ny-worldfair1939-noaudio.ogv",
+      "date": "1939",
+      "type": "prelinger_public_domain_clip_access_pending",
+      "supports": [
+        "62-second public-domain amateur film excerpt of 1939 World's Fair; potential frame-level visual review"
+      ],
+      "limitations": "320x240 px, ~62s derivative of longer film; listed public domain by Wikimedia Commons; archive download failed in current environment, so no frames extracted or geometry observations.",
+      "measured_landmarks": 0,
+      "priority": "MEDIUM"
     }
   ],
   "frame_observation_contract": {
@@ -159,5 +199,14 @@
     "source_copy_stored": false,
     "geometry_impact": "NO_GEOMETRY_RELEASE",
     "annotation_requirement": "At least 4 independent planar fit points plus 2 independently held-out planar points, each with verified model coordinates; 3D needs multi-view noncoplanar controls"
+  },
+  "film_acquisition_status": {
+    "last_review_date": "2026-10-20",
+    "actual_film_frames_extracted": 0,
+    "actual_film_frames_annotated": 0,
+    "highest_priority": "SI_NMAH_HOME_MOVIE_I_1939",
+    "reason": "Catalog explicitly mentions fair construction and seaplane aerial views; strongest unreviewed candidate for 1939 structural/site placement.",
+    "notes": "Do not infer photogrammetric calibrations from catalog descriptions or low-res preview frames. Seek higher-quality reels and independent controls.",
+    "retrieval_blocker": "Internet Archive/Wikimedia direct video download unavailable in this environment; Smithsonian reel may require research appointment or reproduction request."
   }
 }
