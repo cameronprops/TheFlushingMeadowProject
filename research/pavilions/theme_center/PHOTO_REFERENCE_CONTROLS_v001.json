@@ -1,0 +1,125 @@
+{
+  "schema": "fmp.photo-reference-controls.v001",
+  "status": "DERIVED_MODEL_REFERENCE_ONLY__NOT_1939_GEOMETRY",
+  "period_year": 1939,
+  "source_glb": "FMP_ThemeCenter_Assembled_Runtime_v005.glb",
+  "source_glb_sha256": "de38fdd5294285afd92dbb6be0a9d4e564c52bacd588a9fd116c9e1e35f06439",
+  "model_frame": "right-handed Y-up model-local metres UNREGISTERED",
+  "generated_reference_glb": "FMP_ThemeCenter_Bridge_Registration_Controls_v001.glb",
+  "generated_reference_glb_sha256": "24e9ebf855b7654c278c6d24a37029b784d4155e0ab5c3ca31b9d7479f5b6f33",
+  "reference_nodes": [
+    {
+      "id": "TRYLON_LOBBY",
+      "source_node": "Trylon_Lobby_Floor_Envelope",
+      "bbox_min_xyz_m": [
+        -48.158401,
+        0,
+        -3.6576
+      ],
+      "bbox_max_xyz_m": [
+        -41.452801,
+        0.12192,
+        3.6576
+      ]
+    },
+    {
+      "id": "ESCALATOR_1",
+      "source_node": "Escalator_1_Envelope",
+      "bbox_min_xyz_m": [
+        -49.0728,
+        1.34112,
+        2.1336
+      ],
+      "bbox_max_xyz_m": [
+        -20.889065,
+        15.8496,
+        3.9624
+      ]
+    },
+    {
+      "id": "ESCALATOR_2",
+      "source_node": "Escalator_2_Envelope",
+      "bbox_min_xyz_m": [
+        -49.0728,
+        2.25552,
+        -3.9624
+      ],
+      "bbox_max_xyz_m": [
+        -23.295349,
+        19.5072,
+        -2.1336
+      ]
+    },
+    {
+      "id": "BRIDGE_DECK",
+      "source_node": "Return_Bridge_Deck",
+      "bbox_min_xyz_m": [
+        -36.271198,
+        15.63624,
+        0.3048
+      ],
+      "bbox_max_xyz_m": [
+        -17.0688,
+        15.8496,
+        5.7912
+      ]
+    },
+    {
+      "id": "PERISPHERE_LOWER_SHELL",
+      "source_node": "Perisphere_Lower_Removable_Shell__UNREAL_PORTALS_v001",
+      "bbox_min_xyz_m": [
+        -27.428249,
+        5.1816,
+        -27.428249
+      ],
+      "bbox_max_xyz_m": [
+        27.428249,
+        32.613602,
+        27.428249
+      ]
+    },
+    {
+      "id": "TRYLON_EXTERIOR",
+      "source_node": "Trylon_Hollow_Exterior__RUNTIME_SHARED_APERTURES_v004",
+      "bbox_min_xyz_m": [
+        -57.27,
+        0,
+        -12.4968
+      ],
+      "bbox_max_xyz_m": [
+        -36.066601,
+        185.927994,
+        12.4968
+      ]
+    }
+  ],
+  "photo_inputs": [
+    {
+      "id": "MET_1987_1100_403",
+      "title": "Entrance to Perisphere",
+      "photographer": "Samuel H. Gottscho",
+      "date": "circa 1939",
+      "status": "IDENTIFIED_NOT_CAMERA_CALIBRATED",
+      "original_photo_url": "https://commons.wikimedia.org/wiki/File:-1939_New_York_World%27s_Fair,_Entrance_to_Perisphere-_MET_DP103124.jpg",
+      "rights": "CC0 original scan per Commons"
+    },
+    {
+      "id": "MET_1987_1100_404",
+      "title": "Trylon and Perisphere",
+      "photographer": "Samuel H. Gottscho",
+      "date": "circa 1939",
+      "status": "IDENTIFIED_NOT_CAMERA_CALIBRATED",
+      "original_photo_url": "https://www.metmuseum.org/art/collection/search/265470",
+      "rights": "verify chosen copy"
+    }
+  ],
+  "warning": "Bounding control corners are mathematical extrema of existing model, NOT physically identifiable survey marks or guaranteed visible photo points.",
+  "unresolved": [
+    "Acquire original image and hash",
+    "Obtain sufficiently distinct physically identifiable image-to-model controls",
+    "Calibrate camera intrinsics and solve photo pose",
+    "Trace curved bridge soffit with uncertainty",
+    "Reconstruct real ground-level entrance and internal escalator enclosure",
+    "Native Unreal collision and appearance"
+  ]
+}
