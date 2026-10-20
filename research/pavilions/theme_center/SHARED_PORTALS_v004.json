@@ -1,0 +1,81 @@
+{
+  "schema": "fmp.shared-portals.v004",
+  "source_sha256": "a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5",
+  "overlay_sha256": "b1467273bf674c7fbf081bb7ec64800ae61ecf88942e42678ed8948c452c5e01",
+  "output": "ThemeCenter_1939_GuestFlow_Trim_v004.glb",
+  "apertures": [
+    {
+      "id": "TRYLON_RETURN_ENTRY",
+      "center_xyz_m": [
+        -36.7,
+        17.049599838256835,
+        3.048000082373619
+      ],
+      "size_xyz_m": [
+        3.4,
+        2.4,
+        2.4
+      ],
+      "status": "PREVIEW_ONLY_TOPOLOGY_TEST_NOT_HISTORICAL_DIMENSIONS"
+    },
+    {
+      "id": "TRYLON_RETURN_EXIT",
+      "center_xyz_m": [
+        -36.7,
+        17.049599838256835,
+        -3.15
+      ],
+      "size_xyz_m": [
+        3.4,
+        2.4,
+        2.4
+      ],
+      "status": "PREVIEW_ONLY_TOPOLOGY_TEST_NOT_HISTORICAL_DIMENSIONS"
+    }
+  ],
+  "replacements": [
+    {
+      "source_node": "Trylon_Face_3_Frame",
+      "replacement_node": "Trylon_Face_3_Frame__RUNTIME_SHARED_APERTURES_v004",
+      "source_parts": 156,
+      "candidate_cut_parts": 2,
+      "source_volume_m3": 28.214792168190325,
+      "replacement_volume_m3": 28.112507299889653,
+      "watertight": true
+    },
+    {
+      "source_node": "Trylon_Hollow_Exterior",
+      "replacement_node": "Trylon_Hollow_Exterior__RUNTIME_SHARED_APERTURES_v004",
+      "source_parts": 1,
+      "candidate_cut_parts": 1,
+      "source_volume_m3": 1445.4730596337856,
+      "replacement_volume_m3": 1445.4730596337831,
+      "watertight": true
+    },
+    {
+      "source_node": "Helicline_Rail_-1",
+      "replacement_node": "Helicline_Rail_-1__RUNTIME_SHARED_APERTURES_v004",
+      "source_parts": 200,
+      "candidate_cut_parts": 4,
+      "source_volume_m3": 1.139820792754185,
+      "replacement_volume_m3": 1.1306617361405975,
+      "watertight": true
+    }
+  ],
+  "hide_source_nodes": [
+    "Perisphere_Lower_Removable_Shell",
+    "Helicline_Bridge_Transition_Hypothesis",
+    "Trylon_Face_3_Frame",
+    "Trylon_Hollow_Exterior",
+    "Helicline_Rail_-1"
+  ],
+  "coordinate_frame": "MODEL_LOCAL_Y_UP_METRES",
+  "source_unchanged": true,
+  "authority": "Workbook K031/K032 shared aperture rule; not evidence for these dimensions or member transfers",
+  "status": "RUNTIME_TOPOLOGY_TEST_ONLY",
+  "structural_acceptance": "NOT_ENGINEERED; cut brace ends need archival reframing design",
+  "guard_acceptance": "PROVISIONAL_GAP; rail return/edge protection not resolved",
+  "historical_acceptance": "UNVERIFIED",
+  "unreal_acceptance": "NOT_TESTED",
+  "integration": "Replace v003 overlay with v004 and hide only listed source nodes in visitor view. Never overwrite original source/print parts."
+}
