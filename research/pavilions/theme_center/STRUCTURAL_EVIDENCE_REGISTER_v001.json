@@ -92,14 +92,24 @@
     "controls": [],
     "fit_status": "NOT_STARTED",
     "film_frames_processed": 0,
-    "photo_landmarks_measured": 0
+    "photo_landmarks_measured": 0,
+    "holdout_quality_gate_v002": {
+      "code": "tools/world_build/theme_center_image_quality_gate_v002.wl",
+      "minimum_fit_points": 4,
+      "minimum_holdout_points": 2,
+      "required_coordinate_contract": "PLAN_XZ_Y_UP_FEET_MODEL_LOCAL_UNREGISTERED",
+      "maximum_independent_holdout_pixel_error": 6,
+      "maximum_independent_holdout_error_in_declared_sigma": 3,
+      "source_pose_certified": false,
+      "status": "CODE_TESTED_NO_HISTORICAL_ANNOTATIONS"
+    }
   },
   "geometry_gate": {
     "structural_fact_consistency": "COMPUTABLE",
     "trylon_per_bay_truss_centers": "UNKNOWN",
     "perisphere_horiz_truss_latitudes": "UNKNOWN",
     "helicline_column_locations": "UNKNOWN",
-    "planar_image_registration": "NOT_CALIBRATED",
+    "planar_image_registration": "V002_HOLDOUT_GATE_AVAILABLE_NOT_CALIBRATED",
     "true_3d_camera_registration": "NOT_IMPLEMENTED",
     "historical_asset_release": "BLOCKED_FOR_UNRESOLVED_DETAILS"
   },
@@ -112,5 +122,42 @@
     "unreal_import_tested": false,
     "collision_tested": false,
     "stable_id_policy": "Preserve WF0001 WF0002 WF0004 and native TP_ElementIDs; do not overwrite print shells."
+  },
+  "source_probe_v002": {
+    "schema": "fmp.theme-center.photo-source-probe.v002",
+    "source_images": [
+      {
+        "id": "LOC_2018750315",
+        "catalog": "https://www.loc.gov/item/2018750315/",
+        "direct_image": "https://tile.loc.gov/storage-services/service/pnp/gsc/5a30000/5a30700/5a30731r.jpg",
+        "decoded_pixels": [
+          560,
+          384
+        ],
+        "created": "1939 or 1940",
+        "camera_calibrated": false,
+        "image_landmarks_measured": 0,
+        "relevance": "Oblique view of finished Helicline deck, posts/columns and Perisphere exterior",
+        "rights_advisory": "No known restrictions on publication; check full LOC rights context before reuse"
+      },
+      {
+        "id": "LOC_2018750258",
+        "catalog": "https://www.loc.gov/item/2018750258/",
+        "direct_image": "https://tile.loc.gov/storage-services/service/pnp/gsc/5a30000/5a30800/5a30896r.jpg",
+        "decoded_pixels": [
+          560,
+          385
+        ],
+        "created": "1940-10-27",
+        "camera_calibrated": false,
+        "image_landmarks_measured": 0,
+        "relevance": "Helicline detail, support/railing/soffit geometry and Perisphere context",
+        "rights_advisory": "No known restrictions on publication; check full LOC rights context before reuse"
+      }
+    ],
+    "test_method": "Wolfram Import[URI, Image], ImageDimensions; source image downloaded into Wolfram evaluator transient session only, NOT saved in Git/Drive",
+    "source_copy_stored": false,
+    "geometry_impact": "NO_GEOMETRY_RELEASE",
+    "annotation_requirement": "At least 4 independent planar fit points plus 2 independently held-out planar points, each with verified model coordinates; 3D needs multi-view noncoplanar controls"
   }
 }
