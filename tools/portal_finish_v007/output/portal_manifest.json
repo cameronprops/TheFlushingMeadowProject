@@ -1,0 +1,1683 @@
+{
+  "schema": "fmp.framed-portals.v007",
+  "input_sha256": "b7d59c46d66f26d93873f4ccde5f6bffcc45d4c4f7b5c4a146e888de7d2d3cc9",
+  "original_sha256": "a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5",
+  "portals": [
+    {
+      "id": "TRYLON_ENTRY",
+      "x_range": [
+        -37.15,
+        -36.15
+      ],
+      "floor_y": 15.849599838256834,
+      "center_z": 3.048000082373619,
+      "width": 2.4,
+      "height": 2.4,
+      "status": "PROVISIONAL_OPEN_DOORWAY_NO_DOOR_LEAF"
+    },
+    {
+      "id": "TRYLON_EXIT",
+      "x_range": [
+        -37.15,
+        -36.15
+      ],
+      "floor_y": 15.849599838256834,
+      "center_z": -3.15,
+      "width": 2.4,
+      "height": 2.4,
+      "status": "PROVISIONAL_OPEN_DOORWAY_NO_DOOR_LEAF"
+    },
+    {
+      "id": "PERISPHERE_LOWER",
+      "x_range": [
+        -23.495535933642067,
+        -20.76906478881836
+      ],
+      "floor_y": 15.849599838256836,
+      "center_z": 3.0479999780654907,
+      "width": 2.35,
+      "height": 2.4,
+      "status": "PROVISIONAL_OPEN_DOORWAY_NO_DOOR_LEAF"
+    },
+    {
+      "id": "PERISPHERE_UPPER",
+      "x_range": [
+        -25.38689141765125,
+        -23.17534912109375
+      ],
+      "floor_y": 19.507200241088867,
+      "center_z": -3.0479999780654907,
+      "width": 2.35,
+      "height": 2.4,
+      "status": "PROVISIONAL_OPEN_DOORWAY_NO_DOOR_LEAF"
+    }
+  ],
+  "parts": [
+    {
+      "name": "TRYLON_PROVISIONAL_TWO_DOOR_INFILL_WALL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.19242858886719,
+          12.161999702453613,
+          -4.906799793243408
+        ],
+        [
+          -36.41897201538086,
+          24.718799591064453,
+          4.906799793243408
+        ]
+      ],
+      "watertight": true,
+      "triangles": 52
+    },
+    {
+      "name": "TRYLON_ENTRY_LEFT_JAMB_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.15,
+          15.729599838256837,
+          1.6280000823736192
+        ],
+        [
+          -36.15,
+          18.249599838256835,
+          1.848000082373619
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_ENTRY_RIGHT_JAMB_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.15,
+          15.729599838256837,
+          4.24800008237362
+        ],
+        [
+          -36.15,
+          18.249599838256835,
+          4.468000082373619
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_ENTRY_HEADER_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.15,
+          18.249599838256835,
+          1.6280000823736192
+        ],
+        [
+          -36.15,
+          18.469599838256833,
+          4.468000082373619
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_ENTRY_FLUSH_THRESHOLD",
+      "replacement_node": null,
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -37.15,
+          15.729599838256835,
+          1.848000082373619
+        ],
+        [
+          -36.15,
+          15.850599838256834,
+          4.248000082373619
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_ENTRY_LEFT_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.184999999999995,
+          15.849599838256836,
+          1.528000082373619
+        ],
+        [
+          -37.105,
+          18.569599838256835,
+          1.6280000823736192
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_ENTRY_RIGHT_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.184999999999995,
+          15.849599838256836,
+          4.468000082373619
+        ],
+        [
+          -37.105,
+          18.569599838256835,
+          4.56800008237362
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_ENTRY_HEAD_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.184999999999995,
+          18.469599838256833,
+          1.5280000823736188
+        ],
+        [
+          -37.105,
+          18.569599838256835,
+          4.5680000823736195
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_EXIT_LEFT_JAMB_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.15,
+          15.729599838256837,
+          -4.5699999999999985
+        ],
+        [
+          -36.15,
+          18.249599838256835,
+          -4.35
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_EXIT_RIGHT_JAMB_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.15,
+          15.729599838256837,
+          -1.9499999999999997
+        ],
+        [
+          -36.15,
+          18.249599838256835,
+          -1.73
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_EXIT_HEADER_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.15,
+          18.249599838256835,
+          -4.569999999999999
+        ],
+        [
+          -36.15,
+          18.469599838256833,
+          -1.7299999999999998
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_EXIT_FLUSH_THRESHOLD",
+      "replacement_node": null,
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -37.15,
+          15.729599838256835,
+          -4.35
+        ],
+        [
+          -36.15,
+          15.850599838256834,
+          -1.9500000000000002
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_EXIT_LEFT_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.184999999999995,
+          15.849599838256836,
+          -4.67
+        ],
+        [
+          -37.105,
+          18.569599838256835,
+          -4.5699999999999985
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_EXIT_RIGHT_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.184999999999995,
+          15.849599838256836,
+          -1.73
+        ],
+        [
+          -37.105,
+          18.569599838256835,
+          -1.63
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_EXIT_HEAD_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -37.184999999999995,
+          18.469599838256833,
+          -4.67
+        ],
+        [
+          -37.105,
+          18.569599838256835,
+          -1.63
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "TRYLON_EXIT_RAIL_RETURN_-1",
+      "replacement_node": null,
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -36.79999923706055,
+          16.227399826049805,
+          -4.512499809265137
+        ],
+        [
+          -36.28860855102539,
+          16.292400360107422,
+          -4.349999904632568
+        ]
+      ],
+      "watertight": true,
+      "triangles": 352
+    },
+    {
+      "name": "TRYLON_EXIT_RAIL_RETURN_1",
+      "replacement_node": null,
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -36.79999923706055,
+          16.00521469116211,
+          -1.9500000476837158
+        ],
+        [
+          -36.50669479370117,
+          16.070215225219727,
+          -1.787500023841858
+        ]
+      ],
+      "watertight": true,
+      "triangles": 352
+    },
+    {
+      "name": "PERISPHERE_LOWER_LEFT_JAMB_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -23.495535933642067,
+          15.729599838256838,
+          1.6529999780654907
+        ],
+        [
+          -20.769064788818362,
+          18.249599838256835,
+          1.8729999780654905
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_LOWER_RIGHT_JAMB_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -23.495535933642067,
+          15.729599838256838,
+          4.222999978065491
+        ],
+        [
+          -20.769064788818362,
+          18.249599838256835,
+          4.44299997806549
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_LOWER_HEADER_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -23.495535933642067,
+          18.249599838256835,
+          1.652999978065491
+        ],
+        [
+          -20.769064788818362,
+          18.469599838256833,
+          4.44299997806549
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_LOWER_FLUSH_THRESHOLD",
+      "replacement_node": null,
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -23.495535933642067,
+          15.729599838256837,
+          1.872999978065491
+        ],
+        [
+          -20.769064788818362,
+          15.850599838256835,
+          4.2229999780654905
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_LOWER_LEFT_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -23.530535933642064,
+          15.849599838256836,
+          1.5529999780654906
+        ],
+        [
+          -23.450535933642065,
+          18.569599838256835,
+          1.6529999780654907
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_LOWER_RIGHT_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -23.530535933642064,
+          15.849599838256836,
+          4.44299997806549
+        ],
+        [
+          -23.450535933642065,
+          18.569599838256835,
+          4.542999978065492
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_LOWER_HEAD_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -23.530535933642064,
+          18.469599838256833,
+          1.5529999780654906
+        ],
+        [
+          -23.450535933642065,
+          18.569599838256835,
+          4.542999978065491
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_LOWER_CURVED_WALL_COLLAR",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -23.5555362701416,
+          15.699600219726562,
+          1.3730000257492065
+        ],
+        [
+          -21.025577545166016,
+          18.74959945678711,
+          4.7230000495910645
+        ]
+      ],
+      "watertight": true,
+      "triangles": 158
+    },
+    {
+      "name": "PERISPHERE_UPPER_LEFT_JAMB_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -25.38689141765125,
+          19.38720024108887,
+          -4.44299997806549
+        ],
+        [
+          -23.175349121093753,
+          21.907200241088866,
+          -4.222999978065491
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_RIGHT_JAMB_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -25.38689141765125,
+          19.38720024108887,
+          -1.8729999780654905
+        ],
+        [
+          -23.175349121093753,
+          21.907200241088866,
+          -1.6529999780654907
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_HEADER_REVEAL",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -25.38689141765125,
+          21.907200241088866,
+          -4.44299997806549
+        ],
+        [
+          -23.175349121093753,
+          22.127200241088865,
+          -1.652999978065491
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_FLUSH_THRESHOLD",
+      "replacement_node": null,
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -25.38689141765125,
+          19.387200241088866,
+          -4.2229999780654905
+        ],
+        [
+          -23.175349121093753,
+          19.50820024108887,
+          -1.872999978065491
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_LEFT_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -25.421891417651246,
+          19.507200241088867,
+          -4.542999978065492
+        ],
+        [
+          -25.341891417651247,
+          22.227200241088866,
+          -4.44299997806549
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_RIGHT_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -25.421891417651246,
+          19.507200241088867,
+          -1.6529999780654907
+        ],
+        [
+          -25.341891417651247,
+          22.227200241088866,
+          -1.5529999780654906
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_HEAD_FACE_TRIM",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -25.421891417651246,
+          22.127200241088865,
+          -4.542999978065491
+        ],
+        [
+          -25.341891417651247,
+          22.227200241088866,
+          -1.5529999780654906
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_CURVED_WALL_COLLAR",
+      "replacement_node": null,
+      "role": "PORTAL_FINISH",
+      "bounds": [
+        [
+          -25.44689178466797,
+          19.357200622558594,
+          -4.7230000495910645
+        ],
+        [
+          -23.505817413330078,
+          22.40719985961914,
+          -1.3730000257492065
+        ]
+      ],
+      "watertight": true,
+      "triangles": 128
+    },
+    {
+      "name": "PERISPHERE_PRECISE_FRAMED_SHELL_v007",
+      "replacement_node": "Perisphere_Lower_Removable_Shell__UNREAL_PORTALS_v001",
+      "role": "SHELL",
+      "bounds": [
+        [
+          -27.42824935913086,
+          5.181600093841553,
+          -27.42824935913086
+        ],
+        [
+          27.42824935913086,
+          32.61360168457031,
+          27.42824935913086
+        ]
+      ],
+      "watertight": true,
+      "triangles": 73582
+    },
+    {
+      "name": "PERISPHERE_UPPER_OUTER_LANDING",
+      "replacement_node": "PROVISIONAL_UpperLandingToStair",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -27.336891417651245,
+          19.34720024108887,
+          -4.2229999780654905
+        ],
+        [
+          -25.286891417651248,
+          19.507200241088867,
+          -1.872999978065491
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_01",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_01",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -28.146594185097506,
+          19.188174136617913,
+          -3.4633105327784413
+        ],
+        [
+          -26.360367284220153,
+          19.34817413661791,
+          -2.367645942463883
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_02",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_02",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -28.279772819112672,
+          19.029148032146956,
+          -3.198267051889785
+        ],
+        [
+          -26.49354591823532,
+          19.189148032146953,
+          -2.1026024615752266
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_03",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_03",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -28.41295145312783,
+          18.870121927675996,
+          -2.9332235710011276
+        ],
+        [
+          -26.62672455225048,
+          19.030121927675992,
+          -1.8375589806865693
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_04",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_04",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -28.546130087143,
+          18.71109582320504,
+          -2.6681800901124704
+        ],
+        [
+          -26.759903186265646,
+          18.871095823205035,
+          -1.572515499797912
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_05",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_05",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -28.679308721158158,
+          18.55206971873408,
+          -2.4031366092238136
+        ],
+        [
+          -26.893081820280806,
+          18.712069718734078,
+          -1.3074720189092552
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_06",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_06",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -28.812487355173324,
+          18.393043614263124,
+          -2.1380931283351567
+        ],
+        [
+          -27.026260454295972,
+          18.55304361426312,
+          -1.0424285380205984
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_07",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_07",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -28.945665989188484,
+          18.234017509792164,
+          -1.8730496474465
+        ],
+        [
+          -27.15943908831113,
+          18.39401750979216,
+          -0.7773850571319413
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_08",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_08",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -29.07884462320365,
+          18.074991405321207,
+          -1.6080061665578431
+        ],
+        [
+          -27.2926177223263,
+          18.234991405321203,
+          -0.5123415762432845
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_09",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_09",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -29.21202325721881,
+          17.91596530085025,
+          -1.3429626856691859
+        ],
+        [
+          -27.425796356341458,
+          18.075965300850246,
+          -0.24729809535462743
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_10",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_10",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -29.345201891233977,
+          17.756939196379292,
+          -1.077919204780529
+        ],
+        [
+          -27.558974990356624,
+          17.91693919637929,
+          0.0177453855340296
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_11",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_11",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -29.478380525249136,
+          17.59791309190833,
+          -0.8128757238918721
+        ],
+        [
+          -27.692153624371784,
+          17.75791309190833,
+          0.2827888664226864
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_12",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_12",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -29.611559159264303,
+          17.438886987437375,
+          -0.5478322430032151
+        ],
+        [
+          -27.82533225838695,
+          17.59888698743737,
+          0.5478323473113434
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_13",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_13",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -29.744737793279462,
+          17.279860882966418,
+          -0.28278876211455806
+        ],
+        [
+          -27.95851089240211,
+          17.439860882966414,
+          0.8128758282000005
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_14",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_14",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -29.87791642729463,
+          17.12083477849546,
+          -0.017745281225901244
+        ],
+        [
+          -28.091689526417277,
+          17.280834778495457,
+          1.0779193090886574
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_15",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_15",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -30.01109506130979,
+          16.9618086740245,
+          0.2472981996627558
+        ],
+        [
+          -28.224868160432436,
+          17.121808674024496,
+          1.3429627899773142
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_16",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_16",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -30.144273695324955,
+          16.802782569553543,
+          0.5123416805514126
+        ],
+        [
+          -28.358046794447603,
+          16.96278256955354,
+          1.608006270865971
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_17",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_17",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -30.277452329340115,
+          16.643756465082586,
+          0.7773851614400694
+        ],
+        [
+          -28.491225428462762,
+          16.803756465082582,
+          1.8730497517546278
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_18",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_18",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -30.41063096335528,
+          16.48473036061163,
+          1.0424286423287268
+        ],
+        [
+          -28.62440406247793,
+          16.644730360611625,
+          2.138093232643285
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_19",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_19",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -30.54380959737044,
+          16.325704256140668,
+          1.3074721232173836
+        ],
+        [
+          -28.75758269649309,
+          16.485704256140664,
+          2.403136713531942
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_20",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_20",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -30.676988231385607,
+          16.16667815166971,
+          1.5725156041060404
+        ],
+        [
+          -28.890761330508255,
+          16.326678151669707,
+          2.6681801944205987
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_21",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_21",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -30.810166865400767,
+          16.007652047198754,
+          1.8375590849946977
+        ],
+        [
+          -29.023939964523414,
+          16.16765204719875,
+          2.933223675309256
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_22",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_22",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -30.943345499415933,
+          15.848625942727793,
+          2.1026025658833545
+        ],
+        [
+          -29.15711859853858,
+          16.008625942727793,
+          3.198267156197913
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_TREAD_23",
+      "replacement_node": "PROVISIONAL_UpperReturnStair_23",
+      "role": "WALKING_SURFACE",
+      "bounds": [
+        [
+          -31.076524133431093,
+          15.689599838256834,
+          2.3676460467720113
+        ],
+        [
+          -29.29029723255374,
+          15.849599838256834,
+          3.4633106370865696
+        ]
+      ],
+      "watertight": true,
+      "triangles": 12
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_RAIL_L",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_HANDRAIL_L",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -29.4529981030716,
+          16.821060974297158,
+          -2.652689622852309
+        ],
+        [
+          -26.330845047717467,
+          20.535739105048545,
+          3.483310836586339
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_L_00",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_L_00",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -26.382867284220158,
+          19.507200241088867,
+          -2.6551894233525397
+        ],
+        [
+          -26.337867284220156,
+          20.507200241088867,
+          -2.61018942335254
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_L_01",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_L_01",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -26.76575585701375,
+          19.050000190734863,
+          -1.8931894157976512
+        ],
+        [
+          -26.72075585701375,
+          20.050000190734863,
+          -1.8481894157976513
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_L_02",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_L_02",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -27.148644429807344,
+          18.59280014038086,
+          -1.1311894082427625
+        ],
+        [
+          -27.103644429807343,
+          19.59280014038086,
+          -1.0861894082427626
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_L_03",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_L_03",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -27.531533002600938,
+          18.135600090026855,
+          -0.3691894006878738
+        ],
+        [
+          -27.486533002600936,
+          19.135600090026855,
+          -0.3241894006878738
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_L_04",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_L_04",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -27.914421575394535,
+          17.67840003967285,
+          0.3928106068670149
+        ],
+        [
+          -27.869421575394533,
+          18.67840003967285,
+          0.43781060686701495
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_L_05",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_L_05",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -28.297310148188124,
+          17.221199989318848,
+          1.1548106144219037
+        ],
+        [
+          -28.252310148188123,
+          18.221199989318848,
+          1.1998106144219036
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_L_06",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_L_06",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -28.68019872098172,
+          16.763999938964844,
+          1.9168106219767924
+        ],
+        [
+          -28.63519872098172,
+          17.763999938964844,
+          1.9618106219767923
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_L_07",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_L_07",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -29.063087293775315,
+          16.30679988861084,
+          2.6788106295316814
+        ],
+        [
+          -29.018087293775313,
+          17.30679988861084,
+          2.7238106295316813
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_L_08",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_L_08",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -29.445975866568908,
+          15.849599838256836,
+          3.44081063708657
+        ],
+        [
+          -29.400975866568906,
+          16.849599838256836,
+          3.48581063708657
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_LANDING_RAIL_L",
+      "replacement_node": null,
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -26.392868041992188,
+          20.474700927734375,
+          -2.6326894760131836
+        ],
+        [
+          -25.28689193725586,
+          20.53969955444336,
+          -1.8005000352859497
+        ]
+      ],
+      "watertight": true,
+      "triangles": 352
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_RAIL_R",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_HANDRAIL_R",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -31.106046369933786,
+          16.821060974297158,
+          -3.483310732278211
+        ],
+        [
+          -27.983893314579653,
+          20.535739105048545,
+          2.6526897271604373
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_R_00",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_R_00",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -28.035915551082343,
+          19.507200241088867,
+          -3.4858105327784417
+        ],
+        [
+          -27.99091555108234,
+          20.507200241088867,
+          -3.4408105327784417
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_R_01",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_R_01",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -28.418804123875937,
+          19.050000190734863,
+          -2.723810525223553
+        ],
+        [
+          -28.373804123875935,
+          20.050000190734863,
+          -2.678810525223553
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_R_02",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_R_02",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -28.80169269666953,
+          18.59280014038086,
+          -1.961810517668664
+        ],
+        [
+          -28.75669269666953,
+          19.59280014038086,
+          -1.916810517668664
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_R_03",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_R_03",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -29.184581269463123,
+          18.135600090026855,
+          -1.1998105101137753
+        ],
+        [
+          -29.13958126946312,
+          19.135600090026855,
+          -1.1548105101137753
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_R_04",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_R_04",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -29.56746984225672,
+          17.67840003967285,
+          -0.4378105025588866
+        ],
+        [
+          -29.52246984225672,
+          18.67840003967285,
+          -0.39281050255888655
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_R_05",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_R_05",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -29.95035841505031,
+          17.221199989318848,
+          0.32418950499600213
+        ],
+        [
+          -29.90535841505031,
+          18.221199989318848,
+          0.36918950499600217
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_R_06",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_R_06",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -30.333246987843907,
+          16.763999938964844,
+          1.086189512550891
+        ],
+        [
+          -30.288246987843905,
+          17.763999938964844,
+          1.1311895125508908
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_R_07",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_R_07",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -30.7161355606375,
+          16.30679988861084,
+          1.8481895201057796
+        ],
+        [
+          -30.6711355606375,
+          17.30679988861084,
+          1.8931895201057796
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_REPOSITIONED_POST_R_08",
+      "replacement_node": "INTERPRETIVE_UPPER_EXIT_POST_R_08",
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -31.099024133431094,
+          15.849599838256836,
+          2.610189527660668
+        ],
+        [
+          -31.054024133431092,
+          16.849599838256836,
+          2.655189527660668
+        ]
+      ],
+      "watertight": true,
+      "triangles": 64
+    },
+    {
+      "name": "PERISPHERE_UPPER_LANDING_RAIL_R",
+      "replacement_node": null,
+      "role": "RAIL_RETURN",
+      "bounds": [
+        [
+          -28.045915603637695,
+          20.474700927734375,
+          -4.295499801635742
+        ],
+        [
+          -25.28689193725586,
+          20.53969955444336,
+          -3.463310480117798
+        ]
+      ],
+      "watertight": true,
+      "triangles": 352
+    }
+  ],
+  "disabled": [
+    "INTERPRETIVE_LOWER_PORTAL_JAMB_N",
+    "INTERPRETIVE_LOWER_PORTAL_JAMB_S",
+    "INTERPRETIVE_LOWER_PORTAL_HEAD",
+    "INTERPRETIVE_LOWER_PORTAL_SILL_GUIDE",
+    "INTERPRETIVE_UPPER_PORTAL_JAMB_N",
+    "INTERPRETIVE_UPPER_PORTAL_JAMB_S",
+    "INTERPRETIVE_UPPER_PORTAL_HEAD",
+    "INTERPRETIVE_UPPER_PORTAL_SILL_GUIDE",
+    "PROVISIONAL_UPPER_EXIT_STAIR"
+  ],
+  "replaced": [
+    "Perisphere_Lower_Removable_Shell__UNREAL_PORTALS_v001",
+    "PROVISIONAL_UpperLandingToStair",
+    "PROVISIONAL_UpperReturnStair_01",
+    "PROVISIONAL_UpperReturnStair_02",
+    "PROVISIONAL_UpperReturnStair_03",
+    "PROVISIONAL_UpperReturnStair_04",
+    "PROVISIONAL_UpperReturnStair_05",
+    "PROVISIONAL_UpperReturnStair_06",
+    "PROVISIONAL_UpperReturnStair_07",
+    "PROVISIONAL_UpperReturnStair_08",
+    "PROVISIONAL_UpperReturnStair_09",
+    "PROVISIONAL_UpperReturnStair_10",
+    "PROVISIONAL_UpperReturnStair_11",
+    "PROVISIONAL_UpperReturnStair_12",
+    "PROVISIONAL_UpperReturnStair_13",
+    "PROVISIONAL_UpperReturnStair_14",
+    "PROVISIONAL_UpperReturnStair_15",
+    "PROVISIONAL_UpperReturnStair_16",
+    "PROVISIONAL_UpperReturnStair_17",
+    "PROVISIONAL_UpperReturnStair_18",
+    "PROVISIONAL_UpperReturnStair_19",
+    "PROVISIONAL_UpperReturnStair_20",
+    "PROVISIONAL_UpperReturnStair_21",
+    "PROVISIONAL_UpperReturnStair_22",
+    "PROVISIONAL_UpperReturnStair_23",
+    "INTERPRETIVE_UPPER_EXIT_HANDRAIL_L",
+    "INTERPRETIVE_UPPER_EXIT_POST_L_00",
+    "INTERPRETIVE_UPPER_EXIT_POST_L_01",
+    "INTERPRETIVE_UPPER_EXIT_POST_L_02",
+    "INTERPRETIVE_UPPER_EXIT_POST_L_03",
+    "INTERPRETIVE_UPPER_EXIT_POST_L_04",
+    "INTERPRETIVE_UPPER_EXIT_POST_L_05",
+    "INTERPRETIVE_UPPER_EXIT_POST_L_06",
+    "INTERPRETIVE_UPPER_EXIT_POST_L_07",
+    "INTERPRETIVE_UPPER_EXIT_POST_L_08",
+    "INTERPRETIVE_UPPER_EXIT_HANDRAIL_R",
+    "INTERPRETIVE_UPPER_EXIT_POST_R_00",
+    "INTERPRETIVE_UPPER_EXIT_POST_R_01",
+    "INTERPRETIVE_UPPER_EXIT_POST_R_02",
+    "INTERPRETIVE_UPPER_EXIT_POST_R_03",
+    "INTERPRETIVE_UPPER_EXIT_POST_R_04",
+    "INTERPRETIVE_UPPER_EXIT_POST_R_05",
+    "INTERPRETIVE_UPPER_EXIT_POST_R_06",
+    "INTERPRETIVE_UPPER_EXIT_POST_R_07",
+    "INTERPRETIVE_UPPER_EXIT_POST_R_08"
+  ],
+  "brace_cap_contacts": [
+    {
+      "z": 1.8480000823736191,
+      "cap_triangles": 12,
+      "all_inside_jamb_x_depth": true
+    },
+    {
+      "z": 4.248000082373619,
+      "cap_triangles": 12,
+      "all_inside_jamb_x_depth": true
+    },
+    {
+      "z": -4.35,
+      "cap_triangles": 12,
+      "all_inside_jamb_x_depth": true
+    },
+    {
+      "z": -1.95,
+      "cap_triangles": 12,
+      "all_inside_jamb_x_depth": true
+    }
+  ],
+  "source_binary_prefix_preserved": true,
+  "status": "PROVISIONAL_ARCHITECTURE",
+  "limits": [
+    "No historical door dimensions or finish evidence claimed",
+    "No structural load-transfer calculation",
+    "No Unreal traversal",
+    "No hinged door leaves; openings remain usable"
+  ],
+  "output_sha256": "ef1d417434ec9b1a873a0aecd9a287d96c353bcef9c70f7a70fb1b22af8c0633",
+  "local_shell_patch": {
+    "outer_radius_m": 27.444,
+    "inner_radius_m": 27.328,
+    "bounds": [
+      [
+        -32,
+        14,
+        -6.5
+      ],
+      [
+        -14,
+        23.5,
+        6.5
+      ]
+    ],
+    "status": "PROVISIONAL_FIT_TO_INHERITED_SPHERE"
+  }
+}
