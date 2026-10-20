@@ -1,0 +1,44 @@
+{
+  "preservation": "PASS",
+  "added_solids": "PASS",
+  "brace_jamb_connections": "PASS",
+  "screens": [
+    {
+      "portal": "TRYLON_ENTRY",
+      "poses": 51,
+      "sphere_samples": 663,
+      "body_diameter": 0.6,
+      "height": 1.8,
+      "floor_lift": 0.05,
+      "surface_contacts": []
+    },
+    {
+      "portal": "TRYLON_EXIT",
+      "poses": 51,
+      "sphere_samples": 663,
+      "body_diameter": 0.6,
+      "height": 1.8,
+      "floor_lift": 0.05,
+      "surface_contacts": []
+    },
+    {
+      "portal": "PERISPHERE_LOWER",
+      "poses": 51,
+      "sphere_samples": 663,
+      "body_diameter": 0.6,
+      "height": 1.8,
+      "floor_lift": 0.05,
+      "surface_contacts": []
+    },
+    {
+      "portal": "PERISPHERE_UPPER",
+      "poses": 51,
+      "sphere_samples": 663,
+      "body_diameter": 0.6,
+      "height": 1.8,
+      "floor_lift": 0.05,
+      "surface_contacts": []
+    }
+  ],
+  "scope": "Discrete sphere cover body surface screen; not continuous Unreal traversal or structural certification"
+}
