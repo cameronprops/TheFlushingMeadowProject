@@ -1,0 +1,116 @@
+{
+  "schema": "fmp.theme-center.structural-evidence-register.v001",
+  "era": 1939,
+  "model": "FMP_THEME_CENTER_1939",
+  "status": "SOURCE_LEADS_NOT_MEASUREMENTS",
+  "coordinate_contract": "MODEL_LOCAL_Y_UP_METRES_UNREGISTERED",
+  "sources": [
+    {
+      "id": "ENG_1938_ISE",
+      "url": "https://www.istructe.org/journal/volumes/volume-16-%28published-in-1938%29/issue-11/theme-structures-of-new-york-world-s-fair/",
+      "type": "period_engineering_text",
+      "supports": [
+        "WF0001 triangular steel leg framing",
+        "approximate 39 column lengths PER leg",
+        "480-ft change to upper 130-ft plate construction"
+      ],
+      "limitations": "Not an exact truss-node schedule; 39 is approximate",
+      "measured_landmarks": 0
+    },
+    {
+      "id": "ENG_1938_DESIGN_TRENDS",
+      "url": "https://www.worldsfairphotos.com/nywf39/articles/design-trends.pdf",
+      "type": "period_engineering_article",
+      "supports": [
+        "WF0002 32 meridians",
+        "WF0002 15 horizontal trusses",
+        "WF0002 72-ft-diameter ring girder",
+        "WF0004 central tubular support family"
+      ],
+      "limitations": "Some dimensions published in this article describe early proposals; use field-level as-built whitelist",
+      "measured_landmarks": 0
+    },
+    {
+      "id": "LOC_2018750258",
+      "url": "https://www.loc.gov/item/2018750258/",
+      "date": "1940-10-27",
+      "type": "as_built_image",
+      "supports": [
+        "WF0004 Helicline railing soffit and tubular column family"
+      ],
+      "limitations": "1940 view; no camera calibration or recovered column coordinates",
+      "measured_landmarks": 0
+    },
+    {
+      "id": "LOC_2018750315",
+      "url": "https://www.loc.gov/item/2018750315/",
+      "date": "1939-or-1940",
+      "type": "period_color_slide",
+      "supports": [
+        "WF0001 WF0002 WF0004 exterior relative composition"
+      ],
+      "limitations": "Viewpoint and calibrated image controls not recorded",
+      "measured_landmarks": 0
+    },
+    {
+      "id": "NYPL_THEME_CENTER_ENGINEERING",
+      "url": "https://worldsfair.nypl.org/containerlist.pdf",
+      "type": "archival_finding_aid",
+      "supports": [
+        "Box 1661 folder 7 Helicline stability",
+        "Box 1661 folders 9-11 foundation and superstructure",
+        "Box 1663 folders 1-3 Theme Center structural steel"
+      ],
+      "limitations": "Finding aid documents existence only; no blueprint dimensions extracted",
+      "measured_landmarks": 0
+    },
+    {
+      "id": "IA_MEDICUS_REEL6",
+      "url": "https://archive.org/details/0639_HM_Medicus_collection_New_York_Worlds_Fair_1939-40_Reel_6_15_01_00_00",
+      "date": "1939-1940",
+      "type": "archival_home_movie_lead",
+      "supports": [
+        "fairwide historical visual context"
+      ],
+      "limitations": "Archive shot log centers on amusement area; NOT yet established as a Theme Center measurement source",
+      "measured_landmarks": 0
+    }
+  ],
+  "frame_observation_contract": {
+    "description": "Capture image pixel coordinates only after frame retrieval and source/date checks. At least 4 noncollinear planar control points are needed for homography. It does not locate 3D nodes.",
+    "required": [
+      "source_id",
+      "frame_timecode",
+      "pixel_dimensions",
+      "construction_state",
+      "landmark_id",
+      "model_xy_ft",
+      "image_xy_px",
+      "pixel_uncertainty",
+      "control_author"
+    ],
+    "controls": [],
+    "fit_status": "NOT_STARTED",
+    "film_frames_processed": 0,
+    "photo_landmarks_measured": 0
+  },
+  "geometry_gate": {
+    "structural_fact_consistency": "COMPUTABLE",
+    "trylon_per_bay_truss_centers": "UNKNOWN",
+    "perisphere_horiz_truss_latitudes": "UNKNOWN",
+    "helicline_column_locations": "UNKNOWN",
+    "planar_image_registration": "NOT_CALIBRATED",
+    "true_3d_camera_registration": "NOT_IMPLEMENTED",
+    "historical_asset_release": "BLOCKED_FOR_UNRESOLVED_DETAILS"
+  },
+  "game_development_handoff": {
+    "runtime_asset": "FMP_ThemeCenter_Assembled_Runtime_v005.glb",
+    "runtime_manifest": "research/pavilions/theme_center/ASSEMBLED_RUNTIME_v005.json",
+    "source_glb_unmodified": true,
+    "write_normalization_executed": false,
+    "package_vendor_admission_executed": false,
+    "unreal_import_tested": false,
+    "collision_tested": false,
+    "stable_id_policy": "Preserve WF0001 WF0002 WF0004 and native TP_ElementIDs; do not overwrite print shells."
+  }
+}
