@@ -1,0 +1,3 @@
+# WF0028 interpretive route repair v008
+
+2026-10-20. Model v004 preserved (76 original components). Three blocked waypoints moved 0.5m in candidate overlay only. Grid-based AABB search found 14 of 14 possible candidate route links, up from 8/14 in v007. Added 482 visual route segments. Five regression tests executed and passed locally. Source model and historic plan intake remain separate. No wall modifications. Routes not certified for floor support, continuous capsule clearance, doorways, or Unreal NavMesh. Local v008 package SHA256: 781aeccb24f93839c432d0c4cea3612a29dd4285fae0015079423cb5aaa5e33c. Google Drive upload attempted but blocked by tool policy; no remote archive confirmation.
