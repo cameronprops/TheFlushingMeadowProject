@@ -154,6 +154,64 @@
       "limitations": "Unknown lens, camera pose and baseline; no corresponding landmarks verified yet. Not a construction truss drawing.",
       "measured_landmarks": 0,
       "priority": "HIGH"
+    },
+    {
+      "id": "AUCTION_2012_LOT418_DILLON",
+      "url": "https://www.worldsfairauction.com/catalogs/catalog-19.pdf",
+      "page_pdf_zero_based": 115,
+      "auction": "World's Fair Absentee Auction #19, bidding closed February 28, 2012",
+      "lot_number": 418,
+      "type": "historical_primary_document_collection_secondary_sale_listing",
+      "source_status": "CATALOG_DESCRIPTION_ONLY_ORIGINALS_NOT_EXAMINED",
+      "claimed_origin": "Original engineering and construction documents associated with Alfred J. Dillon, identified as Chief Engineer in auction listing",
+      "holdings_described": [
+        "Approximately 40 pieces of drawings/blueprints/construction data",
+        "65-page binder with daughter provenance letter, engineering notes and correspondence",
+        "Perisphere original elevation and plan sketches",
+        "large Perisphere annotated blueprint",
+        "1937-02-02 Theme Building section drawing and covering letter"
+      ],
+      "possible_use": [
+        "Perisphere meridian/ring girder stations and sectional geometry",
+        "Trylon leg bracing/bays if actual structural sheets represented",
+        "Trylon-Perisphere interior and bridge sectional coordinates if Theme Building section is legible"
+      ],
+      "limitations": "Auction listing is not an examined drawing; no evidence confirming buyer, present custodian, complete content, sheet revision, or built versus superseded dimensions. Source contains 1937 proposal-era material. Never use this description for as-built numerical geometry.",
+      "access_status": "PRESENT_CUSTODIAN_UNKNOWN",
+      "lead_priority": "CRITICAL",
+      "measured_landmarks": 0,
+      "provenance_contact": "World's Fair Auction / 4th Dimension Collectibles; published auctioneer Andrew Kaufman; contact@worldsfairauction.com",
+      "question_for_archivist": "Is there a surviving high-resolution image inventory or publicly sharable redacted/permission-cleared scans? Can current custodian be contacted without disclosing buyer identity?"
+    },
+    {
+      "id": "PRELINGER_MEDICUS_REEL4_FILM",
+      "url": "https://www.panix.com/~footage/titles.html",
+      "type": "primary_film_collection_finding_list",
+      "title": "Amateur film: Medicus collection: New York World's Fair, 1939-40, Reel 4",
+      "inventory_citation": "Prelinger Archives Active Film Collection title list; film listed at nominal 60:00",
+      "mirror": "https://publicdomainmovie.net/movie/amateur-film-medicus-collection-new-york-worlds-fair-1939-40-reel-4-part-i",
+      "supplementary_mirror": "https://www.msn.com/en-us/video/peopleandplaces/home-movies-medicus-collection-new-york-world-s-fair-1939-40-reel-4-silent/vi-AA1Bcw96",
+      "date": "1939-1940",
+      "priority": "HIGH",
+      "limitations": "No actual video bytes or decoded frames in runtime. Nominal catalog duration differs from edit on MSN. Do not assume this reel shows Theme Center trussing, construction or same views. Frame timecodes and edit/version must be recorded.",
+      "supports": [
+        "potential dated fairground facade/circulation context",
+        "possible ground-level Trylon-Perisphere visual comparison if frames actually show subject"
+      ],
+      "measured_landmarks": 0
+    },
+    {
+      "id": "CONSTRUCTION_STATE_SCENIC_SCAFFOLD_1938",
+      "url": "https://drivingfordeco.com/vanished-new-york-city-art-deco-the-trylon-and-perisphere/",
+      "type": "secondary_photo_essay_citing_period_NYPL_MCNY_images",
+      "date": "1938-08_to_1939-02",
+      "priority": "HIGH",
+      "supports": [
+        "August 1938 visible steel framework, useful for primary structural member analysis",
+        "September/Autumn 1938 extensive erection/skin scaffolding, not structural steel"
+      ],
+      "limitations": "Chronology synthesized from secondary photo essay; verify each source negative/metadata independently. Scaffold horizontal lines cannot be assumed part of permanent structure. Retain year/state labels and construction versus opening-day geometry.",
+      "measured_landmarks": 0
     }
   ],
   "frame_observation_contract": {
@@ -293,5 +351,15 @@
     },
     "older_slide_tiff_note": "Wolfram imported LOC TIFF URLs, but returned dimensions equal to reviewed JPEG derivative dimensions. No additional image-detail resolution observed.",
     "no_geometry_promoted": true
+  },
+  "acquisition_priorities": {
+    "date": "2026-10-20",
+    "best_unexamined_blueprint_source": "AUCTION_2012_LOT418_DILLON",
+    "best_unexamined_theme_center_film_candidate": "PRELINGER_MEDICUS_REEL4_FILM",
+    "most_urgent_gap": "Actual truss joint/bay schedules and Helicline footing/site section sources; no measured structural intersections from primary drawings/photos.",
+    "usage_lock": "CATALOG_ONLY_NOT_A_MEASURED_CONSTRUCTION_DRAWING",
+    "contact_status": "NOT_CONTACTED",
+    "owner_status": "UNKNOWN",
+    "source_edition_discrimination": "1937 proposal plan, 1938 construction, 1939/1940 finished as-built distinct"
   }
 }
