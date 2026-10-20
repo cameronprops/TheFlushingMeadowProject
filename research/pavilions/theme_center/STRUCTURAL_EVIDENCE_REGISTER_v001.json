@@ -114,6 +114,46 @@
       "limitations": "320x240 px, ~62s derivative of longer film; listed public domain by Wikimedia Commons; archive download failed in current environment, so no frames extracted or geometry observations.",
       "measured_landmarks": 0,
       "priority": "MEDIUM"
+    },
+    {
+      "id": "LOC_2018735542",
+      "url": "https://www.loc.gov/item/2018735542/",
+      "date": "1939-05-18",
+      "creator": "Gottscho-Schleisner, Inc.",
+      "type": "as_built_photo_catalog_and_decoded_reference",
+      "digital_id": "gsc.5a03107",
+      "direct_image": "https://tile.loc.gov/storage-services/service/pnp/gsc/5a03000/5a03100/5a03107r.jpg",
+      "decoded_pixels": [
+        306,
+        420
+      ],
+      "supports": [
+        "WF0001 and WF0002 completed exterior, potential camera-control landmarks",
+        "same-day photo study with LOC_2018735543"
+      ],
+      "limitations": "No recorded camera location, 3D coordinates or measured landmark pixels; same-day does not prove overlapping viewpoints or stereo geometry. Exterior photo, not exposed construction steel.",
+      "measured_landmarks": 0,
+      "priority": "HIGH"
+    },
+    {
+      "id": "LOC_2018735543",
+      "url": "https://www.loc.gov/item/2018735543/",
+      "date": "1939-05-18",
+      "creator": "Gottscho-Schleisner, Inc.",
+      "type": "as_built_photo_catalog_and_decoded_reference",
+      "digital_id": "gsc.5a03108",
+      "direct_image": "https://tile.loc.gov/storage-services/service/pnp/gsc/5a03000/5a03100/5a03108r.jpg",
+      "decoded_pixels": [
+        304,
+        420
+      ],
+      "supports": [
+        "WF0001 and WF0002 completed exterior, potential camera-control landmarks",
+        "same-day photo study with LOC_2018735542"
+      ],
+      "limitations": "Unknown lens, camera pose and baseline; no corresponding landmarks verified yet. Not a construction truss drawing.",
+      "measured_landmarks": 0,
+      "priority": "HIGH"
     }
   ],
   "frame_observation_contract": {
@@ -232,5 +272,26 @@
     "reason": "Catalog explicitly mentions fair construction and seaplane aerial views; strongest unreviewed candidate for 1939 structural/site placement.",
     "notes": "Do not infer photogrammetric calibrations from catalog descriptions or low-res preview frames. Seek higher-quality reels and independent controls.",
     "retrieval_blocker": "Internet Archive/Wikimedia direct video download unavailable in this environment; Smithsonian reel may require research appointment or reproduction request."
+  },
+  "photo_source_review_v003": {
+    "review_date": "2026-10-20",
+    "measurement_status": "NO_HISTORICAL_COORDINATES_ANNOTATED",
+    "sources_decoded": [
+      "LOC_2018735542",
+      "LOC_2018735543"
+    ],
+    "notes": "Two Gottscho-Schleisner images made 1939-05-18; decoded in Wolfram as 306x420 and 304x420 pixel JPEGs. May form multi-view evidence if repeated known structures are visible. No photos in runtime file archive, only source pointers and derivative dimensions.",
+    "older_slide_tiff_probes": {
+      "LOC_2018750258": [
+        560,
+        385
+      ],
+      "LOC_2018750315": [
+        560,
+        384
+      ]
+    },
+    "older_slide_tiff_note": "Wolfram imported LOC TIFF URLs, but returned dimensions equal to reviewed JPEG derivative dimensions. No additional image-detail resolution observed.",
+    "no_geometry_promoted": true
   }
 }
