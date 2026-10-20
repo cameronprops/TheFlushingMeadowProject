@@ -31,3 +31,22 @@ E. Produce source-qualified shell and rooms in separate objects; keep artistical
 F. Join entrance nodes to dated fairground paths after site registration and run physics/collision and visitor traversal in Unreal.
 
 **Current:** Stage A catalog locations identified only. B–F blocked on readable originals, no new GLB or Unreal import. Existing building ID WF0028; Science and Education identity remains unassigned in neighborhood register.
+
+## Additional interior source priority and trace contract
+
+NYPL construction records include C1.0110 Box 142 Folder 7 (Medicine and Public
+Health charts, maps and plans), Folder 11 (1939 proposed plan), Folder 6 (N-5
+building 1939), and Folder 5 (N-5 building 1940). Cross-check with the
+1939 book `Man and His Health`, particularly reported plan pages 30-31; these
+pages have not been inspected and are not yet accepted geometry evidence.
+The NYPL digital record for a polio/iron lung exhibit is also an exhibit subject
+lead, but not a room assignment:
+https://digitalcollections.nypl.org/items/5e66b3e9-1b3e-d471-e040-e00a180654d7
+
+[Blank plan trace intake](WF0028_PLAN_TRACE_INTAKE_v001.json) now enumerates
+source-sheet IDs, metadata, verification fields, empty room/wall/opening/route
+sets, and deliberately unverified registration. It has no invented geometric
+coordinates. Populate only after reviewing an original sheet at useful resolution.
+
+No new geometry generated; no source image acquired; source and trace validation
+remain to be completed.
