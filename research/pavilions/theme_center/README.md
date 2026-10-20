@@ -91,3 +91,9 @@ A new **read-only** cross-tool handoff checks v005 manifest lineage, historical 
 The default mode is **metadata-only**. Supplying the exact v005 GLB additionally checks byte hash and static glTF structure. Neither mode substitutes for actual Unreal import, full continuous collision/traversal, Game Development Studio inspection/packaging or historical as-built opening evidence. Do not promote the v004 435 clear sampled poses into a navigation certification. Preserve original watertight print models.
 
 Next executable gate: run the byte-level preflight against the exact archived v005 GLB, then separately obtain authorization and a configured local Game Development Studio/Unreal runtime for native checks.
+
+## Mathematical constraint solver v0.1 (2026-10-20)
+
+Source and tests are now in [tools/theme_center_constraints](../../../tools/theme_center_constraints/README.md), with the [Wolfram audit and game handoff](../../../docs/THEME_CENTER_SOLVER_V001.md). The [complete portable working bundle](https://drive.google.com/file/d/1lVtPOlNAyZWt-IEnroNxEqAk-QmPi_IT/view) is backed up in the project Drive archive (SHA-256 `e32a683127e2dc248832ba1065402d5224d0089a63e6471577b7e8b34963e0f2`).
+
+A frozen export of all 68 BIM master facts is checked against verified values, Code_Drive status, stable registered element IDs and geometric constraints. The solver emits 60 unique constraint element records, a JSON open-constraint report, and an engine-neutral overlay referencing **existing assembled runtime v005**, not new replacement geometry. Twelve local regression tests passed; the separate analytic sphere GLB is only a dimensional comparator. The project retains its original Y-up/metre 573-node v005 scene unchanged. Underdetermined Trylon base, bridge levels, Helicline path and other gaps remain blocked. Game Development Studio's local CLI was not available for package admission, nor was Unreal available for import/collision/navigation testing.
