@@ -112,3 +112,7 @@ Continued the v004 435-pose return-route screen with a **conservative surface-co
 ## 2026-10-20: passage renders and bounded asset repairs
 
 [Actual mesh views, five scenic winding repairs and WF0028 runtime export filter](ASSET_FIXES_234.md). Separate winding-only derivative preserves v005 architecture and source data; six regressions pass. Three passage renders expose unfinished brace ends and rail returns. Historical reframing and native Unreal acceptance remain open. This derivative does not supersede v005 as the preserved input.
+
+## 2026-10-20: Trylon architectural doorway remains open (visual v001)
+
+[Visual mesh review](TRYLON_PASSAGE_VISUAL_REVIEW_v001.md) checked the actual v005 shell and frame geometry after the return-route clearance claims. **The Trylon exterior shell replacement is geometrically identical to the original 49-vertex/102-triangle shell.** The two provisional 2.4 m-wide crossing envelopes currently sit within a **pre-existing, oversized lower-front cladding opening**; v004 trimmed the face-frame braces and a Helicline rail rather than cutting two new finished doors. Thus the offline walkpath is not simply driven through existing solid cladding, but **a historically correct, architecturally framed entrance/exit has not been modeled or accepted**. The visible framing and portal treatment require separate section/elevation, historic-source and Unreal review. Do not call this architectural acceptance PASS or equate body-surface clearance with completed door construction.
