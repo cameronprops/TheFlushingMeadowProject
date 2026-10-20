@@ -83,3 +83,11 @@ The site model is **not georeferenced**. No Unreal character-collision or live v
 ## Subsequent visitor-shell and circulation update
 
 [Guest-flow v002](THEME_CENTER_GUEST_FLOW_V002.md) adds an **interior/egress preview only** (two modeled exit frames, handrails, solid *unapplied* CAD cutter guides, provisional scene hotspot coordinates, Helicline endpoint proximity check). It **never overwrites** the watertight original print shells. Native Unreal collision/visitor traversal and real physical print apertures remain separate engineering acceptance gates.
+
+## 2026-10-20: Wolfram + Game Development Studio preflight v001
+
+A new **read-only** cross-tool handoff checks v005 manifest lineage, historical numerical constraints and v004 provisional aperture/body arithmetic. The calculation was independently reproduced with the Wolfram Language evaluator. The pipeline includes [handoff instructions](../../../docs/THEME_CENTER_ENGINE_HANDOFF_v001.md), the [machine-readable gate](ENGINE_HANDOFF_GATE_v001.json), a stdlib-only [preflight script](../../../tools/world_build/preflight_theme_center_v005.py), and [seven passing hermetic regression tests](../../../tools/world_build/test_preflight_theme_center_v005.py).
+
+The default mode is **metadata-only**. Supplying the exact v005 GLB additionally checks byte hash and static glTF structure. Neither mode substitutes for actual Unreal import, full continuous collision/traversal, Game Development Studio inspection/packaging or historical as-built opening evidence. Do not promote the v004 435 clear sampled poses into a navigation certification. Preserve original watertight print models.
+
+Next executable gate: run the byte-level preflight against the exact archived v005 GLB, then separately obtain authorization and a configured local Game Development Studio/Unreal runtime for native checks.
