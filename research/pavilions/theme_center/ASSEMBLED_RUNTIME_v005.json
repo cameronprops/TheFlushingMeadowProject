@@ -1,0 +1,47 @@
+{
+  "asset": "FMP_ThemeCenter_Assembled_Runtime_v005.glb",
+  "sha256": "de38fdd5294285afd92dbb6be0a9d4e564c52bacd588a9fd116c9e1e35f06439",
+  "source_sha256": "a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5",
+  "overlay_sha256": "b1467273bf674c7fbf081bb7ec64800ae61ecf88942e42678ed8948c452c5e01",
+  "disabled_source_meshes": [
+    {
+      "name": "Perisphere_Lower_Removable_Shell",
+      "node": 126,
+      "source_mesh": 0
+    },
+    {
+      "name": "Trylon_Hollow_Exterior",
+      "node": 185,
+      "source_mesh": 59
+    },
+    {
+      "name": "Trylon_Face_3_Frame",
+      "node": 188,
+      "source_mesh": 62
+    },
+    {
+      "name": "Helicline_Rail_-1",
+      "node": 198,
+      "source_mesh": 72
+    },
+    {
+      "name": "Helicline_Bridge_Transition_Hypothesis",
+      "node": 203,
+      "source_mesh": 77
+    }
+  ],
+  "units": "metres",
+  "coordinate_frame": "right-handed Y-up local, unregistered",
+  "source_binary_preserved": true,
+  "source_materials_and_ids_preserved": true,
+  "source_nodes": 510,
+  "overlay_nodes": 62,
+  "assembled_nodes": 573,
+  "visible_mesh_nodes": 558,
+  "limitations": [
+    "Provisional runtime geometry, not a print master",
+    "No Unreal import, collision, navigation or play test",
+    "Shared aperture dimensions and structural reframing remain unresolved",
+    "1939 working asset; year presence remains subject to evidence review"
+  ]
+}
