@@ -1,0 +1,51 @@
+{
+  "schema": "fmp.architectural_plan_trace.v001",
+  "building_id": "WF0028",
+  "era": 1939,
+  "state": "AWAITING_SOURCE_IMAGE",
+  "units": "m",
+  "up_axis": "Z",
+  "site_registration": "UNREGISTERED",
+  "source_sheets": [
+    {
+      "source_id": "NEAR39-S005",
+      "holding": "NYSL Box 5 Folder 11",
+      "image_path": null,
+      "image_sha256": null,
+      "image_width_px": null,
+      "image_height_px": null,
+      "sheet_revision": null,
+      "printed_scale": null,
+      "scale_control_pairs": [],
+      "plan_to_local_transform": null,
+      "independent_check_residuals_m": []
+    },
+    {
+      "source_id": "NEAR39-S017",
+      "holding": "NYPL C2.3 Box 206 Folder 10",
+      "image_path": null,
+      "image_sha256": null,
+      "image_width_px": null,
+      "image_height_px": null,
+      "sheet_revision": null,
+      "printed_scale": null,
+      "scale_control_pairs": [],
+      "plan_to_local_transform": null,
+      "independent_check_residuals_m": []
+    }
+  ],
+  "levels": [],
+  "spaces": [],
+  "walls": [],
+  "openings": [],
+  "circulation_edges": [],
+  "exhibits": [],
+  "validation": {
+    "plan_sources_measured": false,
+    "room_coordinates_verified": false,
+    "scale_verified_independently": false,
+    "plan_section_cross_checked": false,
+    "unreal_traversal_tested": false
+  },
+  "notes": "Blank source-dependent geometry is intentional. Never populate room polygons or architectural lengths from the physical sheet dimensions or illustration."
+}
