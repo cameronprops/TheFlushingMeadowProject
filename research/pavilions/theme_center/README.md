@@ -134,3 +134,7 @@ An independently executed, **read-only v005 mesh section** shows two modeled esc
 ## 2026-10-20: 3D projective photo solver v003
 
 A read-only [3D frame correspondence gate](../../../tools/world_build/theme_center_projective_3d_gate_v003.wl) adds direct-linear-transform projection from known noncoplanar 3D landmarks, independently held-out verification points, and strict evidence controls. **12 synthetic Wolfram tests passed**. The [updated source register](STRUCTURAL_EVIDENCE_REGISTER_v001.json) still contains no archival measured 3D coordinates or extracted Prelinger frames; projective alignment is non-metric and cannot certify as-built steelwork or relocate Helicline supports. No meshes or print masters changed.
+
+## 2026-10-20: Framed runtime portals v007 built
+
+[Complete assembly and implementation evidence](FRAMED_PORTALS_v007.md). Four doorway assemblies now include wall infill, deep jambs, headers and finished rail returns in both Trylon and Perisphere. Curved Perisphere wall gaps are closed and the upper approach stair/rails repositioned. Six regression tests and all 204 sampled doorway poses pass. This separate provisional runtime derivative resolves the previously exposed ends geometrically; historical entrance/bridge reconstruction and native Unreal acceptance remain open. Original source and print masters are preserved.
