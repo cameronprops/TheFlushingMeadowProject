@@ -1,0 +1,4 @@
+record_id,building_id,era_year,exhibit_name,exhibit_type,evidence_status,source_url,location_status,room_id,geometry_status,notes
+RCA39-EXP-001,WF0009,1939,Lucite Phantom Teleceiver,TELEVISION_RECEIVER,DOCUMENTED_EXHIBIT,https://spectrum.ieee.org/rca-tv,ROOM_UNLOCATED,,REFERENCE_ONLY,Exhibition object identifiable in historical photography; do not invent floorplan location
+RCA39-EXP-002,WF0009,1939,Television camera demonstration,CAMERA_DEMONSTRATION,DOCUMENTED_ACTIVITY,https://www.earlytelevision.org/worlds_fair.html,ROOM_UNLOCATED,,REFERENCE_ONLY,Demonstration activity documented; precise stage camera arrangement and exact pavilion space require corroboration
+RCA39-EXP-003,WF0009,1939,Radio Living-Room of Tomorrow,ROOM_EXHIBIT,DOCUMENTED_EXHIBIT,https://www.earlytelevision.org/worlds_fair.html,ROOM_UNLOCATED,,REFERENCE_ONLY,Contemporary Broadcasting 1939 image caption identifies RCA fair exhibit; room boundary and location unresolved
