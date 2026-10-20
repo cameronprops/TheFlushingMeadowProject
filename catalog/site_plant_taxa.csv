@@ -1,0 +1,6 @@
+taxon_id,common_name,botanical_name,botanical_id_status,form,notes
+TAXA39-CAMASSIA,American camassia,,HISTORIC_TEXT_TO_VERIFY,BULB,"Fair-wide planting tally reported, no garden-bed coordinates"
+TAXA39-SCILLA,Scilla,,HISTORIC_TEXT_TO_VERIFY,BULB,Historic summary mentions scillas; botanical species unresolved
+TAXA39-NARCISSUS,Narcissus,,HISTORIC_TEXT_TO_VERIFY,BULB,"Historic summary reports narcissi, species unresolved"
+TAXA39-ROSE,Rose,,GENUS_ONLY,SHRUB,"Garden presence referenced, do not assume cultivar"
+TAXA39-YEW,Yew,,GENUS_ONLY,SHRUB,"Garden presence referenced, do not assume cultivar"
