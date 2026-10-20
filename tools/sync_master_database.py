@@ -30,6 +30,7 @@ from tools.export_building_dossiers import export_pack
 from tools.building_program.export_runtime_handoff import export as export_runtime_handoff
 from tools.site.export_site_amenities import export_site_amenities
 from tools.site.export_horticulture import export_horticulture
+from tools.site.atlas_handoff import registry as export_atlas_registry, unreal as export_atlas_unreal
 from tools.building_program.refresh_model_catalog import refresh_registered_models
 WATCH_GLOBS = (
     "catalog/*.csv",
@@ -40,6 +41,7 @@ WATCH_GLOBS = (
     "tools/export_building_dossiers.py",
     "tools/building_program/export_runtime_handoff.py",
     "tools/site/export_horticulture.py",
+    "tools/site/atlas_handoff.py",
     "tools/sync_master_database.py",
 )
 
@@ -110,6 +112,7 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
         staged_handoff = staging / "runtime_handoff"
         staged_amenities = staging / "site_amenities"
         staged_horticulture = staging / "horticulture"
+        staged_atlas = staging / "fairground_atlas"
         # Build_db is bound to ROOT, intentionally refusing another source tree.
         if root.resolve() != ROOT.resolve():
             raise ValueError("sync_once requires its own checkout; do not mix repositories")
@@ -120,6 +123,13 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
             runtime_handoff = export_runtime_handoff(connection, staged_handoff, denominator=250)
             site_amenity_report = export_site_amenities(connection, staged_amenities)
             horticulture_report = export_horticulture(connection, staged_horticulture)
+            staged_atlas.mkdir(parents=True,exist_ok=True)
+            atlas_registry = export_atlas_registry(connection)
+            atlas_unreal = export_atlas_unreal(connection)
+            (staged_atlas / "asset_catalog.json").write_text(
+                json.dumps(atlas_registry,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+            (staged_atlas / "unreal_approved_placements.json").write_text(
+                json.dumps(atlas_unreal,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
         # Only replace the last good SQLite database after all checks/export pass.
         destination_db = output_root / "flushing_meadows.sqlite"
         os.replace(staged_db, destination_db)
@@ -182,6 +192,20 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
             raise
         if horticulture_backup.exists():
             shutil.rmtree(horticulture_backup)
+        atlas_dest = output_root / "fairground_atlas"
+        atlas_backup = output_root / ".fairground_atlas_previous"
+        if atlas_backup.exists():
+            shutil.rmtree(atlas_backup)
+        if atlas_dest.exists():
+            os.replace(atlas_dest, atlas_backup)
+        try:
+            os.replace(staged_atlas, atlas_dest)
+        except Exception:
+            if atlas_backup.exists():
+                os.replace(atlas_backup, atlas_dest)
+            raise
+        if atlas_backup.exists():
+            shutil.rmtree(atlas_backup)
     report = {
         "schema": "fmp.master-db-refresh.v1",
         "updated_utc": datetime.now(timezone.utc).isoformat(),
@@ -192,6 +216,7 @@ def sync_once(output_root: Path, root: Path = ROOT, model_root: Path | None = No
         "runtime_handoff": {"building_manifests": len(runtime_handoff["buildings"]), "units":"metres->Unreal centimetres and scaled print millimetres"},
         "site_amenities": site_amenity_report,
         "horticulture": horticulture_report,
+        "fairground_atlas": {"candidate_assets":len(atlas_registry["assets"]), "unreal_reviewed_placements":len(atlas_unreal["ready_placements"])},
         "source_of_truth": "version-controlled CSV + migration SQL; generated SQLite is derivative",
         "current_snapshot": str(output_root / "flushing_meadows.sqlite"),
         "dossiers_directory": str(output_root / "building_program"),
