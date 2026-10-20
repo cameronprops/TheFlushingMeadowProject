@@ -107,3 +107,8 @@ Continued the v004 435-pose return-route screen with a **conservative surface-co
 [Full limitations and reproduction](RETURN_ROUTE_CONTINUITY_v001.md) · [Machine-readable report](RETURN_ROUTE_CONTINUITY_v001.json) · [Read-only audit script](../../../tools/world_build/audit_theme_center_route_continuity_v001.py) · [10 synthetic regression tests](../../../tools/world_build/test_audit_theme_center_route_continuity_v001.py). **24/24** combined local preflight, mesh audit and continuity tests pass, plus independent evaluation on the actual hash-verified GLB.
 
 **Scope boundary:** This is **not** continuous *native Unreal* collision, route occupancy inside closed solids, character movement or full guest-journey proof. The one-metre Helicline transition junction, other ramps, escalators, staircases, Perisphere platforms and historical exactness remain open. No source or print geometry changed.
+
+
+## 2026-10-20: passage renders and bounded asset repairs
+
+[Actual mesh views, five scenic winding repairs and WF0028 runtime export filter](ASSET_FIXES_234.md). Separate winding-only derivative preserves v005 architecture and source data; six regressions pass. Three passage renders expose unfinished brace ends and rail returns. Historical reframing and native Unreal acceptance remain open. This derivative does not supersede v005 as the preserved input.
