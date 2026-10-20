@@ -53,6 +53,6 @@ class AtlasTests(unittest.TestCase):
   with self.assertRaises(ValueError):fit_preview(dict(FIT,check_rmse_m=99),[],MAP['id'])
  def test_uncertified_unreal_export_empty(self):
   c=sqlite3.connect(':memory:')
-  c.execute('CREATE VIEW atlas_unreal_ready AS SELECT 1 AS test WHERE 0')
+  c.execute('CREATE TABLE atlas_unreal_ready(era_year INTEGER,placement_id TEXT)')
   self.assertEqual(unreal(c)['ready_placements'],[])
 if __name__=='__main__':unittest.main()
