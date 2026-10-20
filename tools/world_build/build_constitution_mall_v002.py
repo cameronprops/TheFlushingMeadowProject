@@ -169,7 +169,12 @@ def parse_glb(blob):
  data=json.loads(pieces[0][1].decode('utf8'));return data,pieces[1][1]
 
 def build(source):
- base=Path(source).read_bytes();data,rawbin=parse_glb(base)
+ base=Path(source).read_bytes()
+ source_digest=hashlib.sha256(base).hexdigest()
+ expected_digest='a35661fd1eef633b8ae4767c0db1f953ed986c8555814361c0824700c6080cf5'
+ if source_digest!=expected_digest:
+  raise ValueError('Refusing unexpected Theme Center source SHA256: '+source_digest)
+ data,rawbin=parse_glb(base)
  # Important: original buffer view byte offsets must not change.
  old_meshes=len(data.get('meshes',[]));old_nodes=len(data.get('nodes',[]));old_materials=len(data.get('materials',[]))
  old_json_hash=hashlib.sha256(json.dumps(data,sort_keys=True,separators=(',',':')).encode()).hexdigest()
@@ -223,7 +228,7 @@ def build(source):
  if len({r['object_id'] for r in records})!=len(records):raise AssertionError('duplicate identifiers')
  manifest={'release':'FMP_Constitution_Mall_Impression_v002','world_state':'1939_INTERPRETIVE_PREVIEW',
            'units':'metres','up_axis':'Y','local_axis':'positive-X extension from Theme Center is an IMPRESSION, not georeferenced east',
-           'source_sha256':hashlib.sha256(base).hexdigest(),'source_original_nodes':old_nodes,
+           'source_sha256':source_digest,'source_original_nodes':old_nodes,
            'source_original_meshes':old_meshes,'source_original_materials':old_materials,
            'source_original_binary_sha256':old_bin_hash,'source_original_json_sha256':old_json_hash,
            'output_sha256':hashlib.sha256(out).hexdigest(),'source_bin_preserved':True,'named_pavilions_created':0,
