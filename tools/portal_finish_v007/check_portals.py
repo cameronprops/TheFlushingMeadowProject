@@ -2,6 +2,7 @@ import json,hashlib
 from pathlib import Path
 import numpy as np,trimesh
 from glb_tools import read_glb
+from validation_gate import require_clear, sha256
 R=Path(__file__).parent
 r=json.loads((R/'output/portal_manifest.json').read_text());path=R/'output/ThemeCenter_Framed_Portals_v007.glb'
 s=trimesh.load(path,force='scene',process=False)
@@ -34,5 +35,7 @@ for p in r['portals']:
   if len(idx):hits.append({'node':n,'samples':len(idx),'min_surface_distance':float(dist.min()),'worst_center':pts[int(dist.argmin())].tolist()})
   near.append(n)
  checks.append({'portal':p['id'],'poses':51,'sphere_samples':len(pts),'body_diameter':.6,'height':1.8,'floor_lift':.05,'surface_contacts':hits})
-out={'preservation':'PASS','added_solids':'PASS','brace_jamb_connections':'PASS','screens':checks,'scope':'Discrete sphere cover body surface screen; not continuous Unreal traversal or structural certification'}
+out={'asset_sha256':sha256(path),'preservation':'PASS','added_solids':'PASS','brace_jamb_connections':'PASS','screens':checks,'scope':'Discrete sphere cover body surface screen; not continuous Unreal traversal or structural certification'}
 (R/'output/portal_validation.json').write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2))
+
+require_clear(out, path, [p['id'] for p in r['portals']])
