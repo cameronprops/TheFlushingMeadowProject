@@ -59,3 +59,15 @@ Next concrete operation: obtain a high-quality dated construction image or a sui
 - No original Trylon/Perisphere/Helicline mesh, photographic rights, archives or world coordinates were changed. Current archive inventory still has **0 measured historical controls**; video extraction remains blocked by unavailable network video decode in runtime. The public-domain short film remains a lead only. Follow Game Development Studio's read-only evidence review and separate asset admission requirements.
 
 **Next actual evidence step:** obtain usable higher-resolution construction views or film frames, establish documented 3D reference control coordinates (not approximate previews), annotate at least 8 correspondences across depth, and use two held-out controls from each image to judge the projection. Cross-check in a second non-identical view before claiming any truss intersections. In the meantime, these numerical results must stay outside the as-built geometry gate.
+
+## 2026-10-20: Real Prelinger film decoded and timecoded
+
+Actual source: https://archive.org/details/Medicusc1939_4 (Philip Medicus NYWF 1939–40 Reel 4, Part I). The direct 512kb MP4 derivative is 20m51.952s, 320x240 pixels. Wolfram successfully extracted a 30-frame coarse survey and eight individual frames at seconds 80, 90, 100, 110, 120, 130, 140 and 150.
+
+Frames around 00:01:30 through 00:02:20 show finished Trylon and Perisphere silhouettes behind fountain spray and sculptures. They are period film frames, not generated images. Lower structure is obscured, the hidden steel is covered, and the film cannot certify internal Trylon trusses or Helicline footings.
+
+The frame register research/pavilions/theme_center/MEDICUS_REEL4_PARTI_FRAME_SURVEY_v001.json records the original source URL, precise derivative duration, timecodes, review notes, frame size and decoded-pixel SHA256. Tested through Wolfram with exact committed integrity script: eight real frames decoded; 8/8 pixel hashes and sizes matched. A corrupted digest and a disallowed video URI were rejected. These are frame pixel hashes, not source MP4 byte hashes.
+
+Repeat using Wolfram from repository root: Get["tools/world_build/medicus_reel4_frame_integrity_v001.wl"]; spec = Import["research/pavilions/theme_center/MEDICUS_REEL4_PARTI_FRAME_SURVEY_v001.json", "RawJSON"]; FMPAcquireAndCheckFilmFrames[spec]
+
+Limits: zero measured archival landmarks, zero camera calibrations, zero historical structural nodes recovered, no permanent video asset archived, sub-era 1939 vs 1940 unknown. No source, print master or runtime GLB modified.
