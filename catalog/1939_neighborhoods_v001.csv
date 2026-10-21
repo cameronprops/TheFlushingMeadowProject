@@ -1,0 +1,5 @@
+neighborhood_id,label,year,geometry_scope,source_of_truth,adjacency_status
+N39-TC,Theme Center core,1939,Trylon Perisphere Helicline,Theme Center source models,PROVISIONAL
+N39-COM,Communications district,1939,RCA AT&T Communications building,Building-level source records,PROVISIONAL
+N39-HEALTH,Health and Science complex,1939,Medical Public Health Science Education Hall of Pharmacy,Building-level source records,PROVISIONAL
+N39-MALL,Constitution Mall and Business Systems,1939,Mall public space and Business Systems Insurance,Site network records,PROVISIONAL
