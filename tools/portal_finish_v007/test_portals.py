@@ -1,6 +1,7 @@
 import unittest,json
 from pathlib import Path
 import numpy as np,trimesh
+from validation_gate import require_clear
 R=Path(__file__).parent
 class PortalChecks(unittest.TestCase):
  @classmethod
@@ -26,6 +27,7 @@ class PortalChecks(unittest.TestCase):
   self.assertTrue(all(p['all_inside_jamb_x_depth'] and p['cap_triangles']>0 for p in self.r['brace_cap_contacts']))
  def test_all_body_screens_clear(self):
   result=json.loads((R/'output/portal_validation.json').read_text())
+  require_clear(result, R/'output/ThemeCenter_Framed_Portals_v007.glb', [p['id'] for p in self.r['portals']])
   self.assertEqual(sum(x['poses'] for x in result['screens']),204)
   self.assertTrue(all(not x['surface_contacts'] for x in result['screens']))
  def test_shell_and_collars_closed(self):
