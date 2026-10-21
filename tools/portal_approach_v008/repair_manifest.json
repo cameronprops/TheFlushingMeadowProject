@@ -1,0 +1,39 @@
+{
+  "source_sha256": "ef1d417434ec9b1a873a0aecd9a287d96c353bcef9c70f7a70fb1b22af8c0633",
+  "output_sha256": "aefc8b0a83c5e8264b936151a13cb5f7190e69d9e55c28a5141ce84c0fced867",
+  "replaced_node": "PROVISIONAL_UpperLandingToStair",
+  "source_binary_prefix_preserved": true,
+  "other_nodes_unchanged": true,
+  "watertight": true,
+  "winding_consistent": true,
+  "before_bounds": [
+    [
+      -27.336891174316406,
+      19.347200393676758,
+      -4.2230000495910645
+    ],
+    [
+      -25.28689193725586,
+      19.507200241088867,
+      -1.8730000257492065
+    ]
+  ],
+  "after_bounds": [
+    [
+      -28.10276985168457,
+      19.347200393676758,
+      -4.295499801635742
+    ],
+    [
+      -25.28689193725586,
+      19.507200241088867,
+      -1.8005000352859497
+    ]
+  ],
+  "classification": "PROVISIONAL_RUNTIME_REPAIR",
+  "limits": [
+    "No historical architecture claim",
+    "No structural analysis",
+    "No native Unreal traversal"
+  ]
+}
