@@ -1,0 +1,184 @@
+{
+  "schema": "fmp.retroactive-dual-archive.photo-structural.v001",
+  "originating_workstream": "FMP Theme Center Wolfram geometry, structural research, Prelinger film & NYPL photo solver conversation",
+  "date": "2026-10-20",
+  "github_repository": "cameronprops/TheFlushingMeadowProject",
+  "drive_archive_folder": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+  "historical_source_rights": "NYPL exposed steel photograph catalog rights undetermined. No original photographic source pixels redistributed in code ZIP or public Git.",
+  "new_verified_items": [
+    {
+      "source_filename": "nypl_exposed_steel_screen_v001.wl",
+      "git_path": "tools/world_build/nypl_exposed_steel_screen_v001.wl",
+      "git_blob_sha1": "7181bc6ae1c6b4cc813abb8c60457c4c3f9fa50c",
+      "git_commit": "41aadfd67b6949bbafb565122ddf595044cf4adf",
+      "drive_file_id": "1tGwBsblAKlLwjPywEe7wwZ9Yh6qLc37R",
+      "drive_folder_id": "1IBq7XWG8vmFBL262E2OXAIddX46h8Eak",
+      "sha256": "8c63acf95a64f5c217c61d19e8175b7c4d8d4ce6be98915b5556a97c56b89ea1",
+      "size_bytes": 3768,
+      "content_class": "code_or_data_read_only",
+      "copy_status": "DUAL_VERIFIED",
+      "verification": "Direct GitHub main file text matched Drive raw download; local Git object SHA-1 matched fetched Github blob SHA."
+    },
+    {
+      "source_filename": "NYPL_EXPOSED_STEEL_SCREEN_v001.json",
+      "git_path": "research/pavilions/theme_center/NYPL_EXPOSED_STEEL_SCREEN_v001.json",
+      "git_blob_sha1": "a8ce1103dfce1ba7405072cc1193a86f0ed9843c",
+      "git_commit": "41aadfd67b6949bbafb565122ddf595044cf4adf",
+      "drive_file_id": "19Mp-KIGhTO4oF1NaX0xz5XS30PvjgbP0",
+      "drive_folder_id": "1IBq7XWG8vmFBL262E2OXAIddX46h8Eak",
+      "sha256": "cb735aa1c576e53dbb0548585d29d098866008565fbdd12c74f8a35debcd2563",
+      "size_bytes": 3860,
+      "content_class": "code_or_data_read_only",
+      "copy_status": "DUAL_VERIFIED",
+      "verification": "Direct GitHub main file text matched Drive raw download; local Git object SHA-1 matched fetched Github blob SHA."
+    },
+    {
+      "source_filename": "test_nypl_exposed_steel_screen_v001.wl",
+      "git_path": "tests/test_nypl_exposed_steel_screen_v001.wl",
+      "git_blob_sha1": "eb052ebef3994b0cba8f6bec694877279150e59a",
+      "git_commit": "41aadfd67b6949bbafb565122ddf595044cf4adf",
+      "drive_file_id": "1cKcBQgDfDx7qYCWehjIYHs3W9-xUFw4V",
+      "drive_folder_id": "1IBq7XWG8vmFBL262E2OXAIddX46h8Eak",
+      "sha256": "80aeb60712ee77eefb75278926884251101347a5db6f6ba2efd6914405719e95",
+      "size_bytes": 2029,
+      "content_class": "code_or_data_read_only",
+      "copy_status": "DUAL_VERIFIED",
+      "verification": "Direct GitHub main file text matched Drive raw download; local Git object SHA-1 matched fetched Github blob SHA."
+    },
+    {
+      "source_filename": "README.md",
+      "git_path": "docs/world_build/NYPL_EXPOSED_STEEL_SCREEN_v001.md",
+      "git_blob_sha1": "c64bfeb5dee67b729fb233542921f3bdfc2c877d",
+      "git_commit": "41aadfd67b6949bbafb565122ddf595044cf4adf",
+      "drive_file_id": "1sO56Sz0Z2VV9hbGesu-BCVgYMoyu92q9",
+      "drive_folder_id": "1IBq7XWG8vmFBL262E2OXAIddX46h8Eak",
+      "sha256": "0c30d3b332f62124e93d069d3b4ace275927ccf6f65d8849dd92e816e7f6fdc5",
+      "size_bytes": 1704,
+      "content_class": "code_or_data_read_only",
+      "copy_status": "DUAL_VERIFIED",
+      "verification": "Direct GitHub main file text matched Drive raw download; local Git object SHA-1 matched fetched Github blob SHA."
+    },
+    {
+      "source_filename": "package_inventory.json",
+      "git_path": "archive/packages/FMP_NYPL_ExposedSteel_v001_inventory.json",
+      "git_blob_sha1": "c4cc81ffd5576725631f932609861ce8d118abbb",
+      "git_commit": "41aadfd67b6949bbafb565122ddf595044cf4adf",
+      "drive_file_id": "1E22-lYvYuglPeVNPGWDfxpd1J0gwvTt-",
+      "drive_folder_id": "1IBq7XWG8vmFBL262E2OXAIddX46h8Eak",
+      "sha256": "8d1cfcc34b850b2878a61fec7183ad5934accc57478f14f972ffb872b55fea63",
+      "size_bytes": 696,
+      "content_class": "code_or_data_read_only",
+      "copy_status": "DUAL_VERIFIED",
+      "verification": "Direct GitHub main file text matched Drive raw download; local Git object SHA-1 matched fetched Github blob SHA."
+    },
+    {
+      "source_filename": "FMP_NYPL_ExposedSteel_v001.zip",
+      "git_path": "archive/packages/FMP_NYPL_ExposedSteel_v001.zip",
+      "git_blob_sha1": "60b63d3769a5d90fab73798ec3a7b0a92aa5655e",
+      "git_commit": "41aadfd67b6949bbafb565122ddf595044cf4adf",
+      "drive_file_id": "1xDQjvZg8yJzDc9VMLypjmhzoAuEpgV2c",
+      "drive_folder_id": "1IBq7XWG8vmFBL262E2OXAIddX46h8Eak",
+      "sha256": "67771f3f52593683592b42b00843d11a48a013cf1e9179a3bbd345ccb0c454a0",
+      "size_bytes": 6203,
+      "content_class": "source_complete_zip",
+      "copy_status": "DUAL_VERIFIED",
+      "verification": "GitHub accepted exact Drive raw bytes as base64 blob, returning Git SHA-1 equal to independently computed local Git blob digest; Drive readback confirmed size and folder."
+    },
+    {
+      "source_filename": "FMP_ThemeCenter_Solver_v001.zip",
+      "git_path": "archive/packages/FMP_ThemeCenter_Solver_v001.zip",
+      "git_blob_sha1": "5a72529493e6eb50cb72e2ef4fe3514874ea925b",
+      "git_commit": "bcb5149660a7777998d397edf981d78da35a1e25",
+      "drive_file_id": "1c5iO6wpd7CNsJSrn44CVmCzIw4KeGYZN",
+      "drive_folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+      "sha256": "738fbffd4d6a073878dd2d0e3a43e1cb87e068a0447e0cc0d2a983e4728f7092",
+      "size_bytes": 88712,
+      "content_class": "prior_solver_workbook_and_scripts_zip",
+      "copy_status": "DUAL_VERIFIED",
+      "verification": "Git blob SHA-1 checked against source local package, GitHub blob upload directly sourced from Drive raw download; Drive folder and byte size checked."
+    }
+  ],
+  "outstanding_file_backfill": [
+    {
+      "git_path": "tools/world_build/theme_center_structural_solver.wl",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "tools/world_build/theme_center_image_quality_gate_v002.wl",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "tools/world_build/theme_center_projective_3d_gate_v003.wl",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "tests/theme_center_structural_solver_tests.wl",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "tests/theme_center_image_quality_gate_tests.wl",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "tests/theme_center_projective_3d_gate_tests.wl",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "tools/world_build/medicus_reel4_frame_integrity_v001.wl",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "research/pavilions/theme_center/STRUCTURAL_EVIDENCE_REGISTER_v001.json",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "research/pavilions/theme_center/MEDICUS_REEL4_PARTI_FRAME_SURVEY_v001.json",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "research/pavilions/theme_center/MEDICUS_REEL4_PARTI_HD_FRAME_SURVEY_v002.json",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "docs/THEME_CENTER_STRUCTURAL_PHOTOGRAMMETRY_v001.md",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    },
+    {
+      "git_path": "research/pavilions/theme_center/README.md",
+      "status": "DRIVE_COPY_PENDING",
+      "next_step": "Mirror exact current Git bytes to canonical FMP Drive and compare SHA-256; some earlier Drive ZIPs may already contain older copies requiring version-aware audit."
+    }
+  ],
+  "unrecovered_media": [
+    {
+      "source": "https://images.nypl.org/index.php?id=ps_mss_cd23_351&t=w",
+      "status": "BLOCKED_RIGHTS",
+      "note": "NYPL image was viewed in transient Wolfram session; rights not determined; original derivative deliberately not republished. Metadata, pixel SHA256 and six authored pixel observations are archived."
+    },
+    {
+      "source": "https://archive.org/details/Medicusc1939_4",
+      "status": "SOURCE_ACQUISITION_PENDING",
+      "note": "Film frame sequences viewed transiently; timestamped checksums and descriptions are in Git, but original video bytes and exported PNG frames are not verified in BOTH endpoints."
+    },
+    {
+      "source": "Full verbatim ChatGPT workstream conversation and attachments",
+      "status": "TRANSCRIPT_PENDING",
+      "note": "Complete transcript export not available in current tools; summary and code cannot substitute."
+    }
+  ],
+  "complete_workstream_dual_archival_claim": false,
+  "game_dev_studio": "Local game-dev CLI and Unreal runtime unavailable; no native import, collision, packaging or GPU capture.",
+  "solver_scope": "11 of 11 Wolfram regression tests passed on exposed-steel 2D rim screening, including real NYPL pixel hash and negative cases; NO 3D as-built truss node locations certified.",
+  "next_step": "Backfill prior Git-only Wolfram and film manifests to Drive as raw matching files, and locate dated engineering drawings/photographs."
+}
