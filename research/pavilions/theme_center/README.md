@@ -154,3 +154,7 @@ The [8-frame timecode and checksum register](MEDICUS_REEL4_PARTI_FRAME_SURVEY_v0
 ## 2026-10-20: Better 640-pixel Medicus film derivative v002
 
 The exact [640 × 480 decoded-film survey](MEDICUS_REEL4_PARTI_HD_FRAME_SURVEY_v002.json) for the same eight Part I timecodes is now the preferred visual derivative. [Archive.org's original file inventory](https://archive.org/metadata/Medicusc1939_4) lists the 130,321,651-byte MP4 derivative, while the prior 320 × 240 survey is kept intact. Wolfram decoded every sample, recorded pixel-array SHA-256 checksums, and independently confirmed the eight records in two groups of four: **8/8 digests and dimensions matched**. This is evidence capture only; no camera registration, true 3D truss/Helicline support placement, native game asset or source-master modification is claimed. The actual MP4 binary has not been re-archived to Drive.
+
+## 2026-10-21: Upper Perisphere stair landing repaired, v008
+
+[Complete scene and actual-mesh before/after evidence](UPPER_LANDING_v008.md). Replaced the incomplete rectangular stair connection with a fitted landing and full-width nosing. Support improved from 9/15 to 15/15 approach probes; first-tread support 15/15, four regressions pass, 204 doorway poses remain clear. Provisional runtime repair; Unreal and historical acceptance remain open.
