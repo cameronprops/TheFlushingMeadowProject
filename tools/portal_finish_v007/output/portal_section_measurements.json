@@ -1,0 +1,90 @@
+{
+  "asset_sha256": "ef1d417434ec9b1a873a0aecd9a287d96c353bcef9c70f7a70fb1b22af8c0633",
+  "units": "metres",
+  "measurements": [
+    {
+      "portal": "TRYLON_ENTRY",
+      "section_x": -36.65,
+      "clear_width": 2.4000000953674316,
+      "threshold_to_header": 2.3989992141723633,
+      "frame_depth": 1.0,
+      "section_nodes": [
+        "TRYLON_ENTRY_FLUSH_THRESHOLD",
+        "TRYLON_ENTRY_HEADER_REVEAL",
+        "TRYLON_ENTRY_RIGHT_JAMB_REVEAL",
+        "TRYLON_ENTRY_LEFT_JAMB_REVEAL",
+        "TRYLON_PROVISIONAL_TWO_DOOR_INFILL_WALL",
+        "Trylon_Hollow_Exterior__RUNTIME_SHARED_APERTURES_v004",
+        "Trylon_Face_3_Frame__RUNTIME_SHARED_APERTURES_v004",
+        "PROVISIONAL_ReturnViaTrylon_01",
+        "Escalator_1_Envelope",
+        "Trylon_Face_2_Frame"
+      ]
+    },
+    {
+      "portal": "TRYLON_EXIT",
+      "section_x": -36.65,
+      "clear_width": 2.3999998569488525,
+      "threshold_to_header": 2.3989992141723633,
+      "frame_depth": 1.0,
+      "section_nodes": [
+        "TRYLON_EXIT_RAIL_RETURN_1",
+        "TRYLON_EXIT_RAIL_RETURN_-1",
+        "TRYLON_EXIT_FLUSH_THRESHOLD",
+        "TRYLON_EXIT_HEADER_REVEAL",
+        "TRYLON_EXIT_RIGHT_JAMB_REVEAL",
+        "TRYLON_EXIT_LEFT_JAMB_REVEAL",
+        "TRYLON_PROVISIONAL_TWO_DOOR_INFILL_WALL",
+        "Trylon_Hollow_Exterior__RUNTIME_SHARED_APERTURES_v004",
+        "Trylon_Face_3_Frame__RUNTIME_SHARED_APERTURES_v004",
+        "PROVISIONAL_ReturnViaTrylon_03",
+        "Escalator_2_Envelope",
+        "Trylon_Face_1_Frame"
+      ]
+    },
+    {
+      "portal": "PERISPHERE_LOWER",
+      "section_x": -22.132300361230214,
+      "clear_width": 2.350000023841858,
+      "threshold_to_header": 2.3989992141723633,
+      "frame_depth": 2.7264711448237087,
+      "section_nodes": [
+        "PERISPHERE_LOWER_CURVED_WALL_COLLAR",
+        "PERISPHERE_LOWER_FLUSH_THRESHOLD",
+        "PERISPHERE_LOWER_HEADER_REVEAL",
+        "PERISPHERE_LOWER_RIGHT_JAMB_REVEAL",
+        "PERISPHERE_LOWER_LEFT_JAMB_REVEAL",
+        "Helicline_Rail_-1__RUNTIME_SHARED_APERTURES_v004",
+        "Perisphere_Lower_Removable_Shell__UNREAL_PORTALS_v001",
+        "Helicline_Rail_1",
+        "Helicline_Deck_and_Curved_Soffit",
+        "Return_Bridge_Deck",
+        "Escalator_1_Envelope",
+        "Latitude_Truss_04",
+        "Meridian_Truss_20",
+        "Meridian_Truss_19",
+        "Meridian_Truss_18",
+        "Interior_Projection_Liner"
+      ]
+    },
+    {
+      "portal": "PERISPHERE_UPPER",
+      "section_x": -24.2811202693725,
+      "clear_width": 2.350000023841858,
+      "threshold_to_header": 2.3990001678466797,
+      "frame_depth": 2.2115422965575,
+      "section_nodes": [
+        "PERISPHERE_UPPER_CURVED_WALL_COLLAR",
+        "PERISPHERE_UPPER_FLUSH_THRESHOLD",
+        "PERISPHERE_UPPER_HEADER_REVEAL",
+        "PERISPHERE_UPPER_RIGHT_JAMB_REVEAL",
+        "PERISPHERE_UPPER_LEFT_JAMB_REVEAL",
+        "Perisphere_Lower_Removable_Shell__UNREAL_PORTALS_v001",
+        "Escalator_2_Envelope",
+        "Meridian_Truss_16",
+        "Meridian_Truss_15",
+        "Interior_Projection_Liner"
+      ]
+    }
+  ]
+}
