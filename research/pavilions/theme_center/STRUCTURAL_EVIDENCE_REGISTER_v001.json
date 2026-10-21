@@ -212,6 +212,22 @@
       ],
       "limitations": "Chronology synthesized from secondary photo essay; verify each source negative/metadata independently. Scaffold horizontal lines cannot be assumed part of permanent structure. Retain year/state labels and construction versus opening-day geometry.",
       "measured_landmarks": 0
+    },
+    {
+      "id": "PRELINGER_MEDICUS_REEL4_PARTI_ARCHIVEORG",
+      "url": "https://archive.org/details/Medicusc1939_4",
+      "download_url": "https://archive.org/download/Medicusc1939_4/Medicusc1939_4_512kb.mp4",
+      "type": "archival_video_derivative_actually_decoded",
+      "date": "1939-1940",
+      "supports": [
+        "Finished exterior Trylon and Perisphere in frame observations at 00:01:30 to 00:02:20",
+        "Approach/fountain and sculptures sightline context"
+      ],
+      "limitations": "Low-resolution 320x240 movie frames, shot date uncertain, uncalibrated. Historical structural truss and Helicline supports NOT visible as measurable engineering parts.",
+      "frame_register": "research/pavilions/theme_center/MEDICUS_REEL4_PARTI_FRAME_SURVEY_v001.json",
+      "measured_landmarks": 0,
+      "frame_pixel_hashes_verified": true,
+      "priority": "HIGH"
     }
   ],
   "frame_observation_contract": {
@@ -273,7 +289,8 @@
     "helicline_column_locations": "UNKNOWN",
     "planar_image_registration": "V002_HOLDOUT_GATE_AVAILABLE_NOT_CALIBRATED",
     "true_3d_camera_registration": "NONMETRIC_3D_PROJECTIVE_FIT_AVAILABLE_REQUIRES_REAL_CORRESPONDENCES",
-    "historical_asset_release": "BLOCKED_FOR_UNRESOLVED_DETAILS"
+    "historical_asset_release": "BLOCKED_FOR_UNRESOLVED_DETAILS",
+    "historical_film_frame_survey": "DECODED_8_OBSERVATIONS_ZERO_CALIBRATED_MEASUREMENTS"
   },
   "game_development_handoff": {
     "runtime_asset": "FMP_ThemeCenter_Assembled_Runtime_v005.glb",
@@ -324,12 +341,14 @@
   },
   "film_acquisition_status": {
     "last_review_date": "2026-10-20",
-    "actual_film_frames_extracted": 0,
+    "actual_film_frames_extracted": 8,
     "actual_film_frames_annotated": 0,
     "highest_priority": "SI_NMAH_HOME_MOVIE_I_1939",
     "reason": "Catalog explicitly mentions fair construction and seaplane aerial views; strongest unreviewed candidate for 1939 structural/site placement.",
     "notes": "Do not infer photogrammetric calibrations from catalog descriptions or low-res preview frames. Seek higher-quality reels and independent controls.",
-    "retrieval_blocker": "Internet Archive/Wikimedia direct video download unavailable in this environment; Smithsonian reel may require research appointment or reproduction request."
+    "retrieval_blocker": "Original reel master and higher-resolution video still unavailable; 320x240 Part I derivative decoded and reviewed.",
+    "frame_register": "research/pavilions/theme_center/MEDICUS_REEL4_PARTI_FRAME_SURVEY_v001.json",
+    "acquisition_state": "VIDEO_DECODED_IN_WOLFRAM_RUNTIME_NO_PERMANENT_FULL_VIDEO_COPY"
   },
   "photo_source_review_v003": {
     "review_date": "2026-10-20",
