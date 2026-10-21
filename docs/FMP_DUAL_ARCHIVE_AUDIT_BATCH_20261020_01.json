@@ -1,0 +1,126 @@
+{
+  "batch_id": "theme-center-chat-retroactive-2026-10-20-batch01",
+  "limits": [
+    "Provider folder membership and download authenticity must be independently checked before using local bytes as Drive evidence.",
+    "GitHub pointers and source member copies do not constitute a GitHub binary ZIP mirror.",
+    "Matching local bytes are only BOTH_LOCAL_COPIES_MATCH; verify actual remote GitHub SHA/release and authenticated Drive bytes before declaring DUAL_VERIFIED."
+  ],
+  "results": [
+    {
+      "drive_file_id": "1PwBZnZ2oDG24TLnF8tQhxWZhhqK2POF_",
+      "drive_local_bytes_verified": true,
+      "errors": [
+        "GIT_BINARY_NOT_AVAILABLE"
+      ],
+      "filename": "FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001.zip",
+      "git_local_bytes_verified": false,
+      "id": "FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001",
+      "sha256": "1d5759b3787986790174b08b4a52267105e748ebcee58fb59caf3e1b2301b5cc",
+      "size_bytes": 12225,
+      "status": "GIT_BINARY_PENDING"
+    },
+    {
+      "drive_file_id": "15b2j_-anBktrh5OKAKYOeVMtHdjqVkCv",
+      "drive_local_bytes_verified": true,
+      "errors": [
+        "GIT_BINARY_NOT_AVAILABLE"
+      ],
+      "filename": "FMP_ThemeCenter_RuntimeMesh_Audit_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_RuntimeMesh_Audit_v001.zip",
+      "git_local_bytes_verified": false,
+      "id": "FMP_ThemeCenter_RuntimeMesh_Audit_v001",
+      "sha256": "3f0e01ad7d630869d16ed2a8525acf8eae26ad65e551df89bfdef97ff7b4c7e7",
+      "size_bytes": 11666,
+      "status": "GIT_BINARY_PENDING"
+    },
+    {
+      "drive_file_id": "1vNaxcSn4SbtOJvH-rTbEmFqdFqGz93UR",
+      "drive_local_bytes_verified": true,
+      "errors": [
+        "GIT_BINARY_NOT_AVAILABLE"
+      ],
+      "filename": "FMP_ThemeCenter_ReturnRoute_Continuity_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_ReturnRoute_Continuity_v001.zip",
+      "git_local_bytes_verified": false,
+      "id": "FMP_ThemeCenter_ReturnRoute_Continuity_v001",
+      "sha256": "175e57ee6b4e859b7c100f092fd530e8850fe7bcaa6a47ea09e6a8edc368b672",
+      "size_bytes": 12711,
+      "status": "GIT_BINARY_PENDING"
+    },
+    {
+      "drive_file_id": "1o8OZlu-q0IOiZbpr90lobYrRql2T6bZ0",
+      "drive_local_bytes_verified": true,
+      "errors": [
+        "GIT_BINARY_NOT_AVAILABLE"
+      ],
+      "filename": "FMP_Trylon_Actual_GLB_Passage_Evidence_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_Trylon_Actual_GLB_Passage_Evidence_v001.zip",
+      "git_local_bytes_verified": false,
+      "id": "FMP_Trylon_Actual_GLB_Passage_Evidence_v001",
+      "sha256": "094dcd4dcbfbbc386abc458cc5e3e6a37183262bb53b86ff7633c7b7704aecc7",
+      "size_bytes": 2106792,
+      "status": "GIT_BINARY_PENDING"
+    },
+    {
+      "drive_file_id": "1LJYXE5P1_tQiUts20qocl2HgGcpMEWih",
+      "drive_local_bytes_verified": true,
+      "errors": [
+        "GIT_BINARY_NOT_AVAILABLE"
+      ],
+      "filename": "FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001.zip",
+      "git_local_bytes_verified": false,
+      "id": "FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001",
+      "sha256": "2440f4607a452075dedb7d5cead46a3e70a7d7c95fe994556ae57d826718fe6a",
+      "size_bytes": 288576,
+      "status": "GIT_BINARY_PENDING"
+    },
+    {
+      "drive_file_id": "1fMraAZ0QP5oNaaYTtlLG44qOfa-HidbY",
+      "drive_local_bytes_verified": true,
+      "errors": [
+        "GIT_BINARY_NOT_AVAILABLE"
+      ],
+      "filename": "FMP_ThemeCenter_Photo_Control_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Photo_Control_v001.zip",
+      "git_local_bytes_verified": false,
+      "id": "FMP_ThemeCenter_Photo_Control_v001",
+      "sha256": "d7147388c9f3a8f4f3c09e6d556ee845747d07298eac1c64e5b44ca52b1236e1",
+      "size_bytes": 245540,
+      "status": "GIT_BINARY_PENDING"
+    },
+    {
+      "drive_file_id": "1Z01QmV6EfgElqiBhVUIg7nIvd_pucZdi",
+      "drive_local_bytes_verified": true,
+      "errors": [
+        "GIT_BINARY_NOT_AVAILABLE"
+      ],
+      "filename": "FMP_ThemeCenter_Shared_Portals_v004.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Shared_Portals_v004.zip",
+      "git_local_bytes_verified": false,
+      "id": "FMP_ThemeCenter_Shared_Portals_v004",
+      "sha256": "c9230e725754be55dbde705931a991d9439e0e1bf9b0135591a83bdbb16f5028",
+      "size_bytes": 845307,
+      "status": "GIT_BINARY_PENDING"
+    },
+    {
+      "drive_file_id": "1OzFZRkHCxN3jMBGwH3Lwdbx0pFJIJhM0",
+      "drive_local_bytes_verified": true,
+      "errors": [
+        "GIT_BINARY_NOT_AVAILABLE"
+      ],
+      "filename": "FMP_ThemeCenter_Assembled_Runtime_v005.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Assembled_Runtime_v005.zip",
+      "git_local_bytes_verified": false,
+      "id": "FMP_ThemeCenter_Assembled_Runtime_v005",
+      "sha256": "d55522c3877638e1e3566ca63a18b0f072c2a6279ca3b5da4620836b547586b2",
+      "size_bytes": 19917363,
+      "status": "GIT_BINARY_PENDING"
+    }
+  ],
+  "schema": "fmp.dual-archive-audit-report.v001",
+  "status_counts": {
+    "GIT_BINARY_PENDING": 8
+  }
+}
