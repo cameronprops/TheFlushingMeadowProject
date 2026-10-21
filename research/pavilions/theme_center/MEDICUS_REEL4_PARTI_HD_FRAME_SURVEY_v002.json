@@ -1,0 +1,149 @@
+{
+  "schema": "fmp.theme-center.archival-film-timecode.v002",
+  "source_id": "PRELINGER_MEDICUS_REEL4_PARTI_ARCHIVEORG_640PX",
+  "source_page": "https://archive.org/details/Medicusc1939_4",
+  "source_url": "https://archive.org/download/Medicusc1939_4/Medicusc1939_4.mp4",
+  "film_type": "Philip Medicus 1939-40 Reel 4 Part I, Internet Archive 640x480 derivative (separate from 512kb copy)",
+  "year_range": "1939-1940",
+  "derivative_duration_seconds": 1251.951,
+  "derivative_frame_resolution_px": [
+    640,
+    480
+  ],
+  "actual_film_frames_inspected": 8,
+  "coarse_pass": {
+    "samples": 30,
+    "start_sec": 20,
+    "interval_sec": 40,
+    "end_sec": 1180
+  },
+  "frame_entries": [
+    {
+      "time_seconds": 80,
+      "timecode": "00:01:20",
+      "frame_dimensions_px": [
+        640,
+        480
+      ],
+      "decoded_pixel_sha256": "a0a808607834de2491179c3d1ac18fe93a901ce934427594e10d3929c397a2e9",
+      "feature_review": "Long shot of approach/fountain axis with candidate Trylon silhouette",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 90,
+      "timecode": "00:01:30",
+      "frame_dimensions_px": [
+        640,
+        480
+      ],
+      "decoded_pixel_sha256": "7c1b4fcf9ea8d66b170281982c451d74f0f157b0ab7fad3025a0d79b92af5544",
+      "feature_review": "Trylon dominant silhouette and smaller distant Perisphere",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 100,
+      "timecode": "00:01:40",
+      "frame_dimensions_px": [
+        640,
+        480
+      ],
+      "decoded_pixel_sha256": "082da5a08e72565389f69ea11ca4929ca102d41b1070e0e3d394c4c8d7b26c42",
+      "feature_review": "Perisphere sphere behind fountain curtain",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 110,
+      "timecode": "00:01:50",
+      "frame_dimensions_px": [
+        640,
+        480
+      ],
+      "decoded_pixel_sha256": "f2a1a74b422904b9cfffe045f6e6b0905f1a1c22430c5da5cf23cc4b50cd1553",
+      "feature_review": "Trylon above fountain, lower structure occluded",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 120,
+      "timecode": "00:02:00",
+      "frame_dimensions_px": [
+        640,
+        480
+      ],
+      "decoded_pixel_sha256": "7be5905111896e9385d22c0e62cc1cc4998f7dfec9e05fd0dee34bed01772f38",
+      "feature_review": "Fountain building with no independently usable Theme Center landmark",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 130,
+      "timecode": "00:02:10",
+      "frame_dimensions_px": [
+        640,
+        480
+      ],
+      "decoded_pixel_sha256": "af644a9be886f45db4a911da79e67c3c2ac8ab72238452e3e7d20e3da888d81c",
+      "feature_review": "Trylon and Perisphere distant beyond statues",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 140,
+      "timecode": "00:02:20",
+      "frame_dimensions_px": [
+        640,
+        480
+      ],
+      "decoded_pixel_sha256": "49a7c15e8c8768e85c5d424e120d2ad7ec9b82c536fb4536c1b45f06d26c8a2b",
+      "feature_review": "Trylon and sphere beyond sculpture garden",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 150,
+      "timecode": "00:02:30",
+      "frame_dimensions_px": [
+        640,
+        480
+      ],
+      "decoded_pixel_sha256": "cc10a386544c8c145cb42bcd71f681f234979b12fddf2ca8d19d2bf68cfe1a42",
+      "feature_review": "International flags and pavilion, contextual scene",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    }
+  ],
+  "checksum_contract": "Wolfram Hash[ImageData[frame,\"Byte\"],\"SHA256\",\"HexString\"]; decoded frame pixel hash not source MP4 file hash; different decoder versions may yield different pixels",
+  "video_byte_sha256": null,
+  "video_full_download_archived": false,
+  "exact_frame_date_known": false,
+  "as_built_member_locations_certified": false,
+  "calibrated_camera_count": 0,
+  "historical_3d_placement_solved": false,
+  "limitations": [
+    "Low-resolution derivative; frame timecodes refer to this edition, not original reel master.",
+    "Scenes show completed skins, obscured by fountain sprays; no permanent steel trusses or Helicline support locations can be measured.",
+    "No known calibration landmarks have yet been matched to surveyed 3D world points; no 3D camera position solved.",
+    "Some frames may include 1940 year footage. Never silently assign all to 1939."
+  ],
+  "reconstruction_use": "Visual reference for silhouette, fountain foreground and historic approach; measurement gated until independent control points and era verified.",
+  "archive_metadata_url": "https://archive.org/metadata/Medicusc1939_4",
+  "archive_mp4_reported_size_bytes": 130321651,
+  "differences_from_v001": [
+    "640x480 rather than 320x240 decoded imagery",
+    "Archive.org file inventory lists higher quality MP4 derivative size 130321651 bytes",
+    "Frame pixel checksums differ appropriately; never transfer v001 checksums to v002.",
+    "Scene observations made at same timestamps, still require source-level landmark registration"
+  ],
+  "source_file_byte_sha256": null
+}
