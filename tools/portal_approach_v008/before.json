@@ -1,0 +1,158 @@
+{
+  "asset_sha256": "ef1d417434ec9b1a873a0aecd9a287d96c353bcef9c70f7a70fb1b22af8c0633",
+  "probe_count": 15,
+  "supported": 9,
+  "samples": [
+    {
+      "point": [
+        -26.360145826058275,
+        19.507200241088867,
+        -2.744492602897142
+      ],
+      "surface_y": 19.507200241088867,
+      "drop_m": 0.0,
+      "level_landing_support": true
+    },
+    {
+      "point": [
+        -26.471838276521936,
+        19.507200241088867,
+        -2.8006156508313245
+      ],
+      "surface_y": 19.507200241088867,
+      "drop_m": 0.0,
+      "level_landing_support": true
+    },
+    {
+      "point": [
+        -26.583530726985597,
+        19.507200241088867,
+        -2.8567386987655072
+      ],
+      "surface_y": 19.507200241088867,
+      "drop_m": 0.0,
+      "level_landing_support": true
+    },
+    {
+      "point": [
+        -26.695223177449257,
+        19.507200241088867,
+        -2.9128617466996896
+      ],
+      "surface_y": 19.507200241088867,
+      "drop_m": 0.0,
+      "level_landing_support": true
+    },
+    {
+      "point": [
+        -26.806915627912918,
+        19.507200241088867,
+        -2.9689847946338723
+      ],
+      "surface_y": 19.507200241088867,
+      "drop_m": 0.0,
+      "level_landing_support": true
+    },
+    {
+      "point": [
+        -26.918608078376582,
+        19.507200241088867,
+        -3.0251078425680547
+      ],
+      "surface_y": 19.507200241088867,
+      "drop_m": 0.0,
+      "level_landing_support": true
+    },
+    {
+      "point": [
+        -27.030300528840243,
+        19.507200241088867,
+        -3.0812308905022374
+      ],
+      "surface_y": 19.507200241088867,
+      "drop_m": 0.0,
+      "level_landing_support": true
+    },
+    {
+      "point": [
+        -27.141992979303904,
+        19.507200241088867,
+        -3.1373539384364197
+      ],
+      "surface_y": 19.507200241088867,
+      "drop_m": 0.0,
+      "level_landing_support": true
+    },
+    {
+      "point": [
+        -27.253685429767565,
+        19.507200241088867,
+        -3.193476986370602
+      ],
+      "surface_y": 19.507200241088867,
+      "drop_m": 0.0,
+      "level_landing_support": true
+    },
+    {
+      "point": [
+        -27.365377880231225,
+        19.507200241088867,
+        -3.249600034304785
+      ],
+      "surface_y": 17.05647850036621,
+      "drop_m": 2.4507217407226562,
+      "level_landing_support": false
+    },
+    {
+      "point": [
+        -27.47707033069489,
+        19.507200241088867,
+        -3.305723082238967
+      ],
+      "surface_y": 16.73823065101027,
+      "drop_m": 2.7689695900785978,
+      "level_landing_support": false
+    },
+    {
+      "point": [
+        -27.58876278115855,
+        19.507200241088867,
+        -3.36184613017315
+      ],
+      "surface_y": 16.664272162759286,
+      "drop_m": 2.8429280783295816,
+      "level_landing_support": false
+    },
+    {
+      "point": [
+        -27.70045523162221,
+        19.507200241088867,
+        -3.4179691781073323
+      ],
+      "surface_y": 16.59031373520984,
+      "drop_m": 2.9168865058790274,
+      "level_landing_support": false
+    },
+    {
+      "point": [
+        -27.81214768208587,
+        19.507200241088867,
+        -3.474092226041515
+      ],
+      "surface_y": 16.51635563538813,
+      "drop_m": 2.9908446057007367,
+      "level_landing_support": false
+    },
+    {
+      "point": [
+        -27.923840132549532,
+        19.507200241088867,
+        -3.5302152739756973
+      ],
+      "surface_y": 16.44239753556642,
+      "drop_m": 3.064802705522446,
+      "level_landing_support": false
+    }
+  ],
+  "scope": "15 point rays 100 mm before upper stair leading edge, excluding outermost 50 mm of stair width; level support only, not body collision or Unreal traversal"
+}
