@@ -1,0 +1,22 @@
+{
+  "schema": "fmp.archival.package.v001",
+  "members": {
+    "NYPL_EXPOSED_STEEL_SCREEN_v001.json": {
+      "bytes": 3860,
+      "sha256": "cb735aa1c576e53dbb0548585d29d098866008565fbdd12c74f8a35debcd2563"
+    },
+    "README.md": {
+      "bytes": 1704,
+      "sha256": "0c30d3b332f62124e93d069d3b4ace275927ccf6f65d8849dd92e816e7f6fdc5"
+    },
+    "test_nypl_exposed_steel_screen_v001.wl": {
+      "bytes": 2029,
+      "sha256": "80aeb60712ee77eefb75278926884251101347a5db6f6ba2efd6914405719e95"
+    },
+    "nypl_exposed_steel_screen_v001.wl": {
+      "bytes": 3768,
+      "sha256": "8c63acf95a64f5c217c61d19e8175b7c4d8d4ce6be98915b5556a97c56b89ea1"
+    }
+  },
+  "photo_binary_included": false
+}
