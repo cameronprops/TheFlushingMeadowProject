@@ -37,3 +37,8 @@ Open `output/ThemeCenter_Framed_Portals_v007.glb` as the complete assembled scen
 The new wall, door framing, frame-member connections and rail returns are explicit provisional geometry fitted to the existing model. They do not establish the original entrance canopy, lettering, Art Deco bridge arch, historical door dimensions, structural engineering or original finishes. Source-derived historical entrance/bridge reconstruction is a distinct pending task. Native Unreal import, collision and full traversal remain untested. This file is not a print master or construction document.
 
 Input archives: [v006 asset fixes](https://drive.google.com/file/d/1ofasHEQ3b9sQoqWM6rSGoQ7VVKZKqkYc/view), [original staging GLB](https://drive.google.com/file/d/197H4eTaLAFYEyfPSFFh8wp7_2B5IflIl/view). Inputs are linked rather than duplicated in this release ZIP.
+
+## Validation hardening, 2026-10-20
+The checker now binds its report to the exact GLB SHA256 and exits unsuccessfully on recorded contacts. Regression tests reject stale hashes, missing/duplicate/incomplete portal screens, absent contact results and failed geometry checks. Run `python check_portals.py` before `python -m unittest discover -p 'test_*.py' -v`. All 12 tests passed after a fresh 204-position screen of the unchanged v007 GLB. This remains a discrete surface check. Game Development Studio CLI is unavailable; local Python validation was used. No new mathematical geometry inference required Wolfram.
+
+The Drive v007 ZIP remains the immutable original release. These updated validators and report are maintained in Git; overlay the current repository scripts when reproducing this hardening.
