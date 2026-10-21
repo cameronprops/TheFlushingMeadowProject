@@ -16,6 +16,20 @@ This includes, when produced, **GLB/STEP/3DM/DXF/STL meshes and CAD masters, scr
 
 **Conversation continuity:** Each FMP work thread must archive a concise evidence/decisions/change log and the complete set of created deliverables. A curated summary does not substitute for an exported verbatim ChatGPT transcript. Where a full transcript export is not available, document that limitation and explicitly leave it open. No background sync is assumed; perform verification during the current session.
 
+### Retroactive backfill: ALL prior FMP conversations
+
+**This requirement is explicitly retroactive to the first Flushing Meadows Project conversation and artifact, not merely files created after this policy change.** Every FMP chat and existing connected workflow must reconcile its *historical* file outputs against GitHub **and** Drive. Cameron will ask older threads to reread this file. Treat that instruction as authorization to inspect, inventory, recover and duplicate their own previously created FMP outputs to the extent permissions and tool access allow.
+
+**At the start of each resumed or new FMP conversation, before creating duplicate assets:**
+1. Fetch this file and the [archive policy](docs/ARCHIVE_POLICY.md), inspect the latest default-branch changes, then read the [retroactive dual-archive register](docs/FMP_RETROACTIVE_DUAL_ARCHIVE_REGISTER.md) and the relevant component dossier.
+2. Identify every FMP file **previously created or modified in that specific conversation**, including user-visible ZIPs, scripts, images, architectural renders, original/reference downloads, models, tests, manifests, reports, CAD intermediates used as sources, and revisions. Include historical chat attachments that have never been published to Drive/GitHub. Do not presume the current state of this repo/Drive is exhaustive.
+3. Check for both *actual artifact bytes* in Drive and an appropriate tracked GitHub object (ordinary Git/LFS or a GitHub binary release) before declaring `DUAL_VERIFIED`. For large/restricted files that cannot lawfully or technically be mirrored to public GitHub, maintain a manifest pointer and mark `BLOCKED_RIGHTS` or `GIT_BINARY_PENDING`, **not** `DUAL_VERIFIED`.
+4. Recover/publish missing outputs **without overwriting original historical masters, other threads' files or newer versions**. Maintain stable IDs, source/derivative separation, original filenames, hashes and revision history. Explicitly label rejected synthetic illustrations as **REJECTED_NON_EVIDENCE** if retained for transcript completeness.
+5. Add or reconcile each artifact in the backfill register with **originating chat/workstream, filename, component, version, type, GitHub commit/path or release, Drive file ID/link, hash, status and unresolved action**. Use separate submanifests for large batches.
+6. Update the affected component dossier, commit reconciled results, mirror the changed instructions/register in Drive, and report both verified and still-pending items. Do not give a false all-clear.
+
+**This is a persistent project instruction, not a promise of automatic synchronization.** Agents can act only on artifacts they can actually access during the active conversation. If a transcript or earlier file is inaccessible, leave a documented `UNRECOVERED` entry for that earlier thread to resolve. Do not invent recovered contents. A concise project history is not a verbatim ChatGPT conversation export; the exact transcript is its own separate backfill target when obtainable.
+
 ## Mission, historical rigor, and tool orchestration
 
 FMP is a source-backed, explorable reconstruction of the New York World's Fairs at Flushing Meadows, beginning with a historically credible 1939-1940 site. It is also a modular reference world for architecture, engineering, education, fabrication, digital archaeology, and flexible Unreal-based experiences. The world comes first. Preserve the historical master geometry separately from runtime meshes, printable variants, and authored/speculative worlds. Read the [README](README.md) for the current milestones, era scope, and component links.
