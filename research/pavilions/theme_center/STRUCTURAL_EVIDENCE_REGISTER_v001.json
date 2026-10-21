@@ -368,7 +368,11 @@
     "best_decoded_frame_width_px": 640,
     "best_decoded_frame_height_px": 480,
     "high_resolution_register": "research/pavilions/theme_center/MEDICUS_REEL4_PARTI_HD_FRAME_SURVEY_v002.json",
-    "original_film_master_acquired": false
+    "original_film_master_acquired": false,
+    "drive_frame_survey_note_url": "https://docs.google.com/document/d/1aZDcb-fCtTVU2ckcSjbNkKmklXhX5BGwWcjs5TarnBM/edit",
+    "drive_note_contains_video_binary": false,
+    "higher_resolution_source_verified": true,
+    "higher_resolution_8_frame_digests_match": true
   },
   "photo_source_review_v003": {
     "review_date": "2026-10-20",
