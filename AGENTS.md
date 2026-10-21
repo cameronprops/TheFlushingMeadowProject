@@ -1,5 +1,21 @@
 # FMP working instructions
 
+
+## Mandatory dual archival for every FMP chat (effective 2026-10-20)
+
+**Standing instruction for every conversation, agent, tool, and development thread working on this project:** All FMP deliverable files **created or modified in any chat** must be saved in **BOTH** of the following destinations, without waiting for Cameron to ask for backups:
+
+1. **GitHub:** `cameronprops/TheFlushingMeadowProject`, at an appropriate stable tracked path, with a verified commit. Store editable source, scripts, specifications, metadata and small assets directly. Use Git LFS or a suitable version-controlled binary release mechanism for larger allowed assets when configured; do **not** push enormous raw binaries through the text-file API or rewrite master geometry.
+2. **Google Drive:** [The Flushing Meadows Project archive](https://drive.google.com/drive/folders/11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk), as an actual complete source/deliverable file or explicitly inventoried ZIP, with a verified Drive file ID and folder membership. Mirror code, notes, manifests and generated visuals there too; Drive is **not** only for meshes.
+
+This includes, when produced, **GLB/STEP/3DM/DXF/STL meshes and CAD masters, screenshots and data-driven renders, extracted research frames and rights-cleared reference images, PDFs/docs/spreadsheets, code/tests, ZIPs, manifests, calculations and QA reports**. Preserve editable masters **and** their distinct runtime/print/render derivatives rather than silently substituting one for another. A chat attachment or temporary sandbox path is **not** a backup. Temporary disposable caches need not be archived, but any artifact delivered, tested, used as evidence, or used for future work **does**.
+
+**Dual-archive completion gate:** For each output, verify (a) exact GitHub commit/release/LFS asset or tracked path, (b) actual Drive file or containing ZIP, (c) SHA-256/size and provenance where possible, and (d) cross-links in an appropriate manifest or dossier. For ZIPs, maintain an internal filename inventory so the originals can be found. Check for a newer revision before committing or replacing. Do not report a file as `backed up to both` if only a GitHub pointer or Drive link exists.
+
+**When a destination is blocked:** Save to the accessible destination, commit a manifest/metadata pointer in GitHub for a large or rights-restricted source, mark the *actual dual-copy requirement* **PENDING**, record the failure and exact missing files, and report it in the handoff. A pointer is **not** a physical second copy. Respect copyright, contributor permissions, file-size and licensed-asset restrictions; never put restricted scans in a public Git repository merely to meet this goal. Reconcile the gap in the next chat rather than falsely marking it complete. Follow [ARCHIVE_POLICY](docs/ARCHIVE_POLICY.md).
+
+**Conversation continuity:** Each FMP work thread must archive a concise evidence/decisions/change log and the complete set of created deliverables. A curated summary does not substitute for an exported verbatim ChatGPT transcript. Where a full transcript export is not available, document that limitation and explicitly leave it open. No background sync is assumed; perform verification during the current session.
+
 ## Mission, historical rigor, and tool orchestration
 
 FMP is a source-backed, explorable reconstruction of the New York World's Fairs at Flushing Meadows, beginning with a historically credible 1939-1940 site. It is also a modular reference world for architecture, engineering, education, fabrication, digital archaeology, and flexible Unreal-based experiences. The world comes first. Preserve the historical master geometry separately from runtime meshes, printable variants, and authored/speculative worlds. Read the [README](README.md) for the current milestones, era scope, and component links.
