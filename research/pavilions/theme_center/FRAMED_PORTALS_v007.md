@@ -11,3 +11,9 @@ This implements the unfinished runtime elements; it does not reconstruct or cert
 ## Validation hardening, 2026-10-20
 
 The checker now returns failure on surface contacts and binds the report to exact GLB bytes. Tests reject stale reports, missing/duplicate/incomplete portal screens, missing contact results and failed geometry checks. Fresh local validation of unchanged v007 cleared all 204 sampled poses; all 12 regressions passed. The original Drive ZIP stays immutable; current code and updated checksums are in `tools/portal_finish_v007/`. Game Development Studio CLI was unavailable; Python checks were executed. No geometry change or new Wolfram calculation. Next engine gate remains native Unreal import and full traversal; historical entrance/bridge work continues separately.
+
+## Actual-model section review and archive reconciliation
+
+[Dimensioned SVG sheet](../../../tools/portal_finish_v007/output/FMP_Portal_Sections_v007.svg) show four actual mesh sections. Measured widths are 2.400 m (Trylon) and 2.350 m (Perisphere); finished threshold-to-header height is 2.399 m. Wolfram confirmed millimetre rounding. No geometry was changed.
+
+[Complete portal review/validation archive](https://drive.google.com/file/d/1yF-mgJDTLaksGkV231E65VvXvVxSAZwr/view) includes current source/tests, GLB, drawings/renders and the immutable original v007 ZIP. Drive ID and project-folder membership were read back. Source and SVG are tracked in Git; PNG/GLB/ZIP Git copies remain pending because direct Git push lacks write credentials. [Hash receipt](../../../tools/portal_finish_v007/SECTION_ARCHIVE_RECEIPT.json). Ten older workspace files are inventoried separately pending full origin/copy reconciliation. Full verbatim transcript remains pending.
