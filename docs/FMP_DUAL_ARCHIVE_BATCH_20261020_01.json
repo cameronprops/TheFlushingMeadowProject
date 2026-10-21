@@ -1,0 +1,404 @@
+{
+  "artifacts": [
+    {
+      "component": "Theme Center / WF0001-WF0004",
+      "drive_file_id": "1PwBZnZ2oDG24TLnF8tQhxWZhhqK2POF_",
+      "drive_relpath": "FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001.zip",
+      "drive_url": "https://drive.google.com/file/d/1PwBZnZ2oDG24TLnF8tQhxWZhhqK2POF_/view",
+      "filename": "FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001.zip",
+      "git_binary_path_status": "proposed_only_not_committed",
+      "id": "FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001",
+      "members": [
+        {
+          "path": "research/pavilions/theme_center/ENGINE_HANDOFF_GATE_v001.json",
+          "sha256": "af185fee946f039bebed5312c9877e6d45931166ede21db9714f1ba6228f89d5",
+          "size_bytes": 1832
+        },
+        {
+          "path": "tools/world_build/preflight_theme_center_v005.py",
+          "sha256": "4a45fb0039dab6ccf522a29a9b74c0cc1652564c09d712112c6ab795342c0fa0",
+          "size_bytes": 13137
+        },
+        {
+          "path": "tools/world_build/test_preflight_theme_center_v005.py",
+          "sha256": "c6d4f1e73cebb60622b68b5fde81f1cebce93e5fcf8a055349ae1ffcdcb28e84",
+          "size_bytes": 6631
+        },
+        {
+          "path": "docs/THEME_CENTER_ENGINE_HANDOFF_v001.md",
+          "sha256": "651e9a1365d8f695fbf511cc5571e7ca2dce12d7d15a85d700e4205e1cbbd132",
+          "size_bytes": 6544
+        }
+      ],
+      "origin_chat": "2026-10-20 Theme Center Game Development Studio and Wolfram FMP work thread",
+      "public_git_rights": "allowed",
+      "rights_review": "user-created-code",
+      "sha256": "1d5759b3787986790174b08b4a52267105e748ebcee58fb59caf3e1b2301b5cc",
+      "size_bytes": 12225
+    },
+    {
+      "component": "Theme Center / WF0001-WF0004",
+      "drive_file_id": "15b2j_-anBktrh5OKAKYOeVMtHdjqVkCv",
+      "drive_relpath": "FMP_ThemeCenter_RuntimeMesh_Audit_v001.zip",
+      "drive_url": "https://drive.google.com/file/d/15b2j_-anBktrh5OKAKYOeVMtHdjqVkCv/view",
+      "filename": "FMP_ThemeCenter_RuntimeMesh_Audit_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_RuntimeMesh_Audit_v001.zip",
+      "git_binary_path_status": "proposed_only_not_committed",
+      "id": "FMP_ThemeCenter_RuntimeMesh_Audit_v001",
+      "members": [
+        {
+          "path": "tools/world_build/audit_theme_center_mesh_v005.py",
+          "sha256": "e0532e9e50d638452ef466a80178060403e50b154701f135cab177b93acd451a",
+          "size_bytes": 8850
+        },
+        {
+          "path": "tools/world_build/test_audit_theme_center_mesh_v005.py",
+          "sha256": "105d9feea5dcbf95d8259ecbd22f723ed7398b367e5ed110baecf124bf31044b",
+          "size_bytes": 3670
+        },
+        {
+          "path": "research/pavilions/theme_center/RUNTIME_MESH_AUDIT_v001.json",
+          "sha256": "fac6e31a3828f801aae159eef5d147fba522cd168a72afa2dc51fb921cc4d826",
+          "size_bytes": 23107
+        },
+        {
+          "path": "research/pavilions/theme_center/RUNTIME_MESH_AUDIT_v001.md",
+          "sha256": "a3684dbf44a7540a945fd4ee6efc11ea82533395eca16e31a77c95e8ab673638",
+          "size_bytes": 6562
+        }
+      ],
+      "origin_chat": "2026-10-20 Theme Center Game Development Studio and Wolfram FMP work thread",
+      "public_git_rights": "allowed",
+      "rights_review": "user-created-code",
+      "sha256": "3f0e01ad7d630869d16ed2a8525acf8eae26ad65e551df89bfdef97ff7b4c7e7",
+      "size_bytes": 11666
+    },
+    {
+      "component": "Theme Center / WF0001-WF0004",
+      "drive_file_id": "1vNaxcSn4SbtOJvH-rTbEmFqdFqGz93UR",
+      "drive_relpath": "FMP_ThemeCenter_ReturnRoute_Continuity_v001.zip",
+      "drive_url": "https://drive.google.com/file/d/1vNaxcSn4SbtOJvH-rTbEmFqdFqGz93UR/view",
+      "filename": "FMP_ThemeCenter_ReturnRoute_Continuity_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_ReturnRoute_Continuity_v001.zip",
+      "git_binary_path_status": "proposed_only_not_committed",
+      "id": "FMP_ThemeCenter_ReturnRoute_Continuity_v001",
+      "members": [
+        {
+          "path": "tools/world_build/audit_theme_center_route_continuity_v001.py",
+          "sha256": "c182051198854a1ada0a64b3623f95bdfa0519f522c8dba1620409f65ed31d03",
+          "size_bytes": 12887
+        },
+        {
+          "path": "tools/world_build/test_audit_theme_center_route_continuity_v001.py",
+          "sha256": "63e89469682119b3a3406a9932236660d1763baba2dd92458330d2634d8ccd13",
+          "size_bytes": 4420
+        },
+        {
+          "path": "research/pavilions/theme_center/RETURN_ROUTE_CONTINUITY_v001.json",
+          "sha256": "b22cb6d861730b1a7693f2c22e55459952ad55ddebad0da4137eccdf3325048e",
+          "size_bytes": 9706
+        },
+        {
+          "path": "research/pavilions/theme_center/RETURN_ROUTE_CONTINUITY_v001.md",
+          "sha256": "d519befbad9e9a90ff06836ad65a7aedcb581b40619a31f6e2dfb5d47eefff82",
+          "size_bytes": 6931
+        }
+      ],
+      "origin_chat": "2026-10-20 Theme Center Game Development Studio and Wolfram FMP work thread",
+      "public_git_rights": "allowed",
+      "rights_review": "user-created-code",
+      "sha256": "175e57ee6b4e859b7c100f092fd530e8850fe7bcaa6a47ea09e6a8edc368b672",
+      "size_bytes": 12711
+    },
+    {
+      "component": "Theme Center / WF0001-WF0004",
+      "drive_file_id": "1o8OZlu-q0IOiZbpr90lobYrRql2T6bZ0",
+      "drive_relpath": "FMP_Trylon_Actual_GLB_Passage_Evidence_v001.zip",
+      "drive_url": "https://drive.google.com/file/d/1o8OZlu-q0IOiZbpr90lobYrRql2T6bZ0/view",
+      "filename": "FMP_Trylon_Actual_GLB_Passage_Evidence_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_Trylon_Actual_GLB_Passage_Evidence_v001.zip",
+      "git_binary_path_status": "proposed_only_not_committed",
+      "id": "FMP_Trylon_Actual_GLB_Passage_Evidence_v001",
+      "members": [
+        {
+          "path": "README_RENDER_EVIDENCE.txt",
+          "sha256": "caca1a8027758c063771ad28c3537bf45c8c94ac2a20498b65c5ff8f3bc76ebd",
+          "size_bytes": 1614
+        },
+        {
+          "path": "01_trylon_return_exterior.png",
+          "sha256": "eeb09566344e52baad871f8111f7b7972f6cdcdde3cfb23f7eae6cf02fbb60b2",
+          "size_bytes": 606873
+        },
+        {
+          "path": "02_trylon_return_section.png",
+          "sha256": "e0e8b47cae8e611a798f24ff290086f85428d5e30afa75f1329bf376fcefb60d",
+          "size_bytes": 617352
+        },
+        {
+          "path": "03_trylon_plan.png",
+          "sha256": "161603bab0929c874e80fba625e51b046b63f720cbc5e5d791ab1f5fc2e8a45b",
+          "size_bytes": 732804
+        },
+        {
+          "path": "11_runtime_trylon_elevation.png",
+          "sha256": "963d3a9a909872e82314e7c2adbdca9d709a7c394410b95d376ecf01dbf5ea3f",
+          "size_bytes": 66844
+        },
+        {
+          "path": "12_before_after_trylon_entrance.png",
+          "sha256": "9d65b7d27477e5b5be5e7058145c3c5472630ea97be931dd528be08d755b161b",
+          "size_bytes": 87398
+        },
+        {
+          "path": "render.py",
+          "sha256": "f1ac8a6bf5373e5c54c0373e7deca076903f4476bf6f5f7c655954a46568997b",
+          "size_bytes": 8058
+        },
+        {
+          "path": "facade.py",
+          "sha256": "ab8019eb2725832e4917b4852b308bec879698965245fe6efb2bc456064bb843",
+          "size_bytes": 3804
+        },
+        {
+          "path": "polish.py",
+          "sha256": "e34d19420bc7783ebb456fd65f73db6440a948880c4e2319a3cc9340afaf186b",
+          "size_bytes": 1745
+        }
+      ],
+      "origin_chat": "2026-10-20 Theme Center Game Development Studio and Wolfram FMP work thread",
+      "public_git_rights": "review_pending",
+      "rights_review": "rights-review-pending",
+      "sha256": "094dcd4dcbfbbc386abc458cc5e3e6a37183262bb53b86ff7633c7b7704aecc7",
+      "size_bytes": 2106792
+    },
+    {
+      "component": "Theme Center / WF0001-WF0004",
+      "drive_file_id": "1LJYXE5P1_tQiUts20qocl2HgGcpMEWih",
+      "drive_relpath": "FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001.zip",
+      "drive_url": "https://drive.google.com/file/d/1LJYXE5P1_tQiUts20qocl2HgGcpMEWih/view",
+      "filename": "FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001.zip",
+      "git_binary_path_status": "proposed_only_not_committed",
+      "id": "FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001",
+      "members": [
+        {
+          "path": "tools/world_build/inspect_theme_center_bridge_entry_v001.py",
+          "sha256": "d1d9bd6d3bc2a4eedb441d9755d390f57b644d768f4da4c13ea247c4edd96071",
+          "size_bytes": 4646
+        },
+        {
+          "path": "tools/world_build/test_inspect_theme_center_bridge_entry_v001.py",
+          "sha256": "32dec225e59dbdb3cdb4c74c2dab73038be4e4da3c995908cc469973b36f54dc",
+          "size_bytes": 870
+        },
+        {
+          "path": "research/pavilions/theme_center/BRIDGE_ENTRY_PRIMARY_EVIDENCE_v001.md",
+          "sha256": "3fa34d427162eb29eb5fc4ee3d5034aa8062130b208b639d243232008506d7d6",
+          "size_bytes": 6054
+        },
+        {
+          "path": "renders/GLB_REAL_SECTION_v001.png",
+          "sha256": "03d93eff12e24eb4d82292a51972c3bfa84df252bfd7186e5717b5f357455baa",
+          "size_bytes": 281897
+        },
+        {
+          "path": "renders/GLB_REAL_SECTION_v001.svg",
+          "sha256": "5bb4acca270fdd720b7009bda62af59fae8dec31aa5883c1d5ff1c0da32d4d9d",
+          "size_bytes": 137986
+        },
+        {
+          "path": "renders/GLB_BRIDGE_ENTRY_MEASUREMENTS_v001.json",
+          "sha256": "f87204377b7146cc63870b1a801ba142701a61ac28e268497fa6b8d9a64504a5",
+          "size_bytes": 2828
+        }
+      ],
+      "origin_chat": "2026-10-20 Theme Center Game Development Studio and Wolfram FMP work thread",
+      "public_git_rights": "review_pending",
+      "rights_review": "rights-review-pending",
+      "sha256": "2440f4607a452075dedb7d5cead46a3e70a7d7c95fe994556ae57d826718fe6a",
+      "size_bytes": 288576
+    },
+    {
+      "component": "Theme Center / WF0001-WF0004",
+      "drive_file_id": "1fMraAZ0QP5oNaaYTtlLG44qOfa-HidbY",
+      "drive_relpath": "FMP_ThemeCenter_Photo_Control_v001.zip",
+      "drive_url": "https://drive.google.com/file/d/1fMraAZ0QP5oNaaYTtlLG44qOfa-HidbY/view",
+      "filename": "FMP_ThemeCenter_Photo_Control_v001.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Photo_Control_v001.zip",
+      "git_binary_path_status": "proposed_only_not_committed",
+      "id": "FMP_ThemeCenter_Photo_Control_v001",
+      "members": [
+        {
+          "path": "README.txt",
+          "sha256": "283b2dd8ca91a00cb405ace5a56ebb3e11fb8a5fe7770465bd7bd7c19eee3bba",
+          "size_bytes": 319
+        },
+        {
+          "path": "BRIDGE_PHOTO_CONTROLS_v001.md",
+          "sha256": "018321f78c3a99810905922f95fdeac09503d51fbdd78e925a784b0fe57698f8",
+          "size_bytes": 6809
+        },
+        {
+          "path": "PHOTO_REGISTRATION_TEMPLATE_v001.json",
+          "sha256": "ca32ce9746de3bece7963e5efd33981ba7771d309ad0e45799c41c7c179c8d04",
+          "size_bytes": 1421
+        },
+        {
+          "path": "build_bridge_registration_controls_v001.py",
+          "sha256": "7060ea5cebeadda4b2aa5d6585b16751748f095bd760f160df6329834d4402ce",
+          "size_bytes": 6017
+        },
+        {
+          "path": "test_bridge_registration_controls_v001.py",
+          "sha256": "a020ef70235251a2571cdb623d3964e666d84ae518701dd3e4b28e8f54d6ba67",
+          "size_bytes": 2014
+        },
+        {
+          "path": "render_bridge_controls_v001.py",
+          "sha256": "33ca27bd9b44a25faf26e23cdb3facf4f96171cb6088c2e07459a7321720c132",
+          "size_bytes": 3174
+        },
+        {
+          "path": "solve_theme_center_photo_pose_v001.py",
+          "sha256": "7ebd5ad845773e57fb81da7a766ceecc4b0e2ace82b2cc07da6138b3e25fc24b",
+          "size_bytes": 6167
+        },
+        {
+          "path": "test_solve_theme_center_photo_pose_v001.py",
+          "sha256": "09ebdc5ecf872778417508ce33dae103a1b4fc661bd7f771714621475be9d7c6",
+          "size_bytes": 2533
+        },
+        {
+          "path": "output/FMP_Bridge_Registration_Controls_v001.json",
+          "sha256": "5b9f90428c9a6021349856b636d3a9416685fd01e0270222462fd746df1ae4a4",
+          "size_bytes": 4470
+        },
+        {
+          "path": "output/FMP_Bridge_Registration_Control_Board_v001.png",
+          "sha256": "94d126944dae3b288ba97db45e96fc5bf34ba0338d280b9d58cbf041af3b3a74",
+          "size_bytes": 250056
+        },
+        {
+          "path": "output/FMP_ThemeCenter_Bridge_Registration_Controls_v001.glb",
+          "sha256": "24e9ebf855b7654c278c6d24a37029b784d4155e0ab5c3ca31b9d7479f5b6f33",
+          "size_bytes": 29764
+        }
+      ],
+      "origin_chat": "2026-10-20 Theme Center Game Development Studio and Wolfram FMP work thread",
+      "public_git_rights": "allowed",
+      "rights_review": "user-created-code-and-geometry",
+      "sha256": "d7147388c9f3a8f4f3c09e6d556ee845747d07298eac1c64e5b44ca52b1236e1",
+      "size_bytes": 245540
+    },
+    {
+      "component": "Theme Center / WF0001-WF0004",
+      "drive_file_id": "1Z01QmV6EfgElqiBhVUIg7nIvd_pucZdi",
+      "drive_relpath": "FMP_ThemeCenter_Shared_Portals_v004.zip",
+      "drive_url": "https://drive.google.com/file/d/1Z01QmV6EfgElqiBhVUIg7nIvd_pucZdi/view",
+      "filename": "FMP_ThemeCenter_Shared_Portals_v004.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Shared_Portals_v004.zip",
+      "git_binary_path_status": "proposed_only_not_committed",
+      "id": "FMP_ThemeCenter_Shared_Portals_v004",
+      "members": [
+        {
+          "path": "README.md",
+          "sha256": "c2a2519ab95a0008dae5cfab228d5275509cea10c9179bd4c39eb9aa8a25dffb",
+          "size_bytes": 3433
+        },
+        {
+          "path": "Shared_Portals_v004.json",
+          "sha256": "6861f8feb098d31b642d5cfa94e4814702362a43347d4a179a6ae8b14c1ba62b",
+          "size_bytes": 2667
+        },
+        {
+          "path": "ThemeCenter_1939_GuestFlow_Trim_v004.glb",
+          "sha256": "b1467273bf674c7fbf081bb7ec64800ae61ecf88942e42678ed8948c452c5e01",
+          "size_bytes": 1685956
+        },
+        {
+          "path": "Shared_Portals_Before_After.png",
+          "sha256": "e4127775f1b96c10e41f9bbe7e72b6f2d09ec3a6ca181c33bfafa8dc1d4efb8c",
+          "size_bytes": 129671
+        },
+        {
+          "path": "Return_Route_Clearance_v004.json",
+          "sha256": "0c81c8a35a6448027c73254c7e7ed8d083ccc04ea6b188e89b591965509cea9c",
+          "size_bytes": 90203
+        },
+        {
+          "path": "tools/world_build/build_shared_portals_v004.py",
+          "sha256": "f97896159ba50f7095e4561cf4da601cc65fe13eb0024229a26e1e35a48cf044",
+          "size_bytes": 4187
+        },
+        {
+          "path": "tools/world_build/audit_transition_clearance.py",
+          "sha256": "783ebbeaae761ee77d6e832ead65593c523551a119d28ab7093e90ade114bcc2",
+          "size_bytes": 6817
+        },
+        {
+          "path": "tools/world_build/audit_helicline_join.py",
+          "sha256": "21d81d71977bd37dcfb5ae78cc2a6da52cc86c043c1a44be0c4d4f54f014fdc3",
+          "size_bytes": 4059
+        },
+        {
+          "path": "tools/world_build/test_shared_portals_v004.py",
+          "sha256": "b5719af32160c35856ec2d6a27a18d324e8d09e78b5f165bf04e4b027a00d106",
+          "size_bytes": 1715
+        },
+        {
+          "path": "tools/world_build/test_transition_clearance.py",
+          "sha256": "2b88f23791ba3f71a9a2f68f6b970442f13efea44e721b485a6ad848715efa2a",
+          "size_bytes": 1054
+        }
+      ],
+      "origin_chat": "2026-10-20 Theme Center Game Development Studio and Wolfram FMP work thread",
+      "public_git_rights": "review_pending",
+      "rights_review": "rights-review-pending",
+      "sha256": "c9230e725754be55dbde705931a991d9439e0e1bf9b0135591a83bdbb16f5028",
+      "size_bytes": 845307
+    },
+    {
+      "component": "Theme Center / WF0001-WF0004",
+      "drive_file_id": "1OzFZRkHCxN3jMBGwH3Lwdbx0pFJIJhM0",
+      "drive_relpath": "FMP_ThemeCenter_Assembled_Runtime_v005.zip",
+      "drive_url": "https://drive.google.com/file/d/1OzFZRkHCxN3jMBGwH3Lwdbx0pFJIJhM0/view",
+      "filename": "FMP_ThemeCenter_Assembled_Runtime_v005.zip",
+      "git_binary_path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Assembled_Runtime_v005.zip",
+      "git_binary_path_status": "proposed_only_not_committed",
+      "id": "FMP_ThemeCenter_Assembled_Runtime_v005",
+      "members": [
+        {
+          "path": "validation.json",
+          "sha256": "bedfffa6a52e332f4640dde17621352aa4bc64640013adccdeb5b7f5d33a6f55",
+          "size_bytes": 374
+        },
+        {
+          "path": "manifest.json",
+          "sha256": "0a8c7abac9bd30b73e9875b3ab20585b679ac860d13f074c19b6f8fe9a001a96",
+          "size_bytes": 1404
+        },
+        {
+          "path": "FMP_ThemeCenter_Assembled_Runtime_v005.glb",
+          "sha256": "de38fdd5294285afd92dbb6be0a9d4e564c52bacd588a9fd116c9e1e35f06439",
+          "size_bytes": 47126840
+        },
+        {
+          "path": "README.md",
+          "sha256": "8d7c4c62e54506a12735fb8726b21e2861c9a0766d27721cd4a4eb1baf81c97f",
+          "size_bytes": 1266
+        }
+      ],
+      "origin_chat": "2026-10-20 Theme Center Game Development Studio and Wolfram FMP work thread",
+      "public_git_rights": "review_pending",
+      "rights_review": "rights-review-pending",
+      "sha256": "d55522c3877638e1e3566ca63a18b0f072c2a6279ca3b5da4620836b547586b2",
+      "size_bytes": 19917363
+    }
+  ],
+  "batch_id": "theme-center-chat-retroactive-2026-10-20-batch01",
+  "drive_folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+  "schema": "fmp.dual-archive-batch.v001",
+  "source_attestation": "Original conversation attachments present locally; separate Google Drive metadata confirmed matching filename, size and parent folder. Remote ZIP-byte equality still requires authenticated redownload and hash check."
+}
