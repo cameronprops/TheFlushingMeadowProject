@@ -70,3 +70,29 @@ SVG, code and JSON are directly tracked under `tools/portal_finish_v007`; curren
   - GitHub [batch audit report](FMP_DUAL_ARCHIVE_AUDIT_BATCH_20261020_01.json) / Drive `1v_sLEdPYC2IfwJU-90EWD5PDyUXHMfOO`.
   - GitHub [instructions](FMP_DUAL_ARCHIVE_BATCH_20261020_01.md) / Drive `1GRY1aD-gMPV9PSGP1W9N8MerbmjvIhNN`.
 - **Critical boundary:** A matched local source tree is not proof of a remote GitHub release/commit; archived original scans need rights review. A successfully uploaded Drive root file is not yet in the designated FMP archive. Future chats should reconcile missing moves and exact Git binary copies rather than creating more manifests that falsely close these gaps.
+
+## 2026-10-21 Backfill batch 02: 18 source copies reconciled
+
+**Supersedes the `DRIVE_FOLDER_PENDING` state for the six audit files in the 2026-10-20 batch-01 section above; the older section remains as an audit trail.** Authenticated Google Drive API copied each file into [Backfill Audit Batches](https://drive.google.com/drive/folders/1T5tEnKN9qCcDr24oewLizJ2nQ2SmLMy_), verified this folder is a child of the canonical FMP Drive project folder, then downloaded the stored raw bytes. Independently retrieved current GitHub file bytes and Git blob SHA-1 identities. **Six of six are exact byte-for-byte matches, original sizes preserved, and both remote endpoints readable: `DUAL_VERIFIED` for these exact versions.** Earlier Drive-root copies were left untouched for provenance/cleanup later.
+
+| Exact GitHub source | Git blob SHA-1 | New Drive project-folder copy | Bytes | Status |
+| --- | --- | --- | ---: | --- |
+| [audit_dual_archive_v001.py](../tools/archive/audit_dual_archive_v001.py) | `049993a39417721e0b55a93e38ebbbeafc987e56` | [Drive](https://drive.google.com/file/d/1u6TnPxmCHz824hwZuU876f5l0Y6iOoun/view) | 6068 | `DUAL_VERIFIED` |
+| [test_audit_dual_archive_v001.py](../tools/archive/test_audit_dual_archive_v001.py) | `b1f2cdb1bca5125de9e40d50abcd3555170ae162` | [Drive](https://drive.google.com/file/d/1SgOKfkH82gvW0iGbDu5osoq1yckjRuiQ/view) | 3953 | `DUAL_VERIFIED` |
+| [generate_dual_archive_batch_v001.py](../tools/archive/generate_dual_archive_batch_v001.py) | `b688fa12f3dbbbda368427a3f64dfac94d43f143` | [Drive](https://drive.google.com/file/d/1dTHQGHweT0YWr0RYCrP7f9F6rSiCLQDV/view) | 3434 | `DUAL_VERIFIED` |
+| [FMP_DUAL_ARCHIVE_BATCH_20261020_01.json](FMP_DUAL_ARCHIVE_BATCH_20261020_01.json) | `e2234c4ff94856a030f5d422cfcf1dd04b977d7f` | [Drive](https://drive.google.com/file/d/1pm-4P1A7f2HqCCGay8Cqb346HiJpD0yX/view) | 18127 | `DUAL_VERIFIED` |
+| [FMP_DUAL_ARCHIVE_AUDIT_BATCH_20261020_01.json](FMP_DUAL_ARCHIVE_AUDIT_BATCH_20261020_01.json) | `2381e7326d7c073a756f5e0de04a523f671a3d86` | [Drive](https://drive.google.com/file/d/1PeskYVUYIKDGVPh2MBnn4gCtAzl6Ynas/view) | 5401 | `DUAL_VERIFIED` |
+| [FMP_DUAL_ARCHIVE_BATCH_20261020_01.md](FMP_DUAL_ARCHIVE_BATCH_20261020_01.md) | `d431f3d1ee2a3dd2c44560c502da2d96b65964a6` | [Drive](https://drive.google.com/file/d/1A8wfs81uS6wyqJTIMGJz3yrnHQUiM-oN/view) | 4223 | `DUAL_VERIFIED` |
+
+### Repaired exact source-member preservation for the first three Theme Center ZIPs
+
+Compared 12 local original ZIP member bytes against the **Git blob SHA-1** of each current canonical source file, revealing that the GitHub copy of each previously lacked **only its terminating LF (`\\n`) byte**. We verified this was the *sole* difference by hashing both the complete member and member minus one byte. Restored those 12 original trailing LF bytes with guarded SHA Git updates, without changing any code or historical content. All 12 current Git blobs were then independently fetched and verified **exactly equal** to the corresponding archived ZIP member bytes. These 12 member files are therefore backed by Git and are also present within existing verified Drive ZIP packages:
+
+- `FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001.zip`: four exact source members under `tools/world_build/`, `research/pavilions/theme_center/`, and `docs/`.
+- `FMP_ThemeCenter_RuntimeMesh_Audit_v001.zip`: four exact source members under `tools/world_build/` and `research/pavilions/theme_center/`.
+- `FMP_ThemeCenter_ReturnRoute_Continuity_v001.zip`: four exact source members under `tools/world_build/` and `research/pavilions/theme_center/`.
+
+The original ZIP member manifest and SHA-256 digests remain [machine-readable](FMP_DUAL_ARCHIVE_BATCH_20261020_01.json); Git SHA-1 identities match their members' exact bytes. A fresh local execution of all three synthetic test modules from the preserved source ZIPs ran **24/24 passing tests**, return code 0 (separate unrelated environment spreadsheet-warmup warning printed at startup). This does not certify Unreal native collision or the Game Development Studio CLI.
+
+**Important remaining boundary:** The complete eight original ZIP packages are **still `GIT_BINARY_PENDING`**. Individual member files being in Git does NOT mean the exact archived ZIP container is in GitHub. Five other ZIPs in batch 01 remain to be reconciled per member. Full verbatim chat transcript is still `TRANSCRIPT_PENDING`. Do not conflate successful read-only tests with full engine acceptance. No historical masters or source ZIP bytes were altered.
+
