@@ -1,0 +1,12 @@
+neighborhood_id,building_id,building_name,year,registration,evidence_status,artifact_family,notes
+N39-TC,WF0001,Trylon,1939,UNREGISTERED,PROVISIONAL,Theme Center master,Survey control needed
+N39-TC,WF0002,Perisphere,1939,UNREGISTERED,PROVISIONAL,Theme Center master,Survey control needed
+N39-TC,WF0003,Democracity,1939,UNREGISTERED,INTERPRETIVE,Theme Center master,Interior exhibit not standalone building
+N39-TC,WF0004,Helicline,1939,UNREGISTERED,PROVISIONAL,Theme Center master,Pedestrian route not certified
+N39-COM,WF0009,RCA Building,1939,UNREGISTERED,PROVISIONAL,RCA schematic floorplan,Architectural sheets CRE351 catalogued not traced
+N39-COM,WF0010,AT&T Building,1939,UNREGISTERED,RESEARCH_PENDING,Archive holding leads,Near Communications zone
+N39-COM,UNASSIGNED,Communications Building,1939,UNREGISTERED,RESEARCH_PENDING,Archive holdings,Assign ID only after inventory reconciliation
+N39-HEALTH,WF0028,Medical and Public Health Buildings,1939,UNREGISTERED,INTERPRETIVE,WF0028 models and plan,Model versions separate from historic source
+N39-HEALTH,UNASSIGNED,Science and Education Building,1939,UNREGISTERED,RESEARCH_PENDING,WF0028 complex references,Shared complex; individual identity pending
+N39-HEALTH,UNASSIGNED,Hall of Pharmacy,1939,UNREGISTERED,RESEARCH_PENDING,Archive holdings,Verify building identity and location
+N39-MALL,UNASSIGNED,Business Systems and Insurance Building,1939,UNREGISTERED,RESEARCH_PENDING,Archive holdings,Footprint still unmeasured
