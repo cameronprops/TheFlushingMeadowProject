@@ -1,0 +1,118 @@
+{
+  "schema": "fmp.theme-center.nypl-exposed-steel-screen.v001",
+  "source_id": "NYPL_PS_MSS_CD23_351",
+  "catalog_url": "https://old-digitalcollections.nypl.org/items/917bd448-7f64-b36d-e040-e00a180609bd",
+  "source_image_uri": "https://images.nypl.org/index.php?id=ps_mss_cd23_351&t=w",
+  "pixel_size": [
+    605,
+    760
+  ],
+  "decoded_pixel_sha256": "352c580f080527f1ae7e65e9ec8c33e1de71f5ac780c217836d63860599d3b92",
+  "image_hash_type": "Wolfram Hash[ImageData[Import[source_image_uri,\"Image\"],\"Byte\"],\"SHA256\",\"HexString\"]",
+  "pixel_coordinates": "top-left image origin; x right, y down",
+  "source_catalog_date": "1935–1945 range; precise image exposure date not established",
+  "work_state": "construction_steel_exposed_date_unverified",
+  "rights": "NYPL original; rights status undetermined. No archival image bytes in this package.",
+  "method": "Six approximate manually identified visible Perisphere silhouette rim observations; four fit and two independently withheld. Uncertainties approximate and deliberately conservative. No 3D registration.",
+  "observations": [
+    {
+      "id": "rim_top",
+      "pixel_xy": [
+        301,
+        428
+      ],
+      "pixel_uncertainty_px": 8,
+      "role": "fit"
+    },
+    {
+      "id": "rim_right",
+      "pixel_xy": [
+        420,
+        550
+      ],
+      "pixel_uncertainty_px": 8,
+      "role": "fit"
+    },
+    {
+      "id": "rim_bottom",
+      "pixel_xy": [
+        306,
+        671
+      ],
+      "pixel_uncertainty_px": 10,
+      "role": "fit"
+    },
+    {
+      "id": "rim_left_partial",
+      "pixel_xy": [
+        181,
+        547
+      ],
+      "pixel_uncertainty_px": 12,
+      "role": "fit"
+    },
+    {
+      "id": "rim_upper_right_holdout",
+      "pixel_xy": [
+        384,
+        462
+      ],
+      "pixel_uncertainty_px": 9,
+      "role": "holdout"
+    },
+    {
+      "id": "rim_lower_right_holdout",
+      "pixel_xy": [
+        383,
+        638
+      ],
+      "pixel_uncertainty_px": 10,
+      "role": "holdout"
+    }
+  ],
+  "qualitative_observations": [
+    {
+      "asset_id": "WF0001",
+      "component": "Trylon",
+      "observed": "exposed tapered steel tower with X-diagonal frame members",
+      "caveat": "No historical truss bay station count, widths or exact elevations inferred."
+    },
+    {
+      "asset_id": "WF0001",
+      "component": "Trylon upper taper",
+      "observed": "upper zone visually appears more enclosed than lower lattice",
+      "caveat": "Cannot project 480ft structural-plate transition from this uncalibrated photograph."
+    },
+    {
+      "asset_id": "WF0002",
+      "component": "Perisphere",
+      "observed": "curving meridians and intersecting horizontal structural members",
+      "caveat": "Do not identify individual 32 main trusses vs secondary purlins without drawing."
+    },
+    {
+      "asset_id": "WF0004",
+      "component": "Helicline",
+      "observed": "curved elevated ramp at frame right with apparent support elements",
+      "caveat": "Partial view: no authentic support node positions or radius established."
+    },
+    {
+      "asset_id": "WF0002",
+      "component": "erection equipment",
+      "observed": "upright projection elements near sphere upper rim",
+      "caveat": "Could be temporary hoists/cranes; not classified as permanent steel."
+    }
+  ],
+  "release_gate": {
+    "image_registration_3d": "NOT_CALIBRATED",
+    "as_built_geometry_release_allowed": false,
+    "historical_structural_node_coordinates_measured": 0,
+    "source_original_scan_acquired": false,
+    "image_bytes_copied_to_public_git": false
+  },
+  "limitations": [
+    "Apparent 2D circular silhouette is not a 3D sphere fit",
+    "Image transfer/lens distortions are uncalibrated",
+    "Provisional pixel picks are not surveyed controls",
+    "The historical date and permanent versus temporary framing remain uncertain"
+  ]
+}
