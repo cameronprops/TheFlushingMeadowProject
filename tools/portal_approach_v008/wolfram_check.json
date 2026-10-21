@@ -1,0 +1,27 @@
+{
+  "purpose": "Independent plan arithmetic, not structural analysis",
+  "start_xz": [
+    -27.18689141765125,
+    -3.0479999780654907
+  ],
+  "finish_xz": [
+    -30.25,
+    3.048000082373619
+  ],
+  "stair_half_width_m": 0.925,
+  "unit_direction_xz": [
+    -0.4489843834734603,
+    0.893539603709291
+  ],
+  "leading_edge_xz": [
+    [
+      -26.360367284220157,
+      -2.6326894233525397
+    ],
+    [
+      -28.013415551082343,
+      -3.4633105327784417
+    ]
+  ],
+  "projection_beyond_old_min_x_m": 0.6765241334310943
+}
