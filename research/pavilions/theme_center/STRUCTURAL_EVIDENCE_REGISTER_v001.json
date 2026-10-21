@@ -228,6 +228,21 @@
       "measured_landmarks": 0,
       "frame_pixel_hashes_verified": true,
       "priority": "HIGH"
+    },
+    {
+      "id": "PRELINGER_MEDICUS_REEL4_PARTI_ARCHIVEORG_640PX",
+      "url": "https://archive.org/details/Medicusc1939_4",
+      "direct_url": "https://archive.org/download/Medicusc1939_4/Medicusc1939_4.mp4",
+      "type": "archival_film_640px_derivative_actually_decoded",
+      "frame_record": "research/pavilions/theme_center/MEDICUS_REEL4_PARTI_HD_FRAME_SURVEY_v002.json",
+      "decoding_status": "EIGHT_REAL_FRAMES_REVIEWED_AND_PIXEL_DIGESTED",
+      "date": "1939-1940",
+      "supports": [
+        "Trylon/Perisphere exterior silhouettes and foreground fountain line",
+        "Potentially clearer pixel boundaries than 320px preview"
+      ],
+      "limitations": "Final exterior only, poor footing/truss visibility, uncalibrated and exact scene year unknown. 640px derivative, not a scanned negative. Source video hash not available.",
+      "measured_landmarks": 0
     }
   ],
   "frame_observation_contract": {
@@ -290,7 +305,8 @@
     "planar_image_registration": "V002_HOLDOUT_GATE_AVAILABLE_NOT_CALIBRATED",
     "true_3d_camera_registration": "NONMETRIC_3D_PROJECTIVE_FIT_AVAILABLE_REQUIRES_REAL_CORRESPONDENCES",
     "historical_asset_release": "BLOCKED_FOR_UNRESOLVED_DETAILS",
-    "historical_film_frame_survey": "DECODED_8_OBSERVATIONS_ZERO_CALIBRATED_MEASUREMENTS"
+    "historical_film_frame_survey": "DECODED_8_OBSERVATIONS_ZERO_CALIBRATED_MEASUREMENTS",
+    "structural_frame_from_film": "NOT_RESOLVED_HIDDEN_BY_FINISHED_CLADDING"
   },
   "game_development_handoff": {
     "runtime_asset": "FMP_ThemeCenter_Assembled_Runtime_v005.glb",
@@ -348,7 +364,11 @@
     "notes": "Do not infer photogrammetric calibrations from catalog descriptions or low-res preview frames. Seek higher-quality reels and independent controls.",
     "retrieval_blocker": "Original reel master and higher-resolution video still unavailable; 320x240 Part I derivative decoded and reviewed.",
     "frame_register": "research/pavilions/theme_center/MEDICUS_REEL4_PARTI_FRAME_SURVEY_v001.json",
-    "acquisition_state": "VIDEO_DECODED_IN_WOLFRAM_RUNTIME_NO_PERMANENT_FULL_VIDEO_COPY"
+    "acquisition_state": "VIDEO_DECODED_IN_WOLFRAM_RUNTIME_NO_PERMANENT_FULL_VIDEO_COPY",
+    "best_decoded_frame_width_px": 640,
+    "best_decoded_frame_height_px": 480,
+    "high_resolution_register": "research/pavilions/theme_center/MEDICUS_REEL4_PARTI_HD_FRAME_SURVEY_v002.json",
+    "original_film_master_acquired": false
   },
   "photo_source_review_v003": {
     "review_date": "2026-10-20",
