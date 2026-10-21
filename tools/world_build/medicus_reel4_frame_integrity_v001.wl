@@ -1,0 +1,26 @@
+(* Read-only integrity check for the source-specific 1939/1940 film derivative. *)
+ClearAll[FMPCheckFilmFrames,FMPAcquireAndCheckFilmFrames];
+FMPCheckFilmFrames[spec_Association,frames_List]:=Module[{items,checks},
+ items=Lookup[spec,"frame_entries",{}];
+ If[Length[items]!=Length[frames],Return[<|"status"->"FRAME_COUNT_MISMATCH"|>]];
+ If[!AllTrue[frames,Head[#]===Image&],Return[<|"status"->"NONIMAGE_FRAME"|>]];
+ checks=Table[<|"seconds"->items[[i,"time_seconds"]],
+ "matches_size"->(ImageDimensions[frames[[i]]]===items[[i,"frame_dimensions_px"]]),
+ "pixel_sha256"->Hash[ImageData[frames[[i]],"Byte"],"SHA256","HexString"],
+ "matches_hash"->(Hash[ImageData[frames[[i]],"Byte"],"SHA256","HexString"]===items[[i,"decoded_pixel_sha256"]])|>,
+ {i,Length[items]}];
+ <|"status"->If[AllTrue[checks,TrueQ[#["matches_size"]]&&TrueQ[#["matches_hash"]]&],
+ "REPRODUCIBLE_FRAMES_DECODED","VIDEO_DERIVATIVE_DRIFT"],"frame_count"->Length[checks],
+ "checks"->checks,"historical_geometry_release_allowed"->False,
+ "camera_calibrated"->False,"source_file_bytes_hashed"->False|>
+];
+FMPAcquireAndCheckFilmFrames[spec_Association]:=Module[{url,v,frames},
+ url=Lookup[spec,"source_url",""];
+ If[!StringQ[url]||!StringStartsQ[url,"https://archive.org/download/Medicusc1939_4/"],
+ Return[<|"status"->"SOURCE_URI_NOT_ALLOWED"|>]];
+ v=Quiet[Check[Video[url],$Failed]];
+ If[Head[v]=!=Video,Return[<|"status"->"VIDEO_LOAD_FAILED"|>]];
+ frames=Quiet[Check[VideoExtractFrames[v,Lookup[Lookup[spec,"frame_entries",{}],"time_seconds",{}]],$Failed]];
+ If[!ListQ[frames],Return[<|"status"->"VIDEO_DECODE_FAILED"|>]];
+ FMPCheckFilmFrames[spec,frames]
+];

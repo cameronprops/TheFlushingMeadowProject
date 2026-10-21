@@ -1,0 +1,140 @@
+{
+  "schema": "fmp.theme-center.archival-film-timecode.v001",
+  "source_id": "PRELINGER_MEDICUS_REEL4_PARTI_ARCHIVEORG",
+  "source_page": "https://archive.org/details/Medicusc1939_4",
+  "source_url": "https://archive.org/download/Medicusc1939_4/Medicusc1939_4_512kb.mp4",
+  "film_type": "Philip Medicus Kodachrome home movie 1939-1940, Reel 4 Part I, Internet Archive low resolution derivative",
+  "year_range": "1939-1940",
+  "derivative_duration_seconds": 1251.952,
+  "derivative_frame_resolution_px": [
+    320,
+    240
+  ],
+  "actual_film_frames_inspected": 8,
+  "coarse_pass": {
+    "samples": 30,
+    "start_sec": 20,
+    "interval_sec": 40,
+    "end_sec": 1180
+  },
+  "frame_entries": [
+    {
+      "time_seconds": 80,
+      "timecode": "00:01:20",
+      "frame_dimensions_px": [
+        320,
+        240
+      ],
+      "decoded_pixel_sha256": "bb1af15c4bf8fe1fe2a346538577a0e3c41b769293f7b81e71a49bbae70f84a1",
+      "feature_review": "Long shot of approach/fountain axis with candidate Trylon silhouette",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 90,
+      "timecode": "00:01:30",
+      "frame_dimensions_px": [
+        320,
+        240
+      ],
+      "decoded_pixel_sha256": "abfed143da8677206efb76ba907adab18ae29e161b1d874d5c4a09c8e5db4acf",
+      "feature_review": "Trylon dominant silhouette and smaller distant Perisphere",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 100,
+      "timecode": "00:01:40",
+      "frame_dimensions_px": [
+        320,
+        240
+      ],
+      "decoded_pixel_sha256": "9d7a9ba6d20e787a388f1fd049a100ee593c5f9aab884e740680eabd7368d2d1",
+      "feature_review": "Perisphere sphere behind fountain curtain",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 110,
+      "timecode": "00:01:50",
+      "frame_dimensions_px": [
+        320,
+        240
+      ],
+      "decoded_pixel_sha256": "c8079b2e38006fe4ee325e4396016021531d36b7fbc927b6774165f36a9d3815",
+      "feature_review": "Trylon above fountain, lower structure occluded",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 120,
+      "timecode": "00:02:00",
+      "frame_dimensions_px": [
+        320,
+        240
+      ],
+      "decoded_pixel_sha256": "b70921dac60178cee4eef940cd366e42980afefdb3030dee066aaf51b2bb6255",
+      "feature_review": "Fountain building with no independently usable Theme Center landmark",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 130,
+      "timecode": "00:02:10",
+      "frame_dimensions_px": [
+        320,
+        240
+      ],
+      "decoded_pixel_sha256": "7724ea948754a2b7e795a4385eb192591e9a2c54cc2e75c686b2a3dae463bb40",
+      "feature_review": "Trylon and Perisphere distant beyond statues",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 140,
+      "timecode": "00:02:20",
+      "frame_dimensions_px": [
+        320,
+        240
+      ],
+      "decoded_pixel_sha256": "23f0b118262eb33f1543f9eada2800b318c336f6b8b6aaa3546ce03fb2e73f52",
+      "feature_review": "Trylon and sphere beyond sculpture garden",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    },
+    {
+      "time_seconds": 150,
+      "timecode": "00:02:30",
+      "frame_dimensions_px": [
+        320,
+        240
+      ],
+      "decoded_pixel_sha256": "3c50c7f41d37d642f1256652524e2bea4947fd5c060e0866a1e041e4a58b6b15",
+      "feature_review": "International flags and pavilion, contextual scene",
+      "construction_phase": "completed_exterior_1939_or_1940",
+      "image_pixel_landmarks_measured": 0,
+      "confidence": "VISUAL_FEATURE_CANDIDATE_NEEDS_SECOND_OBSERVER"
+    }
+  ],
+  "checksum_contract": "Wolfram Hash[ImageData[frame,\"Byte\"],\"SHA256\",\"HexString\"]; decoded frame pixel hash not source MP4 file hash; different decoder versions may yield different pixels",
+  "video_byte_sha256": null,
+  "video_full_download_archived": false,
+  "exact_frame_date_known": false,
+  "as_built_member_locations_certified": false,
+  "calibrated_camera_count": 0,
+  "historical_3d_placement_solved": false,
+  "limitations": [
+    "Low-resolution derivative; frame timecodes refer to this edition, not original reel master.",
+    "Scenes show completed skins, obscured by fountain sprays; no permanent steel trusses or Helicline support locations can be measured.",
+    "No known calibration landmarks have yet been matched to surveyed 3D world points; no 3D camera position solved.",
+    "Some frames may include 1940 year footage. Never silently assign all to 1939."
+  ],
+  "reconstruction_use": "Visual reference for silhouette, fountain foreground and historic approach; measurement gated until independent control points and era verified."
+}
