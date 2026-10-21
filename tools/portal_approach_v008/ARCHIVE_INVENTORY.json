@@ -1,0 +1,104 @@
+[
+  {
+    "file": "before.json",
+    "bytes": 3695,
+    "sha256": "555b40621d818635a1b99e0e68ac047fa8bc41c5fb23019c25e427739242ea2e",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "validation_gate.py",
+    "bytes": 1099,
+    "sha256": "62319defa2f3bf5b821aa1e907c0f9ec51a88f83478291ac85d29cd369ac14af",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "README.md",
+    "bytes": 2747,
+    "sha256": "c56bc43233268bc45fb45ddcb5082aae0e3e0f7ac9582f774b21897ee9748bea",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "review_landing.py",
+    "bytes": 2189,
+    "sha256": "1a1a640f813656d9997f18589421677bc7353f519ac5f710a70ace3c2d637801",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "glb_tools.py",
+    "bytes": 1385,
+    "sha256": "50e5396e91ec829f5368932952d1fa7e318179848ebc5292fd453124288b09e4",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "repair_manifest.json",
+    "bytes": 943,
+    "sha256": "63ca3ef936411ebad395cd8f4b25ca4270f53095413a1e62fd0e77589234fc00",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "check_portals_v008.py",
+    "bytes": 2382,
+    "sha256": "a6108f84f821fc086fafaf1aba6569c9e6f81cf16a4cf59f61091dcf923042bb",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "UpperLanding_Before_After.svg",
+    "bytes": 93968,
+    "sha256": "91d7794ed0942b3c7cbe1d8905e2f2ccf3e59b1e721392a6519cf2c8f50fcf41",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "check_landing.py",
+    "bytes": 1901,
+    "sha256": "1ac604c4ecc7549732c76ddcfd2652915df686902eb31f0668d58caf7bf55f10",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "fix_landing.py",
+    "bytes": 3128,
+    "sha256": "7e6e2409504d5176145704e31e32a0541a0f0d912cda10d4faae8b0afa17c447",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "UpperLanding_Before_After.png",
+    "bytes": 185245,
+    "sha256": "d20865e9857749885c2b66172b5506502147f18dc77a53f3471804db20bb34d1",
+    "git_status": "GIT_BINARY_PENDING"
+  },
+  {
+    "file": "first_tread.json",
+    "bytes": 3970,
+    "sha256": "b9cd6d32c0a262ffd78efb8742c620b4bd19a2d4a11e0be31b1323c779362f91",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "after.json",
+    "bytes": 3606,
+    "sha256": "06c4f06b118a9a2589e8a3bd4dba5131fefb8c62d8d069c8a605abbbb4bf3672",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "ThemeCenter_UpperLanding_v008.glb",
+    "bytes": 49475284,
+    "sha256": "aefc8b0a83c5e8264b936151a13cb5f7190e69d9e55c28a5141ce84c0fced867",
+    "git_status": "GIT_BINARY_PENDING"
+  },
+  {
+    "file": "wolfram_check.json",
+    "bytes": 519,
+    "sha256": "92af7fdfc83164f2084a45a7e6dfcc29ce522d42a703d0d2d9c28b4d38f36f06",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "portal_validation.json",
+    "bytes": 1107,
+    "sha256": "b300ab5b3bcdb7c80ca4dfccaf82ff9bef1817d26c191f43c9b0db9666326040",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  },
+  {
+    "file": "test_landing.py",
+    "bytes": 1287,
+    "sha256": "79e282f05d2f09f04eedd64dbe7d797a285c5048ff6ea1d1da585d696515d54f",
+    "git_status": "SOURCE_COMMIT_PENDING"
+  }
+]
