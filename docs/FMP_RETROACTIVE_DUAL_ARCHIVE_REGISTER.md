@@ -50,3 +50,9 @@
 `DUAL_VERIFIED` is permitted only when all are true: **GitHub actual bytes verified** (path+commit / LFS / release), **Drive actual bytes verified** (file ID + folder), **SHA-256/byte-size correspondence verified**, appropriate license/rights clearance recorded, ZIP members accounted for, and originating chat/component documented. Otherwise state the exact pending condition.
 
 **Initial status:** retroactive policy active; historical backfill remains **IN PROGRESS**.
+
+## Portal finishing thread: bounded recovery batch
+
+The unfinished-ends/returns workstream recovered v007 source, validation hardening, model, four original renders, section PNG/SVG, measurement JSON and original release ZIP into [Drive archive 1yF-mgJDTLaksGkV231E65VvXvVxSAZwr](https://drive.google.com/file/d/1yF-mgJDTLaksGkV231E65VvXvVxSAZwr/view). Folder and size were verified. [Inventory and hashes](../tools/portal_finish_v007/SECTION_ARCHIVE_INVENTORY.json), [current receipt](../tools/portal_finish_v007/SECTION_ARCHIVE_RECEIPT.json), and [ten earlier accessible files](../tools/portal_finish_v007/LEGACY_WORKSPACE_INVENTORY.json).
+
+SVG, code and JSON are directly tracked under `tools/portal_finish_v007`; current register/dossier/receipt are mirrored in a supplemental Drive ZIP named `FMP_Portal_Archive_Records_v007_v2.zip`. PNG, GLB and ZIP binary Git copies remain `GIT_BINARY_PENDING`; direct push failed for missing write credentials and no release/LFS connector is exposed. The earlier records ZIP is superseded because it was assembled before the failed push returned. Earlier file origins and byte copies remain `LEGACY_COPY_VERIFICATION_PENDING`. Do not infer project-wide dual completion. Verbatim conversation: `TRANSCRIPT_PENDING`.
