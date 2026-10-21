@@ -1,0 +1,72 @@
+[
+  {
+    "file": "FMP_Footprint_Massing_2026-10-18.zip",
+    "bytes": 4551,
+    "sha256": "312768b8f8a79ced4a7ca09ec704ae584f3265ce8fca89cdba38833c460dcbd8",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  },
+  {
+    "file": "FMP_Helicline_Surface_Audit_v1.zip",
+    "bytes": 4761,
+    "sha256": "1f770207a5605b7dbaefef798f1a7d9f63d436267aecbb753f1c29918900d06a",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  },
+  {
+    "file": "FMP_Helicline_Transition_v003.zip",
+    "bytes": 634330,
+    "sha256": "684c3b2c025cbeda0a26b1cd4551dc2f3dfde52b87b5ad5dbb8e59d48adf12bd",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  },
+  {
+    "file": "FMP_Project_Handoff_2026-10-19.md",
+    "bytes": 10551,
+    "sha256": "e998c3fa477c3acee5ebaaaf2403db2354c7d07ba3eecd9c06f1355f97378c6b",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  },
+  {
+    "file": "FMP_ThemeCenter_Portal_Headroom_Fix_r1.zip",
+    "bytes": 607135,
+    "sha256": "3cd168262c772a20731d39b73893690541bb9b3f00b8a3b4f78b55ca12c91898",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  },
+  {
+    "file": "FMP_ThemeCenter_Shared_Portals_v004.zip",
+    "bytes": 845307,
+    "sha256": "c9230e725754be55dbde705931a991d9439e0e1bf9b0135591a83bdbb16f5028",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  },
+  {
+    "file": "FMP_ThemeCenter_Walking_Surface_r2.zip",
+    "bytes": 607846,
+    "sha256": "3ff31d1ce14f23961714951aeab1066f866afcddc38d3737f3dbdfa73af65309",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  },
+  {
+    "file": "FMP_Transition_Clearance_v001.zip",
+    "bytes": 8421,
+    "sha256": "f7b546c38296f56a53fae10c3c9fadd76f581e5f1d572b8078796d639a7f1891",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  },
+  {
+    "file": "FMP_Trylon_Crossing_Review_v001.zip",
+    "bytes": 99713,
+    "sha256": "fbfee272baa5a2db0f3dd71336c1833701e34a7d8dae9d664e0a3c8dc708a052",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  },
+  {
+    "file": "FMP_Trylon_Return_Clearance_v001.zip",
+    "bytes": 13711,
+    "sha256": "bcc1d066d982292eb9981ffcc60de0b9a628763a47387b9beb0af26d9590d2ff",
+    "status": "LEGACY_COPY_VERIFICATION_PENDING",
+    "note": "Accessible in this conversation workspace; original workstream and both archive copies require reconciliation. Not overwritten."
+  }
+]
