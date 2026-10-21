@@ -12,6 +12,8 @@ A source-backed reconstruction of Flushing Meadows–Corona Park across **1939, 
 
 **Status reviewed: 2026-10-19**, including infrastructure research commit `df51c682105d9147126991a912a8b75e60f3942e`. This is a snapshot; check newer commits before acting.
 
+**Retroactive archiving requirement:** Every FMP chat, including earlier conversations, must reread [AGENTS.md](AGENTS.md) and [the archive policy](docs/ARCHIVE_POLICY.md), then recover and **verify actual copies of all its historical and current deliverables in both GitHub and the [project Google Drive](https://drive.google.com/drive/folders/11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk)**. Consult and reconcile the [retroactive dual-archive register](docs/FMP_RETROACTIVE_DUAL_ARCHIVE_REGISTER.md) before claiming any conversation is fully backed up. Large/restricted binaries and missing transcripts remain explicitly pending, not silently counted as done.
+
 ## Where the project is
 
 | Area | Available now | Remaining gate |
