@@ -96,3 +96,7 @@ The original ZIP member manifest and SHA-256 digests remain [machine-readable](F
 
 **Important remaining boundary:** The complete eight original ZIP packages are **still `GIT_BINARY_PENDING`**. Individual member files being in Git does NOT mean the exact archived ZIP container is in GitHub. Five other ZIPs in batch 01 remain to be reconciled per member. Full verbatim chat transcript is still `TRANSCRIPT_PENDING`. Do not conflate successful read-only tests with full engine acceptance. No historical masters or source ZIP bytes were altered.
 
+
+## 2026-10-21: Portal finishing thread v008 landing repair
+
+[Component evidence](../research/pavilions/theme_center/UPPER_LANDING_v008.md), [18-member inventory](../tools/portal_approach_v008/ARCHIVE_INVENTORY.json), [Drive package 14X-Jp_tt8PfbNNy0F3TpBFkuKbJM5eGO](https://drive.google.com/file/d/14X-Jp_tt8PfbNNy0F3TpBFkuKbJM5eGO/view). Code, SVG and JSON committed through 0d4a6db42de08b3a5347c34d18e2a41207ea3792; complete source and binaries are in project Drive with metadata readback. PNG/GLB/ZIP remain GIT_BINARY_PENDING. Source/dossier/register snapshots mirrored in FMP_UpperLanding_v008_Record_Snapshot.zip. Older workstream backfill and TRANSCRIPT_PENDING remain open.
