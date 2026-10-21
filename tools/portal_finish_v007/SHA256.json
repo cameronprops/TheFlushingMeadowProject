@@ -1,15 +1,17 @@
 {
-  "README.md": "10ad9a7eb8de7b26815eb499be512f119bf161841fc35809497d96b6b2d9cbbb",
+  "README.md": "230f65e40f5bd0d6317a67d87a7d5a9a1d6c13cf3bdbaedea6aa000edb33ab38",
   "build_portals.py": "6ef7de28248510c95716bb2f20683a5f41c7e2fceacbfa419cfa31f18fea578f",
-  "check_portals.py": "3ca0c5ce154f3ea314b3e78c77aaf83b0b61d5d78b3b314bb57e149af5a8a011",
-  "test_portals.py": "985dfa2ee23f9dbcca067feff9a0a1f3686f0e8dd2236cd8adc85b12beb5ce17",
+  "check_portals.py": "94dece91758e9ffa6ca200cfc137083832fa8f6d8432eaf5a5e77c4bdbba23e1",
+  "test_portals.py": "e4fa4016eca1856f81ef20e4f92b7e236087b6ee9f18590a3f1f49b5c1598095",
   "render_portals.py": "12eff15e3f6c650d9fe35a78a54e6de9f362267a0214b2261417ca1cb3d1a47c",
   "glb_tools.py": "50e5396e91ec829f5368932952d1fa7e318179848ebc5292fd453124288b09e4",
   "output/ThemeCenter_Framed_Portals_v007.glb": "ef1d417434ec9b1a873a0aecd9a287d96c353bcef9c70f7a70fb1b22af8c0633",
   "output/portal_manifest.json": "128752aee9194ff813e8c49da60353fe36b940ee5cbb2e637af330ac2827ca73",
-  "output/portal_validation.json": "8cc616c6c9cd574c474a56e95084f2fb900a4658e238a1cc4eaa31df76145942",
+  "output/portal_validation.json": "81e0fd2c178ae81675e8626112b6663cde7ed6e60e360b4d7f22afc8c4dbbfb5",
   "output/Perisphere_upper_portal.png": "cfcbeee9c47eb7e90ef3b6c8388b81a3806a6bae7ff9d22038d0d66f79db55be",
   "output/Perisphere_lower_portal.png": "832e626b637f7ee9cb2ba216a2cd1ccfa92abf6ac4944b81927729244f8b567d",
   "output/Trylon_rail_return.png": "0b83eaf57c303995b7c6eb5017a22d5147b3f4ffcad53e3838203b0b962f74e7",
-  "output/Trylon_framed_passages.png": "9003bd71ef8a17868bdff011d703c3c7c310ddd552d6984c6ac694f0838383f9"
+  "output/Trylon_framed_passages.png": "9003bd71ef8a17868bdff011d703c3c7c310ddd552d6984c6ac694f0838383f9",
+  "validation_gate.py": "62319defa2f3bf5b821aa1e907c0f9ec51a88f83478291ac85d29cd369ac14af",
+  "test_validation_gate.py": "bf38a425d09003d571f3eb07e8bc60219093b55517a5496815d43d845c4ffba0"
 }
