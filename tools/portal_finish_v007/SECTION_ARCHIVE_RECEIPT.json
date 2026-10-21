@@ -1,0 +1,131 @@
+{
+  "workstream": "unfinished portal ends and returns",
+  "drive_file_id": "1yF-mgJDTLaksGkV231E65VvXvVxSAZwr",
+  "drive_folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+  "archive_sha256": "11109ad7488aaa1df50733236dbf314071fba4c8bfa7e59cfbae7d38c96f2586",
+  "archive_bytes": 37294801,
+  "git_root": "tools/portal_finish_v007",
+  "status": "TEXT_AND_SVG_COMMITTED; ALL_BINARY_GIT_COPIES_PENDING",
+  "legacy_inventory": "LEGACY_WORKSPACE_INVENTORY.json",
+  "transcript": "TRANSCRIPT_PENDING",
+  "files": [
+    {
+      "path": "tools/portal_finish_v007/LEGACY_WORKSPACE_INVENTORY.json",
+      "bytes": 3553,
+      "sha256": "90d449aa56b5dd8ce30e7332c7f847e32bd2ade8a76702f4dc6e38ee54fe8e82"
+    },
+    {
+      "path": "tools/portal_finish_v007/README.md",
+      "bytes": 5139,
+      "sha256": "230f65e40f5bd0d6317a67d87a7d5a9a1d6c13cf3bdbaedea6aa000edb33ab38"
+    },
+    {
+      "path": "tools/portal_finish_v007/SECTION_ARCHIVE_INVENTORY.json",
+      "bytes": 4503,
+      "sha256": "c2765aa09b58488ee9a7c760b844a4006acdebcadc705bc58a47225015ec1ca7"
+    },
+    {
+      "path": "tools/portal_finish_v007/SECTION_REVIEW.md",
+      "bytes": 1903,
+      "sha256": "e9546c79e498491773a95b3c40d3d303d8a65c63836738e3acd8cbff32e4bfe4"
+    },
+    {
+      "path": "tools/portal_finish_v007/SHA256.json",
+      "bytes": 1467,
+      "sha256": "f91c762a9bd2b57795800682066afb85952a07881340845ade79ad55b1bbdf4a"
+    },
+    {
+      "path": "tools/portal_finish_v007/build_portals.py",
+      "bytes": 11069,
+      "sha256": "6ef7de28248510c95716bb2f20683a5f41c7e2fceacbfa419cfa31f18fea578f"
+    },
+    {
+      "path": "tools/portal_finish_v007/check_portals.py",
+      "bytes": 2336,
+      "sha256": "94dece91758e9ffa6ca200cfc137083832fa8f6d8432eaf5a5e77c4bdbba23e1"
+    },
+    {
+      "path": "tools/portal_finish_v007/draw_portal_sections.py",
+      "bytes": 3757,
+      "sha256": "5709301e3d4abfb36ddd3e653a0b4f1cddd554b30d714a476eb009ecc83e5eb3"
+    },
+    {
+      "path": "tools/portal_finish_v007/glb_tools.py",
+      "bytes": 1385,
+      "sha256": "50e5396e91ec829f5368932952d1fa7e318179848ebc5292fd453124288b09e4"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/FMP_Portal_Sections_v007.png",
+      "bytes": 236395,
+      "sha256": "d5e6f3c6f0522d64762cbf3bed64c6b936db49e568aa00645fc4060ae7236409"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/FMP_Portal_Sections_v007.svg",
+      "bytes": 140703,
+      "sha256": "3fb8d76e7a3a3742246734c1740b592af79ee46c8cd0aa0ce2e79883822abf14"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/Perisphere_lower_portal.png",
+      "bytes": 61724,
+      "sha256": "832e626b637f7ee9cb2ba216a2cd1ccfa92abf6ac4944b81927729244f8b567d"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/Perisphere_upper_portal.png",
+      "bytes": 96298,
+      "sha256": "cfcbeee9c47eb7e90ef3b6c8388b81a3806a6bae7ff9d22038d0d66f79db55be"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/Trylon_framed_passages.png",
+      "bytes": 80083,
+      "sha256": "9003bd71ef8a17868bdff011d703c3c7c310ddd552d6984c6ac694f0838383f9"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/Trylon_rail_return.png",
+      "bytes": 51458,
+      "sha256": "0b83eaf57c303995b7c6eb5017a22d5147b3f4ffcad53e3838203b0b962f74e7"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/portal_manifest.json",
+      "bytes": 39571,
+      "sha256": "128752aee9194ff813e8c49da60353fe36b940ee5cbb2e637af330ac2827ca73"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/portal_section_measurements.json",
+      "bytes": 3081,
+      "sha256": "370b657a99acdbc973133602ecec239fd3b6bf1bdde50c7ca827549a9c40f7f9"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/portal_validation.json",
+      "bytes": 1107,
+      "sha256": "81e0fd2c178ae81675e8626112b6663cde7ed6e60e360b4d7f22afc8c4dbbfb5"
+    },
+    {
+      "path": "tools/portal_finish_v007/output/section_wolfram_receipt.json",
+      "bytes": 228,
+      "sha256": "a482a7022bb2cff3e2762e5a7f07257833b04c24ce7b83cd73797e6a45a2818d"
+    },
+    {
+      "path": "tools/portal_finish_v007/render_portals.py",
+      "bytes": 2824,
+      "sha256": "12eff15e3f6c650d9fe35a78a54e6de9f362267a0214b2261417ca1cb3d1a47c"
+    },
+    {
+      "path": "tools/portal_finish_v007/test_portals.py",
+      "bytes": 2171,
+      "sha256": "e4fa4016eca1856f81ef20e4f92b7e236087b6ee9f18590a3f1f49b5c1598095"
+    },
+    {
+      "path": "tools/portal_finish_v007/test_validation_gate.py",
+      "bytes": 2044,
+      "sha256": "bf38a425d09003d571f3eb07e8bc60219093b55517a5496815d43d845c4ffba0"
+    },
+    {
+      "path": "tools/portal_finish_v007/validation_gate.py",
+      "bytes": 1099,
+      "sha256": "62319defa2f3bf5b821aa1e907c0f9ec51a88f83478291ac85d29cd369ac14af"
+    }
+  ],
+  "failed_git_push": "fatal: could not read Username for https://github.com: No such device or address",
+  "local_only_commit": "fb8d43a",
+  "superseded_records_archive": "1B5ndjQDeeEPCJ0xzB6pY5BxkCYmso2oO contains pre-push provisional claims; use corrected records v2"
+}
