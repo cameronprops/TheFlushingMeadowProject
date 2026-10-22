@@ -1,0 +1,179 @@
+{
+  "schema": "fmp.bridge-photoregistration-controls.v001",
+  "source_name": "FMP_ThemeCenter_Assembled_Runtime_v005.glb",
+  "source_sha256": "de38fdd5294285afd92dbb6be0a9d4e564c52bacd588a9fd116c9e1e35f06439",
+  "result_name": "FMP_ThemeCenter_Bridge_Registration_Controls_v001.glb",
+  "result_sha256": "24e9ebf855b7654c278c6d24a37029b784d4155e0ab5c3ca31b9d7479f5b6f33",
+  "units": "metres",
+  "model_frame": "right-handed Y-up model-local UNREGISTERED",
+  "object_count": 6,
+  "objects": [
+    {
+      "label": "PUBLIC_ENTRANCE_LOBBY_REFERENCE_ONLY",
+      "source_node": "Trylon_Lobby_Floor_Envelope",
+      "type": "EXISTING_NODE_WORLD_AABB",
+      "bbox_min_xyz_m": [
+        -48.158401,
+        -0.0,
+        -3.6576
+      ],
+      "bbox_max_xyz_m": [
+        -41.452801,
+        0.12192,
+        3.6576
+      ],
+      "bbox_center_xyz_m": [
+        -44.805601,
+        0.06096,
+        0.0
+      ],
+      "wire_rgb": [
+        247,
+        190,
+        56
+      ],
+      "evidence_status": "DERIVED_FROM_RUNTIME_GLTF_GEOMETRY"
+    },
+    {
+      "label": "ESCALATOR_ONE_EXISTING_ENVELOPE",
+      "source_node": "Escalator_1_Envelope",
+      "type": "EXISTING_NODE_WORLD_AABB",
+      "bbox_min_xyz_m": [
+        -49.0728,
+        1.34112,
+        2.1336
+      ],
+      "bbox_max_xyz_m": [
+        -20.889065,
+        15.8496,
+        3.9624
+      ],
+      "bbox_center_xyz_m": [
+        -34.980932,
+        8.59536,
+        3.048
+      ],
+      "wire_rgb": [
+        23,
+        129,
+        211
+      ],
+      "evidence_status": "DERIVED_FROM_RUNTIME_GLTF_GEOMETRY"
+    },
+    {
+      "label": "ESCALATOR_TWO_EXISTING_ENVELOPE",
+      "source_node": "Escalator_2_Envelope",
+      "type": "EXISTING_NODE_WORLD_AABB",
+      "bbox_min_xyz_m": [
+        -49.0728,
+        2.25552,
+        -3.9624
+      ],
+      "bbox_max_xyz_m": [
+        -23.295349,
+        19.5072,
+        -2.1336
+      ],
+      "bbox_center_xyz_m": [
+        -36.184074,
+        10.88136,
+        -3.048
+      ],
+      "wire_rgb": [
+        246,
+        110,
+        50
+      ],
+      "evidence_status": "DERIVED_FROM_RUNTIME_GLTF_GEOMETRY"
+    },
+    {
+      "label": "RETURN_BRIDGE_EXISTING_DECK",
+      "source_node": "Return_Bridge_Deck",
+      "type": "EXISTING_NODE_WORLD_AABB",
+      "bbox_min_xyz_m": [
+        -36.271198,
+        15.63624,
+        0.3048
+      ],
+      "bbox_max_xyz_m": [
+        -17.0688,
+        15.8496,
+        5.7912
+      ],
+      "bbox_center_xyz_m": [
+        -26.669999,
+        15.74292,
+        3.048
+      ],
+      "wire_rgb": [
+        17,
+        159,
+        125
+      ],
+      "evidence_status": "DERIVED_FROM_RUNTIME_GLTF_GEOMETRY"
+    },
+    {
+      "label": "PERISPHERE_RUNTIME_LOWER_SHELL",
+      "source_node": "Perisphere_Lower_Removable_Shell__UNREAL_PORTALS_v001",
+      "type": "EXISTING_NODE_WORLD_AABB",
+      "bbox_min_xyz_m": [
+        -27.428249,
+        5.1816,
+        -27.428249
+      ],
+      "bbox_max_xyz_m": [
+        27.428249,
+        32.613602,
+        27.428249
+      ],
+      "bbox_center_xyz_m": [
+        0.0,
+        18.897601,
+        0.0
+      ],
+      "wire_rgb": [
+        119,
+        113,
+        153
+      ],
+      "evidence_status": "DERIVED_FROM_RUNTIME_GLTF_GEOMETRY"
+    },
+    {
+      "label": "TRYLON_RUNTIME_EXTERIOR_SHELL",
+      "source_node": "Trylon_Hollow_Exterior__RUNTIME_SHARED_APERTURES_v004",
+      "type": "EXISTING_NODE_WORLD_AABB",
+      "bbox_min_xyz_m": [
+        -57.27,
+        0.0,
+        -12.4968
+      ],
+      "bbox_max_xyz_m": [
+        -36.066601,
+        185.927994,
+        12.4968
+      ],
+      "bbox_center_xyz_m": [
+        -46.668301,
+        92.963997,
+        0.0
+      ],
+      "wire_rgb": [
+        107,
+        104,
+        103
+      ],
+      "evidence_status": "DERIVED_FROM_RUNTIME_GLTF_GEOMETRY"
+    }
+  ],
+  "historical_architecture": "NOT_RECONSTRUCTED",
+  "arc_profile": "NOT_MEASURED",
+  "public_entrance_canopy": "NOT_MEASURED",
+  "game_visibility": "HIDE_ALL_CONTROLS",
+  "purpose": "Geometrical anchors and reference envelopes for calibrating archival photography against the actual runtime asset.",
+  "limits": [
+    "Box edges are guide geometry and do not represent as-built wall/steel surfaces.",
+    "Escalators are existing approximate model geometry, not actual engineering survey.",
+    "No photograph camera calibration performed; no historical profile or fabricated entrance added.",
+    "Do not add to any render scene as architectural elements."
+  ]
+}
