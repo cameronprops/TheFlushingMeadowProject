@@ -1,0 +1,13 @@
+feature_id,component,model_state,evidence_status,next_measurement
+WF28-EXT-01,Curved courtyard mural facade,UNMODELED,PHOTO_VERIFIED_RADIUS_UNKNOWN,Original building plan and calibrated views
+WF28-EXT-02,Science Education bowed entrance frontage,STRAIGHT_GUESSED,PHOTO_VERIFIED_CURVATURE_UNKNOWN,Plan trace of entrance and elevation
+WF28-EXT-03,Hippocrates relief,NOT_MODELED,DOCUMENTED_14_BY_21_FT,Measured facade position
+WF28-EXT-04,The Picnic garden mural,ARTWORK_GUIDE_ONLY,DOCUMENTED_14_BY_110_FT,Locate facade and door cuts
+WF28-EXT-05,Modern Medicine south mural,NOT_MODELED,DOCUMENTED_36_BY_34_FT,South facade survey
+WF28-EXT-06,Avenue of Patriots entrance,INTERPRETIVE,PHOTO_DOCUMENTED,Source plan entrance coordinates
+WF28-EXT-07,Washington Square facade,NOT_MODELED,PHOTO_DOCUMENTED,Source plan and elevation
+WF28-EXT-08,South Southwest mosaics,NOT_MODELED,PHOTO_DOCUMENTED,Wall-face survey
+WF28-EXT-09,Courtyard rib sculpture,NOT_MODELED,PHOTO_DOCUMENTED,Multi-view projection
+WF28-SITE-10,Spiral cascade,NOT_MODELED,POSTCARD_DOCUMENTED,Site plan corroboration
+WF28-INT-11,Hall of Man,INTERPRETIVE_ZONE,PROGRAM_DOCUMENTED_UNLOCATED,Original 1939 guide plus plan
+WF28-INT-12,Hall of Medical Science,INTERPRETIVE_ZONE,PROGRAM_DOCUMENTED_UNLOCATED,Original 1939 guide plus plan
