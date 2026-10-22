@@ -1,0 +1,4535 @@
+{
+  "asset_sha256": "aefc8b0a83c5e8264b936151a13cb5f7190e69d9e55c28a5141ce84c0fced867",
+  "tread_count": 23,
+  "going_m": 0.29662202277362765,
+  "rises_m": [
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422,
+    0.159027099609375,
+    0.1590251922607422
+  ],
+  "sample_count": 375,
+  "supported_count": 375,
+  "max_abs_error_m": 0.0,
+  "samples": [
+    {
+      "zone": "tread_01",
+      "point": [
+        -26.538427762862884,
+        19.348175048828125,
+        -2.668093923280999
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -26.583326198586985,
+        19.348175048828125,
+        -2.578739961591946
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -26.628224634311085,
+        19.348175048828125,
+        -2.4893859999028933
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -26.873505119196835,
+        19.348175048828125,
+        -2.8364630572463785
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -26.918403554920936,
+        19.348175048828125,
+        -2.7471090955573256
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -26.963301990645036,
+        19.348175048828125,
+        -2.657755133868273
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -27.208582475530783,
+        19.348175048828125,
+        -3.004832191211758
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -27.253480911254883,
+        19.348175048828125,
+        -2.915478229522705
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -27.298379346978983,
+        19.348175048828125,
+        -2.8261242678336522
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -27.54365983186473,
+        19.348175048828125,
+        -3.1732013251771374
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -27.58855826758883,
+        19.348175048828125,
+        -3.0838473634880845
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -27.63345670331293,
+        19.348175048828125,
+        -2.9944934017990317
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -27.87873718819868,
+        19.348175048828125,
+        -3.341570459142517
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -27.92363562392278,
+        19.348175048828125,
+        -3.252216497453464
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_01",
+      "point": [
+        -27.96853405964688,
+        19.348175048828125,
+        -3.162862535764411
+      ],
+      "surface_y": 19.348175048828125,
+      "surface_node": "PROVISIONAL_UpperReturnStair_01",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -26.671606473800384,
+        19.18914794921875,
+        -2.4030504261954277
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -26.716504909524485,
+        19.18914794921875,
+        -2.313696464506375
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -26.761403345248585,
+        19.18914794921875,
+        -2.224342502817322
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -27.006683830134335,
+        19.18914794921875,
+        -2.571419560160807
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -27.051582265858436,
+        19.18914794921875,
+        -2.4820655984717543
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -27.096480701582536,
+        19.18914794921875,
+        -2.3927116367827015
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -27.341761186468283,
+        19.18914794921875,
+        -2.7397886941261866
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -27.386659622192383,
+        19.18914794921875,
+        -2.650434732437134
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -27.431558057916483,
+        19.18914794921875,
+        -2.561080770748081
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -27.67683854280223,
+        19.18914794921875,
+        -2.908157828091566
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -27.72173697852633,
+        19.18914794921875,
+        -2.8188038664025132
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -27.76663541425043,
+        19.18914794921875,
+        -2.7294499047134604
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -28.01191589913618,
+        19.18914794921875,
+        -3.0765269620569455
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -28.05681433486028,
+        19.18914794921875,
+        -2.9871730003678927
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_02",
+      "point": [
+        -28.10171277058438,
+        19.18914794921875,
+        -2.89781903867884
+      ],
+      "surface_y": 19.18914794921875,
+      "surface_node": "PROVISIONAL_UpperReturnStair_02",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -26.804784231063568,
+        19.030122756958008,
+        -2.1380069291098565
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -26.84968266678767,
+        19.030122756958008,
+        -2.0486529674208036
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -26.89458110251177,
+        19.030122756958008,
+        -1.9592990057317505
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -27.13986158739752,
+        19.030122756958008,
+        -2.306376063075236
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -27.18476002312162,
+        19.030122756958008,
+        -2.217022101386183
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -27.22965845884572,
+        19.030122756958008,
+        -2.12766813969713
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -27.474938943731466,
+        19.030122756958008,
+        -2.4747451970406154
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -27.519837379455566,
+        19.030122756958008,
+        -2.3853912353515625
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -27.564735815179667,
+        19.030122756958008,
+        -2.2960372736625096
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -27.810016300065413,
+        19.030122756958008,
+        -2.643114331005995
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -27.854914735789514,
+        19.030122756958008,
+        -2.553760369316942
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -27.899813171513614,
+        19.030122756958008,
+        -2.464406407627889
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -28.145093656399364,
+        19.030122756958008,
+        -2.8114834649713742
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -28.189992092123465,
+        19.030122756958008,
+        -2.7221295032823214
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_03",
+      "point": [
+        -28.234890527847565,
+        19.030122756958008,
+        -2.6327755415932685
+      ],
+      "surface_y": 19.030122756958008,
+      "surface_node": "PROVISIONAL_UpperReturnStair_03",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -26.937962942001068,
+        18.871095657348633,
+        -1.8729634320242852
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -26.98286137772517,
+        18.871095657348633,
+        -1.783609470335232
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -27.02775981344927,
+        18.871095657348633,
+        -1.694255508646179
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -27.27304029833502,
+        18.871095657348633,
+        -2.0413325659896646
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -27.31793873405912,
+        18.871095657348633,
+        -1.9519786043006118
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -27.36283716978322,
+        18.871095657348633,
+        -1.8626246426115587
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -27.608117654668966,
+        18.871095657348633,
+        -2.209701699955044
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -27.653016090393066,
+        18.871095657348633,
+        -2.120347738265991
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -27.697914526117167,
+        18.871095657348633,
+        -2.0309937765769384
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -27.943195011002913,
+        18.871095657348633,
+        -2.3780708339204235
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -27.988093446727014,
+        18.871095657348633,
+        -2.2887168722313707
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -28.032991882451114,
+        18.871095657348633,
+        -2.199362910542318
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -28.278272367336864,
+        18.871095657348633,
+        -2.546439967885803
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -28.323170803060965,
+        18.871095657348633,
+        -2.45708600619675
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_04",
+      "point": [
+        -28.368069238785065,
+        18.871095657348633,
+        -2.3677320445076973
+      ],
+      "surface_y": 18.871095657348633,
+      "surface_node": "PROVISIONAL_UpperReturnStair_04",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -27.071141652938568,
+        18.71207046508789,
+        -1.6079199349387139
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -27.11604008866267,
+        18.71207046508789,
+        -1.5185659732496608
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -27.16093852438677,
+        18.71207046508789,
+        -1.4292120115606077
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -27.40621900927252,
+        18.71207046508789,
+        -1.7762890689040935
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -27.45111744499662,
+        18.71207046508789,
+        -1.6869351072150405
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -27.49601588072072,
+        18.71207046508789,
+        -1.5975811455259874
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -27.741296365606466,
+        18.71207046508789,
+        -1.944658202869473
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -27.786194801330566,
+        18.71207046508789,
+        -1.85530424118042
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -27.831093237054667,
+        18.71207046508789,
+        -1.7659502794913668
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -28.076373721940413,
+        18.71207046508789,
+        -2.113027336834852
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -28.121272157664514,
+        18.71207046508789,
+        -2.0236733751457994
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -28.166170593388614,
+        18.71207046508789,
+        -1.9343194134567463
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -28.411451078274364,
+        18.71207046508789,
+        -2.2813964708002317
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -28.456349513998465,
+        18.71207046508789,
+        -2.192042509111179
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_05",
+      "point": [
+        -28.501247949722565,
+        18.71207046508789,
+        -2.102688547422126
+      ],
+      "surface_y": 18.71207046508789,
+      "surface_node": "PROVISIONAL_UpperReturnStair_05",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -27.204320363876068,
+        18.553043365478516,
+        -1.3428765570624321
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -27.24921879960017,
+        18.553043365478516,
+        -1.253522595373379
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -27.29411723532427,
+        18.553043365478516,
+        -1.164168633684326
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -27.53939772021002,
+        18.553043365478516,
+        -1.5112456910278118
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -27.58429615593412,
+        18.553043365478516,
+        -1.4218917293387587
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -27.62919459165822,
+        18.553043365478516,
+        -1.3325377676497057
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -27.874475076543966,
+        18.553043365478516,
+        -1.6796148249931913
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -27.919373512268066,
+        18.553043365478516,
+        -1.5902608633041382
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -27.964271947992167,
+        18.553043365478516,
+        -1.500906901615085
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -28.209552432877913,
+        18.553043365478516,
+        -1.8479839589585707
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -28.254450868602014,
+        18.553043365478516,
+        -1.7586299972695176
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -28.299349304326114,
+        18.553043365478516,
+        -1.6692760355804646
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -28.544629789211864,
+        18.553043365478516,
+        -2.0163530929239504
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -28.589528224935965,
+        18.553043365478516,
+        -1.9269991312348973
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_06",
+      "point": [
+        -28.634426660660065,
+        18.553043365478516,
+        -1.8376451695458442
+      ],
+      "surface_y": 18.553043365478516,
+      "surface_node": "PROVISIONAL_UpperReturnStair_06",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -27.337499074813568,
+        18.394018173217773,
+        -1.0778330301745385
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -27.38239751053767,
+        18.394018173217773,
+        -0.9884790684854854
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -27.42729594626177,
+        18.394018173217773,
+        -0.8991251067964324
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -27.67257643114752,
+        18.394018173217773,
+        -1.2462021641399181
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -27.71747486687162,
+        18.394018173217773,
+        -1.156848202450865
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -27.76237330259572,
+        18.394018173217773,
+        -1.067494240761812
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -28.007653787481466,
+        18.394018173217773,
+        -1.4145712981052976
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -28.052552223205566,
+        18.394018173217773,
+        -1.3252173364162445
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -28.097450658929667,
+        18.394018173217773,
+        -1.2358633747271914
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -28.342731143815413,
+        18.394018173217773,
+        -1.582940432070677
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -28.387629579539514,
+        18.394018173217773,
+        -1.493586470381624
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -28.432528015263614,
+        18.394018173217773,
+        -1.4042325086925709
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -28.677808500149364,
+        18.394018173217773,
+        -1.7513095660360567
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -28.722706935873465,
+        18.394018173217773,
+        -1.6619556043470036
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_07",
+      "point": [
+        -28.767605371597565,
+        18.394018173217773,
+        -1.5726016426579505
+      ],
+      "surface_y": 18.394018173217773,
+      "surface_node": "PROVISIONAL_UpperReturnStair_07",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -27.470677785751068,
+        18.2349910736084,
+        -0.8127895330889671
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -27.51557622147517,
+        18.2349910736084,
+        -0.7234355713999141
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -27.56047465719927,
+        18.2349910736084,
+        -0.6340816097108611
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -27.80575514208502,
+        18.2349910736084,
+        -0.9811586670543466
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -27.85065357780912,
+        18.2349910736084,
+        -0.8918047053652937
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -27.89555201353322,
+        18.2349910736084,
+        -0.8024507436762407
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -28.140832498418966,
+        18.2349910736084,
+        -1.1495278010197263
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -28.185730934143066,
+        18.2349910736084,
+        -1.0601738393306732
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -28.230629369867167,
+        18.2349910736084,
+        -0.9708198776416203
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -28.475909854752913,
+        18.2349910736084,
+        -1.3178969349851057
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -28.520808290477014,
+        18.2349910736084,
+        -1.2285429732960527
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -28.565706726201114,
+        18.2349910736084,
+        -1.1391890116069996
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -28.810987211086864,
+        18.2349910736084,
+        -1.4862660689504854
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -28.855885646810965,
+        18.2349910736084,
+        -1.3969121072614323
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_08",
+      "point": [
+        -28.900784082535065,
+        18.2349910736084,
+        -1.3075581455723793
+      ],
+      "surface_y": 18.2349910736084,
+      "surface_node": "PROVISIONAL_UpperReturnStair_08",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -27.603856496688568,
+        18.075965881347656,
+        -0.5477461105092017
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -27.64875493241267,
+        18.075965881347656,
+        -0.4583921488201488
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -27.69365336813677,
+        18.075965881347656,
+        -0.36903818713109576
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -27.93893385302252,
+        18.075965881347656,
+        -0.7161152444745813
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -27.98383228874662,
+        18.075965881347656,
+        -0.6267612827855283
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -28.02873072447072,
+        18.075965881347656,
+        -0.5374073210964754
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -28.274011209356466,
+        18.075965881347656,
+        -0.8844843784399609
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -28.318909645080566,
+        18.075965881347656,
+        -0.7951304167509079
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -28.363808080804667,
+        18.075965881347656,
+        -0.7057764550618549
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -28.609088565690413,
+        18.075965881347656,
+        -1.0528535124053404
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -28.653987001414514,
+        18.075965881347656,
+        -0.9634995507162875
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -28.698885437138614,
+        18.075965881347656,
+        -0.8741455890272345
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -28.944165922024364,
+        18.075965881347656,
+        -1.22122264637072
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -28.989064357748465,
+        18.075965881347656,
+        -1.131868684681667
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_09",
+      "point": [
+        -29.033962793472565,
+        18.075965881347656,
+        -1.042514722992614
+      ],
+      "surface_y": 18.075965881347656,
+      "surface_node": "PROVISIONAL_UpperReturnStair_09",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -27.737035207626068,
+        17.91693878173828,
+        -0.28270262366817883
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -27.78193364335017,
+        17.91693878173828,
+        -0.1933486619791258
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -27.82683207907427,
+        17.91693878173828,
+        -0.10399470029007281
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -28.07211256396002,
+        17.91693878173828,
+        -0.4510717576335584
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -28.11701099968412,
+        17.91693878173828,
+        -0.36171779594450537
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -28.16190943540822,
+        17.91693878173828,
+        -0.27236383425545235
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -28.407189920293966,
+        17.91693878173828,
+        -0.6194408915989379
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -28.452088356018066,
+        17.91693878173828,
+        -0.5300869299098849
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -28.496986791742167,
+        17.91693878173828,
+        -0.4407329682208319
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -28.742267276627913,
+        17.91693878173828,
+        -0.7878100255643175
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -28.787165712352014,
+        17.91693878173828,
+        -0.6984560638752645
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -28.832064148076114,
+        17.91693878173828,
+        -0.6091021021862115
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -29.077344632961864,
+        17.91693878173828,
+        -0.956179159529697
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -29.122243068685965,
+        17.91693878173828,
+        -0.866825197840644
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_10",
+      "point": [
+        -29.167141504410065,
+        17.91693878173828,
+        -0.7774712361515911
+      ],
+      "surface_y": 17.91693878173828,
+      "surface_node": "PROVISIONAL_UpperReturnStair_10",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -27.870213918563568,
+        17.75791358947754,
+        -0.017659131239220402
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -27.91511235428767,
+        17.75791358947754,
+        0.0716948304498326
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -27.96001079001177,
+        17.75791358947754,
+        0.16104879213888562
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -28.20529127489752,
+        17.75791358947754,
+        -0.18602826520459997
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -28.25018971062162,
+        17.75791358947754,
+        -0.09667430351554696
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -28.29508814634572,
+        17.75791358947754,
+        -0.007320341826493951
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -28.540368631231466,
+        17.75791358947754,
+        -0.35439739916997953
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -28.585267066955566,
+        17.75791358947754,
+        -0.2650434374809265
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -28.630165502679667,
+        17.75791358947754,
+        -0.1756894757918735
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -28.875445987565413,
+        17.75791358947754,
+        -0.522766533135359
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -28.920344423289514,
+        17.75791358947754,
+        -0.43341257144630607
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -28.965242859013614,
+        17.75791358947754,
+        -0.34405860975725305
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -29.210523343899364,
+        17.75791358947754,
+        -0.6911356671007386
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -29.255421779623465,
+        17.75791358947754,
+        -0.6017817054116856
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_11",
+      "point": [
+        -29.300320215347565,
+        17.75791358947754,
+        -0.5124277437226327
+      ],
+      "surface_y": 17.75791358947754,
+      "surface_node": "PROVISIONAL_UpperReturnStair_11",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -28.003392629501068,
+        17.598886489868164,
+        0.24738436584635087
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -28.04829106522517,
+        17.598886489868164,
+        0.3367383275354039
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -28.09318950094927,
+        17.598886489868164,
+        0.4260922892244569
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -28.33846998583502,
+        17.598886489868164,
+        0.07901523188097133
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -28.38336842155912,
+        17.598886489868164,
+        0.16836919357002433
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -28.42826685728322,
+        17.598886489868164,
+        0.25772315525907735
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -28.673547342168966,
+        17.598886489868164,
+        -0.08935390208440823
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -28.718445777893066,
+        17.598886489868164,
+        5.960464477539063e-08
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -28.763344213617167,
+        17.598886489868164,
+        0.08935402129369778
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -29.008624698502913,
+        17.598886489868164,
+        -0.2577230360497878
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -29.053523134227014,
+        17.598886489868164,
+        -0.16836907436073478
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -29.098421569951114,
+        17.598886489868164,
+        -0.07901511267168178
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -29.343702054836864,
+        17.598886489868164,
+        -0.42609217001516736
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -29.388600490560965,
+        17.598886489868164,
+        -0.33673820832611434
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_12",
+      "point": [
+        -29.433498926285065,
+        17.598886489868164,
+        -0.24738424663706132
+      ],
+      "surface_y": 17.598886489868164,
+      "surface_node": "PROVISIONAL_UpperReturnStair_12",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -28.136571340438568,
+        17.439861297607422,
+        0.5124278331295998
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -28.18146977616267,
+        17.439861297607422,
+        0.6017817948186528
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -28.22636821188677,
+        17.439861297607422,
+        0.6911357565077058
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -28.47164869677252,
+        17.439861297607422,
+        0.3440586991642202
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -28.51654713249662,
+        17.439861297607422,
+        0.43341266085327323
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -28.56144556822072,
+        17.439861297607422,
+        0.5227666225423262
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -28.806726053106466,
+        17.439861297607422,
+        0.17568956519884066
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -28.851624488830566,
+        17.439861297607422,
+        0.2650435268878937
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -28.896522924554667,
+        17.439861297607422,
+        0.3543974885769467
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -29.141803409440413,
+        17.439861297607422,
+        0.007320431233461114
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -29.186701845164514,
+        17.439861297607422,
+        0.09667439292251412
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -29.231600280888614,
+        17.439861297607422,
+        0.18602835461156714
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -29.476880765774364,
+        17.439861297607422,
+        -0.16104870273191846
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -29.521779201498465,
+        17.439861297607422,
+        -0.07169474104286544
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_13",
+      "point": [
+        -29.566677637222565,
+        17.439861297607422,
+        0.017659220646187565
+      ],
+      "surface_y": 17.439861297607422,
+      "surface_node": "PROVISIONAL_UpperReturnStair_13",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -28.269750051376068,
+        17.280834197998047,
+        0.7774713479103
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -28.31464848710017,
+        17.280834197998047,
+        0.866825309599353
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -28.35954692282427,
+        17.280834197998047,
+        0.956179271288406
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -28.60482740771002,
+        17.280834197998047,
+        0.6091022139449205
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -28.64972584343412,
+        17.280834197998047,
+        0.6984561756339734
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -28.69462427915822,
+        17.280834197998047,
+        0.7878101373230264
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -28.939904764043966,
+        17.280834197998047,
+        0.44073307997954086
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -28.984803199768066,
+        17.280834197998047,
+        0.5300870416685939
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -29.029701635492167,
+        17.280834197998047,
+        0.6194410033576468
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -29.274982120377913,
+        17.280834197998047,
+        0.2723639460141613
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -29.319880556102014,
+        17.280834197998047,
+        0.3617179077032143
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -29.364778991826114,
+        17.280834197998047,
+        0.45107186939226734
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -29.610059476711864,
+        17.280834197998047,
+        0.10399481204878176
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -29.654957912435965,
+        17.280834197998047,
+        0.19334877373783477
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_14",
+      "point": [
+        -29.699856348160065,
+        17.280834197998047,
+        0.2827027354268878
+      ],
+      "surface_y": 17.280834197998047,
+      "surface_node": "PROVISIONAL_UpperReturnStair_14",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -28.402928762313568,
+        17.121809005737305,
+        1.0425147751466781
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -28.44782719803767,
+        17.121809005737305,
+        1.1318687368357312
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -28.49272563376177,
+        17.121809005737305,
+        1.2212226985247843
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -28.73800611864752,
+        17.121809005737305,
+        0.8741456411812987
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -28.78290455437162,
+        17.121809005737305,
+        0.9634996028703516
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -28.82780299009572,
+        17.121809005737305,
+        1.0528535645594046
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -29.073083474981466,
+        17.121809005737305,
+        0.7057765072159191
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -29.117981910705566,
+        17.121809005737305,
+        0.7951304689049721
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -29.162880346429667,
+        17.121809005737305,
+        0.884484430594025
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -29.408160831315413,
+        17.121809005737305,
+        0.5374073732505396
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -29.453059267039514,
+        17.121809005737305,
+        0.6267613349395925
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -29.497957702763614,
+        17.121809005737305,
+        0.7161152966286455
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -29.743238187649364,
+        17.121809005737305,
+        0.36903823928515994
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -29.788136623373465,
+        17.121809005737305,
+        0.45839220097421296
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_15",
+      "point": [
+        -29.833035059097565,
+        17.121809005737305,
+        0.5477461626632659
+      ],
+      "surface_y": 17.121809005737305,
+      "surface_node": "PROVISIONAL_UpperReturnStair_15",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -28.536107473251068,
+        16.96278190612793,
+        1.3075582647816688
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -28.58100590897517,
+        16.96278190612793,
+        1.3969122264707219
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -28.62590434469927,
+        16.96278190612793,
+        1.486266188159775
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -28.87118482958502,
+        16.96278190612793,
+        1.1391891308162891
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -28.91608326530912,
+        16.96278190612793,
+        1.2285430925053422
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -28.96098170103322,
+        16.96278190612793,
+        1.3178970541943953
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -29.206262185918966,
+        16.96278190612793,
+        0.9708199968509098
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -29.251160621643066,
+        16.96278190612793,
+        1.0601739585399628
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -29.296059057367167,
+        16.96278190612793,
+        1.1495279202290158
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -29.541339542252913,
+        16.96278190612793,
+        0.8024508628855302
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -29.586237977977014,
+        16.96278190612793,
+        0.8918048245745832
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -29.631136413701114,
+        16.96278190612793,
+        0.9811587862636362
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -29.876416898586864,
+        16.96278190612793,
+        0.6340817289201507
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -29.921315334310965,
+        16.96278190612793,
+        0.7234356906092037
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_16",
+      "point": [
+        -29.966213770035065,
+        16.96278190612793,
+        0.8127896522982566
+      ],
+      "surface_y": 16.96278190612793,
+      "surface_node": "PROVISIONAL_UpperReturnStair_16",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -28.669286184188568,
+        16.803756713867188,
+        1.57260176186724
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -28.71418461991267,
+        16.803756713867188,
+        1.6619557235562932
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -28.75908305563677,
+        16.803756713867188,
+        1.7513096852453462
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -29.00436354052252,
+        16.803756713867188,
+        1.4042326279018604
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -29.04926197624662,
+        16.803756713867188,
+        1.4935865895909135
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -29.09416041197072,
+        16.803756713867188,
+        1.5829405512799666
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -29.339440896856466,
+        16.803756713867188,
+        1.235863493936481
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -29.384339332580566,
+        16.803756713867188,
+        1.325217455625534
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -29.429237768304667,
+        16.803756713867188,
+        1.4145714173145871
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -29.674518253190413,
+        16.803756713867188,
+        1.0674943599711015
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -29.719416688914514,
+        16.803756713867188,
+        1.1568483216601546
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -29.764315124638614,
+        16.803756713867188,
+        1.2462022833492077
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -30.009595609524364,
+        16.803756713867188,
+        0.899125226005722
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -30.054494045248465,
+        16.803756713867188,
+        0.9884791876947749
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_17",
+      "point": [
+        -30.099392480972565,
+        16.803756713867188,
+        1.077833149383828
+      ],
+      "surface_y": 16.803756713867188,
+      "surface_node": "PROVISIONAL_UpperReturnStair_17",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -28.802464895126068,
+        16.644729614257812,
+        1.837645229150489
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -28.84736333085017,
+        16.644729614257812,
+        1.926999190839542
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -28.89226176657427,
+        16.644729614257812,
+        2.016353152528595
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -29.13754225146002,
+        16.644729614257812,
+        1.6692760951851093
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -29.18244068718412,
+        16.644729614257812,
+        1.7586300568741624
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -29.22733912290822,
+        16.644729614257812,
+        1.8479840185632155
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -29.472619607793966,
+        16.644729614257812,
+        1.5009069612197299
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -29.517518043518066,
+        16.644729614257812,
+        1.590260922908783
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -29.562416479242167,
+        16.644729614257812,
+        1.679614884597836
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -29.807696964127913,
+        16.644729614257812,
+        1.3325378272543504
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -29.852595399852014,
+        16.644729614257812,
+        1.4218917889434035
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -29.897493835576114,
+        16.644729614257812,
+        1.5112457506324566
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -30.142774320461864,
+        16.644729614257812,
+        1.1641686932889708
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -30.187672756185965,
+        16.644729614257812,
+        1.2535226549780238
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_18",
+      "point": [
+        -30.232571191910065,
+        16.644729614257812,
+        1.342876616667077
+      ],
+      "surface_y": 16.644729614257812,
+      "surface_node": "PROVISIONAL_UpperReturnStair_18",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -28.935643606063568,
+        16.48570442199707,
+        2.1026887262360603
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -28.98054204178767,
+        16.48570442199707,
+        2.192042687925113
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -29.02544047751177,
+        16.48570442199707,
+        2.281396649614166
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -29.27072096239752,
+        16.48570442199707,
+        1.9343195922706806
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -29.31561939812162,
+        16.48570442199707,
+        2.0236735539597337
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -29.36051783384572,
+        16.48570442199707,
+        2.1130275156487865
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -29.605798318731466,
+        16.48570442199707,
+        1.7659504583053012
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -29.650696754455566,
+        16.48570442199707,
+        1.8553044199943542
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -29.695595190179667,
+        16.48570442199707,
+        1.9446583816834073
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -29.940875675065413,
+        16.48570442199707,
+        1.5975813243399217
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -29.985774110789514,
+        16.48570442199707,
+        1.6869352860289748
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -30.030672546513614,
+        16.48570442199707,
+        1.7762892477180279
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -30.275953031399364,
+        16.48570442199707,
+        1.429212190374542
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -30.320851467123465,
+        16.48570442199707,
+        1.5185661520635951
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_19",
+      "point": [
+        -30.365749902847565,
+        16.48570442199707,
+        1.6079201137526482
+      ],
+      "surface_y": 16.48570442199707,
+      "surface_node": "PROVISIONAL_UpperReturnStair_19",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -29.06882136332675,
+        16.326677322387695,
+        2.3677322233216316
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -29.113719799050852,
+        16.326677322387695,
+        2.4570861850106844
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -29.158618234774952,
+        16.326677322387695,
+        2.5464401466997373
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -29.403898719660702,
+        16.326677322387695,
+        2.199363089356252
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -29.448797155384803,
+        16.326677322387695,
+        2.288717051045305
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -29.493695591108903,
+        16.326677322387695,
+        2.378071012734358
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -29.73897607599465,
+        16.326677322387695,
+        2.0309939553908727
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -29.78387451171875,
+        16.326677322387695,
+        2.1203479170799255
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -29.82877294744285,
+        16.326677322387695,
+        2.2097018787689784
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -30.074053432328597,
+        16.326677322387695,
+        1.862624821425493
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -30.118951868052697,
+        16.326677322387695,
+        1.951978783114546
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -30.163850303776798,
+        16.326677322387695,
+        2.041332744803599
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -30.409130788662548,
+        16.326677322387695,
+        1.6942556874601133
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -30.454029224386648,
+        16.326677322387695,
+        1.7836096491491664
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_20",
+      "point": [
+        -30.49892766011075,
+        16.326677322387695,
+        1.8729636108382195
+      ],
+      "surface_y": 16.326677322387695,
+      "surface_node": "PROVISIONAL_UpperReturnStair_20",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -29.20200007426425,
+        16.167652130126953,
+        2.632775720407203
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -29.246898509988352,
+        16.167652130126953,
+        2.7221296820962557
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -29.291796945712452,
+        16.167652130126953,
+        2.8114836437853086
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -29.537077430598202,
+        16.167652130126953,
+        2.4644065864418234
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -29.581975866322303,
+        16.167652130126953,
+        2.5537605481308763
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -29.626874302046403,
+        16.167652130126953,
+        2.643114509819929
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -29.87215478693215,
+        16.167652130126953,
+        2.296037452476444
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -29.91705322265625,
+        16.167652130126953,
+        2.385391414165497
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -29.96195165838035,
+        16.167652130126953,
+        2.4747453758545497
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -30.207232143266097,
+        16.167652130126953,
+        2.1276683185110645
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -30.252130578990197,
+        16.167652130126953,
+        2.2170222802001174
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -30.297029014714298,
+        16.167652130126953,
+        2.3063762418891702
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -30.542309499600048,
+        16.167652130126953,
+        1.9592991845456849
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -30.587207935324148,
+        16.167652130126953,
+        2.048653146234738
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_21",
+      "point": [
+        -30.63210637104825,
+        16.167652130126953,
+        2.138007107923791
+      ],
+      "surface_y": 16.167652130126953,
+      "surface_node": "PROVISIONAL_UpperReturnStair_21",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -29.33517878520175,
+        16.008625030517578,
+        2.8978191578881294
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -29.380077220925852,
+        16.008625030517578,
+        2.9871731195771822
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -29.424975656649952,
+        16.008625030517578,
+        3.076527081266235
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -29.670256141535702,
+        16.008625030517578,
+        2.72945002392275
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -29.715154577259803,
+        16.008625030517578,
+        2.818803985611803
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -29.760053012983903,
+        16.008625030517578,
+        2.9081579473008556
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -30.00533349786965,
+        16.008625030517578,
+        2.5610808899573705
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -30.05023193359375,
+        16.008625030517578,
+        2.6504348516464233
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -30.09513036931785,
+        16.008625030517578,
+        2.739788813335476
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -30.340410854203597,
+        16.008625030517578,
+        2.392711755991991
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -30.385309289927697,
+        16.008625030517578,
+        2.482065717681044
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -30.430207725651798,
+        16.008625030517578,
+        2.5714196793700967
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -30.675488210537548,
+        16.008625030517578,
+        2.2243426220266116
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -30.720386646261648,
+        16.008625030517578,
+        2.3136965837156644
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_22",
+      "point": [
+        -30.76528508198575,
+        16.008625030517578,
+        2.4030505454047173
+      ],
+      "surface_y": 16.008625030517578,
+      "surface_node": "PROVISIONAL_UpperReturnStair_22",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -29.46835749613925,
+        15.849599838256836,
+        3.1628626549737007
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -29.513255931863352,
+        15.849599838256836,
+        3.2522166166627535
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -29.558154367587452,
+        15.849599838256836,
+        3.3415705783518064
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -29.803434852473202,
+        15.849599838256836,
+        2.9944935210083212
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "PROVISIONAL_UpperReturnStair_23",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -29.848333288197303,
+        15.849599838256836,
+        3.083847482697374
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -29.893231723921403,
+        15.849599838256836,
+        3.173201444386427
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -30.13851220880715,
+        15.849599838256836,
+        2.8261243870429418
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "PROVISIONAL_UpperReturnStair_23",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -30.18341064453125,
+        15.849599838256836,
+        2.9154783487319946
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "PROVISIONAL_UpperReturnStair_23",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -30.22830908025535,
+        15.849599838256836,
+        3.0048323104210475
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -30.473589565141097,
+        15.849599838256836,
+        2.6577552530775623
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -30.518488000865197,
+        15.849599838256836,
+        2.747109214766615
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -30.563386436589298,
+        15.849599838256836,
+        2.836463176455668
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -30.808666921475048,
+        15.849599838256836,
+        2.489386119112183
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -30.853565357199148,
+        15.849599838256836,
+        2.5787400808012357
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "PROVISIONAL_UpperReturnStair_23",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "tread_23",
+      "point": [
+        -30.89846379292325,
+        15.849599838256836,
+        2.6680940424902886
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "PROVISIONAL_UpperReturnStair_23",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -29.51305123959541,
+        15.849599838256836,
+        3.5302153873021536
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -29.624743691706726,
+        15.849599838256836,
+        3.474092342647027
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -29.736436143818043,
+        15.849599838256836,
+        3.4179692979919007
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -29.84812859592936,
+        15.849599838256836,
+        3.361846253336774
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -29.959821048040677,
+        15.849599838256836,
+        3.3057232086816475
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -30.07151350015199,
+        15.849599838256836,
+        3.2496001640265213
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -30.183205952263307,
+        15.849599838256836,
+        3.1934771193713947
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -30.294898404374624,
+        15.849599838256836,
+        3.137354074716268
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -30.40659085648594,
+        15.849599838256836,
+        3.0812310300611414
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -30.51828330859726,
+        15.849599838256836,
+        3.0251079854060148
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -30.62997576070857,
+        15.849599838256836,
+        2.9689849407508886
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -30.74166821281989,
+        15.849599838256836,
+        2.912861896095762
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -30.853360664931206,
+        15.849599838256836,
+        2.8567388514406353
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -30.965053117042523,
+        15.849599838256836,
+        2.800615806785509
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.10m",
+      "point": [
+        -31.07674556915384,
+        15.849599838256836,
+        2.7444927621303825
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -29.692644982491814,
+        15.849599838256836,
+        3.887631234058366
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -29.80433743460313,
+        15.849599838256836,
+        3.8315081894032392
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -29.916029886714448,
+        15.849599838256836,
+        3.775385144748113
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -30.027722338825765,
+        15.849599838256836,
+        3.7192621000929864
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -30.13941479093708,
+        15.849599838256836,
+        3.66313905543786
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -30.251107243048395,
+        15.849599838256836,
+        3.6070160107827336
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -30.362799695159712,
+        15.849599838256836,
+        3.550892966127607
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -30.47449214727103,
+        15.849599838256836,
+        3.4947699214724803
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -30.586184599382346,
+        15.849599838256836,
+        3.4386468768173537
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -30.697877051493663,
+        15.849599838256836,
+        3.382523832162227
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -30.809569503604976,
+        15.849599838256836,
+        3.326400787507101
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -30.921261955716293,
+        15.849599838256836,
+        3.2702777428519743
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -31.03295440782761,
+        15.849599838256836,
+        3.2141546981968476
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -31.144646859938927,
+        15.849599838256836,
+        3.1580316535417214
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    },
+    {
+      "zone": "bridge_after_0.50m",
+      "point": [
+        -31.256339312050244,
+        15.849599838256836,
+        3.101908608886595
+      ],
+      "surface_y": 15.849599838256836,
+      "surface_node": "Return_Bridge_Deck",
+      "error_m": 0.0,
+      "pass": true
+    }
+  ],
+  "scope": "Discrete vertical surface rays; 15 points per tread and 30 beyond bottom junction. No swept body, headroom, step-controller, structural or historical acceptance."
+}
