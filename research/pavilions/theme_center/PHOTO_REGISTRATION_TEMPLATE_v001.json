@@ -6,13 +6,7 @@
   "camera_intrinsics_status": "UNKNOWN",
   "camera_matrix_px": null,
   "image_dimensions_px": null,
-  "distortion_coefficients": [
-    0,
-    0,
-    0,
-    0,
-    0
-  ],
+  "distortion_coefficients": [0, 0, 0, 0, 0],
   "photo": {
     "source_url": "https://commons.wikimedia.org/wiki/File:-1939_New_York_World%27s_Fair,_Entrance_to_Perisphere-_MET_DP103124.jpg",
     "credit": "Samuel H. Gottscho / The Metropolitan Museum of Art, accession 1987.1100.403; Wikimedia Commons CC0",
