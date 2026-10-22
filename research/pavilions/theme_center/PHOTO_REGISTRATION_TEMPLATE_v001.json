@@ -1,0 +1,31 @@
+{
+  "schema": "fmp.photo-camera-registration-input.v001",
+  "project": "FMP 1939 Theme Center Trylon / Perisphere",
+  "model_sha256": "de38fdd5294285afd92dbb6be0a9d4e564c52bacd588a9fd116c9e1e35f06439",
+  "model_frame": "right-handed model-local Y-up metres UNREGISTERED",
+  "camera_intrinsics_status": "UNKNOWN",
+  "camera_matrix_px": null,
+  "image_dimensions_px": null,
+  "distortion_coefficients": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "photo": {
+    "source_url": "https://commons.wikimedia.org/wiki/File:-1939_New_York_World%27s_Fair,_Entrance_to_Perisphere-_MET_DP103124.jpg",
+    "credit": "Samuel H. Gottscho / The Metropolitan Museum of Art, accession 1987.1100.403; Wikimedia Commons CC0",
+    "local_image_path": null,
+    "local_image_sha256": null,
+    "source_width_px": 3138,
+    "source_height_px": 3847
+  },
+  "correspondences": [],
+  "comments": [
+    "No 2D/3D control correspondence is assumed, inferred or invented in this template.",
+    "Acquire the actual scanned image, independently measure camera intrinsics or document calibration, then identify at least six distinct non-coplanar model points visible in the image.",
+    "A photograph taken from a different era or depicting a prebuild mockup must not calibrate a built 1939 facade without phase review.",
+    "Do not solve if historical photo features lack correspondence to a genuinely matching modeled 3D surface. The existing models are provisional."
+  ]
+}
