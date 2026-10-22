@@ -129,3 +129,20 @@ Eight original UTF-8 members from two archived Theme Center ZIP packages were re
 - Still pending in GitHub: two photo-control JSON records, Trylon polish.py, original PNG/GLB assets, and all eight complete ZIP binary containers. Their Drive originals remain preserved. Connector blocked some uploads; do not mark any of the eight ZIPs dual-certified. Rights, full chat transcript and native Unreal testing remain open.
 
 Status: eight source-member exact Git copies verified; eight ZIP binary mirrors still GIT_BINARY_PENDING.
+
+## 2026-10-22: Original photo-registration records and Trylon render helper restored
+
+**Actual source-byte recovery, not a model reconstruction.** Original text members below were recovered from the [preserved photo-registration ZIP](https://drive.google.com/file/d/1fMraAZ0QP5oNaaYTtlLG44qOfa-HidbY/view) and [Trylon GLB-evidence ZIP](https://drive.google.com/file/d/1o8OZlu-q0IOiZbpr90lobYrRql2T6bZ0/view), both already in the project Drive archive. Each GitHub result was read back and its Git blob SHA matched the original archived member byte-for-byte.
+
+| Exact source member | GitHub location | Original/member Git blob | Result |
+| --- | --- | --- | --- |
+| `PHOTO_REGISTRATION_TEMPLATE_v001.json` | [file](../research/pavilions/theme_center/PHOTO_REGISTRATION_TEMPLATE_v001.json) | `25bad07435affb7c55e2b6331c9d5129d6b70d3b` | Matched |
+| `output/FMP_Bridge_Registration_Controls_v001.json` | [file](../research/pavilions/theme_center/BRIDGE_REGISTRATION_CONTROLS_v001.json) | `d25a0e7d9996cff72137180c910fab4d5f128c1b` | Matched |
+| `README.txt` in photo-control package | [file](../research/pavilions/theme_center/photo_registration_v001/README.txt) | `f300eac6c86a5c4eeffb8bcddd699b1af75aa2dc` | Matched |
+| `polish.py` in Trylon evidence package | [file](../tools/world_build/trylon_passage_render_v001/polish.py) | `657b50c2a4223866cd90a53d5b6995de7c0f0ef0` | Matched |
+
+The original photo-package regression suite reexecuted from its unchanged archived scripts: **13/13 passing**, return code zero, with a separate unrelated spreadsheet-warmup warning. Camera solver has **not** been calibrated against real period photographs; the guide GLB is a reference-only auxiliary, **not historical entrance or bridge geometry**.
+
+At this point the photo-control package has **all nine textual/JSON/script member bytes represented in GitHub** except its archived `BRIDGE_PHOTO_CONTROLS_v001.md` **original revision**: its current GitHub dossier has subsequent changes; both versions are preserved in Git history and the Drive ZIP but require an exact-version check before marking the archive member individually matched. The guide GLB and PNG remain `GIT_BINARY_PENDING`. The Trylon evidence ZIP has **all four of its original text/script member bytes matched in Git**, but all five actual-model PNGs and the **exact ZIP container** remain `GIT_BINARY_PENDING`.
+
+**Eight original ZIP containers in batch 01 remain unverified in GitHub. No native GitHub binary/LFS/release upload was successful; do not claim any eight ZIPs are `DUAL_VERIFIED`.** Original high-resolution historical references, rights review and full chat transcript export are separate open gates. No historical master or runtime geometry was modified in this backfill.
