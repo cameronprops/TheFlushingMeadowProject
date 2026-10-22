@@ -119,3 +119,13 @@ Actual source/report copies are in project Drive: script `1rJQHNtlY6Agmo069nlVFd
 | BODY_SCREEN.md | 71e3343acbb11f3a3f26b1c0ba510a5599d319dd | [copy](https://drive.google.com/file/d/1qiYaQKInEPTK7xdDYFBi5nxxChMyOLl3/view) | 00f8dfb4c5d6a1aa3985baecaf8542dcac5ce95ab5c77331842f721efe387d96 |
 
 Git contents read back identically. Drive file IDs, sizes and archive folder membership verified; independent Drive byte-hash readback pending. Actual files uploaded, not pointers.
+
+## 2026-10-21: Photo and Trylon source-member recovery
+
+Eight original UTF-8 members from two archived Theme Center ZIP packages were restored to GitHub without changing their source bytes. Independent Git blob readback matched the original member Git-object hashes.
+
+- Photo-control archive on Drive: https://drive.google.com/file/d/1fMraAZ0QP5oNaaYTtlLG44qOfa-HidbY/view. Five restored scripts: build_bridge_registration_controls_v001.py, test_bridge_registration_controls_v001.py, render_bridge_controls_v001.py, solve_theme_center_photo_pose_v001.py, test_solve_theme_center_photo_pose_v001.py. GitHub paths are under tools/world_build/. Synthetic regression tests: 13/13 passed. No original photograph was calibrated.
+- Trylon render evidence archive on Drive: https://drive.google.com/file/d/1o8OZlu-q0IOiZbpr90lobYrRql2T6bZ0/view. Three restored members: README_RENDER_EVIDENCE.txt, render.py, facade.py under tools/world_build/trylon_passage_render_v001/. These reproduce actual v005 model views, not period photographs.
+- Still pending in GitHub: two photo-control JSON records, Trylon polish.py, original PNG/GLB assets, and all eight complete ZIP binary containers. Their Drive originals remain preserved. Connector blocked some uploads; do not mark any of the eight ZIPs dual-certified. Rights, full chat transcript and native Unreal testing remain open.
+
+Status: eight source-member exact Git copies verified; eight ZIP binary mirrors still GIT_BINARY_PENDING.
