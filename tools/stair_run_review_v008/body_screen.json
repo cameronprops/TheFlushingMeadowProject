@@ -1,0 +1,1396 @@
+{
+  "asset_sha256": "aefc8b0a83c5e8264b936151a13cb5f7190e69d9e55c28a5141ce84c0fced867",
+  "poses": 103,
+  "spheres": 1339,
+  "body_diameter_m": 0.6,
+  "nominal_height_m": 1.8,
+  "floor_lift_m": 0.05,
+  "cover_sphere_radius_m": 0.30413812651491096,
+  "pose_list": [
+    {
+      "zone": "tread_01",
+      "foot": [
+        -26.89606506449867,
+        19.348175048828125,
+        -2.7358844866263
+      ]
+    },
+    {
+      "zone": "tread_01",
+      "foot": [
+        -27.253480911254883,
+        19.348175048828125,
+        -2.915478229522705
+      ]
+    },
+    {
+      "zone": "tread_01",
+      "foot": [
+        -27.610896758011094,
+        19.348175048828125,
+        -3.09507197241911
+      ]
+    },
+    {
+      "zone": "tread_02",
+      "foot": [
+        -27.02924377543617,
+        19.18914794921875,
+        -2.470840989540729
+      ]
+    },
+    {
+      "zone": "tread_02",
+      "foot": [
+        -27.386659622192383,
+        19.18914794921875,
+        -2.650434732437134
+      ]
+    },
+    {
+      "zone": "tread_02",
+      "foot": [
+        -27.744075468948594,
+        19.18914794921875,
+        -2.8300284753335387
+      ]
+    },
+    {
+      "zone": "tread_03",
+      "foot": [
+        -27.162421532699355,
+        19.030122756958008,
+        -2.2057974924551575
+      ]
+    },
+    {
+      "zone": "tread_03",
+      "foot": [
+        -27.519837379455566,
+        19.030122756958008,
+        -2.3853912353515625
+      ]
+    },
+    {
+      "zone": "tread_03",
+      "foot": [
+        -27.877253226211778,
+        19.030122756958008,
+        -2.5649849782479675
+      ]
+    },
+    {
+      "zone": "tread_04",
+      "foot": [
+        -27.295600243636855,
+        18.871095657348633,
+        -1.9407539953695863
+      ]
+    },
+    {
+      "zone": "tread_04",
+      "foot": [
+        -27.653016090393066,
+        18.871095657348633,
+        -2.120347738265991
+      ]
+    },
+    {
+      "zone": "tread_04",
+      "foot": [
+        -28.010431937149278,
+        18.871095657348633,
+        -2.299941481162396
+      ]
+    },
+    {
+      "zone": "tread_05",
+      "foot": [
+        -27.428778954574355,
+        18.71207046508789,
+        -1.675710498284015
+      ]
+    },
+    {
+      "zone": "tread_05",
+      "foot": [
+        -27.786194801330566,
+        18.71207046508789,
+        -1.85530424118042
+      ]
+    },
+    {
+      "zone": "tread_05",
+      "foot": [
+        -28.143610648086778,
+        18.71207046508789,
+        -2.034897984076825
+      ]
+    },
+    {
+      "zone": "tread_06",
+      "foot": [
+        -27.561957665511855,
+        18.553043365478516,
+        -1.4106671204077332
+      ]
+    },
+    {
+      "zone": "tread_06",
+      "foot": [
+        -27.919373512268066,
+        18.553043365478516,
+        -1.5902608633041382
+      ]
+    },
+    {
+      "zone": "tread_06",
+      "foot": [
+        -28.276789359024278,
+        18.553043365478516,
+        -1.7698546062005431
+      ]
+    },
+    {
+      "zone": "tread_07",
+      "foot": [
+        -27.695136376449355,
+        18.394018173217773,
+        -1.1456235935198396
+      ]
+    },
+    {
+      "zone": "tread_07",
+      "foot": [
+        -28.052552223205566,
+        18.394018173217773,
+        -1.3252173364162445
+      ]
+    },
+    {
+      "zone": "tread_07",
+      "foot": [
+        -28.409968069961778,
+        18.394018173217773,
+        -1.5048110793126495
+      ]
+    },
+    {
+      "zone": "tread_08",
+      "foot": [
+        -27.828315087386855,
+        18.2349910736084,
+        -0.8805800964342684
+      ]
+    },
+    {
+      "zone": "tread_08",
+      "foot": [
+        -28.185730934143066,
+        18.2349910736084,
+        -1.0601738393306732
+      ]
+    },
+    {
+      "zone": "tread_08",
+      "foot": [
+        -28.543146780899278,
+        18.2349910736084,
+        -1.2397675822270782
+      ]
+    },
+    {
+      "zone": "tread_09",
+      "foot": [
+        -27.961493798324355,
+        18.075965881347656,
+        -0.6155366738545031
+      ]
+    },
+    {
+      "zone": "tread_09",
+      "foot": [
+        -28.318909645080566,
+        18.075965881347656,
+        -0.7951304167509079
+      ]
+    },
+    {
+      "zone": "tread_09",
+      "foot": [
+        -28.676325491836778,
+        18.075965881347656,
+        -0.9747241596473127
+      ]
+    },
+    {
+      "zone": "tread_10",
+      "foot": [
+        -28.094672509261855,
+        17.91693878173828,
+        -0.3504931870134801
+      ]
+    },
+    {
+      "zone": "tread_10",
+      "foot": [
+        -28.452088356018066,
+        17.91693878173828,
+        -0.5300869299098849
+      ]
+    },
+    {
+      "zone": "tread_10",
+      "foot": [
+        -28.809504202774278,
+        17.91693878173828,
+        -0.7096806728062898
+      ]
+    },
+    {
+      "zone": "tread_11",
+      "foot": [
+        -28.227851220199355,
+        17.75791358947754,
+        -0.08544969458452165
+      ]
+    },
+    {
+      "zone": "tread_11",
+      "foot": [
+        -28.585267066955566,
+        17.75791358947754,
+        -0.2650434374809265
+      ]
+    },
+    {
+      "zone": "tread_11",
+      "foot": [
+        -28.942682913711778,
+        17.75791358947754,
+        -0.44463718037733135
+      ]
+    },
+    {
+      "zone": "tread_12",
+      "foot": [
+        -28.361029931136855,
+        17.598886489868164,
+        0.17959380250104964
+      ]
+    },
+    {
+      "zone": "tread_12",
+      "foot": [
+        -28.718445777893066,
+        17.598886489868164,
+        5.960464477539063e-08
+      ]
+    },
+    {
+      "zone": "tread_12",
+      "foot": [
+        -29.075861624649278,
+        17.598886489868164,
+        -0.1795936832917601
+      ]
+    },
+    {
+      "zone": "tread_13",
+      "foot": [
+        -28.494208642074355,
+        17.439861297607422,
+        0.4446372697842985
+      ]
+    },
+    {
+      "zone": "tread_13",
+      "foot": [
+        -28.851624488830566,
+        17.439861297607422,
+        0.2650435268878937
+      ]
+    },
+    {
+      "zone": "tread_13",
+      "foot": [
+        -29.209040335586778,
+        17.439861297607422,
+        0.08544978399148881
+      ]
+    },
+    {
+      "zone": "tread_14",
+      "foot": [
+        -28.627387353011855,
+        17.280834197998047,
+        0.7096807845649987
+      ]
+    },
+    {
+      "zone": "tread_14",
+      "foot": [
+        -28.984803199768066,
+        17.280834197998047,
+        0.5300870416685939
+      ]
+    },
+    {
+      "zone": "tread_14",
+      "foot": [
+        -29.342219046524278,
+        17.280834197998047,
+        0.35049329877218904
+      ]
+    },
+    {
+      "zone": "tread_15",
+      "foot": [
+        -28.760566063949355,
+        17.121809005737305,
+        0.9747242118013769
+      ]
+    },
+    {
+      "zone": "tread_15",
+      "foot": [
+        -29.117981910705566,
+        17.121809005737305,
+        0.7951304689049721
+      ]
+    },
+    {
+      "zone": "tread_15",
+      "foot": [
+        -29.475397757461778,
+        17.121809005737305,
+        0.6155367260085672
+      ]
+    },
+    {
+      "zone": "tread_16",
+      "foot": [
+        -28.893744774886855,
+        16.96278190612793,
+        1.2397677014363677
+      ]
+    },
+    {
+      "zone": "tread_16",
+      "foot": [
+        -29.251160621643066,
+        16.96278190612793,
+        1.0601739585399628
+      ]
+    },
+    {
+      "zone": "tread_16",
+      "foot": [
+        -29.608576468399278,
+        16.96278190612793,
+        0.8805802156435579
+      ]
+    },
+    {
+      "zone": "tread_17",
+      "foot": [
+        -29.026923485824355,
+        16.803756713867188,
+        1.504811198521939
+      ]
+    },
+    {
+      "zone": "tread_17",
+      "foot": [
+        -29.384339332580566,
+        16.803756713867188,
+        1.325217455625534
+      ]
+    },
+    {
+      "zone": "tread_17",
+      "foot": [
+        -29.741755179336778,
+        16.803756713867188,
+        1.145623712729129
+      ]
+    },
+    {
+      "zone": "tread_18",
+      "foot": [
+        -29.160102196761855,
+        16.644729614257812,
+        1.769854665805188
+      ]
+    },
+    {
+      "zone": "tread_18",
+      "foot": [
+        -29.517518043518066,
+        16.644729614257812,
+        1.590260922908783
+      ]
+    },
+    {
+      "zone": "tread_18",
+      "foot": [
+        -29.874933890274278,
+        16.644729614257812,
+        1.410667180012378
+      ]
+    },
+    {
+      "zone": "tread_19",
+      "foot": [
+        -29.293280907699355,
+        16.48570442199707,
+        2.034898162890759
+      ]
+    },
+    {
+      "zone": "tread_19",
+      "foot": [
+        -29.650696754455566,
+        16.48570442199707,
+        1.8553044199943542
+      ]
+    },
+    {
+      "zone": "tread_19",
+      "foot": [
+        -30.008112601211778,
+        16.48570442199707,
+        1.6757106770979493
+      ]
+    },
+    {
+      "zone": "tread_20",
+      "foot": [
+        -29.42645866496254,
+        16.326677322387695,
+        2.2999416599763305
+      ]
+    },
+    {
+      "zone": "tread_20",
+      "foot": [
+        -29.78387451171875,
+        16.326677322387695,
+        2.1203479170799255
+      ]
+    },
+    {
+      "zone": "tread_20",
+      "foot": [
+        -30.14129035847496,
+        16.326677322387695,
+        1.9407541741835206
+      ]
+    },
+    {
+      "zone": "tread_21",
+      "foot": [
+        -29.55963737590004,
+        16.167652130126953,
+        2.5649851570619018
+      ]
+    },
+    {
+      "zone": "tread_21",
+      "foot": [
+        -29.91705322265625,
+        16.167652130126953,
+        2.385391414165497
+      ]
+    },
+    {
+      "zone": "tread_21",
+      "foot": [
+        -30.27446906941246,
+        16.167652130126953,
+        2.205797671269092
+      ]
+    },
+    {
+      "zone": "tread_22",
+      "foot": [
+        -29.69281608683754,
+        16.008625030517578,
+        2.8300285945428283
+      ]
+    },
+    {
+      "zone": "tread_22",
+      "foot": [
+        -30.05023193359375,
+        16.008625030517578,
+        2.6504348516464233
+      ]
+    },
+    {
+      "zone": "tread_22",
+      "foot": [
+        -30.40764778034996,
+        16.008625030517578,
+        2.4708411087500184
+      ]
+    },
+    {
+      "zone": "tread_23",
+      "foot": [
+        -29.82599479777504,
+        15.849599838256836,
+        3.0950720916283996
+      ]
+    },
+    {
+      "zone": "tread_23",
+      "foot": [
+        -30.18341064453125,
+        15.849599838256836,
+        2.9154783487319946
+      ]
+    },
+    {
+      "zone": "tread_23",
+      "foot": [
+        -30.54082649128746,
+        15.849599838256836,
+        2.7358846058355897
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -25.1,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -25.2304307136032,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -25.36086142720641,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -25.49129214080961,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -25.621722854412816,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -25.752153568016016,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -25.882584281619216,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -26.01301499522242,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -26.143445708825624,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -26.273876422428827,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -26.40430713603203,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -26.534737849635235,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -26.66516856323844,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -26.795599276841642,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -26.926029990444842,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -27.05646070404805,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "upper_turn",
+      "foot": [
+        -27.18689141765125,
+        19.507200241088867,
+        -3.0479999780654907
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -30.25,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -30.453125,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -30.65625,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -30.859375,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -31.0625,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -31.265625,
+        15.849599838256832,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -31.46875,
+        15.849599838256832,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -31.671875,
+        15.849599838256832,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -31.875,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -32.078125,
+        15.849599838256832,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -32.28125,
+        15.849599838256832,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -32.484375,
+        15.849599838256832,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -32.6875,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -32.890625,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -33.09375,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -33.296875,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    },
+    {
+      "zone": "lower_turn",
+      "foot": [
+        -33.5,
+        15.849599838256834,
+        3.048000082373619
+      ]
+    }
+  ],
+  "contacts": [
+    {
+      "node": "PROVISIONAL_UpperLandingToStair",
+      "pose": 0,
+      "zone": "tread_01",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.241800683327825,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperLandingToStair",
+      "pose": 1,
+      "zone": "tread_01",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180060647074716,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperLandingToStair",
+      "pose": 2,
+      "zone": "tread_01",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2418005296137101,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_01",
+      "pose": 3,
+      "zone": "tread_02",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179917690175085,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_01",
+      "pose": 4,
+      "zone": "tread_02",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2417991000441942,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_01",
+      "pose": 5,
+      "zone": "tread_02",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179902318667829,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_02",
+      "pose": 6,
+      "zone": "tread_03",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2418004206962884,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_02",
+      "pose": 7,
+      "zone": "tread_03",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180034383934926,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_02",
+      "pose": 8,
+      "zone": "tread_03",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180026698245036,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_03",
+      "pose": 9,
+      "zone": "tread_04",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179906333056322,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_03",
+      "pose": 10,
+      "zone": "tread_04",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179910004420754,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_03",
+      "pose": 11,
+      "zone": "tread_04",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179913675786208,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_04",
+      "pose": 12,
+      "zone": "tread_05",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180056975734493,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_04",
+      "pose": 13,
+      "zone": "tread_05",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180060647076052,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_04",
+      "pose": 14,
+      "zone": "tread_05",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180064318418631,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_05",
+      "pose": 15,
+      "zone": "tread_06",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179903507780545,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_05",
+      "pose": 16,
+      "zone": "tread_06",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179910004420824,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_05",
+      "pose": 17,
+      "zone": "tread_06",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179916501063872,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_06",
+      "pose": 18,
+      "zone": "tread_07",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180053929753612,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_06",
+      "pose": 19,
+      "zone": "tread_07",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180059013723837,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_06",
+      "pose": 20,
+      "zone": "tread_07",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2418006409769585,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_07",
+      "pose": 21,
+      "zone": "tread_08",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179905626737272,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_07",
+      "pose": 22,
+      "zone": "tread_08",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179910004420765,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_07",
+      "pose": 23,
+      "zone": "tread_08",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179914382105577,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_08",
+      "pose": 24,
+      "zone": "tread_09",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2418005404011501,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_08",
+      "pose": 25,
+      "zone": "tread_09",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180059830399922,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_08",
+      "pose": 26,
+      "zone": "tread_09",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180065620687238,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_09",
+      "pose": 27,
+      "zone": "tread_10",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179904005790778,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_09",
+      "pose": 28,
+      "zone": "tread_10",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179909442952427,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_09",
+      "pose": 29,
+      "zone": "tread_10",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179914880116202,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_10",
+      "pose": 30,
+      "zone": "tread_11",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180055197532485,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_10",
+      "pose": 31,
+      "zone": "tread_11",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180060391864833,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_10",
+      "pose": 32,
+      "zone": "tread_11",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180065586199032,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_11",
+      "pose": 33,
+      "zone": "tread_12",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179904920418302,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_11",
+      "pose": 34,
+      "zone": "tread_12",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179910004420785,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_11",
+      "pose": 35,
+      "zone": "tread_12",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179915088425047,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_12",
+      "pose": 36,
+      "zone": "tread_13",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180053929753598,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_12",
+      "pose": 37,
+      "zone": "tread_13",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2418005901372384,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_12",
+      "pose": 38,
+      "zone": "tread_13",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180064097695855,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_13",
+      "pose": 39,
+      "zone": "tread_14",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179906973157386,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_13",
+      "pose": 40,
+      "zone": "tread_14",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179911637783474,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_13",
+      "pose": 41,
+      "zone": "tread_14",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179916302411059,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_14",
+      "pose": 42,
+      "zone": "tread_15",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180051766666388,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_14",
+      "pose": 43,
+      "zone": "tread_15",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180057380371753,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_14",
+      "pose": 44,
+      "zone": "tread_15",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180062994079365,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_15",
+      "pose": 45,
+      "zone": "tread_16",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179905626737266,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_15",
+      "pose": 46,
+      "zone": "tread_16",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179910004420765,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_15",
+      "pose": 47,
+      "zone": "tread_16",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179914382105577,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_16",
+      "pose": 48,
+      "zone": "tread_17",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180056269419853,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_16",
+      "pose": 49,
+      "zone": "tread_17",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180060647076065,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_16",
+      "pose": 50,
+      "zone": "tread_17",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180065024733605,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_17",
+      "pose": 51,
+      "zone": "tread_18",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179904920418302,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_17",
+      "pose": 52,
+      "zone": "tread_18",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179910004420785,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_17",
+      "pose": 53,
+      "zone": "tread_18",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2417991508842504,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_18",
+      "pose": 54,
+      "zone": "tread_19",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180055563105274,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_18",
+      "pose": 55,
+      "zone": "tread_19",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180060647076082,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_18",
+      "pose": 56,
+      "zone": "tread_19",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180065731048667,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_19",
+      "pose": 57,
+      "zone": "tread_20",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2417991627753728,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_19",
+      "pose": 58,
+      "zone": "tread_20",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2417991000441974,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_19",
+      "pose": 59,
+      "zone": "tread_20",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179903731304817,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_20",
+      "pose": 60,
+      "zone": "tread_21",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180066920153498,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_20",
+      "pose": 61,
+      "zone": "tread_21",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.2418006064707504,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_20",
+      "pose": 62,
+      "zone": "tread_21",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180054373999185,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_21",
+      "pose": 63,
+      "zone": "tread_22",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179914864899646,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_21",
+      "pose": 64,
+      "zone": "tread_22",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24179910004419974,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_21",
+      "pose": 65,
+      "zone": "tread_22",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.241799051439419,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_22",
+      "pose": 66,
+      "zone": "tread_23",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180065507524665,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_22",
+      "pose": 67,
+      "zone": "tread_23",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180060647075274,
+      "walking_surface": true
+    },
+    {
+      "node": "PROVISIONAL_UpperReturnStair_22",
+      "pose": 68,
+      "zone": "tread_23",
+      "height_above_tread_m": 0.35,
+      "surface_distance_m": 0.24180055786627477,
+      "walking_surface": true
+    }
+  ],
+  "nonwalking_contacts": 0,
+  "walking_contacts": 69,
+  "nearest_head_surface": {
+    "node": "INTERPRETIVE_UPPER_EXIT_HANDRAIL_R",
+    "margin_m": 0.33237963237295837
+  },
+  "scope": "Discrete surface-only capsule cover at tread centres and straight landing-turn segments. Stair/riser contacts retained. No continuous movement, containment, historical or native Unreal acceptance."
+}
