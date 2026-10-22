@@ -100,3 +100,9 @@ The original ZIP member manifest and SHA-256 digests remain [machine-readable](F
 ## 2026-10-21: Portal finishing thread v008 landing repair
 
 [Component evidence](../research/pavilions/theme_center/UPPER_LANDING_v008.md), [18-member inventory](../tools/portal_approach_v008/ARCHIVE_INVENTORY.json), [Drive package 14X-Jp_tt8PfbNNy0F3TpBFkuKbJM5eGO](https://drive.google.com/file/d/14X-Jp_tt8PfbNNy0F3TpBFkuKbJM5eGO/view). Code, SVG and JSON committed through 0d4a6db42de08b3a5347c34d18e2a41207ea3792; complete source and binaries are in project Drive with metadata readback. PNG/GLB/ZIP remain GIT_BINARY_PENDING. Source/dossier/register snapshots mirrored in FMP_UpperLanding_v008_Record_Snapshot.zip. Older workstream backfill and TRANSCRIPT_PENDING remain open.
+
+## 2026-10-21: Full stair support screen
+
+Read-only v008 inspection found support at all 375 sampled positions: 15 per tread across 23 treads, plus 30 beyond the bottom junction onto the return bridge. No mesh change was required. Wolfram confirms nominal 159.026 mm rise, 296.622 mm going and 28.197-degree slope. [Code and detailed limits](https://github.com/cameronprops/TheFlushingMeadowProject/tree/main/tools/stair_run_review_v008). This establishes discrete floor support only; body/head clearance and Unreal movement remain open.
+
+Actual source/report copies are in project Drive: script `1rJQHNtlY6Agmo069nlVFdeHM8MzwLPEH`, report `1NzEBbZLzY3I93S1m1cK3hEqhCqIyGpqa`, Wolfram receipt `1ncWUFbW8Cfl28zkakxIxNrwv-EMAbu5a`, README `1ewmbnN-IiAglNDLgWg4jtBWyJpWB9EE3`. Git commits through d6f302622bdfd9b872581f39d97bc908099d2813. Drive size/folder readback passed; independent downloaded-byte dual verification is still pending. Prior large binary and transcript backfill remain open.
