@@ -1,0 +1,179 @@
+{
+  "schema": "fmp.archive-retro-member-receipt.v001",
+  "date": "2026-10-22",
+  "repository": "cameronprops/TheFlushingMeadowProject",
+  "status": "MEMBER_BACKFILL_PARTIAL",
+  "method": "Exact authenticated Drive ZIP byte comparison, member hash extraction, and independently fetched original Git blob SHA1 matching; Git path+blob are verified in repo main.",
+  "limits": [
+    "Individual members backed up in git are not an identical GitHub ZIP binary mirror",
+    "13 documented member Git blob hashes were independently matched to existing GitHub files in this active turn",
+    "3 original raster/mesh files still have no GitHub binary copies",
+    "Original source CAD not modified; no archival photograph camera pose calibrated; Unreal native tests not performed",
+    "ZIP sources have component-level rights-review flags; public redistribution of source archival photography remains restricted"
+  ],
+  "packages": [
+    {
+      "component": "bridge",
+      "archive": "FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001.zip",
+      "drive_file_id": "1LJYXE5P1_tQiUts20qocl2HgGcpMEWih",
+      "drive_url": "https://drive.google.com/file/d/1LJYXE5P1_tQiUts20qocl2HgGcpMEWih/view",
+      "zip_sha256": "2440f4607a452075dedb7d5cead46a3e70a7d7c95fe994556ae57d826718fe6a",
+      "zip_bytes": 288576,
+      "drive_parent_verified": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+      "drive_raw_download_sha256_match": true,
+      "zip_integrity": "PASSED",
+      "members": [
+        {
+          "original_member": "tools/world_build/inspect_theme_center_bridge_entry_v001.py",
+          "size_bytes": 4646,
+          "sha256": "d1d9bd6d3bc2a4eedb441d9755d390f57b644d768f4da4c13ea247c4edd96071",
+          "git_blob_sha1": "72deaa7c1943aa7506d0553affd786f5fb4052cf",
+          "github_path": "tools/world_build/inspect_theme_center_bridge_entry_v001.py",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "tools/world_build/test_inspect_theme_center_bridge_entry_v001.py",
+          "size_bytes": 870,
+          "sha256": "32dec225e59dbdb3cdb4c74c2dab73038be4e4da3c995908cc469973b36f54dc",
+          "git_blob_sha1": "d67aac656507cc9f6b884d1e4bcb7a90a3cca9ed",
+          "github_path": "tools/world_build/test_inspect_theme_center_bridge_entry_v001.py",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "research/pavilions/theme_center/BRIDGE_ENTRY_PRIMARY_EVIDENCE_v001.md",
+          "size_bytes": 6054,
+          "sha256": "3fa34d427162eb29eb5fc4ee3d5034aa8062130b208b639d243232008506d7d6",
+          "git_blob_sha1": "84c3fa22232a76f416a6698276437c45bc10d887",
+          "github_path": "research/pavilions/theme_center/BRIDGE_ENTRY_PRIMARY_EVIDENCE_v001.md",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "renders/GLB_REAL_SECTION_v001.png",
+          "size_bytes": 281897,
+          "sha256": "03d93eff12e24eb4d82292a51972c3bfa84df252bfd7186e5717b5f357455baa",
+          "git_blob_sha1": null,
+          "github_path": null,
+          "status": "GIT_BINARY_PENDING"
+        },
+        {
+          "original_member": "renders/GLB_REAL_SECTION_v001.svg",
+          "size_bytes": 137986,
+          "sha256": "5bb4acca270fdd720b7009bda62af59fae8dec31aa5883c1d5ff1c0da32d4d9d",
+          "git_blob_sha1": "31fbdcd09e459070cd2709ecefcc7af0ad01ec82",
+          "github_path": "research/pavilions/theme_center/bridge_entry_v001/GLB_REAL_SECTION_v001.svg",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "renders/GLB_BRIDGE_ENTRY_MEASUREMENTS_v001.json",
+          "size_bytes": 2828,
+          "sha256": "f87204377b7146cc63870b1a801ba142701a61ac28e268497fa6b8d9a64504a5",
+          "git_blob_sha1": "877e0c280f196c68ee1ba525f3e6ec3672d72d68",
+          "github_path": "research/pavilions/theme_center/bridge_entry_v001/GLB_BRIDGE_ENTRY_MEASUREMENTS_v001.json",
+          "status": "DUAL_VERIFIED_MEMBER"
+        }
+      ],
+      "zip_container_status": "GIT_BINARY_PENDING"
+    },
+    {
+      "component": "shared-portals",
+      "archive": "FMP_ThemeCenter_Shared_Portals_v004.zip",
+      "drive_file_id": "1Z01QmV6EfgElqiBhVUIg7nIvd_pucZdi",
+      "drive_url": "https://drive.google.com/file/d/1Z01QmV6EfgElqiBhVUIg7nIvd_pucZdi/view",
+      "zip_sha256": "c9230e725754be55dbde705931a991d9439e0e1bf9b0135591a83bdbb16f5028",
+      "zip_bytes": 845307,
+      "drive_parent_verified": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+      "drive_raw_download_sha256_match": true,
+      "zip_integrity": "PASSED",
+      "members": [
+        {
+          "original_member": "README.md",
+          "size_bytes": 3433,
+          "sha256": "c2a2519ab95a0008dae5cfab228d5275509cea10c9179bd4c39eb9aa8a25dffb",
+          "git_blob_sha1": "35557d7b1eb28d86811fa58563337ea94acab54c",
+          "github_path": "archive/chat_backfill/2026-10-20/SHARED_PORTALS_v004_original_README.md",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "Shared_Portals_v004.json",
+          "size_bytes": 2667,
+          "sha256": "6861f8feb098d31b642d5cfa94e4814702362a43347d4a179a6ae8b14c1ba62b",
+          "git_blob_sha1": "620a103302be4436044b7ae58cc322f942914bc9",
+          "github_path": "research/pavilions/theme_center/SHARED_PORTALS_v004.json",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "ThemeCenter_1939_GuestFlow_Trim_v004.glb",
+          "size_bytes": 1685956,
+          "sha256": "b1467273bf674c7fbf081bb7ec64800ae61ecf88942e42678ed8948c452c5e01",
+          "git_blob_sha1": null,
+          "github_path": null,
+          "status": "GIT_BINARY_PENDING"
+        },
+        {
+          "original_member": "Shared_Portals_Before_After.png",
+          "size_bytes": 129671,
+          "sha256": "e4127775f1b96c10e41f9bbe7e72b6f2d09ec3a6ca181c33bfafa8dc1d4efb8c",
+          "git_blob_sha1": null,
+          "github_path": null,
+          "status": "GIT_BINARY_PENDING"
+        },
+        {
+          "original_member": "Return_Route_Clearance_v004.json",
+          "size_bytes": 90203,
+          "sha256": "0c81c8a35a6448027c73254c7e7ed8d083ccc04ea6b188e89b591965509cea9c",
+          "git_blob_sha1": "b573781dfd34411a9aad507f7452b18efbfec9f3",
+          "github_path": "research/pavilions/theme_center/RETURN_ROUTE_CLEARANCE_v004.json",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "tools/world_build/build_shared_portals_v004.py",
+          "size_bytes": 4187,
+          "sha256": "f97896159ba50f7095e4561cf4da601cc65fe13eb0024229a26e1e35a48cf044",
+          "git_blob_sha1": "527a1798c91809adea2b3f128a664086331707fe",
+          "github_path": "tools/world_build/build_shared_portals_v004.py",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "tools/world_build/audit_transition_clearance.py",
+          "size_bytes": 6817,
+          "sha256": "783ebbeaae761ee77d6e832ead65593c523551a119d28ab7093e90ade114bcc2",
+          "git_blob_sha1": "70c0cf08e32e9063eae4a7d68cd53fb37e70778d",
+          "github_path": "tools/world_build/audit_transition_clearance.py",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "tools/world_build/audit_helicline_join.py",
+          "size_bytes": 4059,
+          "sha256": "21d81d71977bd37dcfb5ae78cc2a6da52cc86c043c1a44be0c4d4f54f014fdc3",
+          "git_blob_sha1": "9c8b7b8e68234af40c46ce0a05e9f79619d94b8a",
+          "github_path": "tools/world_build/audit_helicline_join.py",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "tools/world_build/test_shared_portals_v004.py",
+          "size_bytes": 1715,
+          "sha256": "b5719af32160c35856ec2d6a27a18d324e8d09e78b5f165bf04e4b027a00d106",
+          "git_blob_sha1": "d3c0afd9197ddc596ea204a51d0456350c890962",
+          "github_path": "tools/world_build/test_shared_portals_v004.py",
+          "status": "DUAL_VERIFIED_MEMBER"
+        },
+        {
+          "original_member": "tools/world_build/test_transition_clearance.py",
+          "size_bytes": 1054,
+          "sha256": "2b88f23791ba3f71a9a2f68f6b970442f13efea44e721b485a6ad848715efa2a",
+          "git_blob_sha1": "226e2659e5f6270e617a02df201a4e511d93eaec",
+          "github_path": "tools/world_build/test_transition_clearance.py",
+          "status": "DUAL_VERIFIED_MEMBER"
+        }
+      ],
+      "zip_container_status": "GIT_BINARY_PENDING"
+    }
+  ],
+  "totals": {
+    "archives_checked": 2,
+    "total_members": 16,
+    "git_exact_members": 13,
+    "binary_members_pending": 3,
+    "whole_zips_git_pending": 2
+  }
+}
