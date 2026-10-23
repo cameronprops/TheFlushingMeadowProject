@@ -1,0 +1,319 @@
+{
+  "archive_folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+  "archive_packages": [
+    {
+      "drive": {
+        "folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+        "id": "1PwBZnZ2oDG24TLnF8tQhxWZhhqK2POF_",
+        "url": "https://drive.google.com/file/d/1PwBZnZ2oDG24TLnF8tQhxWZhhqK2POF_/view"
+      },
+      "filename": "FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001.zip",
+      "github": {
+        "blob_sha1": "f349ff3eca938525f01e7ef12e314f10c966fe28",
+        "commit": "1966571c489a07a94bc7385c090f8b2995cc2936",
+        "path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Wolfram_GameDev_EngineeringGate_v001.zip"
+      },
+      "rights_note": "user-created code",
+      "sha256": "1d5759b3787986790174b08b4a52267105e748ebcee58fb59caf3e1b2301b5cc",
+      "size_bytes": 12225,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "dual_actual_bytes_verified": true,
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed",
+        "local_original_member_sha256_and_zip_integrity": "passed"
+      },
+      "zip_members": 4
+    },
+    {
+      "drive": {
+        "folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+        "id": "15b2j_-anBktrh5OKAKYOeVMtHdjqVkCv",
+        "url": "https://drive.google.com/file/d/15b2j_-anBktrh5OKAKYOeVMtHdjqVkCv/view"
+      },
+      "filename": "FMP_ThemeCenter_RuntimeMesh_Audit_v001.zip",
+      "github": {
+        "blob_sha1": "8b58d173bb2028a9e9b75796ceda42ee0efa3400",
+        "commit": "1966571c489a07a94bc7385c090f8b2995cc2936",
+        "path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_RuntimeMesh_Audit_v001.zip"
+      },
+      "rights_note": "user-created code",
+      "sha256": "3f0e01ad7d630869d16ed2a8525acf8eae26ad65e551df89bfdef97ff7b4c7e7",
+      "size_bytes": 11666,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "dual_actual_bytes_verified": true,
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed",
+        "local_original_member_sha256_and_zip_integrity": "passed"
+      },
+      "zip_members": 4
+    },
+    {
+      "drive": {
+        "folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+        "id": "1vNaxcSn4SbtOJvH-rTbEmFqdFqGz93UR",
+        "url": "https://drive.google.com/file/d/1vNaxcSn4SbtOJvH-rTbEmFqdFqGz93UR/view"
+      },
+      "filename": "FMP_ThemeCenter_ReturnRoute_Continuity_v001.zip",
+      "github": {
+        "blob_sha1": "cd53dffe475700791c72e32c58e5601411715bbe",
+        "commit": "1966571c489a07a94bc7385c090f8b2995cc2936",
+        "path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_ReturnRoute_Continuity_v001.zip"
+      },
+      "rights_note": "user-created code",
+      "sha256": "175e57ee6b4e859b7c100f092fd530e8850fe7bcaa6a47ea09e6a8edc368b672",
+      "size_bytes": 12711,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "dual_actual_bytes_verified": true,
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed",
+        "local_original_member_sha256_and_zip_integrity": "passed"
+      },
+      "zip_members": 4
+    },
+    {
+      "drive": {
+        "folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+        "id": "1fMraAZ0QP5oNaaYTtlLG44qOfa-HidbY",
+        "url": "https://drive.google.com/file/d/1fMraAZ0QP5oNaaYTtlLG44qOfa-HidbY/view"
+      },
+      "filename": "FMP_ThemeCenter_Photo_Control_v001.zip",
+      "github": {
+        "blob_sha1": "8d50f9b7a3f682d9de720e90b477e685c89f3872",
+        "commit": "1966571c489a07a94bc7385c090f8b2995cc2936",
+        "path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Photo_Control_v001.zip"
+      },
+      "rights_note": "user-created code and reference-only geometry",
+      "sha256": "d7147388c9f3a8f4f3c09e6d556ee845747d07298eac1c64e5b44ca52b1236e1",
+      "size_bytes": 245540,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "dual_actual_bytes_verified": true,
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed",
+        "local_original_member_sha256_and_zip_integrity": "passed"
+      },
+      "zip_members": 11
+    },
+    {
+      "drive": {
+        "folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+        "id": "1LJYXE5P1_tQiUts20qocl2HgGcpMEWih",
+        "url": "https://drive.google.com/file/d/1LJYXE5P1_tQiUts20qocl2HgGcpMEWih/view"
+      },
+      "filename": "FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001.zip",
+      "github": {
+        "blob_sha1": "5e14bb4a3fc97bcf95cd0b54abafaf07000dc0de",
+        "commit": "a936c022771c3eb899af97c816f46d28c663f8eb",
+        "path": "archive/chat_backfill/2026-10-20/FMP_1939_Bridge_Entrance_Archival_Model_Audit_v001.zip"
+      },
+      "rights_note": "model-derived renders, documents; prior provenance flag review pending",
+      "sha256": "2440f4607a452075dedb7d5cead46a3e70a7d7c95fe994556ae57d826718fe6a",
+      "size_bytes": 288576,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "dual_actual_bytes_verified": true,
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed",
+        "local_original_member_sha256_and_zip_integrity": "passed"
+      },
+      "zip_members": 6
+    },
+    {
+      "drive": {
+        "folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+        "id": "1Z01QmV6EfgElqiBhVUIg7nIvd_pucZdi",
+        "url": "https://drive.google.com/file/d/1Z01QmV6EfgElqiBhVUIg7nIvd_pucZdi/view"
+      },
+      "filename": "FMP_ThemeCenter_Shared_Portals_v004.zip",
+      "github": {
+        "blob_sha1": "f554094e9dfb6d3adf344089776841d4a1a5e5e8",
+        "commit": "a936c022771c3eb899af97c816f46d28c663f8eb",
+        "path": "archive/chat_backfill/2026-10-20/FMP_ThemeCenter_Shared_Portals_v004.zip"
+      },
+      "rights_note": "user-generated geometry; zero embedded GLB images; rights review pending",
+      "sha256": "c9230e725754be55dbde705931a991d9439e0e1bf9b0135591a83bdbb16f5028",
+      "size_bytes": 845307,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "dual_actual_bytes_verified": true,
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed",
+        "local_original_member_sha256_and_zip_integrity": "passed"
+      },
+      "zip_members": 10
+    },
+    {
+      "drive": {
+        "folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+        "id": "1o8OZlu-q0IOiZbpr90lobYrRql2T6bZ0",
+        "url": "https://drive.google.com/file/d/1o8OZlu-q0IOiZbpr90lobYrRql2T6bZ0/view"
+      },
+      "filename": "FMP_Trylon_Actual_GLB_Passage_Evidence_v001.zip",
+      "github": {
+        "blob_sha1": "bcdc227c387a52070f8bd33e73d71ca774198cac",
+        "commit": "f945af5b51c2d523056242145b462d6994f7c9a7",
+        "path": "archive/chat_backfill/2026-10-20/FMP_Trylon_Actual_GLB_Passage_Evidence_v001.zip"
+      },
+      "rights_note": "model-derived renders, no original archival photographs; rights review pending",
+      "sha256": "094dcd4dcbfbbc386abc458cc5e3e6a37183262bb53b86ff7633c7b7704aecc7",
+      "size_bytes": 2106792,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "dual_actual_bytes_verified": true,
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed",
+        "local_original_member_sha256_and_zip_integrity": "passed"
+      },
+      "zip_members": 9
+    },
+    {
+      "drive": {
+        "folder_id": "11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk",
+        "id": "1OzFZRkHCxN3jMBGwH3Lwdbx0pFJIJhM0",
+        "url": "https://drive.google.com/file/d/1OzFZRkHCxN3jMBGwH3Lwdbx0pFJIJhM0/view"
+      },
+      "filename": "FMP_ThemeCenter_Assembled_Runtime_v005.zip",
+      "github": {
+        "blob_sha1": null,
+        "commit": null,
+        "path": null
+      },
+      "rights_note": "large binary, six embedded texture images; provenance and Git LFS or release pending",
+      "sha256": "d55522c3877638e1e3566ca63a18b0f072c2a6279ca3b5da4620836b547586b2",
+      "size_bytes": 19917363,
+      "status": "GIT_BINARY_PENDING",
+      "verification": {
+        "dual_actual_bytes_verified": false,
+        "github_git_tree_blob_sha_and_size": "not_available",
+        "google_drive_authenticated_download_sha256": "not_rechecked_this_turn",
+        "local_original_member_sha256_and_zip_integrity": "passed"
+      },
+      "zip_members": 4
+    }
+  ],
+  "audit_date": "2026-10-23",
+  "counts": {
+    "standalone_binary_members_mirrored": 5,
+    "total_new_binary_git_objects_committed": 12,
+    "zip_containers_binary_mirrored": 7,
+    "zip_containers_in_batch": 8,
+    "zip_containers_pending": 1
+  },
+  "github_branch": "main",
+  "limitations": [
+    "Public rights and provenance for three user-generated, model-derived packages require dossier review; byte-identical copies alone do not validate historical accuracy or creative rights",
+    "Source GLB v005 runtime ZIP (19,917,363 bytes; one embedded 47 MB GLB with 6 image textures) retained in Drive; Git LFS/release method needed before dual archival",
+    "Not a verbatim transcript; full conversation remains TRANSCRIPT_PENDING",
+    "No Unreal engine runtime validation or historical photo pose calibration performed",
+    "The reference guide GLB is not a historical bridge model"
+  ],
+  "repo": "cameronprops/TheFlushingMeadowProject",
+  "schema": "fmp.dual-archive-binary-backfill.v002",
+  "source": "Original FMP Theme Center ZIP packages and generated model-derived assets only; no historical photographs added",
+  "standalone_assets": [
+    {
+      "drive": {
+        "folder_id": "1FP0n-TfWbzO9ai2bCu2yQ0YEBFukBfgR",
+        "id": "1xpQfxVE1F9tKXzXHNIDVyU5DtzFuhigd",
+        "url": "https://drive.google.com/file/d/1xpQfxVE1F9tKXzXHNIDVyU5DtzFuhigd/view"
+      },
+      "filename": "GLB_REAL_SECTION_v001.png",
+      "github": {
+        "blob_sha1": "6386878f3c0d65c3c9285f138856d319d8d4dabd",
+        "commit": "bda90aedac4cd140c4f6651f85eb9bb87a27fbc3",
+        "path": "research/pavilions/theme_center/bridge_entry_v001/GLB_REAL_SECTION_v001.png"
+      },
+      "sha256": "03d93eff12e24eb4d82292a51972c3bfa84df252bfd7186e5717b5f357455baa",
+      "size_bytes": 281897,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed"
+      }
+    },
+    {
+      "drive": {
+        "folder_id": "1FP0n-TfWbzO9ai2bCu2yQ0YEBFukBfgR",
+        "id": "1Pp-luZuzb5LLbV0-7kB9hBLew-205bdB",
+        "url": "https://drive.google.com/file/d/1Pp-luZuzb5LLbV0-7kB9hBLew-205bdB/view"
+      },
+      "filename": "Shared_Portals_Before_After.png",
+      "github": {
+        "blob_sha1": "417ee07b137da70fe9b01f27930a850a05dcdf63",
+        "commit": "bda90aedac4cd140c4f6651f85eb9bb87a27fbc3",
+        "path": "research/pavilions/theme_center/Shared_Portals_Before_After_v004.png"
+      },
+      "sha256": "e4127775f1b96c10e41f9bbe7e72b6f2d09ec3a6ca181c33bfafa8dc1d4efb8c",
+      "size_bytes": 129671,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed"
+      }
+    },
+    {
+      "drive": {
+        "folder_id": "1FP0n-TfWbzO9ai2bCu2yQ0YEBFukBfgR",
+        "id": "1el_8Fwdkkwuf4h80Je2A3npJjnpspcni",
+        "url": "https://drive.google.com/file/d/1el_8Fwdkkwuf4h80Je2A3npJjnpspcni/view"
+      },
+      "filename": "FMP_Bridge_Registration_Control_Board_v001.png",
+      "github": {
+        "blob_sha1": "68fceadb45371d82415f8b91d49704b86baea4e4",
+        "commit": "bda90aedac4cd140c4f6651f85eb9bb87a27fbc3",
+        "path": "research/pavilions/theme_center/photo_registration_v001/FMP_Bridge_Registration_Control_Board_v001.png"
+      },
+      "sha256": "94d126944dae3b288ba97db45e96fc5bf34ba0338d280b9d58cbf041af3b3a74",
+      "size_bytes": 250056,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed"
+      }
+    },
+    {
+      "drive": {
+        "folder_id": "1FP0n-TfWbzO9ai2bCu2yQ0YEBFukBfgR",
+        "id": "1NptfYN0i8T1eWxqe5kM9iLAanyo6rz5y",
+        "url": "https://drive.google.com/file/d/1NptfYN0i8T1eWxqe5kM9iLAanyo6rz5y/view"
+      },
+      "filename": "FMP_ThemeCenter_Bridge_Registration_Controls_v001.glb",
+      "github": {
+        "blob_sha1": "7e11b4c052ed976ab2eedfa78b90075c5f28c024",
+        "commit": "bda90aedac4cd140c4f6651f85eb9bb87a27fbc3",
+        "path": "research/pavilions/theme_center/photo_registration_v001/FMP_ThemeCenter_Bridge_Registration_Controls_v001.glb"
+      },
+      "sha256": "24e9ebf855b7654c278c6d24a37029b784d4155e0ab5c3ca31b9d7479f5b6f33",
+      "size_bytes": 29764,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed"
+      }
+    },
+    {
+      "drive": {
+        "folder_id": "1FP0n-TfWbzO9ai2bCu2yQ0YEBFukBfgR",
+        "id": "1GraiXVvj6tICRbGUQHYeMvleT7GfGtKH",
+        "url": "https://drive.google.com/file/d/1GraiXVvj6tICRbGUQHYeMvleT7GfGtKH/view"
+      },
+      "filename": "11_runtime_trylon_elevation.png",
+      "github": {
+        "blob_sha1": "a7e13d412eef223892ac9611f5506e52a219758e",
+        "commit": "bda90aedac4cd140c4f6651f85eb9bb87a27fbc3",
+        "path": "research/pavilions/theme_center/trylon_passage_render_v001/11_runtime_trylon_elevation.png"
+      },
+      "sha256": "963d3a9a909872e82314e7c2adbdca9d709a7c394410b95d376ecf01dbf5ea3f",
+      "size_bytes": 66844,
+      "status": "DUAL_BYTES_VERIFIED",
+      "verification": {
+        "github_git_tree_blob_sha_and_size": "passed",
+        "google_drive_authenticated_download_sha256": "passed"
+      }
+    }
+  ],
+  "verification_method": "Compare exact original SHA-256 and Git hash-object; upload Git binary via create_blob; fast-forward commit verified; fetch repo main recursive Git tree and compare blob IDs+sizes; authenticated Google Drive bytes redownloaded and SHA256 matched; confirm Drive IDs and parent folders"
+}
