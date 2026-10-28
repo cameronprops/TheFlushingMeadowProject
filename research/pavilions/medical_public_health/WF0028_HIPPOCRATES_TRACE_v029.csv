@@ -1,0 +1,7 @@
+source_id,feature,kind,pixel_a_512_view,pixel_b_512_view,status,notes
+hippocrates_photo,relief,approximate_envelope,"128,165","376,321",VISUAL_TRACE_APPROX,Uncalibrated; relief shadows and sculptural extents uncertain
+hippocrates_photo,awning,lower_face,"106,354","405,374",VISUAL_TRACE_APPROX,Canopy rough span
+hippocrates_photo,portal,visible_dark_aperture,"157,379","353,465",VISUAL_TRACE_APPROX,Recess appears narrower than canopy
+hippocrates_photo,grade,entry_threshold_line,"136,466","390,466",VISUAL_TRACE_APPROX,Image line not verified finished floor elevation
+hippocrates_photo,wall,left_return,"16,71","16,444",VISUAL_TRACE_APPROX,Partial crop
+hippocrates_photo,wall,right_return,"492,70","492,452",VISUAL_TRACE_APPROX,Partial crop
