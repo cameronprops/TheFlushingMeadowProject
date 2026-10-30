@@ -6,6 +6,8 @@ Produced a source-driven parametric study from the v034 photo observations, but 
 
 All numerical parameters remain provisional: facade width 18 m, height 7 m, bow 1.1 m, 3.6 m portal, 8 m canopy. **Do not interpret these as measurements**. The generated radius and diagram follow those chosen parameters only. No source plan, 3D camera solve, site control, or Unreal test conducted.
 
-Local deliverable WF0028_Hippocrates_Entrance_Study_v035.zip (85,423 bytes), SHA256 74d8c7d775579692b64a11d1f549af27ff2d993a74fd6e844e339940a904ee47; includes Python generator, GLB, PNG orthographic plate, JSON manifest, README. GitHub binary mirror remains PENDING unless uploaded as a release or LFS asset. Historic source reference: WF0028_HIPPOCRATES_FACADE_OBSERVATIONS_v034.md.
+Local deliverable WF0028_Hippocrates_Entrance_Study_v035.zip (91,050 bytes), SHA256 567be07ad135d48dd21f011a620004e225ea8746370e0a320b1c6c59c785a53d; includes Python generator, GLB, PNG orthographic plate, JSON manifest, README. GitHub binary mirror remains PENDING unless uploaded as a release or LFS asset. Historic source reference: WF0028_HIPPOCRATES_FACADE_OBSERVATIONS_v034.md.
 
 Next: trace source plan and actual film views, measure thresholds and returns, then revise parameters and decide whether exterior steps exist. Preserve historic master and keep all hypotheses removable.
+
+Drive archive: https://drive.google.com/file/d/1yRSUOhByqkMz_DbLIfizq2yxxw_0kXS0/view?usp=drivesdk (folder 11aRetkT2qaA69j8jnRyqxCJu2sR7DAPk). The archive's actual GLB/PNG binary bytes are not mirrored into GitHub; GIT_BINARY_PENDING.
